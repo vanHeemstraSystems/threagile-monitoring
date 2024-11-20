@@ -80,7 +80,7 @@
 
     然后，导航至`http://127.0.0.1:5000/`在您的网络浏览器中。
 
-    To run tests, use:
+    要运行测试，请使用：
 
     ```bash
     $ cd threagile-monitoring
@@ -114,7 +114,7 @@ pip install threagile-monitoring
 
 ## 版本来源
 
--   这[孵化VCS](https://github.com/ofek/hatch-vcs) version source plugin determines the project version using Git tags
+-   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 
 ## 环境
 
@@ -123,7 +123,7 @@ pip install threagile-monitoring
 
 ## 建造
 
--   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
+-   All build targets use the [孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
