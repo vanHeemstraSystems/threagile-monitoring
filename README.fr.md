@@ -22,8 +22,9 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 **Note**: Assurez-vous de remplir les[exigences](./200/README.md).
 
-1.  Processus d'installation :
-    ```bash
+1.  **Processus d'installation :**
+
+    ````bash
     $ cd threagile-monitoring
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
@@ -38,8 +39,22 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+
+    **Package your site with webpack:**
+    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
+
+    All of the setup should be ready by now so all you have to do is run `npm run build` in the `./templates/static` folder.
+
+    This will create the bundle.js and index.html files here in `./templates/public`.
+
+    **Development with webpack:**
+    If you are still developing your website, it is as easy as `npm run watch` which will constantly load the changes you make into the appropriate files.
+
+    To see the changes just save and reload your navigator (usually with F5). Make sure you are using the `python run.py` to run your webpage when testing with backend functions.
+
+    **Run:**
     $ hatch run python src/threagile_monitoring/app.py # starts the app 
-    ```
+    ````
 2.  Dépendances logicielles
 3.  Dernières versions
 4.  Références API
@@ -119,7 +134,7 @@ pip install threagile-monitoring
 ## Environnements
 
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Le`test` matrix uses the [conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
+-   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
 ## Construire
 
@@ -133,7 +148,7 @@ pip install threagile-monitoring
 
 `threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
@@ -141,7 +156,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Construire notre application
+## 300 - Créer notre application
 
 Voir[README.md](./300/README.md)
 
