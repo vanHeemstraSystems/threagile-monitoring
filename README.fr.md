@@ -10,13 +10,13 @@ nom du référentiel
 
 **Résumé exécutif**
 
-Text
+Texte
 
 ## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - Exigences
 
 Voir[README.md](./200/README.md)
 
