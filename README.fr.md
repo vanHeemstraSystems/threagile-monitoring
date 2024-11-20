@@ -10,7 +10,7 @@ surveillance des risques
 
 * * *
 
-> Une application Web pour créer un tableau de bord pour[Menaçant](https://threagile.io).
+> Une application Web pour créer un tableau de bord pour[Threagile](https://threagile.io).
 
 -   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
@@ -41,7 +41,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  Dépendances logicielles
-3.  Latest releases
+3.  Dernières versions
 4.  Références API
 5.  Construire et tester :
 
@@ -70,7 +70,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ setx SECRET_KEY secret
     ```
 
-    Alors:
+    Then:
 
     ```bash
     $ cd threagile-monitoring
@@ -90,7 +90,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 # Documentation API
 
-Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
+Navigate to `http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
 
 # Métrique
 
@@ -112,7 +112,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 pip install threagile-monitoring
 ```
 
-## Version source
+## Source de la version
 
 -   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
 
@@ -133,15 +133,15 @@ pip install threagile-monitoring
 
 `threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
 ## 200 - Exigences
 
-See [README.md](./200/README.md)
+Voir[README.md](./200/README.md)
 
-## 300 - Construire notre application
+## 300 - Créer notre application
 
 Voir[README.md](./300/README.md)
 
