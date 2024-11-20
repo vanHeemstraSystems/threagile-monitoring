@@ -114,7 +114,7 @@ pip install threagile-monitoring
 
 ## مصدر النسخة
 
--   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
+-   The [Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
 ## البيئات
 
@@ -131,7 +131,7 @@ pip install threagile-monitoring
 
 ## رخصة
 
-`threagile-monitoring`يتم توزيعها بموجب شروط[مع](https://spdx.org/licenses/MIT.html)رخصة.
+`threagile-monitoring` is distributed under the terms of the [مع](https://spdx.org/licenses/MIT.html)رخصة.
 
 ## 100- مقدمة
 
