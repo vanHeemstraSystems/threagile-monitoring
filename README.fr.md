@@ -41,7 +41,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  Dépendances logicielles
-3.  Dernières versions
+3.  Latest releases
 4.  Références API
 5.  Construire et tester :
 
@@ -112,7 +112,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 pip install threagile-monitoring
 ```
 
-## Source de la version
+## Version source
 
 -   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
 
@@ -139,7 +139,7 @@ Voir[README.md](./100/README.md)
 
 ## 200 - Exigences
 
-Voir[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 - Construire notre application
 
