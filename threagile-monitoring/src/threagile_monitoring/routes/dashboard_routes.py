@@ -90,6 +90,12 @@ def edit_dashboard(dashboard_id):
     return render_template("dashboard/edit_dashboard.html", form=form, dashboard=dashboard)
 
 
+# View a Dashboard
+@dashboard_bp.route("/<int:dashboard_id>/view", methods=["GET"])
+def view_dashboard(dashboard_id):
+    dashboard = Dashboard.query.get_or_404(dashboard_id)
+    return render_template("dashboard/view_dashboard.html", dashboard=dashboard)
+
 # # Run a Build
 # @build_bp.route("/run-build", methods=["POST"])
 # def run_build():
