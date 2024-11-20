@@ -12,7 +12,7 @@
 
 > تطبيق ويب لإنشاء لوحة تحكم لـ[ثريجيل](https://threagile.io).
 
--   [Glossary](./GLOSSARY.md)
+-   [مسرد](./GLOSSARY.md)
 -   [مراجع](./REFERENCES.md)
 -   [التوثيق](./DOCUMENTATION.md)
 
@@ -88,7 +88,7 @@
     $ pytest tests/
     ```
 
-# API Documentation
+# وثائق واجهة برمجة التطبيقات
 
 انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
