@@ -1,6 +1,6 @@
 threagile-monitoring
 
-# Threagile Monitoring
+# Threagile-monitoring
 
 |        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -26,7 +26,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
     ```bash
     $ cd threagile-monitoring
-    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
+    $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -41,7 +41,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Dit is binnen`.gitignore` to avoid a bloated git commit history.
+    **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Dit is binnen`.gitignore`om een ​​opgeblazen git commit geschiedenis te voorkomen.
 
     Alle instellingen zouden nu klaar moeten zijn, dus alles wat u hoeft te doen`/src/threagile_monitoring/templates/static`wordt gerund`$ npm run build`in de`/src/threagile_monitoring/templates/static`map.
 
@@ -137,7 +137,7 @@ pip install threagile-monitoring
 
 ## Bouwen
 
--   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
+-   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
