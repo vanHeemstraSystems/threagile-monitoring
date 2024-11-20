@@ -1,4 +1,4 @@
-Threagile-Überwachung
+threagile-monitoring
 
 # Threagile Überwachung
 
@@ -10,7 +10,7 @@ Threagile-Überwachung
 
 * * *
 
-> Eine Webanwendung zum Erstellen eines Dashboards[Threagile](https://threagile.io).
+> Eine Webanwendung zum Erstellen von Dashboards[Threagile](https://threagile.io).
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
@@ -43,13 +43,13 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Das ist drin`.gitignore`um einen aufgeblähten Git-Commit-Verlauf zu vermeiden.
 
-    Das gesamte Setup sollte jetzt fertig sein, Sie müssen es also nur noch ausführen`$ npm run build`im`./templates/static`Ordner.
+    Die gesamte Einrichtung sollte jetzt fertig sein, Sie müssen also nur noch etwas tun`/src/threagile_monitoring/templates/static` is run `$ npm run build`im`/src/threagile_monitoring/templates/static`Ordner.
 
-    Dadurch werden hier die Dateien bundle.js und index.html erstellt`./templates/public`.
+    Dadurch wird das erstellt`bundle.js`Und`index.html`Dateien in`/src/threagile_monitoring/templates/public`.
 
-    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, ist es so einfach wie`$ npm run watch`Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
+    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, geht das so einfach wie in einem separaten Terminal`/src/threagile_monitoring/templates/static`laufen`$ npm run watch`Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
 
-    Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5). Stellen Sie sicher, dass Sie das verwenden`$ python run.py`um Ihre Webseite beim Testen mit Backend-Funktionen auszuführen.
+    Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5). Stellen Sie sicher, dass`/src/threagile_monitoring`Du verwendest die`$ python run.py`um Ihre Webseite beim Testen mit Backend-Funktionen auszuführen.**ZU TUN**: Wechsel von`run.py`zu verwenden`app.py`.
 
     **Laufen:**
 
@@ -59,7 +59,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 4.  API-Referenzen
 5.  Erstellen und testen:
 
-    Um Ihren Code zu erstellen, verwenden Sie:
+    To build your code, use:
 
     ```bash
     $ cd threagile-monitoring
@@ -68,7 +68,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     Um KI für Pull-Request-Reviews zu verwenden, verwenden Sie:
 
-    <https://app.coderabbit.ai/dashboard>(verwendet`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
 
     Um die Anwendung auszuführen, verwenden Sie:
 
@@ -151,7 +151,7 @@ pip install threagile-monitoring
 
 Sehen[README.md](./100/README.md)
 
-## 200 – Anforderungen
+## 200 - Requirements
 
 Sehen[README.md](./200/README.md)
 
