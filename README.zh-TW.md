@@ -64,7 +64,7 @@
     $ export SECRET_KEY="secret"
     ```
 
-    Windows:
+    視窗：
 
     ```bash
     $ setx SECRET_KEY secret
