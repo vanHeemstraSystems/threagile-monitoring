@@ -10,7 +10,7 @@ Threagile-Überwachung
 
 * * *
 
-> A web application to create dashboard for [Threagile](https://threagile.io).
+> Eine Webanwendung zum Erstellen eines Dashboards[Threagile](https://threagile.io).
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
@@ -40,7 +40,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch run python src/threagile_monitoring/app.py # starts the app 
     ```
-2.  Software dependencies
+2.  Softwareabhängigkeiten
 3.  Neueste Veröffentlichungen
 4.  API-Referenzen
 5.  Erstellen und testen:
@@ -98,7 +98,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 
 **_NEU_**
 
-**Table of Contents**
+**Inhaltsverzeichnis**
 
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)
@@ -119,7 +119,7 @@ pip install threagile-monitoring
 ## Umgebungen
 
 -   Ordentlich in einem Standalone definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
+-   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers) plugin to run each environment inside Docker containers; usage can be seen in the [prüfen](.github/workflows/test.yml)GitHub-Workflow
 
 ## Bauen
 
@@ -133,7 +133,7 @@ pip install threagile-monitoring
 
 `threagile-monitoring`wird gemäß den Bedingungen der verteilt[MIT](https://spdx.org/licenses/MIT.html)Lizenz.
 
-## 100 - Introduction
+## 100 - Einführung
 
 Sehen[README.md](./100/README.md)
 
