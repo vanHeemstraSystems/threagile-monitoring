@@ -24,7 +24,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 1.  **Installationsprozess:**
 
-    ````bash
+    ```bash
     $ cd threagile-monitoring
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
@@ -39,22 +39,21 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    ```
 
-    **Package your site with webpack:**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
+    **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Das ist drin`.gitignore`um einen aufgeblähten Git-Commit-Verlauf zu vermeiden.
 
-    All of the setup should be ready by now so all you have to do is run ```$ npm run build``` in the ```./templates/static``` folder.
+    Das gesamte Setup sollte jetzt fertig sein, Sie müssen es also nur noch ausführen`$ npm run build`im`./templates/static`Ordner.
 
-    This will create the bundle.js and index.html files here in ```./templates/public```.
+    Dadurch werden hier die Dateien bundle.js und index.html erstellt`./templates/public`.
 
-    **Development with webpack:**
-    If you are still developing your website, it is as easy as ```$ npm run watch``` which will constantly load the changes you make into the appropriate files.
+    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, ist es so einfach wie`$ npm run watch`Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
 
-    To see the changes just save and reload your navigator (usually with F5). Make sure you are using the ```$ python run.py``` to run your webpage when testing with backend functions.
+    Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5). Stellen Sie sicher, dass Sie das verwenden`$ python run.py`um Ihre Webseite beim Testen mit Backend-Funktionen auszuführen.
 
-    **Run:**
-    $ hatch run python src/threagile_monitoring/app.py # starts the app 
-    ````
+    **Laufen:**
+
+        $ hatch run python src/threagile_monitoring/app.py # starts the app 
 2.  Softwareabhängigkeiten
 3.  Neueste Veröffentlichungen
 4.  API-Referenzen
