@@ -70,7 +70,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    ثم:
+    Then:
 
     ```bash
     $ cd threagile-monitoring
