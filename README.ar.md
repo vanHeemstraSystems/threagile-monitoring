@@ -1,6 +1,6 @@
 اسم المستودع
 
-# Repository Name
+# اسم المستودع
 
 > سلوجلاين
 
@@ -26,4 +26,4 @@
 
 ## 400 - الخاتمة
 
-يرى[README.md](./400/README.md)
+See [README.md](./400/README.md)
