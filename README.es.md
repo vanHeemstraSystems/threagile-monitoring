@@ -1,8 +1,16 @@
-nombre-repositorio
+monitoreo-threagil
 
-# Nombre del repositorio
+# Monitoreo amenazante
 
-> Slugline
+|         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| CI/CD   | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
+| Paquete | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
+| Meta    | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
+
+* * *
+
+> Una aplicación web para crear un panel de control para[amenazante](https://threagile.io).
 
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
@@ -10,7 +18,120 @@ nombre-repositorio
 
 **Resumen ejecutivo**
 
-Texto
+Poner en funcionamiento su código en su propio sistema.
+
+**Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
+
+1.  Proceso de instalación:
+    ```bash
+    $ cd threagile-monitoring
+    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
+    # Without hatch: $ python src/threagile_monitoring/app.py
+    $ hatch env create # optional, if the default env already exists you will be told
+    $ hatch shell # spawn a shell within an environment
+    (threagile-monitoring) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
+    # Name: threagile-monitoring
+    # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
+    # ...
+    (threagile-monitoring) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
+    (threagile-monitoring) $ exit # type `exit` to leave the environment
+    $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    $ hatch run pip install -r requirements.txt # pipx won't do this
+    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    $ hatch run python src/threagile_builder/app.py # starts the app 
+    ```
+2.  Dependencias de software
+3.  Últimos lanzamientos
+4.  Referencias API
+5.  Construir y probar:
+
+    Para construir su código, use:
+
+    ```bash
+    $ cd threagile-monitoring
+    $ hatch build
+    ```
+
+    Para usar IA para revisiones de solicitudes de extracción, use:
+
+    <https://app.coderabbit.ai/dashboard>(usa`phpstan.neon`)
+
+    Para ejecutar la aplicación, utilice:
+
+    Linux:
+
+    ```bash
+    $ export SECRET_KEY="secret"
+    ```
+
+    Ventanas:
+
+    ```bash
+    $ setx SECRET_KEY secret
+    ```
+
+    Entonces:
+
+    ```bash
+    $ cd threagile-monitoring
+    # Without hatch: $ python src/threagile_monitoring/app.py
+    $ hatch run python src/threagile_monitoring/app.py
+    ```
+
+    Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
+
+    Para ejecutar pruebas, utilice:
+
+    ```bash
+    $ cd threagile-monitoring
+    $ pip install pytest # optional
+    $ pytest tests/
+    ```
+
+# Documentación API
+
+Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
+
+# Métrica
+
+Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
+
+**_NUEVO_**
+
+**Tabla de contenido**
+
+-   [Instalación](#installation)
+-   [Fuente de la versión](#version-source)
+-   [Ambientes](#environments)
+-   [Construir](#build)
+-   [Licencia](#license)
+
+## Instalación
+
+```console
+pip install threagile-monitoring
+```
+
+## Fuente de la versión
+
+-   El[escotilla-vcs](https://github.com/ofek/hatch-vcs)El complemento fuente de la versión determina la versión del proyecto usando etiquetas Git.
+
+## Ambientes
+
+-   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+
+## Construir
+
+-   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
+-   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
+-   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
+    -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
+    -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
+
+## Licencia
+
+`threagile-monitoring`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html)licencia.
 
 ## 100 - Introducción
 
