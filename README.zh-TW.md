@@ -8,11 +8,11 @@
 -   [參考](./REFERENCES.md)
 -   [文件](./DOCUMENTATION.md)
 
-**Executive Summary**
+**執行摘要**
 
 文字
 
-## 100 - 簡介
+## 100 - Introduction
 
 看[README.md](./100/README.md)
 
