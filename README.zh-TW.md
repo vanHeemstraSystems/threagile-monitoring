@@ -26,7 +26,7 @@
 
     ```bash
     $ cd threagile-monitoring
-    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
+    $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -41,7 +41,8 @@
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包應用程式。這是在`.gitignore`以避免臃腫的 git 提交歷史記錄。
+    **使用 webpack 打包您的網站：**
+    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in `.gitignore`以避免臃腫的 git 提交歷史記錄。
 
     所有的設定現在應該已經準備好了，所以你所要做的就是`/src/threagile_monitoring/templates/static`正在運行`$ npm run build`在`/src/threagile_monitoring/templates/static`資料夾。
 
@@ -159,6 +160,6 @@ pip install threagile-monitoring
 
 看[README.md](./300/README.md)
 
-## 400 - 結論
+## 400 - Conclusion
 
 看[README.md](./400/README.md)
