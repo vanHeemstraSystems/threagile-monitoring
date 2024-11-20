@@ -78,7 +78,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`in Ihrem Webbrowser.
+    Navigieren Sie dann zu`http://127.0.0.1:5000/`in Ihrem Webbrowser.
 
     Um Tests auszuführen, verwenden Sie:
 
