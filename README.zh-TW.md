@@ -112,7 +112,7 @@
 pip install threagile-monitoring
 ```
 
-## 版本來源
+## Version source
 
 -   這[孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
 
