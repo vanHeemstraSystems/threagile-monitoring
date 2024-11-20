@@ -22,8 +22,9 @@
 
 **टिप्पणी**: सुनिश्चित करें कि आप इसे पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
-1.  स्थापना प्रक्रिया:
-    ```bash
+1.  **स्थापना प्रक्रिया:**
+
+    ````bash
     $ cd threagile-monitoring
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
@@ -38,8 +39,22 @@
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+
+    **Package your site with webpack:**
+    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
+
+    All of the setup should be ready by now so all you have to do is run `npm run build` in the `./templates/static` folder.
+
+    This will create the bundle.js and index.html files here in `./templates/public`.
+
+    **Development with webpack:**
+    If you are still developing your website, it is as easy as `npm run watch` which will constantly load the changes you make into the appropriate files.
+
+    To see the changes just save and reload your navigator (usually with F5). Make sure you are using the `python run.py` to run your webpage when testing with backend functions.
+
+    **Run:**
     $ hatch run python src/threagile_monitoring/app.py # starts the app 
-    ```
+    ````
 2.  सॉफ़्टवेयर निर्भरताएँ
 3.  नवीनतम रिलीज़
 4.  एपीआई संदर्भ
@@ -123,7 +138,7 @@ pip install threagile-monitoring
 
 ## निर्माण
 
--   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)शिप करने के लिए हुक प्लगइन बनाएं`_version.py`फ़ाइल करें ताकि संस्करण का उपयोग रनटाइम पर किया जा सके
+-   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py`फ़ाइल करें ताकि संस्करण का उपयोग रनटाइम पर किया जा सके
 -   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे करें:
     -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
