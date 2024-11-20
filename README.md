@@ -39,16 +39,32 @@ Getting your code up and running on your own system.
     ```
 
     **Package your site with webpack:**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
+    Once you have a website that is good enough for you to use, you have to package the application with webpack. This package folder is listed in ```.gitignore``` to avoid it to be committed to git.
 
-    All of the setup should be ready by now so all you have to do in ```/src/threagile_monitoring/templates/static``` is run ```$ npm install``` then  ```$ npm run build``` in the ```/src/threagile_monitoring/templates/static``` folder.
+    All of the setup should be ready by now so all you have to do:
+    1) ```$ hatch shell```
+    2) ```(threagile-monitoring) $ cd templates/static```
+    3) ```(threagile-monitoring) $ npm install```
+    4) ```(threagile-monitoring) $ npm run build```
 
     This will create the ```bundle.js``` and ```index.html``` files in ```/src/threagile_monitoring/templates/public```.
 
     **Development with webpack:**
-    If you are still developing your website, it is as easy as in a separate terminal in ```/src/threagile_monitoring/templates/static``` run ```$ npm install``` then ```$ npm run watch``` which will constantly load the changes you make into the appropriate files.
+    If you are still developing your website, it is as easy as:
+    1) ```$ hatch shell```
+    2) ```(threagile-monitoring) $ cd templates/static```
+    3) ```(threagile-monitoring) $ npm install```
+    4) ```(threagile-monitoring) $ npm run watch```
 
-    To see the changes just save and reload your navigator (usually with F5). Make sure from ```/src/threagile_monitoring``` you are using the ```$ hatch run python run.py``` to run your webpage when testing with backend functions. **TO DO**: Change from ```run.py``` to using ```app.py```.
+    This will constantly load the changes you make into the appropriate files.
+
+    To see the changes just save and reload your navigator (usually with F5). 
+    
+    Make sure, to run your webpage when testing with backend functions, you are using:
+    1) ```(threagile-monitoring) $ cd ../../``` # to go out of templates/static
+    2) ```(threagile-monitoring) $ python run.py```
+    
+    **TO DO**: Change from ```run.py``` to using ```app.py```.
 
     **Run:**
     ```
