@@ -9,7 +9,7 @@ threagile-monitoring
 
 -----
 
-> A web application to create dashboard for [Threagile](https://threagile.io).
+> A web application to create dashboards for [Threagile](https://threagile.io).
 
 - [Glossary](./GLOSSARY.md)
 - [References](./REFERENCES.md)
