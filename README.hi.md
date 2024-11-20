@@ -43,7 +43,7 @@
 
     **अपनी साइट को वेबपैक के साथ पैकेज करें:**एक बार जब आपके पास एक ऐसी वेबसाइट हो जो आपके उपयोग के लिए पर्याप्त हो, तो आपको एप्लिकेशन को वेबपैक के साथ पैकेज करना होगा। ये अंदर है`.gitignore`फूले हुए गिट प्रतिबद्ध इतिहास से बचने के लिए।
 
-    अब तक सारा सेटअप तैयार हो जाना चाहिए, इसलिए आपको बस इतना करना है`/src/threagile_monitoring/templates/static`चलाया जाता है`$ npm install`तब`$ npm run build`में`/src/threagile_monitoring/templates/static`फ़ोल्डर.
+    अब तक सारा सेटअप तैयार हो जाना चाहिए, इसलिए आपको बस इतना करना है`/src/threagile_monitoring/templates/static`चलाया जाता है`$ npm install` then  `$ npm run build`में`/src/threagile_monitoring/templates/static`फ़ोल्डर.
 
     यह बनायेगा`bundle.js`और`index.html`फ़ाइलों में`/src/threagile_monitoring/templates/public`.
 
