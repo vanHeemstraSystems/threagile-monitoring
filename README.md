@@ -36,6 +36,7 @@ Getting your code up and running on your own system.
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    ```
 
     **Package your site with webpack:**
     Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
@@ -50,6 +51,7 @@ Getting your code up and running on your own system.
     To see the changes just save and reload your navigator (usually with F5). Make sure you are using the ```$ python run.py``` to run your webpage when testing with backend functions.
 
     **Run:**
+    ```
     $ hatch run python src/threagile_monitoring/app.py # starts the app 
     ```
 2.	Software dependencies
