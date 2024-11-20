@@ -26,7 +26,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     ```bash
     $ cd threagile-monitoring
-    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
+    $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -54,7 +54,7 @@ Poner en funcionamiento su código en su propio sistema.
     **Correr:**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
-2.  Software dependencies
+2.  Dependencias de software
 3.  Últimos lanzamientos
 4.  Referencias API
 5.  Construir y probar:
@@ -128,7 +128,7 @@ pip install threagile-monitoring
 
 ## Fuente de la versión
 
--   El[escotilla-vcs](https://github.com/ofek/hatch-vcs)El complemento fuente de la versión determina la versión del proyecto usando etiquetas Git.
+-   El[escotilla-vcs](https://github.com/ofek/hatch-vcs) version source plugin determines the project version using Git tags
 
 ## Ambientes
 
