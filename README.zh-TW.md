@@ -22,8 +22,9 @@
 
 **筆記**: 確保您滿足[要求](./200/README.md).
 
-1.  安裝過程：
-    ```bash
+1.  **安裝過程：**
+
+    ````bash
     $ cd threagile-monitoring
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
@@ -38,8 +39,22 @@
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+
+    **Package your site with webpack:**
+    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
+
+    All of the setup should be ready by now so all you have to do is run `npm run build` in the `./templates/static` folder.
+
+    This will create the bundle.js and index.html files here in `./templates/public`.
+
+    **Development with webpack:**
+    If you are still developing your website, it is as easy as `npm run watch` which will constantly load the changes you make into the appropriate files.
+
+    To see the changes just save and reload your navigator (usually with F5). Make sure you are using the `python run.py` to run your webpage when testing with backend functions.
+
+    **Run:**
     $ hatch run python src/threagile_monitoring/app.py # starts the app 
-    ```
+    ````
 2.  軟體依賴性
 3.  最新版本
 4.  API參考
@@ -64,7 +79,7 @@
     $ export SECRET_KEY="secret"
     ```
 
-    視窗：
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
@@ -94,7 +109,7 @@
 
 # 指標
 
-Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
