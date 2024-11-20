@@ -36,7 +36,7 @@ Getting your code up and running on your own system.
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
-    $ hatch run python src/threagile_builder/app.py # starts the app 
+    $ hatch run python src/threagile_monitoring/app.py # starts the app 
     ```
 2.	Software dependencies
 3.	Latest releases
