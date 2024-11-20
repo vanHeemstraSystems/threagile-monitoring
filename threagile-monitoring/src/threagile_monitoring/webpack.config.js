@@ -2,9 +2,11 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
-  entry: "/src/index.js", // main js
+  // entry: "/src/index.js", // main js
+  entry: "/src/view_dashboard.js",
   output: {
-    path: path.resolve(__dirname, "dist"), // output folder
+    // path: path.resolve(__dirname, "dist"), // output folder
+    path: path.resolve(__dirname, "static/js"), // output folder
     publicPath: "/",
   },
   module: {
@@ -30,7 +32,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html", // base html
+      // template: "./src/index.html", // base html
+      template: "./templates/dashboard/view_dashboard.html",
     }),
   ],
   devServer: {
