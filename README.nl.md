@@ -5,7 +5,7 @@ repositorynaam
 > Slaklijn
 
 -   [Glossarium](./GLOSSARY.md)
--   [References](./REFERENCES.md)
+-   [Referenties](./REFERENCES.md)
 -   [Documentatie](./DOCUMENTATION.md)
 
 **Samenvatting**
@@ -14,9 +14,9 @@ Tekst
 
 ## 100 - Inleiding
 
-See [README.md](./100/README.md)
+Zien[README.md](./100/README.md)
 
-## 200 - Vereisten
+## 200 - Requirements
 
 Zien[README.md](./200/README.md)
 
