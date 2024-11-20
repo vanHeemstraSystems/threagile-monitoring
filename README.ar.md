@@ -26,7 +26,7 @@
 
     ```bash
     $ cd threagile-monitoring
-    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
+    $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -41,7 +41,7 @@
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **حزم موقعك باستخدام حزمة الويب:**بمجرد أن يكون لديك موقع ويب جيد بما يكفي لاستخدامه، يجب عليك حزم التطبيق مع حزمة الويب. هذا في`.gitignore`لتجنب سجل الالتزام المتضخم.
+    **حزم موقعك باستخدام حزمة الويب:**بمجرد أن يكون لديك موقع ويب جيد بما يكفي لاستخدامه، يجب عليك حزم التطبيق مع حزمة الويب. هذا في`.gitignore` to avoid a bloated git commit history.
 
     يجب أن تكون جميع الإعدادات جاهزة الآن، لذلك كل ما عليك القيام به`/src/threagile_monitoring/templates/static`يتم تشغيله`$ npm run build`في`/src/threagile_monitoring/templates/static`المجلد.
 
@@ -49,7 +49,7 @@
 
     **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل كما هو الحال في محطة منفصلة`/src/threagile_monitoring/templates/static`يجري`$ npm run watch`والذي سيؤدي باستمرار إلى تحميل التغييرات التي تجريها في الملفات المناسبة.
 
-    لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5). تأكد من`/src/threagile_monitoring`أنت تستخدم`$ python run.py`لتشغيل صفحة الويب الخاصة بك عند الاختبار باستخدام وظائف الواجهة الخلفية.**TO DO**: التغيير من`run.py`لاستخدام`app.py`.
+    لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5). تأكد من`/src/threagile_monitoring`أنت تستخدم`$ python run.py`لتشغيل صفحة الويب الخاصة بك عند الاختبار باستخدام وظائف الواجهة الخلفية.**للقيام به**: التغيير من`run.py`لاستخدام`app.py`.
 
     **يجري:**
 
