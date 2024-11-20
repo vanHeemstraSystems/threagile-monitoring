@@ -41,14 +41,13 @@
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **使用 webpack 打包您的網站：**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in `.gitignore`以避免臃腫的 git 提交歷史記錄。
+    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包應用程式。這是在`.gitignore`以避免臃腫的 git 提交歷史記錄。
 
-    所有的設定現在應該已經準備好了，所以你所要做的就是`/src/threagile_monitoring/templates/static`正在運行`$ npm run build`在`/src/threagile_monitoring/templates/static`資料夾。
+    所有的設定現在應該已經準備好了，所以你所要做的就是`/src/threagile_monitoring/templates/static`正在運行`$ npm install`然後`$ npm run build`在`/src/threagile_monitoring/templates/static`資料夾。
 
     這將創建`bundle.js`和`index.html`文件在`/src/threagile_monitoring/templates/public`.
 
-    **使用webpack開發：**如果您仍在開發網站，那麼就像在單獨的終端中一樣簡單`/src/threagile_monitoring/templates/static`跑步`$ npm run watch`它會不斷地將您所做的更改載入到適當的文件中。
+    **使用webpack開發：**如果您仍在開發網站，那麼就像在單獨的終端中一樣簡單`/src/threagile_monitoring/templates/static`跑步`$ npm install`然後`$ npm run watch`它會不斷地將您所做的更改載入到適當的文件中。
 
     要查看更改，只需儲存並重新載入導航器（通常使用 F5）。確保從`/src/threagile_monitoring`你正在使用`$ python run.py`在使用後端功能進行測試時執行您的網頁。**待辦事項**：更改自`run.py`使用`app.py`.
 
@@ -160,6 +159,6 @@ pip install threagile-monitoring
 
 看[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - 結論
 
 看[README.md](./400/README.md)
