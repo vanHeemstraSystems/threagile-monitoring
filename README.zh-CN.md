@@ -12,7 +12,7 @@
 
 > 用于创建仪表板的 Web 应用程序[威胁型](https://threagile.io).
 
--   [词汇表](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 
@@ -24,7 +24,7 @@
 
 1.  **安装过程：**
 
-    ````bash
+    ```bash
     $ cd threagile-monitoring
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
@@ -39,22 +39,21 @@
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    ```
 
-    **Package your site with webpack:**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
+    **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 打包应用程序。这是在`.gitignore`以避免臃肿的 git 提交历史记录。
 
-    All of the setup should be ready by now so all you have to do is run ```$ npm run build``` in the ```./templates/static``` folder.
+    所有的设置现在应该已经准备好了，所以你所要做的就是运行`$ npm run build`在`./templates/static`文件夹。
 
-    This will create the bundle.js and index.html files here in ```./templates/public```.
+    这将在此处创建bundle.js和index.html文件`./templates/public`.
 
-    **Development with webpack:**
-    If you are still developing your website, it is as easy as ```$ npm run watch``` which will constantly load the changes you make into the appropriate files.
+    **使用webpack开发：**如果您仍在开发网站，那么这很简单`$ npm run watch`它会不断地将您所做的更改加载到适当的文件中。
 
-    To see the changes just save and reload your navigator (usually with F5). Make sure you are using the ```$ python run.py``` to run your webpage when testing with backend functions.
+    要查看更改，只需保存并重新加载导航器（通常使用 F5）。确保您正在使用`$ python run.py`在使用后端功能进行测试时运行您的网页。
 
-    **Run:**
-    $ hatch run python src/threagile_monitoring/app.py # starts the app 
-    ````
+    **跑步：**
+
+        $ hatch run python src/threagile_monitoring/app.py # starts the app 
 2.  软件依赖性
 3.  最新版本
 4.  API参考
@@ -95,7 +94,7 @@
 
     然后，导航至`http://127.0.0.1:5000/`在您的网络浏览器中。
 
-    To run tests, use:
+    要运行测试，请使用：
 
     ```bash
     $ cd threagile-monitoring
@@ -109,7 +108,7 @@
 
 # 指标
 
-让像 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
+让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -133,10 +132,10 @@ pip install threagile-monitoring
 
 ## 环境
 
--   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers) plugin to run each environment inside Docker containers; usage can be seen in the [测试](.github/workflows/test.yml)GitHub 工作流程
+-   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
 
-## Build
+## 建造
 
 -   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
@@ -144,7 +143,7 @@ pip install threagile-monitoring
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
     -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
-## License
+## 执照
 
 `threagile-monitoring`是根据以下条款分发的[和](https://spdx.org/licenses/MIT.html)执照。
 
