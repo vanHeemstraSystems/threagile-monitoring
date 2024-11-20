@@ -20,7 +20,7 @@ Threagile-Überwachung
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
-**Notiz**: Make sure you fulfill the [Anforderungen](./200/README.md).
+**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
 1.  **Installationsprozess:**
 
@@ -49,7 +49,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, geht das so einfach wie in einem separaten Terminal`/src/threagile_monitoring/templates/static`laufen`$ npm install`Dann`$ npm run watch`Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
 
-    Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5). Stellen Sie sicher, dass`/src/threagile_monitoring`Du verwendest die`$ python run.py`um Ihre Webseite beim Testen mit Backend-Funktionen auszuführen.**ZU TUN**: Wechsel von`run.py`zu verwenden`app.py`.
+    Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5). Stellen Sie sicher, dass`/src/threagile_monitoring`Du verwendest die`$ hatch run python run.py`um Ihre Webseite beim Testen mit Backend-Funktionen auszuführen.**ZU TUN**: Wechsel von`run.py`zu verwenden`app.py`.
 
     **Laufen:**
 

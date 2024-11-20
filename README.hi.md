@@ -43,13 +43,13 @@
 
     **अपनी साइट को वेबपैक के साथ पैकेज करें:**एक बार जब आपके पास एक ऐसी वेबसाइट हो जो आपके उपयोग के लिए पर्याप्त हो, तो आपको एप्लिकेशन को वेबपैक के साथ पैकेज करना होगा। ये अंदर है`.gitignore`फूले हुए गिट प्रतिबद्ध इतिहास से बचने के लिए।
 
-    अब तक सारा सेटअप तैयार हो जाना चाहिए, इसलिए आपको बस इतना करना है`/src/threagile_monitoring/templates/static`चलाया जाता है`$ npm install` then  `$ npm run build`में`/src/threagile_monitoring/templates/static`फ़ोल्डर.
+    अब तक सारा सेटअप तैयार हो जाना चाहिए, इसलिए आपको बस इतना करना है`/src/threagile_monitoring/templates/static`चलाया जाता है`$ npm install`तब`$ npm run build`में`/src/threagile_monitoring/templates/static`फ़ोल्डर.
 
     यह बनायेगा`bundle.js`और`index.html`फ़ाइलों में`/src/threagile_monitoring/templates/public`.
 
     **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, तो यह एक अलग टर्मिनल जितना आसान है`/src/threagile_monitoring/templates/static`दौड़ना`$ npm install`तब`$ npm run watch`जो आपके द्वारा किए गए परिवर्तनों को लगातार उचित फ़ाइलों में लोड करेगा।
 
-    परिवर्तनों को देखने के लिए बस अपने नेविगेटर को सहेजें और पुनः लोड करें (आमतौर पर F5 के साथ)। से सुनिश्चित करें`/src/threagile_monitoring`आप उपयोग कर रहे हैं`$ python run.py`बैकएंड फ़ंक्शंस के साथ परीक्षण करते समय अपना वेबपेज चलाने के लिए।**करने के लिए**: से बदलें`run.py`उपयोग करने के लिए`app.py`.
+    परिवर्तनों को देखने के लिए बस अपने नेविगेटर को सहेजें और पुनः लोड करें (आमतौर पर F5 के साथ)। से सुनिश्चित करें`/src/threagile_monitoring`आप उपयोग कर रहे हैं`$ hatch run python run.py`बैकएंड फ़ंक्शंस के साथ परीक्षण करते समय अपना वेबपेज चलाने के लिए।**करने के लिए**: से बदलें`run.py`उपयोग करने के लिए`app.py`.
 
     **दौड़ना:**
 
@@ -138,7 +138,7 @@ pip install threagile-monitoring
 ## निर्माण
 
 -   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)शिप करने के लिए हुक प्लगइन बनाएं`_version.py`फ़ाइल करें ताकि संस्करण का उपयोग रनटाइम पर किया जा सके
--   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
+-   पहिये का उपयोग करते हैं[hatch-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे करें:
     -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
     -   उपयोग[अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)प्रत्येक प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण बनाने का लक्ष्य बनाएं
