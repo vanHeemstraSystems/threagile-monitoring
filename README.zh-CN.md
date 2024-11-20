@@ -54,7 +54,7 @@
     **跑步：**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
-2.  软件依赖性
+2.  Software dependencies
 3.  最新版本
 4.  API参考
 5.  构建和测试：
