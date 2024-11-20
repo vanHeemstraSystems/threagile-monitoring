@@ -112,7 +112,7 @@
 pip install threagile-monitoring
 ```
 
-## Version source
+## 版本來源
 
 -   這[孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
 
@@ -129,7 +129,7 @@ pip install threagile-monitoring
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
     -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
 
-## 執照
+## License
 
 `threagile-monitoring`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
 
