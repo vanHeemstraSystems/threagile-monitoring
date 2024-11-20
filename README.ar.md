@@ -12,7 +12,7 @@
 
 > تطبيق ويب لإنشاء لوحة تحكم لـ[ثريجيل](https://threagile.io).
 
--   [مسرد](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [مراجع](./REFERENCES.md)
 -   [التوثيق](./DOCUMENTATION.md)
 
@@ -54,7 +54,7 @@
 
     لاستخدام الذكاء الاصطناعي لمراجعات طلبات السحب، استخدم:
 
-    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard>(الاستخدامات`phpstan.neon`)
 
     لتشغيل التطبيق استخدم:
 
@@ -88,7 +88,7 @@
     $ pytest tests/
     ```
 
-# وثائق واجهة برمجة التطبيقات
+# API Documentation
 
 انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
