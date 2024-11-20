@@ -12,7 +12,7 @@ surveillance des risques
 
 > Une application Web pour créer un tableau de bord pour[Menaçant](https://threagile.io).
 
--   [Glossary](./GLOSSARY.md)
+-   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
 -   [Documentation](./DOCUMENTATION.md)
 
@@ -114,7 +114,7 @@ pip install threagile-monitoring
 
 ## Source de la version
 
--   Le[trappe-vcs](https://github.com/ofek/hatch-vcs) version source plugin determines the project version using Git tags
+-   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
 
 ## Environnements
 
@@ -125,7 +125,7 @@ pip install threagile-monitoring
 
 -   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
 -   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
--   The [construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
+-   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
     -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
     -   utiliser le[application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
 
