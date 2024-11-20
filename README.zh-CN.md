@@ -43,14 +43,14 @@
     **Package your site with webpack:**
     Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
 
-    All of the setup should be ready by now so all you have to do is run `npm run build` in the `./templates/static` folder.
+    All of the setup should be ready by now so all you have to do is run ```$ npm run build``` in the ```./templates/static``` folder.
 
-    This will create the bundle.js and index.html files here in `./templates/public`.
+    This will create the bundle.js and index.html files here in ```./templates/public```.
 
     **Development with webpack:**
-    If you are still developing your website, it is as easy as `npm run watch` which will constantly load the changes you make into the appropriate files.
+    If you are still developing your website, it is as easy as ```$ npm run watch``` which will constantly load the changes you make into the appropriate files.
 
-    To see the changes just save and reload your navigator (usually with F5). Make sure you are using the `python run.py` to run your webpage when testing with backend functions.
+    To see the changes just save and reload your navigator (usually with F5). Make sure you are using the ```$ python run.py``` to run your webpage when testing with backend functions.
 
     **Run:**
     $ hatch run python src/threagile_monitoring/app.py # starts the app 
@@ -95,7 +95,7 @@
 
     然后，导航至`http://127.0.0.1:5000/`在您的网络浏览器中。
 
-    要运行测试，请使用：
+    To run tests, use:
 
     ```bash
     $ cd threagile-monitoring
@@ -109,7 +109,7 @@
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -133,10 +133,10 @@ pip install threagile-monitoring
 
 ## 环境
 
--   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
+-   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers) plugin to run each environment inside Docker containers; usage can be seen in the [测试](.github/workflows/test.yml)GitHub 工作流程
 
-## 建造
+## Build
 
 -   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
@@ -144,7 +144,7 @@ pip install threagile-monitoring
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
     -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
-## 执照
+## License
 
 `threagile-monitoring`是根据以下条款分发的[和](https://spdx.org/licenses/MIT.html)执照。
 
@@ -162,4 +162,4 @@ pip install threagile-monitoring
 
 ## 400 - 结论
 
-See [README.md](./400/README.md)
+看[README.md](./400/README.md)
