@@ -1,6 +1,6 @@
 threagile-monitoring
 
-# Threagile-monitoring
+# Threagile Monitoring
 
 |        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,7 +10,7 @@ threagile-monitoring
 
 * * *
 
-> Een webapplicatie om dashboard voor te maken[Threagil](https://threagile.io).
+> Een webapplicatie om dashboards voor te maken[Threagil](https://threagile.io).
 
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
@@ -41,15 +41,15 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Dit is binnen`.gitignore`om een ​​opgeblazen git commit geschiedenis te voorkomen.
+    **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Dit is binnen`.gitignore` to avoid a bloated git commit history.
 
-    Alle instellingen zouden nu klaar moeten zijn, dus u hoeft alleen maar te rennen`$ npm run build`in de`./templates/static`map.
+    Alle instellingen zouden nu klaar moeten zijn, dus alles wat u hoeft te doen`/src/threagile_monitoring/templates/static`wordt gerund`$ npm run build`in de`/src/threagile_monitoring/templates/static`map.
 
-    Hierdoor worden hier de bestanden Bundle.js en index.html gemaakt`./templates/public`.
+    Hierdoor ontstaat de`bundle.js`En`index.html`bestanden binnen`/src/threagile_monitoring/templates/public`.
 
-    **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, is het net zo eenvoudig`$ npm run watch`die de wijzigingen die u aanbrengt voortdurend in de juiste bestanden laadt.
+    **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, gaat dit net zo eenvoudig als in een aparte terminal`/src/threagile_monitoring/templates/static`loop`$ npm run watch`die de wijzigingen die u aanbrengt voortdurend in de juiste bestanden laadt.
 
-    Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5). Zorg ervoor dat u de`$ python run.py`om uw webpagina uit te voeren tijdens het testen met backend-functies.
+    Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5). Zorg ervoor dat van`/src/threagile_monitoring`je gebruikt de`$ python run.py`om uw webpagina uit te voeren tijdens het testen met backend-functies.**TE DOEN**: Wijzigen van`run.py`te gebruiken`app.py`.
 
     **Loop:**
 
@@ -137,7 +137,7 @@ pip install threagile-monitoring
 
 ## Bouwen
 
--   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
+-   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
