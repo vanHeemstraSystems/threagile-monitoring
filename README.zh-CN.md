@@ -49,12 +49,12 @@
 
     **使用webpack开发：**如果您仍在开发网站，那么就像在单独的终端中一样简单`/src/threagile_monitoring/templates/static`跑步`$ npm install`然后`$ npm run watch`它会不断地将您所做的更改加载到适当的文件中。
 
-    要查看更改，只需保存并重新加载导航器（通常使用 F5）。确保从`/src/threagile_monitoring`你正在使用`$ python run.py`在使用后端功能进行测试时运行您的网页。**待办事项**：更改自`run.py`使用`app.py`.
+    要查看更改，只需保存并重新加载导航器（通常使用 F5）。确保从`/src/threagile_monitoring`你正在使用`$ hatch run python run.py`在使用后端功能进行测试时运行您的网页。**待办事项**：更改自`run.py`使用`app.py`.
 
     **跑步：**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
-2.  Software dependencies
+2.  软件依赖性
 3.  最新版本
 4.  API参考
 5.  构建和测试：
