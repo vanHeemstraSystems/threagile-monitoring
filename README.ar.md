@@ -47,7 +47,7 @@
 
     سيؤدي هذا إلى إنشاء`bundle.js`و`index.html`الملفات في`/src/threagile_monitoring/templates/public`.
 
-    **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل كما هو الحال في محطة منفصلة`/src/threagile_monitoring/templates/static`يجري`$ npm install`ثم`$ npm run watch` which will constantly load the changes you make into the appropriate files.
+    **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل كما هو الحال في محطة منفصلة`/src/threagile_monitoring/templates/static`يجري`$ npm install`ثم`$ npm run watch`والذي سيؤدي باستمرار إلى تحميل التغييرات التي تجريها في الملفات المناسبة.
 
     لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5). تأكد من`/src/threagile_monitoring`أنت تستخدم`$ python run.py`لتشغيل صفحة الويب الخاصة بك عند الاختبار باستخدام وظائف الواجهة الخلفية.**للقيام به**: التغيير من`run.py`لاستخدام`app.py`.
 
@@ -108,7 +108,7 @@
 
 # المقاييس
 
-دع أداة مثل بروميثيوس تتخلص`http://127.0.0.1:9464/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
 
 **_جديد_**
 
@@ -141,7 +141,7 @@ pip install threagile-monitoring
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
-    -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
+    -   use the [برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
 
 ## رخصة
 

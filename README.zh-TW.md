@@ -49,7 +49,7 @@
 
     **使用webpack開發：**如果您仍在開發網站，那麼就像在單獨的終端中一樣簡單`/src/threagile_monitoring/templates/static`跑步`$ npm install`然後`$ npm run watch`它會不斷地將您所做的更改載入到適當的文件中。
 
-    要查看更改，只需儲存並重新載入導航器（通常使用 F5）。確保從`/src/threagile_monitoring`你正在使用`$ python run.py`在使用後端功能進行測試時執行您的網頁。**待辦事項**：更改自`run.py`使用`app.py`.
+    To see the changes just save and reload your navigator (usually with F5). Make sure from `/src/threagile_monitoring`你正在使用`$ python run.py`在使用後端功能進行測試時執行您的網頁。**待辦事項**：更改自`run.py`使用`app.py`.
 
     **跑步：**
 

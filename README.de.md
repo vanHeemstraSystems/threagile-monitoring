@@ -13,14 +13,14 @@ Threagile-Überwachung
 > Eine Webanwendung zum Erstellen von Dashboards[Threagile](https://threagile.io).
 
 -   [Glossar](./GLOSSARY.md)
--   [References](./REFERENCES.md)
+-   [Referenzen](./REFERENCES.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 
 **Zusammenfassung**
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
-**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
+**Notiz**: Make sure you fulfill the [Anforderungen](./200/README.md).
 
 1.  **Installationsprozess:**
 

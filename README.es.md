@@ -51,7 +51,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5). Asegúrate de`/src/threagile_monitoring`estás usando el`$ python run.py`para ejecutar su página web cuando pruebe con funciones de backend.**HACER**: Cambiar de`run.py`a usar`app.py`.
 
-    **Correr:**
+    **Run:**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 2.  Dependencias de software
@@ -68,7 +68,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     Para usar IA para revisiones de solicitudes de extracción, use:
 
-    <https://app.coderabbit.ai/dashboard>(usa`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
 
     Para ejecutar la aplicación, utilice:
 
@@ -133,7 +133,7 @@ pip install threagile-monitoring
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml) GitHub workflow
 
 ## Construir
 
