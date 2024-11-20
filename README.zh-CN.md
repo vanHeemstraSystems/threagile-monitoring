@@ -41,20 +41,30 @@
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 打包应用程序。这是在`.gitignore`以避免臃肿的 git 提交历史记录。
+    **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 打包应用程序。该包文件夹列于`.gitignore`以避免它被提交给 git。
 
-    所有的设置现在应该已经准备好了，所以你所要做的就是`/src/threagile_monitoring/templates/static`正在运行`$ npm install`然后`$ npm run build`在`/src/threagile_monitoring/templates/static`文件夹。
+    现在所有设置都应该准备就绪，因此您需要做的就是：
+    1）`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     这将创建`bundle.js`和`index.html`文件在`/src/threagile_monitoring/templates/public`.
 
-    **使用webpack开发：**如果您仍在开发网站，那么就像在单独的终端中一样简单`/src/threagile_monitoring/templates/static`跑步`$ npm install`然后`$ npm run watch`它会不断地将您所做的更改加载到适当的文件中。
+    **使用webpack开发：**如果您仍在开发网站，那么简单如下：
+    1）`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    要查看更改，只需保存并重新加载导航器（通常使用 F5）。确保从`/src/threagile_monitoring`你正在使用`$ hatch run python run.py`在使用后端功能进行测试时运行您的网页。**待办事项**：更改自`run.py`使用`app.py`.
+    这将不断地将您所做的更改加载到适当的文件中。
+
+    要查看更改，只需保存并重新加载导航器（通常使用 F5）。
+
+    确保在使用后端功能进行测试时运行网页，您正在使用：
+    1）`(threagile-monitoring) $ cd ../../`# 走出模板/静态
+    2）`(threagile-monitoring) $ python run.py`
+
+    **待办事项**：更改自`run.py`使用`app.py`.
 
     **跑步：**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
-2.  软件依赖性
+2.  Software dependencies
 3.  最新版本
 4.  API参考
 5.  构建和测试：
@@ -140,7 +150,7 @@ pip install threagile-monitoring
 -   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
-    -   use [cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
+    -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
     -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
 ## 执照
