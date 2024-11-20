@@ -10,13 +10,13 @@ surveillance des risques
 
 * * *
 
-> Une application Web pour créer un tableau de bord pour[Threagile](https://threagile.io).
+> Une application Web pour créer un tableau de bord pour[Menaçant](https://threagile.io).
 
 -   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
 -   [Documentation](./DOCUMENTATION.md)
 
-**Résumé exécutif**
+**Executive Summary**
 
 Faire en sorte que votre code soit opérationnel sur votre propre système.
 
@@ -38,7 +38,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
-    $ hatch run python src/threagile_builder/app.py # starts the app 
+    $ hatch run python src/threagile_monitoring/app.py # starts the app 
     ```
 2.  Dépendances logicielles
 3.  Dernières versions
@@ -70,7 +70,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    Alors:
 
     ```bash
     $ cd threagile-monitoring
@@ -90,7 +90,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 # Documentation API
 
-Navigate to `http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
+Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
 
 # Métrique
 
@@ -114,7 +114,7 @@ pip install threagile-monitoring
 
 ## Source de la version
 
--   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
+-   Le[trappe-vcs](https://github.com/ofek/hatch-vcs) version source plugin determines the project version using Git tags
 
 ## Environnements
 
@@ -133,7 +133,7 @@ pip install threagile-monitoring
 
 `threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 
@@ -141,7 +141,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Créer notre application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 

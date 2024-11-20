@@ -16,13 +16,13 @@
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 
-**执行摘要**
+**Executive Summary**
 
 在您自己的系统上启动并运行您的代码。
 
 **笔记**: 确保您满足[要求](./200/README.md).
 
-1.  安装过程：
+1.  Installation process: 
     ```bash
     $ cd threagile-monitoring
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
@@ -38,7 +38,7 @@
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
-    $ hatch run python src/threagile_builder/app.py # starts the app 
+    $ hatch run python src/threagile_monitoring/app.py # starts the app 
     ```
 2.  软件依赖性
 3.  最新版本
@@ -103,7 +103,7 @@
 -   [安装](#installation)
 -   [版本来源](#version-source)
 -   [环境](#environments)
--   [建造](#build)
+-   [Build](#build)
 -   [执照](#license)
 
 ## 安装
@@ -123,9 +123,9 @@ pip install threagile-monitoring
 
 ## 建造
 
--   All build targets use the [孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
+-   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
--   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
+-   The [建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
     -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
