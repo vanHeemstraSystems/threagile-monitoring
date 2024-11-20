@@ -49,7 +49,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
     **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, gaat dit net zo eenvoudig als in een aparte terminal`/src/threagile_monitoring/templates/static`loop`$ npm install`Dan`$ npm run watch`die de wijzigingen die u aanbrengt voortdurend in de juiste bestanden laadt.
 
-    Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5). Zorg ervoor dat van`/src/threagile_monitoring`je gebruikt de`$ python run.py`om uw webpagina uit te voeren tijdens het testen met backend-functies.**TO DO**: Wijzigen van`run.py`te gebruiken`app.py`.
+    Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5). Zorg ervoor dat van`/src/threagile_monitoring`je gebruikt de`$ python run.py`om uw webpagina uit te voeren tijdens het testen met backend-functies.**TE DOEN**: Wijzigen van`run.py`te gebruiken`app.py`.
 
     **Loop:**
 
@@ -128,7 +128,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
@@ -139,7 +139,7 @@ pip install threagile-monitoring
 
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
+-   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
