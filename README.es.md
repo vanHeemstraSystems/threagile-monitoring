@@ -40,7 +40,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch run python src/threagile_monitoring/app.py # starts the app 
     ```
-2.  Software dependencies
+2.  Dependencias de software
 3.  Últimos lanzamientos
 4.  Referencias API
 5.  Construir y probar:
@@ -112,22 +112,22 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
 pip install threagile-monitoring
 ```
 
-## Version source
+## Fuente de la versión
 
 -   El[escotilla-vcs](https://github.com/ofek/hatch-vcs)El complemento fuente de la versión determina la versión del proyecto usando etiquetas Git.
 
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
 -   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
 -   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
--   The [construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
+-   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
-    -   utilizar el[app](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
+    -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
 
 ## Licencia
 
@@ -147,4 +147,4 @@ Ver[README.md](./300/README.md)
 
 ## 400 - Conclusión
 
-See [README.md](./400/README.md)
+Ver[README.md](./400/README.md)
