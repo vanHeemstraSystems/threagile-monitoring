@@ -20,7 +20,7 @@
 
 在您自己的系统上启动并运行您的代码。
 
-**笔记**: Make sure you fulfill the [要求](./200/README.md).
+**笔记**: 确保您满足[要求](./200/README.md).
 
 1.  **安装过程：**
 
@@ -43,11 +43,11 @@
 
     **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 打包应用程序。这是在`.gitignore`以避免臃肿的 git 提交历史记录。
 
-    所有的设置现在应该已经准备好了，所以你所要做的就是`/src/threagile_monitoring/templates/static`正在运行`$ npm run build`在`/src/threagile_monitoring/templates/static`文件夹。
+    所有的设置现在应该已经准备好了，所以你所要做的就是`/src/threagile_monitoring/templates/static`正在运行`$ npm install`然后`$ npm run build`在`/src/threagile_monitoring/templates/static`文件夹。
 
     这将创建`bundle.js`和`index.html`文件在`/src/threagile_monitoring/templates/public`.
 
-    **使用webpack开发：**如果您仍在开发网站，那么就像在单独的终端中一样简单`/src/threagile_monitoring/templates/static`跑步`$ npm run watch`它会不断地将您所做的更改加载到适当的文件中。
+    **使用webpack开发：**如果您仍在开发网站，那么就像在单独的终端中一样简单`/src/threagile_monitoring/templates/static`跑步`$ npm install`然后`$ npm run watch`它会不断地将您所做的更改加载到适当的文件中。
 
     要查看更改，只需保存并重新加载导航器（通常使用 F5）。确保从`/src/threagile_monitoring`你正在使用`$ python run.py`在使用后端功能进行测试时运行您的网页。**待办事项**：更改自`run.py`使用`app.py`.
 
@@ -126,7 +126,7 @@
 pip install threagile-monitoring
 ```
 
-## Version source
+## 版本来源
 
 -   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 
