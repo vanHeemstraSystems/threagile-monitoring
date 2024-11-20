@@ -10,7 +10,7 @@ surveillance des risques
 
 * * *
 
-> Une application Web pour créer un tableau de bord pour[Menaçant](https://threagile.io).
+> Une application web pour créer des tableaux de bord pour[Menaçant](https://threagile.io).
 
 -   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
@@ -43,13 +43,13 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. C'est dans`.gitignore`pour éviter un historique de commit git gonflé.
 
-    Toute la configuration devrait être prête maintenant, il ne vous reste plus qu'à exécuter`$ npm run build`dans le`./templates/static`dossier.
+    Toute la configuration devrait être prête maintenant, donc tout ce que vous avez à faire`/src/threagile_monitoring/templates/static`est exécuté`$ npm run build`dans le`/src/threagile_monitoring/templates/static`dossier.
 
-    Cela créera les fichiers bundle.js et index.html ici dans`./templates/public`.
+    Cela créera le`bundle.js`et`index.html`fichiers dans`/src/threagile_monitoring/templates/public`.
 
-    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que`$ npm run watch` which will constantly load the changes you make into the appropriate files.
+    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que dans un terminal séparé dans`/src/threagile_monitoring/templates/static`courir`$ npm run watch`qui chargera constamment les modifications que vous apportez dans les fichiers appropriés.
 
-    Pour voir les modifications, enregistrez et rechargez simplement votre navigateur (généralement avec F5). Assurez-vous que vous utilisez le`$ python run.py`pour exécuter votre page Web lors des tests avec les fonctions backend.
+    Pour voir les modifications, enregistrez et rechargez simplement votre navigateur (généralement avec F5). Assurez-vous de`/src/threagile_monitoring`vous utilisez le`$ python run.py`pour exécuter votre page Web lors des tests avec les fonctions backend.**FAIRE**: Changement de`run.py`à utiliser`app.py`.
 
     **Courir:**
 
@@ -68,7 +68,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Pour utiliser l'IA pour les révisions de demandes d'extraction, utilisez :
 
-    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard>(utilise`phpstan.neon`)
 
     Pour exécuter l'application, utilisez :
 
@@ -92,7 +92,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`dans votre navigateur Internet.
+    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
 
     Pour exécuter des tests, utilisez :
 
