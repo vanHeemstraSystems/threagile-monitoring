@@ -48,7 +48,7 @@ Getting your code up and running on your own system.
     **Development with webpack:**
     If you are still developing your website, it is as easy as in a separate terminal in ```/src/threagile_monitoring/templates/static``` run ```$ npm install``` then ```$ npm run watch``` which will constantly load the changes you make into the appropriate files.
 
-    To see the changes just save and reload your navigator (usually with F5). Make sure from ```/src/threagile_monitoring``` you are using the ```$ python run.py``` to run your webpage when testing with backend functions. **TO DO**: Change from ```run.py``` to using ```app.py```.
+    To see the changes just save and reload your navigator (usually with F5). Make sure from ```/src/threagile_monitoring``` you are using the ```$ hatch run python run.py``` to run your webpage when testing with backend functions. **TO DO**: Change from ```run.py``` to using ```app.py```.
 
     **Run:**
     ```
