@@ -38,7 +38,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
-    $ hatch run python src/threagile_builder/app.py # starts the app 
+    $ hatch run python src/threagile_monitoring/app.py # starts the app 
     ```
 2.  Software-afhankelijkheden
 3.  Nieuwste releases
@@ -114,7 +114,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
@@ -125,7 +125,7 @@ pip install threagile-monitoring
 
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
+-   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 

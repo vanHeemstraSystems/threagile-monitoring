@@ -16,7 +16,7 @@ surveillance des risques
 -   [Références](./REFERENCES.md)
 -   [Documentation](./DOCUMENTATION.md)
 
-**Executive Summary**
+**Résumé exécutif**
 
 Faire en sorte que votre code soit opérationnel sur votre propre système.
 
@@ -114,7 +114,7 @@ pip install threagile-monitoring
 
 ## Source de la version
 
--   Le[trappe-vcs](https://github.com/ofek/hatch-vcs) version source plugin determines the project version using Git tags
+-   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
 
 ## Environnements
 
