@@ -42,7 +42,7 @@ Poner en funcionamiento su código en su propio sistema.
     ```
 2.  Dependencias de software
 3.  Últimos lanzamientos
-4.  Referencias API
+4.  API references
 5.  Construir y probar:
 
     Para construir su código, use:
@@ -119,11 +119,11 @@ pip install threagile-monitoring
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
--   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
+-   All build targets use the [hatch-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
 -   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
