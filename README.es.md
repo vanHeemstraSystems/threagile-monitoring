@@ -22,8 +22,9 @@ Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
-1.  Proceso de instalación:
-    ```bash
+1.  **Proceso de instalación:**
+
+    ````bash
     $ cd threagile-monitoring
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
@@ -38,8 +39,22 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+
+    **Package your site with webpack:**
+    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
+
+    All of the setup should be ready by now so all you have to do is run `npm run build` in the `./templates/static` folder.
+
+    This will create the bundle.js and index.html files here in `./templates/public`.
+
+    **Development with webpack:**
+    If you are still developing your website, it is as easy as `npm run watch` which will constantly load the changes you make into the appropriate files.
+
+    To see the changes just save and reload your navigator (usually with F5). Make sure you are using the `python run.py` to run your webpage when testing with backend functions.
+
+    **Run:**
     $ hatch run python src/threagile_monitoring/app.py # starts the app 
-    ```
+    ````
 2.  Dependencias de software
 3.  Últimos lanzamientos
 4.  Referencias API
@@ -119,7 +134,7 @@ pip install threagile-monitoring
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
