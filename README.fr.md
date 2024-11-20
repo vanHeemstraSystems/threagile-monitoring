@@ -1,6 +1,6 @@
 surveillance des risques
 
-# Threagile Monitoring
+# Surveillance menaçante
 
 |          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -16,7 +16,7 @@ surveillance des risques
 -   [Références](./REFERENCES.md)
 -   [Documentation](./DOCUMENTATION.md)
 
-**Executive Summary**
+**Résumé exécutif**
 
 Faire en sorte que votre code soit opérationnel sur votre propre système.
 
@@ -90,7 +90,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 # Documentation API
 
-Accédez à`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
+Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
 
 # Métrique
 
@@ -119,7 +119,7 @@ pip install threagile-monitoring
 ## Environnements
 
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
+-   Le`test` matrix uses the [conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
 ## Construire
 
