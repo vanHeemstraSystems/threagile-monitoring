@@ -16,13 +16,13 @@
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 
-**Executive Summary**
+**执行摘要**
 
 在您自己的系统上启动并运行您的代码。
 
 **笔记**: 确保您满足[要求](./200/README.md).
 
-1.  Installation process: 
+1.  安装过程：
     ```bash
     $ cd threagile-monitoring
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
@@ -103,7 +103,7 @@
 -   [安装](#installation)
 -   [版本来源](#version-source)
 -   [环境](#environments)
--   [Build](#build)
+-   [建造](#build)
 -   [执照](#license)
 
 ## 安装
@@ -125,7 +125,7 @@ pip install threagile-monitoring
 
 -   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
--   The [建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
+-   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
     -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
@@ -145,6 +145,6 @@ pip install threagile-monitoring
 
 看[README.md](./300/README.md)
 
-## 400 - 结论
+## 400 - Conclusion
 
 看[README.md](./400/README.md)
