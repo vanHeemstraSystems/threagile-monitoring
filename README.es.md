@@ -10,7 +10,7 @@ monitoreo-threagil
 
 * * *
 
-> Una aplicación web para crear un panel de control para[amenazante](https://threagile.io).
+> Una aplicación web para crear paneles de control para[amenazante](https://threagile.io).
 
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
@@ -43,18 +43,18 @@ Poner en funcionamiento su código en su propio sistema.
 
     **Empaqueta tu sitio con webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para su uso, deberá empaquetar la aplicación con webpack. esto esta en`.gitignore`para evitar un historial de confirmaciones de git inflado.
 
-    Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer es ejecutar`$ npm run build`en el`./templates/static`carpeta.
+    Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer en`/src/threagile_monitoring/templates/static`se ejecuta`$ npm run build`en el`/src/threagile_monitoring/templates/static`carpeta.
 
-    Esto creará los archivos bundle.js e index.html aquí en`./templates/public`.
+    Esto creará el`bundle.js`y`index.html`archivos en`/src/threagile_monitoring/templates/public`.
 
-    **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, es tan fácil como`$ npm run watch`que cargará constantemente los cambios que realice en los archivos apropiados.
+    **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, es tan fácil como en una terminal separada en`/src/threagile_monitoring/templates/static`correr`$ npm run watch`que cargará constantemente los cambios que realice en los archivos apropiados.
 
-    Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5). Asegúrese de que está utilizando el`$ python run.py`para ejecutar su página web cuando pruebe con funciones de backend.
+    Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5). Asegúrate de`/src/threagile_monitoring`estás usando el`$ python run.py`para ejecutar su página web cuando pruebe con funciones de backend.**HACER**: Cambiar de`run.py`a usar`app.py`.
 
     **Correr:**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
-2.  Dependencias de software
+2.  Software dependencies
 3.  Últimos lanzamientos
 4.  Referencias API
 5.  Construir y probar:
