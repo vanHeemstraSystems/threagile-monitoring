@@ -24,7 +24,7 @@
 
 1.  **安裝過程：**
 
-    ````bash
+    ```bash
     $ cd threagile-monitoring
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
@@ -39,22 +39,21 @@
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    ```
 
-    **Package your site with webpack:**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
+    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包應用程式。這是在`.gitignore`以避免臃腫的 git 提交歷史記錄。
 
-    All of the setup should be ready by now so all you have to do is run ```$ npm run build``` in the ```./templates/static``` folder.
+    所有的設定現在應該已經準備好了，所以你所要做的就是運行`$ npm run build`在`./templates/static`資料夾。
 
-    This will create the bundle.js and index.html files here in ```./templates/public```.
+    這將在此處創建bundle.js和index.html文件`./templates/public`.
 
-    **Development with webpack:**
-    If you are still developing your website, it is as easy as ```$ npm run watch``` which will constantly load the changes you make into the appropriate files.
+    **使用webpack開發：**如果您仍在開發網站，那麼這很簡單`$ npm run watch`它會不斷地將您所做的更改載入到適當的文件中。
 
-    To see the changes just save and reload your navigator (usually with F5). Make sure you are using the ```$ python run.py``` to run your webpage when testing with backend functions.
+    要查看更改，只需儲存並重新載入導航器（通常使用 F5）。確保您正在使用`$ python run.py`在使用後端功能進行測試時執行您的網頁。
 
-    **Run:**
-    $ hatch run python src/threagile_monitoring/app.py # starts the app 
-    ````
+    **跑步：**
+
+        $ hatch run python src/threagile_monitoring/app.py # starts the app 
 2.  軟體依賴性
 3.  最新版本
 4.  API參考
@@ -109,13 +108,13 @@
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
 **目錄**
 
--   [Installation](#installation)
+-   [安裝](#installation)
 -   [版本來源](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
