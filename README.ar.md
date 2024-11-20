@@ -41,15 +41,25 @@
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **حزم موقعك باستخدام حزمة الويب:**بمجرد أن يكون لديك موقع ويب جيد بما يكفي لاستخدامه، يجب عليك حزم التطبيق مع حزمة الويب. هذا في`.gitignore`لتجنب سجل الالتزام المتضخم.
+    **حزم موقعك باستخدام حزمة الويب:**بمجرد أن يكون لديك موقع ويب جيد بما يكفي لاستخدامه، يجب عليك حزم التطبيق مع حزمة الويب. تم إدراج مجلد الحزمة هذا في`.gitignore`لتجنب ذلك يجب الالتزام بـ git.
 
-    يجب أن تكون جميع الإعدادات جاهزة الآن، لذلك كل ما عليك القيام به`/src/threagile_monitoring/templates/static`يتم تشغيله`$ npm install`ثم`$ npm run build`في`/src/threagile_monitoring/templates/static`المجلد.
+    يجب أن تكون جميع الإعدادات جاهزة الآن، لذا كل ما عليك فعله:
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     سيؤدي هذا إلى إنشاء`bundle.js`و`index.html`الملفات في`/src/threagile_monitoring/templates/public`.
 
-    **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل كما هو الحال في محطة منفصلة`/src/threagile_monitoring/templates/static`يجري`$ npm install`ثم`$ npm run watch`والذي سيؤدي باستمرار إلى تحميل التغييرات التي تجريها في الملفات المناسبة.
+    **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل كما يلي:
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5). تأكد من`/src/threagile_monitoring`أنت تستخدم`$ hatch run python run.py`لتشغيل صفحة الويب الخاصة بك عند الاختبار باستخدام وظائف الواجهة الخلفية.**للقيام به**: التغيير من`run.py`لاستخدام`app.py`.
+    سيؤدي هذا إلى تحميل التغييرات التي تجريها باستمرار في الملفات المناسبة.
+
+    لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5).
+
+    تأكد من أنك تستخدم: لتشغيل صفحة الويب الخاصة بك عند الاختبار باستخدام وظائف الواجهة الخلفية:
+    1)`(threagile-monitoring) $ cd ../../`# للخروج من القوالب/static
+    2)`(threagile-monitoring) $ python run.py`
+
+    **للقيام به**: التغيير من`run.py`لاستخدام`app.py`.
 
     **يجري:**
 
