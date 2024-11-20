@@ -10,7 +10,7 @@
 
 * * *
 
-> تطبيق ويب لإنشاء لوحة تحكم لـ[ثريجيل](https://threagile.io).
+> تطبيق ويب لإنشاء لوحات معلومات لـ[ثريجيل](https://threagile.io).
 
 -   [مسرد](./GLOSSARY.md)
 -   [مراجع](./REFERENCES.md)
@@ -43,13 +43,13 @@
 
     **حزم موقعك باستخدام حزمة الويب:**بمجرد أن يكون لديك موقع ويب جيد بما يكفي لاستخدامه، يجب عليك حزم التطبيق مع حزمة الويب. هذا في`.gitignore`لتجنب سجل الالتزام المتضخم.
 
-    يجب أن تكون جميع الإعدادات جاهزة الآن، لذا كل ما عليك فعله هو التشغيل`$ npm run build`في`./templates/static`المجلد.
+    يجب أن تكون جميع الإعدادات جاهزة الآن، لذلك كل ما عليك القيام به`/src/threagile_monitoring/templates/static`يتم تشغيله`$ npm run build`في`/src/threagile_monitoring/templates/static`المجلد.
 
-    سيؤدي هذا إلى إنشاء ملفات Bundle.js وindex.html هنا`./templates/public`.
+    سيؤدي هذا إلى إنشاء`bundle.js`و`index.html`الملفات في`/src/threagile_monitoring/templates/public`.
 
-    **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل للغاية`$ npm run watch`والذي سيؤدي باستمرار إلى تحميل التغييرات التي تجريها في الملفات المناسبة.
+    **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل كما هو الحال في محطة منفصلة`/src/threagile_monitoring/templates/static`يجري`$ npm run watch`والذي سيؤدي باستمرار إلى تحميل التغييرات التي تجريها في الملفات المناسبة.
 
-    لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5). تأكد من أنك تستخدم`$ python run.py`لتشغيل صفحة الويب الخاصة بك عند الاختبار باستخدام وظائف الواجهة الخلفية.
+    لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5). تأكد من`/src/threagile_monitoring`أنت تستخدم`$ python run.py`لتشغيل صفحة الويب الخاصة بك عند الاختبار باستخدام وظائف الواجهة الخلفية.**TO DO**: التغيير من`run.py`لاستخدام`app.py`.
 
     **يجري:**
 
@@ -133,7 +133,7 @@ pip install threagile-monitoring
 ## البيئات
 
 -   تم تعريفها بدقة في قائمة بذاتها[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   ال`test` matrix uses the [حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
+-   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
 
 ## يبني
 
@@ -149,7 +149,7 @@ pip install threagile-monitoring
 
 ## 100- مقدمة
 
-See [README.md](./100/README.md)
+يرى[README.md](./100/README.md)
 
 ## 200 - المتطلبات
 
