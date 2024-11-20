@@ -13,14 +13,14 @@ Threagile-Überwachung
 > Eine Webanwendung zum Erstellen von Dashboards[Threagile](https://threagile.io).
 
 -   [Glossar](./GLOSSARY.md)
--   [Referenzen](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 
 **Zusammenfassung**
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
-**Note**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
+**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
 1.  **Installationsprozess:**
 
@@ -43,11 +43,11 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Das ist drin`.gitignore`um einen aufgeblähten Git-Commit-Verlauf zu vermeiden.
 
-    Die gesamte Einrichtung sollte jetzt fertig sein, Sie müssen also nur noch etwas tun`/src/threagile_monitoring/templates/static`wird ausgeführt`$ npm run build`im`/src/threagile_monitoring/templates/static`Ordner.
+    Die gesamte Einrichtung sollte jetzt fertig sein, Sie müssen also nur noch etwas tun`/src/threagile_monitoring/templates/static`wird ausgeführt`$ npm install`Dann`$ npm run build`im`/src/threagile_monitoring/templates/static`Ordner.
 
     Dadurch wird das erstellt`bundle.js`Und`index.html`Dateien in`/src/threagile_monitoring/templates/public`.
 
-    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, geht das so einfach wie in einem separaten Terminal`/src/threagile_monitoring/templates/static`laufen`$ npm run watch`Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
+    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, geht das so einfach wie in einem separaten Terminal`/src/threagile_monitoring/templates/static`laufen`$ npm install`Dann`$ npm run watch`Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
 
     Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5). Stellen Sie sicher, dass`/src/threagile_monitoring`Du verwendest die`$ python run.py`um Ihre Webseite beim Testen mit Backend-Funktionen auszuführen.**ZU TUN**: Wechsel von`run.py`zu verwenden`app.py`.
 
@@ -133,7 +133,7 @@ pip install threagile-monitoring
 ## Umgebungen
 
 -   Ordentlich in einem Standalone definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Der`test`Matrix verwendet die[hatch-containers](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
+-   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
 
 ## Bauen
 

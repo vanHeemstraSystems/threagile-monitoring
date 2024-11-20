@@ -43,11 +43,11 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. C'est dans`.gitignore`pour éviter un historique de commit git gonflé.
 
-    Toute la configuration devrait être prête maintenant, donc tout ce que vous avez à faire`/src/threagile_monitoring/templates/static`est exécuté`$ npm run build`dans le`/src/threagile_monitoring/templates/static`dossier.
+    Toute la configuration devrait être prête maintenant, donc tout ce que vous avez à faire`/src/threagile_monitoring/templates/static`est exécuté`$ npm install`alors`$ npm run build`dans le`/src/threagile_monitoring/templates/static`dossier.
 
     Cela créera le`bundle.js`et`index.html`fichiers dans`/src/threagile_monitoring/templates/public`.
 
-    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que dans un terminal séparé dans`/src/threagile_monitoring/templates/static`courir`$ npm run watch`qui chargera constamment les modifications que vous apportez dans les fichiers appropriés.
+    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que dans un terminal séparé dans`/src/threagile_monitoring/templates/static`courir`$ npm install`alors`$ npm run watch`qui chargera constamment les modifications que vous apportez dans les fichiers appropriés.
 
     Pour voir les modifications, enregistrez et rechargez simplement votre navigateur (généralement avec F5). Assurez-vous de`/src/threagile_monitoring`vous utilisez le`$ python run.py`pour exécuter votre page Web lors des tests avec les fonctions backend.**FAIRE**: Changement de`run.py`à utiliser`app.py`.
 
@@ -137,7 +137,7 @@ pip install threagile-monitoring
 
 ## Construire
 
--   Toutes les cibles de build utilisent le[hatch-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
+-   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
 -   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
 -   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
     -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
@@ -147,7 +147,7 @@ pip install threagile-monitoring
 
 `threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 
@@ -155,7 +155,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Créer notre application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 
