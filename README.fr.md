@@ -24,7 +24,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 1.  **Processus d'installation :**
 
-    ````bash
+    ```bash
     $ cd threagile-monitoring
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
@@ -39,22 +39,21 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    ```
 
-    **Package your site with webpack:**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This is in ```.gitignore``` to avoid a bloated git commit history.
+    **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. C'est dans`.gitignore`pour éviter un historique de commit git gonflé.
 
-    All of the setup should be ready by now so all you have to do is run ```$ npm run build``` in the ```./templates/static``` folder.
+    Toute la configuration devrait être prête maintenant, il ne vous reste plus qu'à exécuter`$ npm run build`dans le`./templates/static`dossier.
 
-    This will create the bundle.js and index.html files here in ```./templates/public```.
+    Cela créera les fichiers bundle.js et index.html ici dans`./templates/public`.
 
-    **Development with webpack:**
-    If you are still developing your website, it is as easy as ```$ npm run watch``` which will constantly load the changes you make into the appropriate files.
+    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que`$ npm run watch` which will constantly load the changes you make into the appropriate files.
 
-    To see the changes just save and reload your navigator (usually with F5). Make sure you are using the ```$ python run.py``` to run your webpage when testing with backend functions.
+    Pour voir les modifications, enregistrez et rechargez simplement votre navigateur (généralement avec F5). Assurez-vous que vous utilisez le`$ python run.py`pour exécuter votre page Web lors des tests avec les fonctions backend.
 
-    **Run:**
-    $ hatch run python src/threagile_monitoring/app.py # starts the app 
-    ````
+    **Courir:**
+
+        $ hatch run python src/threagile_monitoring/app.py # starts the app 
 2.  Dépendances logicielles
 3.  Dernières versions
 4.  Références API
@@ -69,7 +68,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Pour utiliser l'IA pour les révisions de demandes d'extraction, utilisez :
 
-    <https://app.coderabbit.ai/dashboard>(utilise`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
 
     Pour exécuter l'application, utilisez :
 
@@ -93,7 +92,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
+    Then, navigate to `http://127.0.0.1:5000/`dans votre navigateur Internet.
 
     Pour exécuter des tests, utilisez :
 
