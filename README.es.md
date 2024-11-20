@@ -43,11 +43,11 @@ Poner en funcionamiento su código en su propio sistema.
 
     **Empaqueta tu sitio con webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para su uso, deberá empaquetar la aplicación con webpack. esto esta en`.gitignore`para evitar un historial de confirmaciones de git inflado.
 
-    Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer en`/src/threagile_monitoring/templates/static`se ejecuta`$ npm run build`en el`/src/threagile_monitoring/templates/static`carpeta.
+    Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer en`/src/threagile_monitoring/templates/static`se ejecuta`$ npm install`entonces`$ npm run build`en el`/src/threagile_monitoring/templates/static`carpeta.
 
     Esto creará el`bundle.js`y`index.html`archivos en`/src/threagile_monitoring/templates/public`.
 
-    **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, es tan fácil como en una terminal separada en`/src/threagile_monitoring/templates/static`correr`$ npm run watch`que cargará constantemente los cambios que realice en los archivos apropiados.
+    **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, es tan fácil como en una terminal separada en`/src/threagile_monitoring/templates/static`correr`$ npm install`entonces`$ npm run watch`que cargará constantemente los cambios que realice en los archivos apropiados.
 
     Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5). Asegúrate de`/src/threagile_monitoring`estás usando el`$ python run.py`para ejecutar su página web cuando pruebe con funciones de backend.**HACER**: Cambiar de`run.py`a usar`app.py`.
 
@@ -128,12 +128,12 @@ pip install threagile-monitoring
 
 ## Fuente de la versión
 
--   El[escotilla-vcs](https://github.com/ofek/hatch-vcs) version source plugin determines the project version using Git tags
+-   El[escotilla-vcs](https://github.com/ofek/hatch-vcs)El complemento fuente de la versión determina la versión del proyecto usando etiquetas Git.
 
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
