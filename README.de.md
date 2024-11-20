@@ -1,4 +1,4 @@
-threagile-monitoring
+Threagile-Überwachung
 
 # Threagile Überwachung
 
@@ -20,13 +20,13 @@ threagile-monitoring
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
-**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
+**Note**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
 1.  **Installationsprozess:**
 
     ```bash
     $ cd threagile-monitoring
-    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
+    $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -43,7 +43,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Das ist drin`.gitignore`um einen aufgeblähten Git-Commit-Verlauf zu vermeiden.
 
-    Die gesamte Einrichtung sollte jetzt fertig sein, Sie müssen also nur noch etwas tun`/src/threagile_monitoring/templates/static` is run `$ npm run build`im`/src/threagile_monitoring/templates/static`Ordner.
+    Die gesamte Einrichtung sollte jetzt fertig sein, Sie müssen also nur noch etwas tun`/src/threagile_monitoring/templates/static`wird ausgeführt`$ npm run build`im`/src/threagile_monitoring/templates/static`Ordner.
 
     Dadurch wird das erstellt`bundle.js`Und`index.html`Dateien in`/src/threagile_monitoring/templates/public`.
 
@@ -59,7 +59,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 4.  API-Referenzen
 5.  Erstellen und testen:
 
-    To build your code, use:
+    Um Ihren Code zu erstellen, verwenden Sie:
 
     ```bash
     $ cd threagile-monitoring
@@ -68,7 +68,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     Um KI für Pull-Request-Reviews zu verwenden, verwenden Sie:
 
-    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard>(verwendet`phpstan.neon`)
 
     Um die Anwendung auszuführen, verwenden Sie:
 
@@ -133,7 +133,7 @@ pip install threagile-monitoring
 ## Umgebungen
 
 -   Ordentlich in einem Standalone definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
+-   Der`test`Matrix verwendet die[hatch-containers](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
 
 ## Bauen
 
@@ -151,7 +151,7 @@ pip install threagile-monitoring
 
 Sehen[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 – Anforderungen
 
 Sehen[README.md](./200/README.md)
 
