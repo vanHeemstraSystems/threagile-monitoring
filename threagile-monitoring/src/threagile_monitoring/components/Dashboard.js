@@ -1,13 +1,24 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect, Component } from 'react'
+import { Barchart } from 'recharts'
 
-class Dashboard extends Component {
-  render () {
-    return (
-      <div>
-        <h1>THE DASHBOARD</h1>
-      </div>
-    )
-  }
+// Temporarily hard coded, make dynamic import
+const risksJson = {}
+
+// Parse Threagile risks.json structure
+const parseThreagileData = risksJson => {
+    return ('foo')
+}
+
+const Dashboard = ({ risksJson }) => {
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [selectedSevereity, setSelectedSeverity] = useState(null)
+  const [timeRange, setTimeRange] = useState('1M')
+  const [data, setData] = useState(null)
+  useEffect(() => {
+    if (risksJson) {
+      setData(parseThreagileData(risksJson))
+    }
+  }, [risksJson])
 }
 
 export default Dashboard
