@@ -16,7 +16,7 @@ threagile-monitoring
 -   [Referenties](./REFERENCES.md)
 -   [Documentatie](./DOCUMENTATION.md)
 
-**Samenvatting**
+**Uitvoerende samenvatting**
 
 Uw code op uw eigen systeem operationeel krijgen.
 
@@ -41,25 +41,25 @@ Uw code op uw eigen systeem operationeel krijgen.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
-    **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Deze pakketmap wordt vermeld in`.gitignore`om te voorkomen dat het aan git wordt vastgelegd.
+    **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Deze pakketmap wordt vermeld`.gitignore`om te voorkomen dat het zich inzet voor git.
 
-    Alle instellingen zouden nu klaar moeten zijn, dus alles wat je hoeft te doen:
+    Alle setup zou nu klaar moeten zijn, dus alles wat je hoeft te doen:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Hierdoor ontstaat de`bundle.js`En`index.html`bestanden binnen`/src/threagile_monitoring/templates/public`.
 
-    **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, is het zo eenvoudig als:
+    **Ontwikkeling met webpack:**Als u nog steeds uw website ontwikkelt, is deze zo eenvoudig als:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    Hierdoor worden de wijzigingen die u aanbrengt voortdurend in de juiste bestanden geladen.
+    Dit laadt constant de wijzigingen die u aanbrengt in de juiste bestanden.
 
     Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5).
 
-    Zorg ervoor dat u, om uw webpagina uit te voeren tijdens het testen met backend-functies, het volgende gebruikt:
+    Zorg ervoor dat u uw webpagina uitvoert bij het testen met backend -functies, u gebruikt:
     1)`(threagile-monitoring) $ cd ../../`# om uit sjablonen/statisch te gaan
     2)`(threagile-monitoring) $ python run.py`
 
-    **TE DOEN**: Wijzigen van`run.py`te gebruiken`app.py`.
+    **Doen**: Wijzigen van`run.py`te gebruiken`app.py`.
 
     **Loop:**
 
@@ -138,7 +138,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
@@ -149,7 +149,7 @@ pip install threagile-monitoring
 
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
+-   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
