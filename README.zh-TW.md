@@ -152,7 +152,7 @@ pip install threagile-monitoring
 
 ## 執照
 
-`threagile-monitoring` is distributed under the terms of the [和](https://spdx.org/licenses/MIT.html)執照。
+`threagile-monitoring`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
 
 ## 100 - 簡介
 
