@@ -44,23 +44,19 @@
     **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包應用程式。該包資料夾列於`.gitignore`以避免它被提交給 git。
 
     現在所有設定都應該準備就緒，因此您需要做的就是：
-    1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
-    這將創建`bundle.js`和`index.html`文件在`/src/threagile_monitoring/templates/public`.
+    這將創建`app.js`文件 - 包含所有組件 - 在`/src/threagile_monitoring/static/js/`.
 
     **使用webpack開發：**如果您仍在開發網站，那麼簡單如下：
-    1）`$ hatch shell`
-    2) `(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
+    1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     這將不斷地將您所做的更改載入到適當的文件中。
 
     要查看更改，只需儲存並重新載入導航器（通常使用 F5）。
 
     確保在使用後端功能進行測試時運行網頁，您正在使用：
-    1）`(threagile-monitoring) $ cd ../../`# 走出模板/靜態
-    2）`(threagile-monitoring) $ python run.py`
-
-    **待辦事項**：更改自`run.py`使用`app.py`.
+    1）`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **跑步：**
 
