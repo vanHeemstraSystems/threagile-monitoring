@@ -64,7 +64,7 @@
 2.  सॉफ़्टवेयर निर्भरताएँ
 3.  नवीनतम रिलीज़
 4.  एपीआई संदर्भ
-5.  निर्माण और परीक्षण:
+5.  Build and Test:
 
     अपना कोड बनाने के लिए, इसका उपयोग करें:
 
@@ -73,7 +73,7 @@
     $ hatch build
     ```
 
-    पुल अनुरोध समीक्षा के लिए AI का उपयोग करने के लिए, इसका उपयोग करें:
+    To use AI for pull request reviews, use:
 
     <https://app.coderabbit.ai/dashboard>(उपयोग करता है`phpstan.neon`)
 
