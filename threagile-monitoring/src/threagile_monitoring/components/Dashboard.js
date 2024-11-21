@@ -1707,7 +1707,54 @@ const Dashboard = ({ risksJson }) => {
       </ScatterChart>
     )
   }
-  // MORE
+
+  // Risk Trend Over Time
+  const RiskTrendChart = ({ timeRange }) => {
+    // Simulate historical data based on current risks
+    const generateHistoricalData = () => {
+      const periods = {
+        '1M': 30,
+        '3M': 90,
+        '6M': 180,
+        '1Y': 365
+      }
+
+      const days = periods[timeRange]
+      return Array.from({ length: days }, (_, i) => ({
+        date: new Date(Date.now() - (days - i) * 24 * 60 * 60 * 1000),
+        risks: Math.floor(Math.random() * 20) + 30
+      }))
+    }
+
+    return (
+      <AreaChart width={400} height={300} data={generateHistoricalData()}>
+        <defs>
+          <linearGradient id='riskColor' x1='0' y1='0' x2='0' y2='1'>
+            <stop offset='5%' stopColor='#3b82f6' stopOpacity={0.8} />
+            <stop offset='95%' stopColor='#3b82f6' stopOpacity={0} />
+          </linearGradient>
+        </defs>
+        <XAxis
+          dataKey='date'
+          tickFormatter={date => new Date(date).toLocaleDateString()}
+        />
+        <YAxis />
+        <CartesianGrid strokeDasharray='3 3' />
+        <Tooltip labelFormatter={date => new Date(date).toLocaleDateString()} />
+        <Area
+          type='monotone'
+          dataKey='risks'
+          stroke='#3b82f6'
+          fillOpacity={1}
+          fill='url(#riskColor)'
+        />
+      </AreaChart>
+    )
+  }
+  return (
+    <ScatterChart width={400} height={300}></ScatterChart>
+    // MORE
+  )
 }
 
 export default Dashboard
