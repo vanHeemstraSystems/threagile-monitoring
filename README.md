@@ -43,7 +43,7 @@ Getting your code up and running on your own system.
 
     All of the setup should be ready by now so all you have to do:
     1) ```$ hatch shell```
-    2) ```(threagile-monitoring) $ cd templates/static```
+    2) ```(threagile-monitoring) $ cd src/threagile_monitoring/templates/static```
     3) ```(threagile-monitoring) $ npm install```
     4) ```(threagile-monitoring) $ npm run build```
 
