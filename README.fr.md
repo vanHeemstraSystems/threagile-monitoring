@@ -43,12 +43,12 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
 
-    All of the setup should be ready by now so all you have to do:
-    1) `$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    Toute la configuration devrait être prête maintenant, il vous suffit donc de :
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Cela créera le`app.js`fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
 
-    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que :
+    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que :
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     Cela chargera constamment les modifications que vous apportez dans les fichiers appropriés.
@@ -75,7 +75,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Pour utiliser l'IA pour les révisions de demandes d'extraction, utilisez :
 
-    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard>(utilise`phpstan.neon`)
 
     Pour exécuter l'application, utilisez :
 
