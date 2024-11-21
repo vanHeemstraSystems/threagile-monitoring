@@ -46,7 +46,7 @@
     يجب أن تكون جميع الإعدادات جاهزة الآن، لذا كل ما عليك فعله:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
-    سيؤدي هذا إلى إنشاء`bundle.js`و`index.html`الملفات في`/src/threagile_monitoring/templates/public`.
+    سيؤدي هذا إلى إنشاء`bundle.js`و`index.html` files in `/src/threagile_monitoring/templates/public`.
 
     **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل كما يلي:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
