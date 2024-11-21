@@ -44,22 +44,19 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
 
     Toute la configuration devrait être prête maintenant, il vous suffit donc de :
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
-    Cela créera le`bundle.js`et`index.html`fichiers dans`/src/threagile_monitoring/templates/public`.
+    Cela créera le`app.js`fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
 
     **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que :
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     Cela chargera constamment les modifications que vous apportez dans les fichiers appropriés.
 
     Pour voir les modifications, enregistrez et rechargez simplement votre navigateur (généralement avec F5).
 
     Assurez-vous que pour exécuter votre page Web lors des tests avec les fonctions backend, vous utilisez :
-    1)`(threagile-monitoring) $ cd ../../`# pour sortir des modèles/statiques
-    2)`(threagile-monitoring) $ python run.py`
-
-    **FAIRE**: Changement de`run.py`à utiliser`app.py`.
+    1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **Courir:**
 
@@ -128,7 +125,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 -   [Source de la version](#version-source)
 -   [Environnements](#environments)
 -   [Construire](#build)
--   [Licence](#license)
+-   [License](#license)
 
 ## Installation
 
