@@ -38,7 +38,7 @@
     (threagile-monitoring) $ exit # type `exit` to leave the environment
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
-    ~~$ hatch run python -m setuptools_scm~~ # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
     **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包應用程式。該包資料夾列於`.gitignore`以避免它被提交給 git。
@@ -104,7 +104,7 @@
 
     然後，導航至`http://127.0.0.1:5000/`在您的網頁瀏覽器中。
 
-    若要執行測試，請使用：
+    To run tests, use:
 
     ```bash
     $ cd threagile-monitoring
@@ -116,7 +116,7 @@
 
 導航至`http://127.0.0.1:5000/docs`在您的網頁瀏覽器中，或從下列位置下載 openapi.json`http://127.0.0.1:5000/openapi.json`.
 
-# 指標
+# Metrics
 
 讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
@@ -147,7 +147,7 @@ pip install threagile-monitoring
 
 ## 建造
 
--   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
+-   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py` file so the version can be used at runtime
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
