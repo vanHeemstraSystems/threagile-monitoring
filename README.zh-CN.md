@@ -18,7 +18,7 @@
 
 **执行摘要**
 
-Getting your code up and running on your own system.
+在您自己的系统上启动并运行您的代码。
 
 **笔记**: 确保您满足[要求](./200/README.md).
 
@@ -66,7 +66,7 @@ Getting your code up and running on your own system.
 4.  API参考
 5.  构建和测试：
 
-    要构建您的代码，请使用：
+    To build your code, use:
 
     ```bash
     $ cd threagile-monitoring
@@ -99,7 +99,7 @@ Getting your code up and running on your own system.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    然后，导航至`http://127.0.0.1:5000/`在您的网络浏览器中。
+    然后，导航至`http://127.0.0.1:5000/` in your web browser.
 
     要运行测试，请使用：
 
@@ -117,7 +117,7 @@ Getting your code up and running on your own system.
 
 让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
-**_ NEW _**
+**_新的_**
 
 **目录**
 
@@ -139,12 +139,12 @@ pip install threagile-monitoring
 
 ## 环境
 
--   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[test](.github/workflows/test.yml)GitHub 工作流程
+-   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
 
--   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
+-   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py`文件，以便可以在运行时使用该版本
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
@@ -162,7 +162,7 @@ pip install threagile-monitoring
 
 看[README.md](./200/README.md)
 
-## 300 - 构建我们的应用程序
+## 300 - Building Our Application
 
 看[README.md](./300/README.md)
 
