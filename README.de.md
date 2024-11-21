@@ -18,7 +18,7 @@ Threagile-Überwachung
 
 **Zusammenfassung**
 
-Getting your code up and running on your own system.
+Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
@@ -44,12 +44,12 @@ Getting your code up and running on your own system.
     **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Dieser Paketordner ist in aufgeführt`.gitignore`um zu vermeiden, dass man sich an Git bindet.
 
     Die gesamte Einrichtung sollte inzwischen fertig sein. Sie müssen also nur noch Folgendes tun:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Dadurch wird das erstellt`bundle.js`Und`index.html`Dateien in`/src/threagile_monitoring/templates/public`.
 
     **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, ist es so einfach:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
 
@@ -59,7 +59,7 @@ Getting your code up and running on your own system.
     1)`(threagile-monitoring) $ cd ../../`# zum Verlassen der Vorlagen/Statik
     2)`(threagile-monitoring) $ python run.py`
 
-    **ZU TUN**: Change from `run.py`zu verwenden`app.py`.
+    **ZU TUN**: Wechsel von`run.py`zu verwenden`app.py`.
 
     **Laufen:**
 
