@@ -51,7 +51,7 @@
     **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل كما يلي:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    سيؤدي هذا إلى تحميل التغييرات التي تجريها باستمرار في الملفات المناسبة.
+    This will constantly load the changes you make into the appropriate files.
 
     لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5).
 
