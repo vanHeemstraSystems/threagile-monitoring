@@ -18,7 +18,7 @@
 
 **执行摘要**
 
-Getting your code up and running on your own system.
+在您自己的系统上启动并运行您的代码。
 
 **笔记**: 确保您满足[要求](./200/README.md).
 
@@ -115,7 +115,7 @@ Getting your code up and running on your own system.
 
 # 指标
 
-Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
+让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
