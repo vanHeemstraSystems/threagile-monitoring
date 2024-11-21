@@ -124,7 +124,7 @@
 -   [安裝](#installation)
 -   [版本來源](#version-source)
 -   [環境](#environments)
--   [Build](#build)
+-   [建造](#build)
 -   [執照](#license)
 
 ## 安裝
