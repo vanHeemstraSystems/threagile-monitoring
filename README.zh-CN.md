@@ -38,7 +38,7 @@
     (threagile-monitoring) $ exit # type `exit` to leave the environment
     $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     $ hatch run pip install -r requirements.txt # pipx won't do this
-    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    ~$ hatch run python -m setuptools_scm~ # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
     **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 打包应用程序。该包文件夹列于`.gitignore`以避免它被提交给 git。
@@ -64,7 +64,7 @@
     **跑步：**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
-2.  Software dependencies
+2.  软件依赖性
 3.  最新版本
 4.  API参考
 5.  构建和测试：
@@ -76,7 +76,7 @@
     $ hatch build
     ```
 
-    要使用 AI 进行拉取请求审查，请使用：
+    To use AI for pull request reviews, use:
 
     <https://app.coderabbit.ai/dashboard>（使用`phpstan.neon`)
 
@@ -127,7 +127,7 @@
 -   [安装](#installation)
 -   [版本来源](#version-source)
 -   [环境](#environments)
--   [建造](#build)
+-   [Build](#build)
 -   [执照](#license)
 
 ## 安装
