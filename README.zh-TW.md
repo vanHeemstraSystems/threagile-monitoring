@@ -49,7 +49,8 @@
     這將創建`bundle.js`和`index.html`文件在`/src/threagile_monitoring/templates/public`.
 
     **使用webpack開發：**如果您仍在開發網站，那麼簡單如下：
-    1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
+    1）`$ hatch shell`
+    2) `(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     這將不斷地將您所做的更改載入到適當的文件中。
 

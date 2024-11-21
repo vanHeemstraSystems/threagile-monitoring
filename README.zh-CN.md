@@ -61,7 +61,7 @@
 
     **待办事项**：更改自`run.py`使用`app.py`.
 
-    **Run:**
+    **跑步：**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 2.  软件依赖性
