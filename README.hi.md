@@ -41,7 +41,8 @@
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
-    **अपनी साइट को वेबपैक के साथ पैकेज करें:**एक बार जब आपके पास एक ऐसी वेबसाइट हो जो आपके उपयोग के लिए पर्याप्त हो, तो आपको एप्लिकेशन को वेबपैक के साथ पैकेज करना होगा। यह पैकेज फ़ोल्डर सूचीबद्ध है`.gitignore`इससे बचने के लिए गिट के प्रति प्रतिबद्ध होना होगा।
+    **अपनी साइट को वेबपैक के साथ पैकेज करें:**
+    Once you have a website that is good enough for you to use, you have to package the application with webpack. This package folder is listed in `.gitignore`इससे बचने के लिए गिट के प्रति प्रतिबद्ध होना होगा।
 
     अब तक सारा सेटअप तैयार हो जाना चाहिए, इसलिए आपको बस इतना करना है:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
@@ -62,7 +63,7 @@
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 2.  सॉफ़्टवेयर निर्भरताएँ
-3.  नवीनतम रिलीज़
+3.  Latest releases
 4.  एपीआई संदर्भ
 5.  निर्माण और परीक्षण:
 
@@ -109,7 +110,7 @@
     $ pytest tests/
     ```
 
-# API Documentation
+# एपीआई दस्तावेज़ीकरण
 
 पर नेविगेट करें`http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
 
@@ -135,7 +136,7 @@ pip install threagile-monitoring
 
 ## संस्करण स्रोत
 
--   [hatch-vcs](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
+-   [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
 
 ## वातावरण
 
@@ -144,7 +145,7 @@ pip install threagile-monitoring
 
 ## निर्माण
 
--   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)शिप करने के लिए हुक प्लगइन बनाएं`_version.py`फ़ाइल करें ताकि संस्करण का उपयोग रनटाइम पर किया जा सके
+-   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)शिप करने के लिए हुक प्लगइन बनाएं`_version.py` file so the version can be used at runtime
 -   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे करें:
     -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
