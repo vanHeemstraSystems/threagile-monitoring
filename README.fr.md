@@ -43,8 +43,8 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
 
-    Toute la configuration devrait être prête maintenant, il vous suffit donc de :
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    All of the setup should be ready by now so all you have to do:
+    1) `$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Cela créera le`app.js`fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
 
@@ -75,7 +75,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Pour utiliser l'IA pour les révisions de demandes d'extraction, utilisez :
 
-    <https://app.coderabbit.ai/dashboard>(utilise`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
 
     Pour exécuter l'application, utilisez :
 
@@ -154,7 +154,7 @@ pip install threagile-monitoring
 
 `threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
@@ -162,7 +162,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Construire notre application
+## 300 - Créer notre application
 
 Voir[README.md](./300/README.md)
 
