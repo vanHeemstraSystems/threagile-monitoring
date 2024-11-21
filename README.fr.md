@@ -126,7 +126,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 
 -   [Installation](#installation)
 -   [Source de la version](#version-source)
--   [Environments](#environments)
+-   [Environnements](#environments)
 -   [Construire](#build)
 -   [Licence](#license)
 
@@ -143,11 +143,11 @@ pip install threagile-monitoring
 ## Environnements
 
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers) plugin to run each environment inside Docker containers; usage can be seen in the [test](.github/workflows/test.yml)Flux de travail GitHub
+-   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
 ## Construire
 
--   Toutes les cibles de build utilisent le[hatch-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
+-   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
 -   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
 -   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
     -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
@@ -157,15 +157,15 @@ pip install threagile-monitoring
 
 `threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 
 ## 200 - Exigences
 
-See [README.md](./200/README.md)
+Voir[README.md](./200/README.md)
 
-## 300 - Créer notre application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 
