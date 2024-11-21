@@ -52,7 +52,7 @@ Getting your code up and running on your own system.
     **Development with webpack:**
     If you are still developing your website, it is as easy as:
     1) ```$ hatch shell```
-    2) ```(threagile-monitoring) $ cd templates/static```
+    2) ```(threagile-monitoring) $ cd src/threagile_monitoring/templates/static```
     3) ```(threagile-monitoring) $ npm install```
     4) ```(threagile-monitoring) $ npm run watch```
 
