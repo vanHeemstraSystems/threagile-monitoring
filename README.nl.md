@@ -44,22 +44,19 @@ Uw code op uw eigen systeem operationeel krijgen.
     **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Deze pakketmap wordt vermeld in`.gitignore`om te voorkomen dat het aan git wordt vastgelegd.
 
     Alle instellingen zouden nu klaar moeten zijn, dus alles wat je hoeft te doen:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
-    Hierdoor ontstaat de`bundle.js`En`index.html`bestanden binnen`/src/threagile_monitoring/templates/public`.
+    Hierdoor ontstaat de`app.js`bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
 
     **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, is het zo eenvoudig als:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    Hierdoor worden de wijzigingen die u aanbrengt voortdurend in de juiste bestanden geladen.
+    This will constantly load the changes you make into the appropriate files.
 
     Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5).
 
     Zorg ervoor dat u, om uw webpagina uit te voeren tijdens het testen met backend-functies, het volgende gebruikt:
-    1)`(threagile-monitoring) $ cd ../../`# om uit sjablonen/statisch te gaan
-    2)`(threagile-monitoring) $ python run.py`
-
-    **TE DOEN**: Wijzigen van`run.py`te gebruiken`app.py`.
+    1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **Loop:**
 
