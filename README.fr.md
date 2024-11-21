@@ -48,9 +48,8 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Cela créera le`app.js`fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
 
-    **Développement avec webpack :**
-    If you are still developing your website, it is as easy as:
-    1) `$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
+    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que :
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     Cela chargera constamment les modifications que vous apportez dans les fichiers appropriés.
 
@@ -62,7 +61,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     **Courir:**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
-2.  Dépendances logicielles
+2.  Software dependencies
 3.  Dernières versions
 4.  Références API
 5.  Construire et tester :
