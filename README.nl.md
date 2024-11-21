@@ -14,9 +14,9 @@ threagile-monitoring
 
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
--   [Documentatie](./DOCUMENTATION.md)
+-   [Documentation](./DOCUMENTATION.md)
 
-**Uitvoerende samenvatting**
+**Samenvatting**
 
 Uw code op uw eigen systeem operationeel krijgen.
 
@@ -41,32 +41,32 @@ Uw code op uw eigen systeem operationeel krijgen.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
-    **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Deze pakketmap wordt vermeld`.gitignore`om te voorkomen dat het zich inzet voor git.
+    **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Deze pakketmap wordt vermeld in`.gitignore`om te voorkomen dat het aan git wordt vastgelegd.
 
-    Alle setup zou nu klaar moeten zijn, dus alles wat je hoeft te doen:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    All of the setup should be ready by now so all you have to do:
+    1) `$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Hierdoor ontstaat de`bundle.js`En`index.html`bestanden binnen`/src/threagile_monitoring/templates/public`.
 
-    **Ontwikkeling met webpack:**Als u nog steeds uw website ontwikkelt, is deze zo eenvoudig als:
+    **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, is het zo eenvoudig als:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    Dit laadt constant de wijzigingen die u aanbrengt in de juiste bestanden.
+    Hierdoor worden de wijzigingen die u aanbrengt voortdurend in de juiste bestanden geladen.
 
     Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5).
 
-    Zorg ervoor dat u uw webpagina uitvoert bij het testen met backend -functies, u gebruikt:
+    Zorg ervoor dat u, om uw webpagina uit te voeren tijdens het testen met backend-functies, het volgende gebruikt:
     1)`(threagile-monitoring) $ cd ../../`# om uit sjablonen/statisch te gaan
     2)`(threagile-monitoring) $ python run.py`
 
-    **Doen**: Wijzigen van`run.py`te gebruiken`app.py`.
+    **TE DOEN**: Wijzigen van`run.py`te gebruiken`app.py`.
 
     **Loop:**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 2.  Software-afhankelijkheden
 3.  Nieuwste releases
-4.  API-referenties
+4.  API references
 5.  Bouwen en testen:
 
     Om uw code samen te stellen, gebruikt u:
@@ -138,7 +138,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
@@ -149,7 +149,7 @@ pip install threagile-monitoring
 
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
+-   De[build](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
