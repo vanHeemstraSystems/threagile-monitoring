@@ -1,12 +1,38 @@
 import React, { useState, useEffect, Component } from 'react'
-import { Barchart } from 'recharts'
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  PieChart,
+  Pie,
+  Cell,
+  Sector,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  Radar,
+  Treemap,
+  ScatterChart,
+  Scatter,
+  LineChart,
+  Line,
+  AreaChart,
+  Area,
+  ResponsiveContainer,
+  Sankey
+} from 'recharts'
 
 // Temporarily hard coded, make dynamic import
 const risksJson = {}
 
 // Parse Threagile risks.json structure
 const parseThreagileData = risksJson => {
-    return ('foo')
+  return 'foo'
 }
 
 const Dashboard = ({ risksJson }) => {
@@ -20,8 +46,7 @@ const Dashboard = ({ risksJson }) => {
     }
   }, [risksJson])
 
-  if (!data) return <div>Loading...</div>;
-  
+  if (!data) return <div>Loading...</div>
 }
 
 export default Dashboard

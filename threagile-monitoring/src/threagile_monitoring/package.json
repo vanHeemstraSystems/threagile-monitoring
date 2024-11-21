@@ -28,6 +28,7 @@
         "webpack-dev-server": "^3.7.1"
     },
     "dependencies": {
+        "lucide-react": "^0.460.0",
         "recharts": "^2.13.3",
         "serialize-javascript": "^2.1.1",
         "simple-datatables": "^9.2.1"
