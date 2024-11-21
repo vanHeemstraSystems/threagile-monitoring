@@ -22,7 +22,7 @@
 
 **टिप्पणी**: सुनिश्चित करें कि आप इसे पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
-1.  **Installation process:**
+1.  **स्थापना प्रक्रिया:**
 
     ```bash
     $ cd threagile-monitoring
@@ -49,8 +49,7 @@
     यह बनायेगा`app.js`फ़ाइल - जिसमें सभी घटक शामिल हैं - in`/src/threagile_monitoring/static/js/`.
 
     **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, तो यह इतना आसान है:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`
-    3) `(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     यह आपके द्वारा किए गए परिवर्तनों को लगातार उचित फ़ाइलों में लोड करेगा।
 
@@ -145,7 +144,7 @@ pip install threagile-monitoring
 
 ## निर्माण
 
--   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[hatch-vcs](https://github.com/ofek/hatch-vcs)शिप करने के लिए हुक प्लगइन बनाएं`_version.py` file so the version can be used at runtime
+-   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)शिप करने के लिए हुक प्लगइन बनाएं`_version.py`फ़ाइल करें ताकि संस्करण का उपयोग रनटाइम पर किया जा सके
 -   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे करें:
     -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
@@ -167,6 +166,6 @@ pip install threagile-monitoring
 
 देखना[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - निष्कर्ष
 
 देखना[README.md](./400/README.md)
