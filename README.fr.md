@@ -18,7 +18,7 @@ surveillance des risques
 
 **Résumé exécutif**
 
-Getting your code up and running on your own system.
+Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 **Note**: Assurez-vous de remplir les[exigences](./200/README.md).
 
@@ -41,13 +41,12 @@ Getting your code up and running on your own system.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
-    **Packagez votre site avec webpack :**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This package folder is listed in `.gitignore`pour éviter qu'il soit engagé dans git.
+    **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
 
     Toute la configuration devrait être prête maintenant, il vous suffit donc de :
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
-    This will create the `app.js`fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
+    Cela créera le`app.js`fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
 
     **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que :
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
@@ -143,7 +142,7 @@ pip install threagile-monitoring
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
-## Build
+## Construire
 
 -   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
 -   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
