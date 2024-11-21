@@ -41,15 +41,25 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Das ist drin`.gitignore`um einen aufgeblähten Git-Commit-Verlauf zu vermeiden.
+    **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Dieser Paketordner ist in aufgeführt`.gitignore`um zu vermeiden, dass man sich an Git bindet.
 
-    Die gesamte Einrichtung sollte jetzt fertig sein, Sie müssen also nur noch etwas tun`/src/threagile_monitoring/templates/static`wird ausgeführt`$ npm install`Dann`$ npm run build`im`/src/threagile_monitoring/templates/static`Ordner.
+    Die gesamte Einrichtung sollte inzwischen fertig sein. Sie müssen also nur noch Folgendes tun:
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Dadurch wird das erstellt`bundle.js`Und`index.html`Dateien in`/src/threagile_monitoring/templates/public`.
 
-    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, geht das so einfach wie in einem separaten Terminal`/src/threagile_monitoring/templates/static`laufen`$ npm install`Dann`$ npm run watch`Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
+    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, ist es so einfach:
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5). Stellen Sie sicher, dass`/src/threagile_monitoring`Du verwendest die`$ hatch run python run.py`um Ihre Webseite beim Testen mit Backend-Funktionen auszuführen.**ZU TUN**: Wechsel von`run.py`zu verwenden`app.py`.
+    Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
+
+    Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5).
+
+    Stellen Sie sicher, dass Sie zum Ausführen Ihrer Webseite beim Testen mit Backend-Funktionen Folgendes verwenden:
+    1)`(threagile-monitoring) $ cd ../../`# zum Verlassen der Vorlagen/Statik
+    2)`(threagile-monitoring) $ python run.py`
+
+    **ZU TUN**: Wechsel von`run.py`zu verwenden`app.py`.
 
     **Laufen:**
 
@@ -102,7 +112,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ pytest tests/
     ```
 
-# API Documentation
+# API-Dokumentation
 
 Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
 

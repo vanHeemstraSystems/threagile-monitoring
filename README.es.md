@@ -41,15 +41,25 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **Empaqueta tu sitio con webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para su uso, deberá empaquetar la aplicación con webpack. esto esta en`.gitignore`para evitar un historial de confirmaciones de git inflado.
+    **Empaqueta tu sitio con webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para su uso, deberá empaquetar la aplicación con webpack. Esta carpeta de paquete aparece en`.gitignore`para evitar que se comprometa con git.
 
-    Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer en`/src/threagile_monitoring/templates/static`se ejecuta`$ npm install`entonces`$ npm run build`en el`/src/threagile_monitoring/templates/static`carpeta.
+    Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer:
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Esto creará el`bundle.js`y`index.html`archivos en`/src/threagile_monitoring/templates/public`.
 
-    **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, es tan fácil como en una terminal separada en`/src/threagile_monitoring/templates/static`correr`$ npm install`entonces`$ npm run watch`que cargará constantemente los cambios que realice en los archivos apropiados.
+    **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, es tan fácil como:
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5). Asegúrate de`/src/threagile_monitoring`estás usando el`$ hatch run python run.py`para ejecutar su página web cuando pruebe con funciones de backend.**HACER**: Cambiar de`run.py`a usar`app.py`.
+    Esto cargará constantemente los cambios que realice en los archivos apropiados.
+
+    Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5).
+
+    Asegúrese de que, para ejecutar su página web cuando pruebe con funciones de backend, esté utilizando:
+    1)`(threagile-monitoring) $ cd ../../`# salir de plantillas/estático
+    2)`(threagile-monitoring) $ python run.py`
+
+    **HACER**: Cambiar de`run.py`a usar`app.py`.
 
     **Correr:**
 
@@ -133,7 +143,7 @@ pip install threagile-monitoring
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 

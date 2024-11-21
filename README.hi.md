@@ -41,15 +41,25 @@
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **अपनी साइट को वेबपैक के साथ पैकेज करें:**एक बार जब आपके पास एक ऐसी वेबसाइट हो जो आपके उपयोग के लिए पर्याप्त हो, तो आपको एप्लिकेशन को वेबपैक के साथ पैकेज करना होगा। ये अंदर है`.gitignore`फूले हुए गिट प्रतिबद्ध इतिहास से बचने के लिए।
+    **अपनी साइट को वेबपैक के साथ पैकेज करें:**एक बार जब आपके पास एक ऐसी वेबसाइट हो जो आपके उपयोग के लिए पर्याप्त हो, तो आपको एप्लिकेशन को वेबपैक के साथ पैकेज करना होगा। यह पैकेज फ़ोल्डर सूचीबद्ध है`.gitignore`इससे बचने के लिए गिट के प्रति प्रतिबद्ध होना होगा।
 
-    अब तक सारा सेटअप तैयार हो जाना चाहिए, इसलिए आपको बस इतना करना है`/src/threagile_monitoring/templates/static`चलाया जाता है`$ npm install`तब`$ npm run build`में`/src/threagile_monitoring/templates/static`फ़ोल्डर.
+    अब तक सारा सेटअप तैयार हो जाना चाहिए, इसलिए आपको बस इतना करना है:
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     यह बनायेगा`bundle.js`और`index.html`फ़ाइलों में`/src/threagile_monitoring/templates/public`.
 
-    **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, तो यह एक अलग टर्मिनल जितना आसान है`/src/threagile_monitoring/templates/static`दौड़ना`$ npm install`तब`$ npm run watch`जो आपके द्वारा किए गए परिवर्तनों को लगातार उचित फ़ाइलों में लोड करेगा।
+    **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, तो यह इतना आसान है:
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    परिवर्तनों को देखने के लिए बस अपने नेविगेटर को सहेजें और पुनः लोड करें (आमतौर पर F5 के साथ)। से सुनिश्चित करें`/src/threagile_monitoring`आप उपयोग कर रहे हैं`$ hatch run python run.py`बैकएंड फ़ंक्शंस के साथ परीक्षण करते समय अपना वेबपेज चलाने के लिए।**करने के लिए**: से बदलें`run.py`उपयोग करने के लिए`app.py`.
+    यह आपके द्वारा किए गए परिवर्तनों को लगातार उचित फ़ाइलों में लोड करेगा।
+
+    परिवर्तनों को देखने के लिए बस अपने नेविगेटर को सहेजें और पुनः लोड करें (आमतौर पर F5 के साथ)।
+
+    सुनिश्चित करें कि बैकएंड फ़ंक्शंस के साथ परीक्षण करते समय अपना वेबपेज चलाने के लिए आप इसका उपयोग कर रहे हैं:
+    1)`(threagile-monitoring) $ cd ../../`# टेम्प्लेट/स्टेटिक से बाहर जाने के लिए
+    2)`(threagile-monitoring) $ python run.py`
+
+    **करने के लिए**: से बदलें`run.py`उपयोग करने के लिए`app.py`.
 
     **दौड़ना:**
 

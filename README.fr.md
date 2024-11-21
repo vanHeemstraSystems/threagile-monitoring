@@ -41,15 +41,25 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. C'est dans`.gitignore`pour éviter un historique de commit git gonflé.
+    **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
 
-    Toute la configuration devrait être prête maintenant, donc tout ce que vous avez à faire`/src/threagile_monitoring/templates/static`est exécuté`$ npm install`alors`$ npm run build`dans le`/src/threagile_monitoring/templates/static`dossier.
+    Toute la configuration devrait être prête maintenant, il vous suffit donc de :
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Cela créera le`bundle.js`et`index.html`fichiers dans`/src/threagile_monitoring/templates/public`.
 
-    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que dans un terminal séparé dans`/src/threagile_monitoring/templates/static`courir`$ npm install`alors`$ npm run watch`qui chargera constamment les modifications que vous apportez dans les fichiers appropriés.
+    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que :
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    Pour voir les modifications, enregistrez et rechargez simplement votre navigateur (généralement avec F5). Assurez-vous de`/src/threagile_monitoring`vous utilisez le`$ hatch run python run.py`pour exécuter votre page Web lors des tests avec les fonctions backend.**FAIRE**: Changement de`run.py`à utiliser`app.py`.
+    Cela chargera constamment les modifications que vous apportez dans les fichiers appropriés.
+
+    Pour voir les modifications, enregistrez et rechargez simplement votre navigateur (généralement avec F5).
+
+    Assurez-vous que pour exécuter votre page Web lors des tests avec les fonctions backend, vous utilisez :
+    1)`(threagile-monitoring) $ cd ../../`# pour sortir des modèles/statiques
+    2)`(threagile-monitoring) $ python run.py`
+
+    **FAIRE**: Changement de`run.py`à utiliser`app.py`.
 
     **Courir:**
 
@@ -126,7 +136,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 pip install threagile-monitoring
 ```
 
-## Source de la version
+## Version source
 
 -   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
 
@@ -147,7 +157,7 @@ pip install threagile-monitoring
 
 `threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 
@@ -155,7 +165,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Créer notre application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 
