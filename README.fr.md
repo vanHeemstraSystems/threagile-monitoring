@@ -48,7 +48,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Cela créera le`app.js`fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
 
-    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que :
+    **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que :
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     Cela chargera constamment les modifications que vous apportez dans les fichiers appropriés.
@@ -61,7 +61,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     **Courir:**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
-2.  Software dependencies
+2.  Dépendances logicielles
 3.  Dernières versions
 4.  Références API
 5.  Construire et tester :
@@ -154,7 +154,7 @@ pip install threagile-monitoring
 
 `threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 
@@ -162,7 +162,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Créer notre application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 
