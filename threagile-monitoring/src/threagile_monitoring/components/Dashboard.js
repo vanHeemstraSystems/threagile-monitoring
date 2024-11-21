@@ -1586,7 +1586,13 @@ const parseThreagileData = risksJson => {
       likelihood: risk.riskAssessment.likelihood,
       severity: risk.severity,
       title: risk.title
-    })) //, MORE
+    })),
+    mitigationStatus: Object.entries(
+      risksJson.reduce((acc, risk) => {
+        acc[risk.status] = (acc[risk.status] || 0) + 1
+        return acc
+      }, {})
+    ).map(([status, count]) => ({ name: status, value: count })) //, MORE
   }
 }
 
