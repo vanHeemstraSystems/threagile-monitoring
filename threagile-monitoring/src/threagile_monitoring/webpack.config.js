@@ -1,11 +1,10 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./components/index.js",
     output: {
-        path: path.join(__dirname, "../public"),
-        filename: "bundle.js"
+        path: path.join(__dirname, "../threagile_monitoring/static/js"),
+        filename: "app.js"
     },
     module: {
         rules: [
@@ -17,10 +16,5 @@ module.exports = {
                 }
             }
         ]
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./index.html"
-        })
-    ]
+    }
 }

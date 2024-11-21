@@ -43,16 +43,16 @@ Getting your code up and running on your own system.
 
     All of the setup should be ready by now so all you have to do:
     1) ```$ hatch shell```
-    2) ```(threagile-monitoring) $ cd src/threagile_monitoring/templates/static```
+    2) ```(threagile-monitoring) $ cd src/threagile_monitoring```
     3) ```(threagile-monitoring) $ npm install```
     4) ```(threagile-monitoring) $ npm run build```
 
-    This will create the ```bundle.js``` and ```index.html``` files in ```/src/threagile_monitoring/templates/public```.
+    This will create the ```app.js``` file - which contains all components - in ```/src/threagile_monitoring/static/js/```.
 
     **Development with webpack:**
     If you are still developing your website, it is as easy as:
     1) ```$ hatch shell```
-    2) ```(threagile-monitoring) $ cd src/threagile_monitoring/templates/static```
+    2) ```(threagile-monitoring) $ cd src/threagile_monitoring```
     3) ```(threagile-monitoring) $ npm install```
     4) ```(threagile-monitoring) $ npm run watch```
 
@@ -61,10 +61,8 @@ Getting your code up and running on your own system.
     To see the changes just save and reload your navigator (usually with F5). 
     
     Make sure, to run your webpage when testing with backend functions, you are using:
-    1) ```(threagile-monitoring) $ cd ../../``` # to go out of templates/static
-    2) ```(threagile-monitoring) $ python run.py```
-    
-    **TO DO**: Change from ```run.py``` to using ```app.py```.
+    1) ```(threagile-monitoring) $ cd src/threagile_monitoring```
+    2) ```(threagile-monitoring) $ python app.py```
 
     **Run:**
     ```

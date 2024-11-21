@@ -2,7 +2,7 @@
 import logging
 from .db_utils import db
 from apiflask import APIFlask
-from config import DevelopmentConfig # DevelopmentConfig | ProductionConfig
+from config import DevelopmentConfig as Config # DevelopmentConfig | ProductionConfig
 # NOT REQUIRED from flask import Flask
 
 from multiprocessing.pool import ThreadPool
