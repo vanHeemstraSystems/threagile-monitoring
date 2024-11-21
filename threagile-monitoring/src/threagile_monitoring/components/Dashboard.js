@@ -250,7 +250,178 @@ const Dashboard = ({ risksJson }) => {
           </button>
         </div>
       </div>
-      {/* Risk Summary Cards  ==   WE ARE HERE */}
+
+      {/* Risk Summary Cards */}
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <div className='bg-white p-4 rounded-lg shadow flex items-center gap-4'>
+          <AlertCircle className='text-red-500' size={24} />
+          <div>
+            <h3 className='text-lg font-semibold'>Critical Risks</h3>
+            <p className='text-2xl font-bold'>
+              {data.risksBySeverity.find(
+                r => r.name.toLowerCase() === 'critical'
+              ).count || 0}
+            </p>
+          </div>
+        </div>
+        <div className='bg-white p-4 rounded-lg shadow flex items-center gap-4'>
+          <Activity className='text-yellow-500' size={24} />
+          <div>
+            <h3 className='text-lg font-semibold'>Active Mitigations</h3>
+            <p className='text-2xl font-bold'>
+              {data.mitigationStatus.find(s => s.name === 'in-progress')
+                .value || 0}
+            </p>
+          </div>
+        </div>
+        <div className='bg-white p-4 rounded-lg shadow flex items-center gap-4'>
+          <TrendingDown className='text-green-500' size={24} />
+          <div>
+            <h3 className='text-lg font-semibold'>Risk Reduction</h3>
+            <p className='text-2xl font-bold'>23%</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Dashboard Grid */}
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        {/* Risk Matrix */}
+        <div className='bg-white p-4 rounded-lg shadow col-span-2'>
+          <h3 className='text-lg font-semibold mb-4'>Risk Matrix</h3>
+          <RiskMatrix data={data} />
+          <p className='mt-2 text-sm text-gray-600'>
+            Interactive risk matrix showing impact vs likelihood. Click on
+            points to see risk details.
+          </p>
+        </div>
+
+        {/* Risk Categories */}
+        <div className='bg-white p-4 rounded-lg shadow'>
+          <h3 className='text-lg font-semibold mb-4'>Risk Categories</h3>
+          <PieChart width={400} height={300}>
+            <Pie
+              activeIndex={activeIndex}
+              activeShape={renderActiveShape}
+              data={data.risksByCategory}
+              cx='50%'
+              cy='50%'
+              innerRadius={60}
+              outerRadius={80}
+              dataKey='value'
+              onMouseEnter={(_, index) => setActiveIndex(index)}
+            >
+              {data.risksByCategory.map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={`hsl(${index * 45}, 70%, 50%)`}
+                />
+              ))}
+            </Pie>
+            <Tooltip />
+          </PieChart>
+        </div>
+
+        {/* Risk Trend */}
+        <div className='bg-white p-4 rounded-lg shadow col-span-2'>
+          <h3 className='text-lg font-semibold mb-4'>Risk Trend</h3>
+          <RiskTrendChart timeRange={timeRange} />
+          <p className='mt-2 text-sm text-gray-600'>
+            Historical view of risk levels over time.
+          </p>
+        </div>
+
+        {/* Technical Asset Risk Heatmap */}
+        <div className='bg-white p-4 rounded-lg shadow'>
+          <h3 className='text-lg font-semibold mb-4'>Asset Risk Heatmap</h3>
+          <Treemap
+            width={400}
+            height={300}
+            data={data.technicalAssetRisks}
+            dataKey='value'
+            ratio={4 / 3}
+            stroke='#fff'
+            fill='#8884d8'
+            content={({
+              root,
+              depth,
+              x,
+              y,
+              width,
+              height,
+              index,
+              payload,
+              colors,
+              rank,
+              name
+            }) => (
+              <g>
+                <rect
+                  x={x}
+                  y={y}
+                  width={width}
+                  height={height}
+                  style={{
+                    fill: `hsl(${index * 45}, 70%, 50%)`,
+                    stroke: '#fff',
+                    strokeWidth: 2,
+                    strokeOpacity: 1 / (depth + 1e-10)
+                  }}
+                />
+                {depth === 1 && (
+                  <text
+                    x={x + width / 2}
+                    y={y + height / 2}
+                    textAnchor='middle'
+                    fill='#fff'
+                    fontSize={12}
+                  >
+                    {name}
+                  </text>
+                )}
+              </g>
+            )}
+          />
+        </div>
+      </div>
+
+      {/* Custom Controls */}
+      <div className='bg-white p-4 rounded-lg shadow'>
+        <h3 className='text-lg font-semibold mb-4'>Visualization Controls</h3>
+        <div className='flex gap-4'>
+          <div>
+            <label className='block text-sm font-medium text-gray-700'>
+              Severity Filter
+            </label>
+            <select
+              className='mt-1 block w-full p-2 border rounded'
+              value={selectedSeverity || ''}
+              onChange={e => setSelectedSeverity(e.target.value || null)}
+            >
+              <option value=''>All Severities</option>
+              {data.risksBySeverity.map(risk => (
+                <option key={risk.name} value={risk.name}>
+                  {risk.name}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label className='block text-sm font-medium text-gray-700'>
+              Time Range
+            </label>
+            <select
+              className='mt-1 block w-full p-2 border rounded'
+              value={timeRange}
+              onChange={e => setTimeRange(e.target.value)}
+            >
+              <option value='1M'>Last Month</option>
+              <option value='3M'>Last 3 Months</option>
+              <option value='6M'>Last 6 Months</option>
+              <option value='1Y'>Last Year</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
