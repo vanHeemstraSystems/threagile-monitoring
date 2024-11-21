@@ -44,22 +44,19 @@ Poner en funcionamiento su código en su propio sistema.
     **Empaqueta tu sitio con webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para su uso, deberá empaquetar la aplicación con webpack. Esta carpeta de paquete aparece en`.gitignore`para evitar que se comprometa con git.
 
     Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
-    Esto creará el`bundle.js`y`index.html`archivos en`/src/threagile_monitoring/templates/public`.
+    Esto creará el`app.js`archivo, que contiene todos los componentes, en`/src/threagile_monitoring/static/js/`.
 
     **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, es tan fácil como:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     Esto cargará constantemente los cambios que realice en los archivos apropiados.
 
     Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5).
 
     Asegúrese de que, para ejecutar su página web cuando pruebe con funciones de backend, esté utilizando:
-    1)`(threagile-monitoring) $ cd ../../`# salir de plantillas/estático
-    2)`(threagile-monitoring) $ python run.py`
-
-    **HACER**: Cambiar de`run.py`a usar`app.py`.
+    1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **Correr:**
 
