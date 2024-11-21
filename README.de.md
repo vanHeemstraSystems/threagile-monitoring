@@ -18,7 +18,7 @@ Threagile-Überwachung
 
 **Zusammenfassung**
 
-Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
+Getting your code up and running on your own system.
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
@@ -35,10 +35,10 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
     # ...
     (threagile-monitoring) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
-    (threagile-monitoring) $ exit # type `exit` to leave the environment
-    $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    $ hatch run pip install -r requirements.txt # pipx won't do this
-    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    (threagile-monitoring) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    (threagile-monitoring) $ pip install -r requirements.txt # pipx won't do this
+    (threagile-monitoring) $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
     **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Dieser Paketordner ist in aufgeführt`.gitignore`um zu vermeiden, dass man sich an Git bindet.
@@ -59,7 +59,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     1)`(threagile-monitoring) $ cd ../../`# zum Verlassen der Vorlagen/Statik
     2)`(threagile-monitoring) $ python run.py`
 
-    **ZU TUN**: Wechsel von`run.py`zu verwenden`app.py`.
+    **ZU TUN**: Change from `run.py`zu verwenden`app.py`.
 
     **Laufen:**
 
