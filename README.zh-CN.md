@@ -12,7 +12,7 @@
 
 > 用于创建仪表板的 Web 应用程序[威胁型](https://threagile.io).
 
--   [Glossary](./GLOSSARY.md)
+-   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 
@@ -55,8 +55,8 @@
 
     要查看更改，只需保存并重新加载导航器（通常使用 F5）。
 
-    Make sure, to run your webpage when testing with backend functions, you are using:
-    1) `(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
+    确保在使用后端功能进行测试时运行网页，您正在使用：
+    1）`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **跑步：**
 
@@ -140,7 +140,7 @@ pip install threagile-monitoring
 ## 环境
 
 -   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   这`test` matrix uses the [孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
+-   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
 
