@@ -18,7 +18,7 @@ monitoreo-threagil
 
 **Resumen ejecutivo**
 
-Poner en funcionamiento su código en su propio sistema.
+Getting your code up and running on your own system.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -55,8 +55,8 @@ Poner en funcionamiento su código en su propio sistema.
 
     Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5).
 
-    Asegúrese de que, para ejecutar su página web cuando pruebe con funciones de backend, esté utilizando:
-    1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
+    Make sure, to run your webpage when testing with backend functions, you are using:
+    1) `(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **Correr:**
 
@@ -140,7 +140,7 @@ pip install threagile-monitoring
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
