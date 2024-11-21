@@ -99,7 +99,7 @@
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    然後，導航至`http://127.0.0.1:5000/` in your web browser.
+    然後，導航至`http://127.0.0.1:5000/`在您的網頁瀏覽器中。
 
     若要執行測試，請使用：
 
@@ -115,7 +115,7 @@
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
