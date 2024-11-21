@@ -1752,8 +1752,40 @@ const Dashboard = ({ risksJson }) => {
     )
   }
   return (
-    <ScatterChart width={400} height={300}></ScatterChart>
-    // MORE
+    <ScatterChart width={400} height={300}>
+      <CartesianGrid />
+      <XAxis type='number' dataKey='likelihood' name='Likelihood' />
+      <YAxis type='number' dataKey='impact' name='Impact' />
+      <Tooltip
+        content={({ active, payload }) => {
+          if (active && payload && payload.length) {
+            const risk = payload[0].payload
+            return (
+              <div className='bg-white p-2 shadow rounded'>
+                <p className='font-bold'>{risk.title}</p>
+                <p>Impact: {risk.impact}</p>
+                <p>Likelihood: {risk.likelihood}</p>
+                <p>Severity: {risk.severity}</p>
+              </div>
+            )
+          }
+          return null
+        }}
+      />
+      <Scatter
+        data={data.riskMatrix}
+        fill='#8884d8'
+        shape={props => (
+          <circle
+            cx={props.cx}
+            cy={props.cy}
+            r={8}
+            fill={severityColors[props.payload.severity.toLowerCase()]}
+            opacity={0.8}
+          />
+        )}
+      />
+    </ScatterChart>
   )
 }
 
