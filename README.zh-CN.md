@@ -115,7 +115,7 @@
 
 # 指标
 
-让像 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
+让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -125,7 +125,7 @@
 -   [版本来源](#version-source)
 -   [环境](#environments)
 -   [建造](#build)
--   [执照](#license)
+-   [License](#license)
 
 ## 安装
 
