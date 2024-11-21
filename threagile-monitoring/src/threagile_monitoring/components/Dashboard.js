@@ -26,6 +26,7 @@ import {
   ResponsiveContainer,
   Sankey
 } from 'recharts'
+import { AlertCircle, Activity, TrendingDown, Settings } from 'lucide-react'
 
 // Temporarily hard coded, make dynamic import
 const risksJson = {}
