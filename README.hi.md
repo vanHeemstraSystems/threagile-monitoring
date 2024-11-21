@@ -109,7 +109,7 @@
     $ pytest tests/
     ```
 
-# एपीआई दस्तावेज़ीकरण
+# API Documentation
 
 पर नेविगेट करें`http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
 
@@ -135,7 +135,7 @@ pip install threagile-monitoring
 
 ## संस्करण स्रोत
 
--   [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
+-   [hatch-vcs](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
 
 ## वातावरण
 
