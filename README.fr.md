@@ -20,7 +20,7 @@ surveillance des risques
 
 Faire en sorte que votre code soit opérationnel sur votre propre système.
 
-**Note**: Assurez-vous de remplir les[exigences](./200/README.md).
+**Note**: Assurez-vous de remplir les[requirements](./200/README.md).
 
 1.  **Processus d'installation :**
 
@@ -44,12 +44,12 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
 
     Toute la configuration devrait être prête maintenant, il vous suffit donc de :
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Cela créera le`bundle.js`et`index.html`fichiers dans`/src/threagile_monitoring/templates/public`.
 
     **Développement avec webpack :**Si vous êtes encore en train de développer votre site Web, c'est aussi simple que :
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     Cela chargera constamment les modifications que vous apportez dans les fichiers appropriés.
 
@@ -102,7 +102,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
+    Ensuite, accédez à`http://127.0.0.1:5000/` in your web browser.
 
     Pour exécuter des tests, utilisez :
 
@@ -125,7 +125,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 **Table des matières**
 
 -   [Installation](#installation)
--   [Source de la version](#version-source)
+-   [Version source](#version-source)
 -   [Environnements](#environments)
 -   [Construire](#build)
 -   [Licence](#license)
@@ -148,7 +148,7 @@ pip install threagile-monitoring
 ## Construire
 
 -   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
--   Wheels use the [trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
+-   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
 -   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
     -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
     -   utiliser le[application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
