@@ -48,17 +48,17 @@
 
     سيؤدي هذا إلى إنشاء`app.js`الملف - الذي يحتوي على جميع المكونات - في`/src/threagile_monitoring/static/js/`.
 
-    **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل كما يلي:
+    **Development with webpack:**إذا كنت لا تزال تعمل على تطوير موقع الويب الخاص بك، فالأمر سهل كما يلي:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     سيؤدي هذا إلى تحميل التغييرات التي تجريها باستمرار في الملفات المناسبة.
 
     لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5).
 
-    تأكد من أنك تستخدم: لتشغيل صفحة الويب الخاصة بك عند الاختبار باستخدام وظائف الواجهة الخلفية:
-    1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
+    Make sure, to run your webpage when testing with backend functions, you are using:
+    1) `(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
-    **Run:**
+    **يجري:**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 2.  تبعيات البرمجيات
@@ -135,7 +135,7 @@ pip install threagile-monitoring
 
 ## مصدر النسخة
 
--   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
+-   ال[hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
 ## البيئات
 
@@ -144,7 +144,7 @@ pip install threagile-monitoring
 
 ## يبني
 
--   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
+-   جميع أهداف البناء تستخدم[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة

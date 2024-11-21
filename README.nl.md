@@ -1,6 +1,6 @@
 threagile-monitoring
 
-# Threagile-monitoring
+# Threagile Monitoring
 
 |        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -64,7 +64,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 2.  Software-afhankelijkheden
 3.  Nieuwste releases
 4.  API-referenties
-5.  Bouwen en testen:
+5.  Build and Test:
 
     Om uw code samen te stellen, gebruikt u:
 
@@ -121,7 +121,7 @@ Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:9464/metrics`
 
 **Inhoudsopgave**
 
--   [Installatie](#installation)
+-   [Installation](#installation)
 -   [Versiebron](#version-source)
 -   [Omgevingen](#environments)
 -   [Bouwen](#build)
@@ -135,7 +135,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
