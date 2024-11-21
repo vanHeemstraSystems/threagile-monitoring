@@ -61,7 +61,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     **Laufen:**
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
-2.  Software dependencies
+2.  Softwareabhängigkeiten
 3.  Neueste Veröffentlichungen
 4.  API-Referenzen
 5.  Erstellen und testen:
