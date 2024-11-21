@@ -35,10 +35,10 @@
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
     # ...
     (threagile-monitoring) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
-    (threagile-monitoring) $ exit # type `exit` to leave the environment
-    $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    $ hatch run pip install -r requirements.txt # pipx won't do this
-    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    (threagile-monitoring) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    (threagile-monitoring) $ pip install -r requirements.txt # pipx won't do this
+    (threagile-monitoring) $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
     **حزم موقعك باستخدام حزمة الويب:**بمجرد أن يكون لديك موقع ويب جيد بما يكفي لاستخدامه، يجب عليك حزم التطبيق مع حزمة الويب. تم إدراج مجلد الحزمة هذا في`.gitignore`لتجنب ذلك يجب الالتزام بـ git.
@@ -143,7 +143,7 @@ pip install threagile-monitoring
 ## البيئات
 
 -   تم تعريفها بدقة في قائمة بذاتها[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
+-   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml) GitHub workflow
 
 ## يبني
 

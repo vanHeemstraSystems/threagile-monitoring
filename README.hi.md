@@ -35,10 +35,10 @@
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
     # ...
     (threagile-monitoring) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
-    (threagile-monitoring) $ exit # type `exit` to leave the environment
-    $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    $ hatch run pip install -r requirements.txt # pipx won't do this
-    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    (threagile-monitoring) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    (threagile-monitoring) $ pip install -r requirements.txt # pipx won't do this
+    (threagile-monitoring) $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
     **अपनी साइट को वेबपैक के साथ पैकेज करें:**एक बार जब आपके पास एक ऐसी वेबसाइट हो जो आपके उपयोग के लिए पर्याप्त हो, तो आपको एप्लिकेशन को वेबपैक के साथ पैकेज करना होगा। यह पैकेज फ़ोल्डर सूचीबद्ध है`.gitignore`इससे बचने के लिए गिट के प्रति प्रतिबद्ध होना होगा।
@@ -153,7 +153,7 @@ pip install threagile-monitoring
     -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
     -   उपयोग[अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)प्रत्येक प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण बनाने का लक्ष्य बनाएं
 
-## लाइसेंस
+## License
 
 `threagile-monitoring`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
 

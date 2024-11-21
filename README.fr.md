@@ -35,10 +35,10 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
     # ...
     (threagile-monitoring) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
-    (threagile-monitoring) $ exit # type `exit` to leave the environment
-    $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    $ hatch run pip install -r requirements.txt # pipx won't do this
-    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    (threagile-monitoring) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    (threagile-monitoring) $ pip install -r requirements.txt # pipx won't do this
+    (threagile-monitoring) $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
     **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
@@ -148,7 +148,7 @@ pip install threagile-monitoring
 ## Construire
 
 -   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
--   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
+-   Wheels use the [trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
 -   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
     -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
     -   utiliser le[application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
