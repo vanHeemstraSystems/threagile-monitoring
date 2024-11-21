@@ -64,7 +64,7 @@
 2.  सॉफ़्टवेयर निर्भरताएँ
 3.  नवीनतम रिलीज़
 4.  एपीआई संदर्भ
-5.  Build and Test:
+5.  निर्माण और परीक्षण:
 
     अपना कोड बनाने के लिए, इसका उपयोग करें:
 
@@ -73,11 +73,11 @@
     $ hatch build
     ```
 
-    To use AI for pull request reviews, use:
+    पुल अनुरोध समीक्षा के लिए AI का उपयोग करने के लिए, इसका उपयोग करें:
 
     <https://app.coderabbit.ai/dashboard>(उपयोग करता है`phpstan.neon`)
 
-    एप्लिकेशन चलाने के लिए, उपयोग करें:
+    To run the application, use:
 
     लिनक्स:
 
@@ -127,7 +127,7 @@
 -   [निर्माण](#build)
 -   [लाइसेंस](#license)
 
-## इंस्टालेशन
+## Installation
 
 ```console
 pip install threagile-monitoring
