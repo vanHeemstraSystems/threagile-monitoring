@@ -119,7 +119,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 
 **_NEU_**
 
-**Inhaltsverzeichnis**
+**Table of Contents**
 
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)
@@ -152,7 +152,7 @@ pip install threagile-monitoring
 
 ## Lizenz
 
-`threagile-monitoring`wird gemäß den Bedingungen der verteilt[MIT](https://spdx.org/licenses/MIT.html) license.
+`threagile-monitoring`wird gemäß den Bedingungen der verteilt[MIT](https://spdx.org/licenses/MIT.html)Lizenz.
 
 ## 100 - Einführung
 
