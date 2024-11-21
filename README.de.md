@@ -119,7 +119,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 
 **_NEU_**
 
-**Table of Contents**
+**Inhaltsverzeichnis**
 
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)

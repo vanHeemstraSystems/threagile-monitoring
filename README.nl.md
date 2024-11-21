@@ -22,7 +22,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
 **Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
 
-1.  **Installatieproces:** 
+1.  **Installatieproces:**
 
     ```bash
     $ cd threagile-monitoring
@@ -135,7 +135,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
