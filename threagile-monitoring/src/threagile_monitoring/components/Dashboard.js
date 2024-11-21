@@ -19,6 +19,9 @@ const Dashboard = ({ risksJson }) => {
       setData(parseThreagileData(risksJson))
     }
   }, [risksJson])
+
+  if (!data) return <div>Loading...</div>;
+  
 }
 
 export default Dashboard
