@@ -41,22 +41,22 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
-    **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Dieser Paketordner ist in aufgeführt`.gitignore`um zu vermeiden, dass man sich an Git bindet.
+    **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Dieser Paketordner ist in aufgeführt`.gitignore`Um zu vermeiden, dass es Git verpflichtet ist.
 
     Die gesamte Einrichtung sollte inzwischen fertig sein. Sie müssen also nur noch Folgendes tun:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Dadurch wird das erstellt`bundle.js`Und`index.html`Dateien in`/src/threagile_monitoring/templates/public`.
 
-    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, ist es so einfach:
+    **Entwicklung mit Webpack:**Wenn Sie Ihre Website weiterentwickeln, ist dies so einfach wie:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
+    Dadurch wird die Änderungen, die Sie vornehmen, ständig in die entsprechenden Dateien geladen.
 
     Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5).
 
-    Stellen Sie sicher, dass Sie zum Ausführen Ihrer Webseite beim Testen mit Backend-Funktionen Folgendes verwenden:
-    1)`(threagile-monitoring) $ cd ../../`# zum Verlassen der Vorlagen/Statik
+    Stellen Sie sicher, dass Sie Ihre Webseite beim Testen mit Backend -Funktionen ausführen, und verwenden Sie:
+    1)`(threagile-monitoring) $ cd ../../`# aus den Vorlagen/statisch herausgehen
     2)`(threagile-monitoring) $ python run.py`
 
     **ZU TUN**: Wechsel von`run.py`zu verwenden`app.py`.
@@ -153,7 +153,7 @@ pip install threagile-monitoring
     -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)binäre Räder für jede Plattform zu verteilen
     -   Benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)build target zum Erstellen eigenständiger Distributionen für jede Plattform
 
-## Lizenz
+## License
 
 `threagile-monitoring`wird gemäß den Bedingungen der verteilt[MIT](https://spdx.org/licenses/MIT.html)Lizenz.
 
