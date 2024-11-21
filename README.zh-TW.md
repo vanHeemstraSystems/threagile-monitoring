@@ -49,7 +49,7 @@
     這將創建`bundle.js`和`index.html`文件在`/src/threagile_monitoring/templates/public`.
 
     **使用webpack開發：**如果您仍在開發網站，那麼簡單如下：
-    1）`$ hatch shell`2)`(threagile-monitoring) $ cd templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
+    1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring/templates/static`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
     這將不斷地將您所做的更改載入到適當的文件中。
 
@@ -69,7 +69,7 @@
 4.  API參考
 5.  建置和測試：
 
-    To build your code, use:
+    要建立您的程式碼，請使用：
 
     ```bash
     $ cd threagile-monitoring
@@ -118,7 +118,7 @@
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
