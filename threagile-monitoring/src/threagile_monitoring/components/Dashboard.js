@@ -1592,7 +1592,16 @@ const parseThreagileData = risksJson => {
         acc[risk.status] = (acc[risk.status] || 0) + 1
         return acc
       }, {})
-    ).map(([status, count]) => ({ name: status, value: count })) //, MORE
+    ).map(([status, count]) => ({ name: status, value: count })),
+    technicalAssetRisks: Object.entries(
+      risksJson.reduce((acc, risk) => {
+        risk.affectedTechnicalAssets.forEach(asset => {
+          acc[asset] =
+            (acc[asset] || 0) + severityMap[risk.severity.toLowerCase()].weight
+        })
+        return acc
+      }, {})
+    ).map(([asset, weight]) => ({ name: asset, value: weight }))
   }
 }
 
