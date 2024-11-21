@@ -18,7 +18,7 @@
 
 **ملخص تنفيذي**
 
-الحصول على التعليمات البرمجية الخاصة بك وتشغيلها على النظام الخاص بك.
+Getting your code up and running on your own system.
 
 **ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
 
@@ -122,7 +122,7 @@
 **جدول المحتويات**
 
 -   [تثبيت](#installation)
--   [مصدر النسخة](#version-source)
+-   [Version source](#version-source)
 -   [البيئات](#environments)
 -   [يبني](#build)
 -   [رخصة](#license)
@@ -144,7 +144,7 @@ pip install threagile-monitoring
 
 ## يبني
 
--   جميع أهداف البناء تستخدم[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
+-   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
