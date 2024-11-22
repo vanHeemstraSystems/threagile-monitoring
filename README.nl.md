@@ -60,7 +60,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
     **Loop:**
 
-    Als u niet aan het ontwikkelen bent, voert u de applicatie (backend en frontend tegelijkertijd) op deze manier uit:
+    If not developing, run the application (backend and frontend simultaneously) this way: 
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
@@ -131,7 +131,7 @@ Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:9464/metrics`
 -   [Versiebron](#version-source)
 -   [Omgevingen](#environments)
 -   [Bouwen](#build)
--   [Licentie](#license)
+-   [License](#license)
 
 ## Installatie
 
@@ -152,7 +152,7 @@ pip install threagile-monitoring
 
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
+-   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
