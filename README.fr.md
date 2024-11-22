@@ -1,4 +1,4 @@
-surveillance des menaces
+surveillance des risques
 
 # Surveillance menaçante
 
@@ -18,7 +18,7 @@ surveillance des menaces
 
 **Résumé exécutif**
 
-Getting your code up and running on your own system.
+Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 **Note**: Assurez-vous de remplir les[exigences](./200/README.md).
 
@@ -146,7 +146,7 @@ pip install threagile-monitoring
 ## Environnements
 
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
+-   Le`test`la matrice utilise le[conteneurs à écoutille](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
 ## Construire
 
@@ -160,7 +160,7 @@ pip install threagile-monitoring
 
 `threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 
