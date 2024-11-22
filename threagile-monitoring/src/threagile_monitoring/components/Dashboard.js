@@ -39,6 +39,7 @@ const parseThreagileData = risksJson => {
     low: { weight: 1, color: '#22c55e' }
   }
   return {
+    // risksBySeverity: risksBySeverityFunction(severityMap, risksJson, Object),
     risksBySeverity: Object.entries(
       risksJson.reduce((acc, risk) => {
         acc[risk.severity] = (acc[risk.severity] || 0) + 1
@@ -57,8 +58,8 @@ const parseThreagileData = risksJson => {
     ).map(([category, value]) => ({ name: category, value })),
     riskMatrix: risksJson.map(risk => ({
       id: risk.id,
-      impact: 'low', // risk.riskAssessment.impact,
-      likelihood: 'high', // risk.riskAssessment.likelihood,
+      impact: risk.exploitation_impact, // risk.riskAssessment.impact,
+      likelihood: risk.exploitation_likelihood, // risk.riskAssessment.likelihood,
       severity: risk.severity,
       title: risk.title
     })),
@@ -73,30 +74,34 @@ const parseThreagileData = risksJson => {
       risksJson,
       Object
     )
-
-    // Object.entries(
-    //   risksJson.reduce((acc, risk) => {
-    //     console.debug("acc:", acc, "risk:", risk)
-    //     // ORIGINAL risk.affectedTechnicalAssets.forEach(asset => {
-    //     if (!risk.data_breach_technical_assets || !acc) return;  // New
-    //     risk.data_breach_technical_assets.forEach(asset=> {
-    //       acc[asset] =
-    //         (acc[asset] || 0) + severityMap[risk.severity.toLowerCase()].weight
-    //     })
-    //     return acc
-    //   }, {})
-    // ).map(([asset, weight]) => ({ name: asset, value: weight }))
   }
 }
 
-// New
+function risksBySeverityFunction (severityMap, risksJson, Object) {
+  console.debug('risksBySeverityFunction')
+  try {
+    Object.entries(
+      risksJson.reduce((acc, risk) => {
+        acc[risk.severity] = (acc[risk.severity] || 0) + 1
+        return acc
+      }, {})
+    ).map(([severity, count]) => ({
+      name: severity,
+      count,
+      color: severityMap[severity.toLowerCase()].color
+    }))
+  } catch (e) {
+    console.debug('error: ', e)
+  }
+}
+
 function technicalAssetsRisksFunction (severityMap, risksJson, Object) {
+  console.debug('technicalAssetsRisksFunction')
   try {
     Object.entries(
       risksJson.reduce((acc, risk) => {
         console.debug('acc:', acc, 'risk:', risk)
-        // ORIGINAL risk.affectedTechnicalAssets.forEach(asset => {
-        if (!risk.data_breach_technical_assets || !acc) return {} // New
+        if (!risk.data_breach_technical_assets || !acc) return {}
         risk.data_breach_technical_assets.forEach(asset => {
           acc[asset] =
             (acc[asset] || 0) + severityMap[risk.severity.toLowerCase()].weight
@@ -302,7 +307,8 @@ const Dashboard = ({ risksJson }) => {
             <h3 className='text-lg font-semibold'>Active Mitigations</h3>
             <p className='text-2xl font-bold'>
               {/* data.mitigationStatus.find(s => s.name === 'in-progress')
-                .value || 0 */} FIX THIS!
+                .value || 0 */}{' '}
+              FIX THIS!
             </p>
           </div>
         </div>
