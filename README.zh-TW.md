@@ -48,22 +48,28 @@
 
     這將創建`app.js`文件 - 包含所有組件 - 在`/src/threagile_monitoring/static/js/`.
 
-    **使用webpack開發：**如果您仍在開發網站，那麼簡單如下：
+    **使用webpack開發：**如果您仍在開發您的網站，**單獨的終端會話**，按照上述安裝程序後，執行以下操作：
     1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    這將不斷地將您所做的更改載入到適當的文件中。
+    這將 - 在單獨的終端會話中（即`background`) - 不斷地將您所做的更改載入到適當的文件中，同時您可以在初始終端會話中繼續進行這些更改（即`foreground`）。因此，您不必在每次編輯後建立原始程式碼，它會自動處理！
 
     要查看更改，只需儲存並重新載入導航器（通常使用 F5）。
 
-    確保在使用後端功能進行測試時運行網頁，您正在使用：
+    確保在使用後端功能進行測試時運行您的網頁，如下所示：
     1）`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **跑步：**
 
+    如果不進行開發，請按以下方式運行應用程式（同時後端和前端）：
+
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
+
 2.  軟體依賴性
+
 3.  最新版本
+
 4.  API參考
+
 5.  建置和測試：
 
     要建立您的程式碼，請使用：
@@ -77,7 +83,7 @@
 
     <https://app.coderabbit.ai/dashboard>（使用`phpstan.neon`)
 
-    要運行該應用程序，請使用：
+    To run the application, use:
 
     Linux：
 
@@ -115,7 +121,7 @@
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -148,7 +154,7 @@ pip install threagile-monitoring
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
-    -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
+    -   use the [應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
 
 ## 執照
 
@@ -164,7 +170,7 @@ pip install threagile-monitoring
 
 ## 300 - 建立我們的應用程式
 
-看[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400 - 結論
 
