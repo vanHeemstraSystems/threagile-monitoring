@@ -39,7 +39,6 @@ const parseThreagileData = risksJson => {
     low: { weight: 1, color: '#22c55e' }
   }
   return {
-    // risksBySeverity: risksBySeverityFunction(severityMap, risksJson, Object),
     risksBySeverity: Object.entries(
       risksJson.reduce((acc, risk) => {
         acc[risk.severity] = (acc[risk.severity] || 0) + 1
@@ -69,36 +68,7 @@ const parseThreagileData = risksJson => {
         return acc
       }, {})
     ).map(([status, count]) => ({ name: status, value: count })),
-    technicalAssetRisks: technicalAssetsRisksFunction(
-      severityMap,
-      risksJson,
-      Object
-    )
-  }
-}
-
-function risksBySeverityFunction (severityMap, risksJson, Object) {
-  console.debug('risksBySeverityFunction')
-  try {
-    Object.entries(
-      risksJson.reduce((acc, risk) => {
-        acc[risk.severity] = (acc[risk.severity] || 0) + 1
-        return acc
-      }, {})
-    ).map(([severity, count]) => ({
-      name: severity,
-      count,
-      color: severityMap[severity.toLowerCase()].color
-    }))
-  } catch (e) {
-    console.debug('error: ', e)
-  }
-}
-
-function technicalAssetsRisksFunction (severityMap, risksJson, Object) {
-  console.debug('technicalAssetsRisksFunction')
-  try {
-    Object.entries(
+    technicalAssetRisks: Object.entries(
       risksJson.reduce((acc, risk) => {
         console.debug('acc:', acc, 'risk:', risk)
         if (!risk.data_breach_technical_assets || !acc) return {}
@@ -109,9 +79,6 @@ function technicalAssetsRisksFunction (severityMap, risksJson, Object) {
         return acc
       }, {})
     ).map(([asset, weight]) => ({ name: asset, value: weight }))
-  } catch (e) {
-    console.debug('error: ', e)
-    return null
   }
 }
 
