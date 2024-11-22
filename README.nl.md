@@ -48,22 +48,28 @@ Uw code op uw eigen systeem operationeel krijgen.
 
     Hierdoor ontstaat de`app.js`bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
 
-    **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, is het zo eenvoudig als:
+    **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, in a**afzonderlijke terminalsessie**, nadat u het bovenstaande installatieproces heeft gevolgd, doet u het volgende:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    Hierdoor worden de wijzigingen die u aanbrengt voortdurend in de juiste bestanden geladen.
+    Dit zal - in de afzonderlijke terminalsessie (d.w.z.`background`) - laad voortdurend de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u door kunt gaan met het aanbrengen van die wijzigingen - in de initiële terminalsessie (d.w.z.`foreground`). Je hoeft dus niet na elke bewerking je bronnen opnieuw op te bouwen, dit gebeurt automatisch!
 
     Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5).
 
-    Zorg ervoor dat u, om uw webpagina uit te voeren tijdens het testen met backend-functies, het volgende gebruikt:
+    Zorg ervoor dat u uw webpagina als volgt uitvoert tijdens het testen met backend-functies:
     1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **Loop:**
 
+    Als u niet aan het ontwikkelen bent, voert u de applicatie (backend en frontend tegelijkertijd) op deze manier uit:
+
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
+
 2.  Software-afhankelijkheden
+
 3.  Nieuwste releases
+
 4.  API-referenties
+
 5.  Bouwen en testen:
 
     Om uw code samen te stellen, gebruikt u:
@@ -135,18 +141,18 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
 -   Netjes gedefinieerd in een standalone[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   De`test`matrix maakt gebruik van de[luikcontainers](https://github.com/ofek/hatch-containers)plug-in om elke omgeving binnen Docker-containers uit te voeren; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub-workflow
+-   De`test` matrix uses the [luikcontainers](https://github.com/ofek/hatch-containers)plug-in om elke omgeving binnen Docker-containers uit te voeren; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub-workflow
 
 ## Bouwen
 
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
+-   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
