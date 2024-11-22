@@ -41,7 +41,7 @@
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
-    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包應用程式。該包資料夾列於`.gitignore`以避免它被提交給 git。
+    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包該應用程式。該包資料夾列於`.gitignore`以避免它被提交給 git。
 
     現在所有設定都應該準備就緒，因此您需要做的就是：
     1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
@@ -83,7 +83,7 @@
 
     <https://app.coderabbit.ai/dashboard>（使用`phpstan.neon`)
 
-    To run the application, use:
+    要運行該應用程序，請使用：
 
     Linux：
 
@@ -121,7 +121,7 @@
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -133,7 +133,7 @@
 -   [建造](#build)
 -   [執照](#license)
 
-## 安裝
+## Installation
 
 ```console
 pip install threagile-monitoring
@@ -154,7 +154,7 @@ pip install threagile-monitoring
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
-    -   use the [應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
+    -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
 
 ## 執照
 
@@ -170,7 +170,7 @@ pip install threagile-monitoring
 
 ## 300 - 建立我們的應用程式
 
-See [README.md](./300/README.md)
+看[README.md](./300/README.md)
 
 ## 400 - 結論
 
