@@ -64,7 +64,7 @@ const parseThreagileData = risksJson => {
     })),
     mitigationStatus: Object.entries(
       risksJson.reduce((acc, risk) => {
-        acc[risk.status] = (acc[risk.status] || 0) + 1
+        acc[risk.risk_status] = (acc[risk.risk_status] || 0) + 1
         return acc
       }, {})
     ).map(([status, count]) => ({ name: status, value: count })),
@@ -273,9 +273,8 @@ const Dashboard = ({ risksJson }) => {
           <div>
             <h3 className='text-lg font-semibold'>Active Mitigations</h3>
             <p className='text-2xl font-bold'>
-              {/* data.mitigationStatus.find(s => s.name === 'in-progress')
-                .value || 0 */}{' '}
-              FIX THIS!
+              {data.mitigationStatus.find(s => s.name === 'in-progress')
+                .value || 0}{' '}
             </p>
           </div>
         </div>
