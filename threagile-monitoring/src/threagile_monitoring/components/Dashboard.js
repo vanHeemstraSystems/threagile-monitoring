@@ -57,8 +57,8 @@ const parseThreagileData = risksJson => {
     ).map(([category, value]) => ({ name: category, value })),
     riskMatrix: risksJson.map(risk => ({
       id: risk.id,
-      impact: risk.riskAssessment.impact,
-      likelihood: risk.riskAssessment.likelihood,
+      impact: 'low', // risk.riskAssessment.impact,
+      likelihood: 'high', // risk.riskAssessment.likelihood,
       severity: risk.severity,
       title: risk.title
     })),
@@ -68,21 +68,51 @@ const parseThreagileData = risksJson => {
         return acc
       }, {})
     ).map(([status, count]) => ({ name: status, value: count })),
-    technicalAssetRisks: Object.entries(
+    technicalAssetRisks: technicalAssetsRisksFunction(
+      severityMap,
+      risksJson,
+      Object
+    )
+
+    // Object.entries(
+    //   risksJson.reduce((acc, risk) => {
+    //     console.debug("acc:", acc, "risk:", risk)
+    //     // ORIGINAL risk.affectedTechnicalAssets.forEach(asset => {
+    //     if (!risk.data_breach_technical_assets || !acc) return;  // New
+    //     risk.data_breach_technical_assets.forEach(asset=> {
+    //       acc[asset] =
+    //         (acc[asset] || 0) + severityMap[risk.severity.toLowerCase()].weight
+    //     })
+    //     return acc
+    //   }, {})
+    // ).map(([asset, weight]) => ({ name: asset, value: weight }))
+  }
+}
+
+// New
+function technicalAssetsRisksFunction (severityMap, risksJson, Object) {
+  try {
+    Object.entries(
       risksJson.reduce((acc, risk) => {
-        risk.affectedTechnicalAssets.forEach(asset => {
+        console.debug('acc:', acc, 'risk:', risk)
+        // ORIGINAL risk.affectedTechnicalAssets.forEach(asset => {
+        if (!risk.data_breach_technical_assets || !acc) return // New
+        risk.data_breach_technical_assets.forEach(asset => {
           acc[asset] =
             (acc[asset] || 0) + severityMap[risk.severity.toLowerCase()].weight
         })
         return acc
       }, {})
     ).map(([asset, weight]) => ({ name: asset, value: weight }))
+  } catch (e) {
+    console.debug('error: ', e)
+    return null
   }
 }
 
 const Dashboard = ({ risksJson }) => {
   const [activeIndex, setActiveIndex] = useState(0)
-  const [selectedSevereity, setSelectedSeverity] = useState(null)
+  const [selectedSeverity, setSelectedSeverity] = useState(null)
   const [timeRange, setTimeRange] = useState('1M')
   const [data, setData] = useState(null)
   useEffect(() => {
@@ -96,6 +126,7 @@ const Dashboard = ({ risksJson }) => {
 
   // Custom Active Shape for Pie Chart
   const renderActiveShape = props => {
+    console.debug('renderActiveShape')
     const {
       cx,
       cy,
@@ -270,8 +301,8 @@ const Dashboard = ({ risksJson }) => {
           <div>
             <h3 className='text-lg font-semibold'>Active Mitigations</h3>
             <p className='text-2xl font-bold'>
-              {data.mitigationStatus.find(s => s.name === 'in-progress')
-                .value || 0}
+              {/* data.mitigationStatus.find(s => s.name === 'in-progress')
+                .value || 0 */} FIX THIS!
             </p>
           </div>
         </div>
