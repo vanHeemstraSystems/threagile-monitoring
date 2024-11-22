@@ -50,24 +50,28 @@ Getting your code up and running on your own system.
     This will create the ```app.js``` file - which contains all components - in ```/src/threagile_monitoring/static/js/```.
 
     **Development with webpack:**
-    If you are still developing your website, it is as easy as:
+    If you are still developing your website, in a **separate terminal session**, after having followed the above installation process, do this:
     1) ```$ hatch shell```
     2) ```(threagile-monitoring) $ cd src/threagile_monitoring```
     3) ```(threagile-monitoring) $ npm install```
     4) ```(threagile-monitoring) $ npm run watch```
 
-    This will constantly load the changes you make into the appropriate files.
+    This will - in the separate terminal session (i.e. ```background```) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. ```foreground```). So you do not have to build your sources after each edit, it is taken care of automatically!
 
     To see the changes just save and reload your navigator (usually with F5). 
     
-    Make sure, to run your webpage when testing with backend functions, you are using:
+    Make sure, to run your webpage when testing with backend functions, as follows:
     1) ```(threagile-monitoring) $ cd src/threagile_monitoring```
     2) ```(threagile-monitoring) $ python app.py```
 
     **Run:**
+
+    If not developing, run the application (backend and frontend simultaneously) this way: 
+
     ```
     $ hatch run python src/threagile_monitoring/app.py # starts the app 
     ```
+
 2.	Software dependencies
 3.	Latest releases
 4.	API references

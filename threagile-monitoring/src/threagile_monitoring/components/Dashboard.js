@@ -30,6 +30,7 @@ import { AlertCircle, Activity, TrendingDown, Settings } from 'lucide-react'
 
 // Parse Threagile risks.json structure
 const parseThreagileData = risksJson => {
+  console.debug('parseThreagileData')
   const severityMap = {
     critical: { weight: 5, color: '#dc2626' },
     high: { weight: 4, color: '#ea580c' },
