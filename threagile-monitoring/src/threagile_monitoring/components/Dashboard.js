@@ -96,7 +96,7 @@ function technicalAssetsRisksFunction (severityMap, risksJson, Object) {
       risksJson.reduce((acc, risk) => {
         console.debug('acc:', acc, 'risk:', risk)
         // ORIGINAL risk.affectedTechnicalAssets.forEach(asset => {
-        if (!risk.data_breach_technical_assets || !acc) return // New
+        if (!risk.data_breach_technical_assets || !acc) return {} // New
         risk.data_breach_technical_assets.forEach(asset => {
           acc[asset] =
             (acc[asset] || 0) + severityMap[risk.severity.toLowerCase()].weight
