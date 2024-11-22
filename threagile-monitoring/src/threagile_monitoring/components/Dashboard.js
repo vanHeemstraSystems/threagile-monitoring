@@ -57,8 +57,8 @@ const parseThreagileData = risksJson => {
     ).map(([category, value]) => ({ name: category, value })),
     riskMatrix: risksJson.map(risk => ({
       id: risk.id,
-      impact: risk.exploitation_impact, // risk.riskAssessment.impact,
-      likelihood: risk.exploitation_likelihood, // risk.riskAssessment.likelihood,
+      impact: risk.exploitation_impact,
+      likelihood: risk.exploitation_likelihood,
       severity: risk.severity,
       title: risk.title
     })),
