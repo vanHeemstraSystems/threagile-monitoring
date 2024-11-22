@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
   BarChart,
   Bar,
@@ -140,7 +140,8 @@ const Dashboard = ({ risksJson }) => {
   }
 
   // Interactive Risk Matrix
-  const RiskMatrix = ({ data }) => {
+  const RiskMatrix = data => {
+    console.debug('RiskMatrix, data: ', data)
     const severityColors = {
       critical: '#dc2626',
       high: '#ea580c',
@@ -150,42 +151,55 @@ const Dashboard = ({ risksJson }) => {
     }
 
     return (
-      <ScatterChart width={400} height={300}>
-        <CartesianGrid />
-        <XAxis type='number' dataKey='likelihood' name='Likelihood' />
-        <YAxis type='number' dataKey='impact' name='Impact' />
-        <Tooltip
-          content={({ active, payload }) => {
-            if (active && payload && payload.length) {
-              const risk = payload[0].payload
-              return (
-                <div className='bg-white p-2 shadow rounded'>
-                  <p className='font-bold'>{risk.title}</p>
-                  <p>Impact: {risk.impact}</p>
-                  <p>Likelihood: {risk.likelihood}</p>
-                  <p>Severity: {risk.severity}</p>
-                </div>
-              )
-            }
-            return null
-          }}
-        />
-        <Scatter
-          data={data.riskMatrix}
-          fill='#8884d8'
-          shape={props => (
-            <circle
-              cx={props.cx}
-              cy={props.cy}
-              r={8}
-              fill={severityColors[props.payload.severity.toLowerCase()]}
-              opacity={0.8}
-            />
-          )}
-        />
-      </ScatterChart>
+      <ResponsiveContainer width='100%' height={400}>
+        <ScatterChart width={400} height={300} margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
+          <CartesianGrid />
+          <XAxis type='number' dataKey='x' name='stature' unit='cm' />
+          <YAxis type='number' dataKey='y' name='weight' unit='kg' />
+          <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+          <Scatter name='A school' data={data} fill='#8884d8' />
+        </ScatterChart>
+      </ResponsiveContainer>
     )
   }
+
+  //   return (
+  //     <ScatterChart width={400} height={300}>
+  //       <CartesianGrid />
+  //       <XAxis type='number' dataKey='likelihood' name='Likelihood' />
+  //       <YAxis type='number' dataKey='impact' name='Impact' />
+  //       <Tooltip
+  //         content={({ active, payload }) => {
+  //           if (active && payload && payload.length) {
+  //             const risk = payload[0].payload
+  //             return (
+  //               <div className='bg-white p-2 shadow rounded'>
+  //                 <p className='font-bold'>{risk.title}</p>
+  //                 <p>Impact: {risk.impact}</p>
+  //                 <p>Likelihood: {risk.likelihood}</p>
+  //                 <p>Severity: {risk.severity}</p>
+  //               </div>
+  //             )
+  //           }
+  //           return null
+  //         }}
+  //       />
+  //       <Scatter
+  //         data={data.riskMatrix}
+  //         fill='#8884d8'
+  //         shape={props => (
+  //           <circle
+  //             cx={props.cx}
+  //             cy={props.cy}
+  //             r={8}
+  //             fill={severityColors[props.payload.severity.toLowerCase()]}
+  //             opacity={0.8}
+  //           />
+  //         )}
+  //       />
+  //     </ScatterChart>
+  //   )
+  // }
 
   // Risk Trend Over Time
   const RiskTrendChart = ({ timeRange }) => {
@@ -292,7 +306,16 @@ const Dashboard = ({ risksJson }) => {
         {/* Risk Matrix */}
         <div className='bg-white p-4 rounded-lg shadow col-span-2'>
           <h3 className='text-lg font-semibold mb-4'>Risk Matrix</h3>
-          <RiskMatrix data={data} />
+          <RiskMatrix
+            data={[
+              { x: 100, y: 200, z: 200 },
+              { x: 120, y: 100, z: 260 },
+              { x: 170, y: 300, z: 400 },
+              { x: 140, y: 250, z: 280 },
+              { x: 150, y: 400, z: 500 },
+              { x: 110, y: 280, z: 200 }
+            ]}
+          />
           <p className='mt-2 text-sm text-gray-600'>
             Interactive risk matrix showing impact vs likelihood. Click on
             points to see risk details.
