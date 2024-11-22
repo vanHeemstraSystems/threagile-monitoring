@@ -1,4 +1,4 @@
-Threagile-Überwachung
+threagile-monitoring
 
 # Threagile Überwachung
 
@@ -41,29 +41,37 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
-    **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Dieser Paketordner ist in aufgeführt`.gitignore`um zu vermeiden, dass man sich an Git bindet.
+    **Verpacken Sie Ihre Website mit Webpack:**
+    Once you have a website that is good enough for you to use, you have to package the application with webpack. This package folder is listed in `.gitignore`um zu vermeiden, dass man sich an Git bindet.
 
     Die gesamte Einrichtung sollte inzwischen fertig sein. Sie müssen also nur noch Folgendes tun:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`
+    3) `(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
     Dadurch wird das erstellt`app.js`Datei - die alle Komponenten enthält - in`/src/threagile_monitoring/static/js/`.
 
-    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, ist es so einfach:
+    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, in a**separate Terminalsitzung**, nachdem Sie den oben genannten Installationsprozess befolgt haben, gehen Sie wie folgt vor:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    Dadurch werden die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien geladen.
+    Dies wird - in der separaten Terminalsitzung (d. h.`background`) – lädt die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien, während Sie diese Änderungen weiterhin vornehmen können – in der ersten Terminalsitzung (d. h.`foreground`). Sie müssen Ihre Quellen also nicht nach jeder Bearbeitung neu erstellen, dies geschieht automatisch!
 
     Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5).
 
-    Stellen Sie sicher, dass Sie zum Ausführen Ihrer Webseite beim Testen mit Backend-Funktionen Folgendes verwenden:
+    Stellen Sie sicher, dass Sie Ihre Webseite beim Testen mit Backend-Funktionen wie folgt ausführen:
     1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **Laufen:**
 
+    Wenn Sie nicht entwickeln, führen Sie die Anwendung (Backend und Frontend gleichzeitig) auf diese Weise aus:
+
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
+
 2.  Softwareabhängigkeiten
+
 3.  Neueste Veröffentlichungen
+
 4.  API-Referenzen
+
 5.  Erstellen und testen:
 
     Um Ihren Code zu erstellen, verwenden Sie:
@@ -77,7 +85,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     <https://app.coderabbit.ai/dashboard>(verwendet`phpstan.neon`)
 
-    Um die Anwendung auszuführen, verwenden Sie:
+    To run the application, use:
 
     Linux:
 
@@ -137,16 +145,16 @@ pip install threagile-monitoring
 
 -   Der[hatch-vcs](https://github.com/ofek/hatch-vcs)Das Versionsquellen-Plugin bestimmt die Projektversion mithilfe von Git-Tags
 
-## Umgebungen
+## Environments
 
 -   Ordentlich in einem Standalone definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
 
 ## Bauen
 
--   Alle Build-Ziele verwenden die[hatch-vcs](https://github.com/ofek/hatch-vcs)Erstellen Sie ein Hook-Plugin, um ein zu versenden`_version.py`Datei, damit die Version zur Laufzeit verwendet werden kann
+-   All build targets use the [hatch-vcs](https://github.com/ofek/hatch-vcs)Erstellen Sie ein Hook-Plugin, um ein zu versenden`_version.py`Datei, damit die Version zur Laufzeit verwendet werden kann
 -   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build-Hook-Plugin, mit dem zunächst der gesamte Code kompiliert werden soll[Mypyc](https://github.com/mypyc/mypyc)
--   Der[bauen](.github/workflows/build.yml)Der GitHub-Workflow zeigt, wie Sie:
+-   Der[bauen](.github/workflows/build.yml) GitHub workflow shows how to:
     -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)binäre Räder für jede Plattform zu verteilen
     -   Benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)build target zum Erstellen eigenständiger Distributionen für jede Plattform
 
