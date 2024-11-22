@@ -20,7 +20,7 @@
 
 الحصول على التعليمات البرمجية الخاصة بك وتشغيلها على النظام الخاص بك.
 
-**ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
+**ملحوظة**: Make sure you fulfill the [متطلبات](./200/README.md).
 
 1.  **عملية التثبيت:**
 
@@ -97,7 +97,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    ثم:
+    Then:
 
     ```bash
     $ cd threagile-monitoring
@@ -151,7 +151,7 @@ pip install threagile-monitoring
 ## يبني
 
 -   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
--   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
+-   تستخدم العجلات[hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
     -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
