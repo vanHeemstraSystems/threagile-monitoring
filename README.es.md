@@ -18,7 +18,7 @@ monitoreo-threagil
 
 **Resumen ejecutivo**
 
-Getting your code up and running on your own system.
+Cómo poner en marcha su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -48,22 +48,28 @@ Getting your code up and running on your own system.
 
     Esto creará el`app.js`archivo, que contiene todos los componentes, en`/src/threagile_monitoring/static/js/`.
 
-    **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, es tan fácil como:
+    **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, en un**sesión terminal separada**, después de haber seguido el proceso de instalación anterior, haga esto:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run watch`
 
-    Esto cargará constantemente los cambios que realice en los archivos apropiados.
+    Esto, en la sesión de terminal separada (es decir,`background`) - cargue constantemente los cambios que realice en los archivos apropiados, mientras puede continuar realizando esos cambios - en la sesión inicial del terminal (es decir,`foreground`). Así que no tienes que crear tus fuentes después de cada edición, ¡se encargan automáticamente!
 
     Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5).
 
-    Make sure, to run your webpage when testing with backend functions, you are using:
-    1) `(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
+    Asegúrese de ejecutar su página web cuando pruebe con funciones de backend, de la siguiente manera:
+    1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **Correr:**
 
+    Si no está en desarrollo, ejecute la aplicación (backend y frontend simultáneamente) de esta manera:
+
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
+
 2.  Dependencias de software
+
 3.  Últimos lanzamientos
+
 4.  Referencias API
+
 5.  Construir y probar:
 
     Para construir su código, use:
