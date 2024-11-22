@@ -20,7 +20,7 @@
 
 在您自己的系统上启动并运行您的代码。
 
-**Note**: 确保您满足[要求](./200/README.md).
+**笔记**: 确保您满足[要求](./200/README.md).
 
 1.  **安装过程：**
 
@@ -41,7 +41,7 @@
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
-    **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 打包该应用程序。该包文件夹列于`.gitignore`以避免它被提交给 git。
+    **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 打包应用程序。该包文件夹列于`.gitignore`以避免它被提交给 git。
 
     现在所有设置都应该准备就绪，因此您需要做的就是：
     1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
@@ -121,7 +121,7 @@
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -158,7 +158,7 @@ pip install threagile-monitoring
 
 ## 执照
 
-`threagile-monitoring` is distributed under the terms of the [和](https://spdx.org/licenses/MIT.html)执照。
+`threagile-monitoring`是根据以下条款分发的[和](https://spdx.org/licenses/MIT.html)执照。
 
 ## 100 - 简介
 
