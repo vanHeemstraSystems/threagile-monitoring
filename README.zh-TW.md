@@ -58,6 +58,12 @@
     確保在使用後端功能進行測試時運行您的網頁，如下所示：
     1）`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
+    **測試**
+
+    以這種方式測試應用程式（前端）：
+
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm test`5)`(threagile-monitoring) $ npm test -- --coverage`
+
     **跑步：**
 
     如果不進行開發，請按以下方式運行應用程式（同時後端和前端）：
@@ -127,7 +133,7 @@
 
 **目錄**
 
--   [安裝](#installation)
+-   [Installation](#installation)
 -   [版本來源](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
@@ -139,7 +145,7 @@
 pip install threagile-monitoring
 ```
 
-## 版本來源
+## Version source
 
 -   這[孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
 
