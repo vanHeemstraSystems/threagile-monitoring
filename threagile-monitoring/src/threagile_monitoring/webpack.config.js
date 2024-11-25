@@ -1,21 +1,25 @@
+// See https://createapp.dev/webpack/react--babel--react-hot-loader
 const path = require('path')
-
-module.exports = [].map(devtool => ({
+const config = {
   entry: './components/index.js',
   output: {
-    path: path.join(__dirname, '../threagile_monitoring/static/js'),
+    path: path.resolve(__dirname, 'static/js'),
     filename: 'app.js'
   },
-  devtool,
   module: {
     rules: [
       {
-        test: /\.jsx?/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
+        test: /\.(js|jsx)$/,
+        use: 'babel-loader',
+        exclude: /node_modules/
       }
     ]
+  },
+  devServer: {
+    static: {
+      directory: './static/js'
+    }
   }
-}))
+}
+
+module.exports = config
