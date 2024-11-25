@@ -142,7 +142,25 @@ const Dashboard = ({ risksJson }) => {
   // Hardcoded Risk Matrix for testing only
   const TestRiskMatrix = data => {
     console.debug('TestRiskMatrix, data: ', data)
-    return(<div>Hello from TestRiskMatrix</div>)
+    const sample_data = [
+      { x: 1, y: 23 },
+      { x: 2, y: 3 },
+      { x: 3, y: 15 },
+      { x: 4, y: 35 },
+      { x: 5, y: 45 },
+      { x: 6, y: 25 },
+      { x: 7, y: 17 },
+      { x: 8, y: 32 },
+      { x: 9, y: 43 }
+    ]
+    return (
+      <ScatterChart width={400} height={400}>
+        <CartesianGrid />
+        <XAxis type='number' dataKey='x' />
+        <YAxis type='number' dataKey='y' />
+        <Scatter data={sample_data} fill='green' />
+      </ScatterChart>
+    )
   }
 
   // Interactive Risk Matrix
@@ -306,7 +324,7 @@ const Dashboard = ({ risksJson }) => {
             Interactive risk matrix showing impact vs likelihood. Click on
             points to see risk details.
           </p>
-        </div>        
+        </div>
 
         {/* Risk Matrix */}
         <div className='bg-white p-4 rounded-lg shadow col-span-2'>
