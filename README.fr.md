@@ -41,7 +41,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
-    **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore` to avoid it to be committed to git.
+    **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
 
     Toute la configuration devrait être prête maintenant, il vous suffit donc de :
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
@@ -123,7 +123,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 # Documentation API
 
-Navigate to `http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
+Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
 
 # Métrique
 
