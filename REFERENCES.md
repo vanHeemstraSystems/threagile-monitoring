@@ -6,3 +6,4 @@
 - [How to Create a Flask + React Project with Vite | Python Backend + React Frontend](https://www.youtube.com/watch?v=ctQMqqEo4G8)
 - [Flask-React-Template](https://github.com/holyfiddlex/Flask-React-Template/tree/master)
 - [Create a Scatter Chart using Recharts in ReactJS](https://www.geeksforgeeks.org/create-a-scatter-chart-using-recharts-in-reactjs/)
+- [How do I change `src` folder to something else in create-react-app](https://stackoverflow.com/questions/44448851/how-do-i-change-src-folder-to-something-else-in-create-react-app)
