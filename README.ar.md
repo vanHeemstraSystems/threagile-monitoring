@@ -105,7 +105,7 @@
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
+    ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
 
     لتشغيل الاختبارات استخدم:
 
