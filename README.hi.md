@@ -174,4 +174,4 @@ pip install threagile-monitoring
 
 ## 400 - निष्कर्ष
 
-See [README.md](./400/README.md)
+देखना[README.md](./400/README.md)
