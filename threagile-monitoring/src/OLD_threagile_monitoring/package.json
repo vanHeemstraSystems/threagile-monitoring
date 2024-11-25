@@ -1,6 +1,7 @@
 {
     "name": "threagile-monitoring",
     "version": "1.0.0",
+    "private": false,
     "description": "Threagile Monitoring application",
     "main": "index.js",
     "scripts": {

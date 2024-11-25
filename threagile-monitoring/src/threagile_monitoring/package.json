@@ -1,7 +1,11 @@
 {
   "name": "threagile_monitoring",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Threagile Monitoring application",
+  "author": "Willem van Heemstra",
+  "license": "ISC",
+  "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
