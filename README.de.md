@@ -22,7 +22,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
-1.  **Installationsprozess:**
+1.  **Installation process:**
 
     ```bash
     $ cd threagile-monitoring
