@@ -12,7 +12,7 @@ Threagile-Überwachung
 
 > Eine Webanwendung zum Erstellen von Dashboards[Threagile](https://threagile.io).
 
--   [Glossar](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 
