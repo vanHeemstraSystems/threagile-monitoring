@@ -115,7 +115,7 @@
     $ pytest tests/
     ```
 
-# API文档
+# API Documentation
 
 导航至`http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
 
@@ -162,7 +162,7 @@ pip install threagile-monitoring
 
 ## 100 - 简介
 
-See [README.md](./100/README.md)
+看[README.md](./100/README.md)
 
 ## 200 - 要求
 

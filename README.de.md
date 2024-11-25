@@ -154,7 +154,7 @@ pip install threagile-monitoring
 -   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build-Hook-Plugin, mit dem zunächst der gesamte Code kompiliert werden soll[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Der GitHub-Workflow zeigt, wie Sie:
     -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)binäre Räder für jede Plattform zu verteilen
-    -   Benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)build target zum Erstellen eigenständiger Distributionen für jede Plattform
+    -   Benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/) build target to build standalone distributions for every platform
 
 ## Lizenz
 
@@ -168,7 +168,7 @@ Sehen[README.md](./100/README.md)
 
 Sehen[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 – Erstellen unserer Anwendung
 
 Sehen[README.md](./300/README.md)
 
