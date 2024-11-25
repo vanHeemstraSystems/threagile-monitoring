@@ -72,7 +72,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 5.  Construire et tester :
 
-    Pour construire votre code, utilisez :
+    To build your code, use:
 
     ```bash
     $ cd threagile-monitoring
