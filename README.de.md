@@ -55,8 +55,8 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5).
 
-    Make sure, to run your webpage when testing with backend functions, as follows:
-    1) `(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
+    Stellen Sie sicher, dass Sie Ihre Webseite beim Testen mit Backend-Funktionen wie folgt ausführen:
+    1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **Laufen:**
 
@@ -105,7 +105,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Navigieren Sie dann zu`http://127.0.0.1:5000/` in your web browser.
+    Navigieren Sie dann zu`http://127.0.0.1:5000/`in Ihrem Webbrowser.
 
     Um Tests auszuführen, verwenden Sie:
 
@@ -158,7 +158,7 @@ pip install threagile-monitoring
 
 ## Lizenz
 
-`threagile-monitoring` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html)Lizenz.
+`threagile-monitoring`wird gemäß den Bedingungen der verteilt[MIT](https://spdx.org/licenses/MIT.html)Lizenz.
 
 ## 100 - Einführung
 
