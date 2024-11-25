@@ -41,7 +41,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     ```
 
-    **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
+    **Package your site with webpack:**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
 
     Toute la configuration devrait être prête maintenant, il vous suffit donc de :
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
@@ -72,7 +72,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 5.  Construire et tester :
 
-    To build your code, use:
+    Pour construire votre code, utilisez :
 
     ```bash
     $ cd threagile-monitoring
