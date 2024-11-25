@@ -55,8 +55,15 @@
 
     لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5).
 
-    تأكد من تشغيل صفحة الويب الخاصة بك عند الاختبار باستخدام وظائف الواجهة الخلفية، كما يلي:
-    1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
+    Make sure, to run your webpage when testing with backend functions, as follows:
+    1) `(threagile-monitoring) $ cd src/threagile_monitoring`
+    2) `(threagile-monitoring) $ python app.py`
+
+    **امتحان**
+
+    اختبر التطبيق (الواجهة الأمامية) بهذه الطريقة:
+
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm test`5)`(threagile-monitoring) $ npm test -- --coverage`
 
     **يجري:**
 
@@ -119,7 +126,7 @@
 
 انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
-# المقاييس
+# Metrics
 
 دع أداة مثل بروميثيوس تتخلص`http://127.0.0.1:9464/metrics`.
 
