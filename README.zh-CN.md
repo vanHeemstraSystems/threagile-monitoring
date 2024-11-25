@@ -131,7 +131,7 @@
 -   [版本来源](#version-source)
 -   [环境](#environments)
 -   [建造](#build)
--   [执照](#license)
+-   [License](#license)
 
 ## 安装
 
