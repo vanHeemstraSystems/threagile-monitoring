@@ -72,7 +72,7 @@
 
 5.  建置和測試：
 
-    要建立您的程式碼，請使用：
+    To build your code, use:
 
     ```bash
     $ cd threagile-monitoring
