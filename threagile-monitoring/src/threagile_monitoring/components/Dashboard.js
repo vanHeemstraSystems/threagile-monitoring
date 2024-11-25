@@ -2,7 +2,7 @@ import React from 'react';
 import { ScatterChart, Scatter, XAxis, 
     YAxis, CartesianGrid } from 'recharts';
 
-const Dashboard = () => {
+const Dashboard = ({ risksJson }) => {
  
   // Sample data
   const data = [
