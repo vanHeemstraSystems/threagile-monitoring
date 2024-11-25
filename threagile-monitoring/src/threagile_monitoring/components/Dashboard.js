@@ -83,18 +83,6 @@ const parseThreagileData = risksJson => {
 }
 
 const Dashboard = ({ risksJson }) => {
-  // Sample data for ScatterGraph
-//   const sample_data = [
-//     { x: 1, y: 23 },
-//     { x: 2, y: 3 },
-//     { x: 3, y: 15 },
-//     { x: 4, y: 35 },
-//     { x: 5, y: 45 },
-//     { x: 6, y: 25 },
-//     { x: 7, y: 17 },
-//     { x: 8, y: 32 },
-//     { x: 9, y: 43 }
-//   ]
   const [activeIndex, setActiveIndex] = useState(0)
   const [selectedSeverity, setSelectedSeverity] = useState(null)
   const [timeRange, setTimeRange] = useState('1M')
@@ -161,22 +149,6 @@ const Dashboard = ({ risksJson }) => {
       medium: '#84cc16',
       low: '#22c55e'
     }
-
-    // return (
-    //   <ResponsiveContainer width='100%' height={400}>
-    //     <ScatterChart
-    //       width={400}
-    //       height={300}
-    //       margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
-    //     >
-    //       <CartesianGrid />
-    //       <XAxis type='number' dataKey='x' name='stature' unit='cm' />
-    //       <YAxis type='number' dataKey='y' name='weight' unit='kg' />
-    //       <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-    //       <Scatter name='A school' data={sample_data} fill='#8884d8' />
-    //     </ScatterChart>
-    //   </ResponsiveContainer>
-    // )
 
     return (
       <ScatterChart width={400} height={300}>
