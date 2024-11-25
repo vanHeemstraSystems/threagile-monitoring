@@ -83,8 +83,8 @@ const parseThreagileData = risksJson => {
 }
 
 const Dashboard = ({ risksJson }) => {
-  // Sample data
-  const data = [
+  // Sample data for ScatterGraph
+  const sample_data = [
     { x: 1, y: 23 },
     { x: 2, y: 3 },
     { x: 3, y: 15 },
@@ -95,13 +95,25 @@ const Dashboard = ({ risksJson }) => {
     { x: 8, y: 32 },
     { x: 9, y: 43 }
   ]
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [selectedSeverity, setSelectedSeverity] = useState(null)
+  const [timeRange, setTimeRange] = useState('1M')
+  const [data, setData] = useState(null)
+  useEffect(() => {
+    console.debug('Dashboard with risksJson started: ', risksJson)
+    if (risksJson) {
+      setData(parseThreagileData(risksJson))
+    }
+  }, [risksJson])
+
+  if (!data) return <div>Loading...</div>
 
   return (
     <ScatterChart width={400} height={400}>
       <CartesianGrid />
       <XAxis type='number' dataKey='x' />
       <YAxis type='number' dataKey='y' />
-      <Scatter data={data} fill='green' />
+      <Scatter data={sample_data} fill='green' />
     </ScatterChart>
   )
 }
