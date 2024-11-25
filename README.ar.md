@@ -83,7 +83,7 @@
 
     <https://app.coderabbit.ai/dashboard>(الاستخدامات`phpstan.neon`)
 
-    To run the application, use:
+    لتشغيل التطبيق استخدم:
 
     لينكس:
 
