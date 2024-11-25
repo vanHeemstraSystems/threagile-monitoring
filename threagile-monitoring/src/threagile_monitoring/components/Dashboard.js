@@ -1,5 +1,31 @@
 import React, { useState, useEffect } from 'react'
-import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid } from 'recharts'
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  PieChart,
+  Pie,
+  Cell,
+  Sector,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  Radar,
+  Treemap,
+  ScatterChart,
+  Scatter,
+  LineChart,
+  Line,
+  AreaChart,
+  Area,
+  ResponsiveContainer,
+  Sankey
+} from 'recharts'
 import { AlertCircle, Activity, TrendingDown, Settings } from 'lucide-react'
 
 const Dashboard = ({ risksJson }) => {
