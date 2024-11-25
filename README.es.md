@@ -1,4 +1,4 @@
-monitoreo-threagil
+threagile-monitoring
 
 # Monitoreo amenazante
 
@@ -18,7 +18,7 @@ monitoreo-threagil
 
 **Resumen ejecutivo**
 
-Poner en funcionamiento su código en su propio sistema.
+Cómo poner en marcha su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -170,7 +170,7 @@ pip install threagile-monitoring
 
 Ver[README.md](./100/README.md)
 
-## 200 - Requisitos
+## 200 - Requirements
 
 Ver[README.md](./200/README.md)
 
