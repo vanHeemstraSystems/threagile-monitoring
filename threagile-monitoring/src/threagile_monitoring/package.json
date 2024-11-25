@@ -34,9 +34,7 @@
     "webpack-dev-server": "^5.1.0"
   },
   "scripts": {
-    "DELETE-start": "react-app-rewired start",
     "start": "webpack-dev-server --mode development --open --hot",
-    "DELETE-build": "react-app-rewired build",
     "build": "webpack --mode production",
     "dev-build": "webpack --progress -d --config webpack.config.js",
     "watch": "webpack --progress -d --config webpack.config.js --watch",
