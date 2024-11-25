@@ -139,6 +139,12 @@ const Dashboard = ({ risksJson }) => {
     )
   }
 
+  // Hardcoded Risk Matrix for testing only
+  const TestRiskMatrix = data => {
+    console.debug('TestRiskMatrix, data: ', data)
+    return(<div>Hello from TestRiskMatrix</div>)
+  }
+
   // Interactive Risk Matrix
   const RiskMatrix = data => {
     console.debug('RiskMatrix, data: ', data)
@@ -292,6 +298,16 @@ const Dashboard = ({ risksJson }) => {
 
       {/* Main Dashboard Grid */}
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        {/* TestRiskMatrix */}
+        <div className='bg-white p-4 rounded-lg shadow col-span-2'>
+          <h3 className='text-lg font-semibold mb-4'>Test Risk Matrix</h3>
+          <TestRiskMatrix data={data} />
+          <p className='mt-2 text-sm text-gray-600'>
+            Interactive risk matrix showing impact vs likelihood. Click on
+            points to see risk details.
+          </p>
+        </div>        
+
         {/* Risk Matrix */}
         <div className='bg-white p-4 rounded-lg shadow col-span-2'>
           <h3 className='text-lg font-semibold mb-4'>Risk Matrix</h3>
