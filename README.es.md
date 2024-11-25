@@ -18,7 +18,7 @@ monitoreo-threagil
 
 **Resumen ejecutivo**
 
-Cómo poner en marcha su código en su propio sistema.
+Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -57,6 +57,12 @@ Cómo poner en marcha su código en su propio sistema.
 
     Asegúrese de ejecutar su página web cuando pruebe con funciones de backend, de la siguiente manera:
     1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
+
+    **Prueba**
+
+    Pruebe la aplicación (frontend) de esta manera:
+
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm test`5)`(threagile-monitoring) $ npm test -- --coverage`
 
     **Correr:**
 
