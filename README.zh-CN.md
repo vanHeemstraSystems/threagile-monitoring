@@ -141,7 +141,7 @@ pip install threagile-monitoring
 
 ## 版本来源
 
--   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
+-   这[hatch-vcs](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 
 ## 环境
 
@@ -162,7 +162,7 @@ pip install threagile-monitoring
 
 ## 100 - 简介
 
-看[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - 要求
 
