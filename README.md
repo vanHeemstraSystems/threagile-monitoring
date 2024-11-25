@@ -64,6 +64,16 @@ Getting your code up and running on your own system.
     1) ```(threagile-monitoring) $ cd src/threagile_monitoring```
     2) ```(threagile-monitoring) $ python app.py```
 
+    **Test**
+
+    Test the application (frontend) this way:
+
+    1) ```$ hatch shell```
+    2) ```(threagile-monitoring) $ cd src/threagile_monitoring```
+    3) ```(threagile-monitoring) $ npm install```
+    4) ```(threagile-monitoring) $ npm test```
+    5) ```(threagile-monitoring) $ npm test -- --coverage```
+
     **Run:**
 
     If not developing, run the application (backend and frontend simultaneously) this way: 

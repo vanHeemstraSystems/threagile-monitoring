@@ -8,3 +8,5 @@
 - [Create a Scatter Chart using Recharts in ReactJS](https://www.geeksforgeeks.org/create-a-scatter-chart-using-recharts-in-reactjs/)
 - [How do I change `src` folder to something else in create-react-app](https://stackoverflow.com/questions/44448851/how-do-i-change-src-folder-to-something-else-in-create-react-app)
 - [Create App - Frontend build config generator](https://createapp.dev/webpack)
+- [Running Tests - Create react App](https://create-react-app.dev/docs/running-tests/)
+- [The Essential Guide to Using React App Rewired for Custom Configurations](https://www.dhiwise.com/post/guide-to-using-react-app-rewired-for-custom-configuration)
