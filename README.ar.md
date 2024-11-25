@@ -105,7 +105,7 @@
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
+    Then, navigate to `http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
 
     لتشغيل الاختبارات استخدم:
 
@@ -146,7 +146,7 @@ pip install threagile-monitoring
 ## البيئات
 
 -   تم تعريفها بدقة في قائمة بذاتها[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
+-   ال`test`تستخدم المصفوفة[hatch-containers](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml) GitHub workflow
 
 ## يبني
 

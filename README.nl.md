@@ -20,7 +20,7 @@ threagile-monitoring
 
 Uw code op uw eigen systeem operationeel krijgen.
 
-**Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
+**Opmerking**: Zorg ervoor dat u voldoet aan de[requirements](./200/README.md).
 
 1.  **Installatieproces:**
 
@@ -107,7 +107,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
     Navigeer vervolgens naar`http://127.0.0.1:5000/`in uw webbrowser.
 
-    Om tests uit te voeren, gebruikt u:
+    To run tests, use:
 
     ```bash
     $ cd threagile-monitoring
@@ -158,7 +158,7 @@ pip install threagile-monitoring
 
 ## Licentie
 
-`threagile-monitoring`wordt verspreid onder de voorwaarden van de[MET](https://spdx.org/licenses/MIT.html)licentie.
+`threagile-monitoring` is distributed under the terms of the [MET](https://spdx.org/licenses/MIT.html)licentie.
 
 ## 100 - Inleiding
 
