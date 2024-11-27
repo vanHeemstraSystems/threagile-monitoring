@@ -15,12 +15,13 @@ threagile-monitoring
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
 -   [Documentatie](./DOCUMENTATION.md)
+-   [Telemetrie](./TELEMETRY.md)
 
 **Samenvatting**
 
 Uw code op uw eigen systeem operationeel krijgen.
 
-**Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
+**Opmerking**: Make sure you fulfill the [vereisten](./200/README.md).
 
 1.  **Installatieproces:**
 
@@ -70,7 +71,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
-2.  Software-afhankelijkheden
+2.  Software dependencies
 
 3.  Nieuwste releases
 
@@ -147,7 +148,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
@@ -156,7 +157,7 @@ pip install threagile-monitoring
 
 ## Bouwen
 
--   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
+-   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py` file so the version can be used at runtime
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
