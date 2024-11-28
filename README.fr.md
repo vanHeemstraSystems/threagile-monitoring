@@ -10,7 +10,7 @@ surveillance des risques
 
 * * *
 
-> A web application to create dashboards for [Menaçant](https://threagile.io).
+> Une application web pour créer des tableaux de bord pour[Menaçant](https://threagile.io).
 
 -   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
