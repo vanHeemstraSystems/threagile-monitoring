@@ -79,7 +79,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
 5.  Bouwen en testen:
 
-    To build your code, use:
+    Om uw code samen te stellen, gebruikt u:
 
     ```bash
     $ cd threagile-monitoring
@@ -173,7 +173,7 @@ Zien[README.md](./100/README.md)
 
 ## 200 - Vereisten
 
-See [README.md](./200/README.md)
+Zien[README.md](./200/README.md)
 
 ## 300 - Onze applicatie bouwen
 
