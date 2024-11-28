@@ -21,7 +21,7 @@ threagile-monitoring
 
 Uw code op uw eigen systeem operationeel krijgen.
 
-**Opmerking**: Make sure you fulfill the [vereisten](./200/README.md).
+**Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
 
 1.  **Installatieproces:**
 
@@ -71,7 +71,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
-2.  Software dependencies
+2.  Software-afhankelijkheden
 
 3.  Nieuwste releases
 
@@ -79,7 +79,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
 5.  Bouwen en testen:
 
-    Om uw code samen te stellen, gebruikt u:
+    To build your code, use:
 
     ```bash
     $ cd threagile-monitoring
@@ -157,7 +157,7 @@ pip install threagile-monitoring
 
 ## Bouwen
 
--   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py` file so the version can be used at runtime
+-   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
@@ -173,7 +173,7 @@ Zien[README.md](./100/README.md)
 
 ## 200 - Vereisten
 
-Zien[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 - Onze applicatie bouwen
 
