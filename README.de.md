@@ -114,7 +114,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     Navigieren Sie dann zu`http://127.0.0.1:5000/`in Ihrem Webbrowser.
 
-    To run tests, use:
+    Um Tests auszuführen, verwenden Sie:
 
     ```bash
     $ cd threagile-monitoring
