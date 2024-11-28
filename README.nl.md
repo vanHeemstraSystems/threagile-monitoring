@@ -54,7 +54,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
     Dit zal - in de afzonderlijke terminalsessie (d.w.z.`background`) - laad voortdurend de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u door kunt gaan met het aanbrengen van die wijzigingen - in de initiële terminalsessie (d.w.z.`foreground`). Je hoeft dus niet na elke bewerking je bronnen opnieuw op te bouwen, dit gebeurt automatisch!
 
-    Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5).
+    To see the changes just save and reload your navigator (usually with F5). 
 
     Zorg ervoor dat u uw webpagina als volgt uitvoert tijdens het testen met backend-functies:
     1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
@@ -171,7 +171,7 @@ pip install threagile-monitoring
 
 Zien[README.md](./100/README.md)
 
-## 200 - Vereisten
+## 200 - Requirements
 
 Zien[README.md](./200/README.md)
 
