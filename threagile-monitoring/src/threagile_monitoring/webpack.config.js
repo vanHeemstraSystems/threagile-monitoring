@@ -16,6 +16,7 @@ const config = {
     ]
   },
   devServer: {
+    allowedHosts: 'all',
     static: {
       directory: './static/js'
     }
