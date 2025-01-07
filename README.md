@@ -56,7 +56,7 @@ Getting your code up and running on your own system.
     If you are still developing your website, in a **separate terminal session**, after having followed the above installation process, do this:
     1) ```$ hatch shell```
     2) ```(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring```
-    3) ```(threagile-monitoring) $ pip install -r ../../requirements.txt``` # When you started a new hatch shell later, it was a fresh environment needing the requirements again
+    3) ```(threagile-monitoring) $ pip install -r ../../requirements.txt``` # When you started a new hatch shell after exiting, it is a fresh environment needing the requirements again
     4) ```(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm```
     5) ```(threagile-monitoring) $ npm install```
     6) ```(threagile-monitoring) $ npm run watch```
