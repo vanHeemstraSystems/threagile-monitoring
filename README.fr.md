@@ -51,8 +51,8 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Cela créera le`app.js`fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
 
-    **Développement avec webpack :**Si vous développez encore votre site Web, dans un**separate terminal session**, après avoir suivi le processus d'installation ci-dessus, faites ceci :
-    1)`$ cd threagile-monitoring`2)`$ hatch shell`3)`(threagile-monitoring) $ cd src/threagile_monitoring`4)`(threagile-monitoring) $ npm install`5)`(threagile-monitoring) $ npm run watch`
+    **Développement avec webpack :**Si vous développez encore votre site Web, dans un**session terminale séparée**, après avoir suivi le processus d'installation ci-dessus, faites ceci :
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring`3)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`4)`(threagile-monitoring) $ npm install`5)`(threagile-monitoring) $ npm run watch`
 
     Cela sera - dans la session de terminal séparée (c'est-à-dire`background`) - chargez constamment les modifications que vous apportez dans les fichiers appropriés, tandis que vous pouvez continuer à apporter ces modifications - lors de la session initiale du terminal (c'est-à-dire`foreground`). Vous n’avez donc pas besoin de construire vos sources après chaque édition, cela est pris en charge automatiquement !
 
@@ -79,7 +79,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 4.  Références API
 
-5.  Construire et tester :
+5.  Build and Test:
 
     Pour construire votre code, utilisez :
 
@@ -169,7 +169,7 @@ pip install threagile-monitoring
 
 `threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 
@@ -177,7 +177,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Créer notre application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 
