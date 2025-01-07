@@ -54,9 +54,9 @@ Getting your code up and running on your own system.
 
     **Development with webpack:**
     If you are still developing your website, in a **separate terminal session**, after having followed the above installation process, do this:
-    1) ```$ cd threagile-monitoring```
-    2) ```$ hatch shell```
-    3) ```(threagile-monitoring) $ cd src/threagile_monitoring```
+    1) ```$ hatch shell```
+    2) ```(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring```
+    3) ```(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm```
     4) ```(threagile-monitoring) $ npm install```
     5) ```(threagile-monitoring) $ npm run watch```
 
