@@ -49,7 +49,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     Alle instellingen zouden nu klaar moeten zijn, dus alles wat je hoeft te doen:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
 
-    Hierdoor ontstaat de`app.js`bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
+    Hierdoor ontstaat de`app.js` file - which contains all components - in `/src/threagile_monitoring/static/js/`.
 
     **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, in a**afzonderlijke terminalsessie**, nadat u het bovenstaande installatieproces heeft gevolgd, doet u het volgende:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring`3)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`4)`(threagile-monitoring) $ npm install`5)`(threagile-monitoring) $ npm run watch`
@@ -179,7 +179,7 @@ Zien[README.md](./200/README.md)
 
 ## 300 - Onze applicatie bouwen
 
-See [README.md](./300/README.md)
+Zien[README.md](./300/README.md)
 
 ## 400 - Conclusie
 
