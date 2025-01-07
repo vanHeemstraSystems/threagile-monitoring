@@ -52,7 +52,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     Hierdoor ontstaat de`app.js`bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
 
     **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, in a**afzonderlijke terminalsessie**, nadat u het bovenstaande installatieproces heeft gevolgd, doet u het volgende:
-    1)`$ cd threagile-monitoring`2)`$ hatch shell`3)`(threagile-monitoring) $ cd src/threagile_monitoring`4)`(threagile-monitoring) $ npm install`5)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring`3)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`4)`(threagile-monitoring) $ npm install`5)`(threagile-monitoring) $ npm run watch`
 
     Dit zal - in de afzonderlijke terminalsessie (d.w.z.`background`) - laad voortdurend de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u door kunt gaan met het aanbrengen van die wijzigingen - in de initiële terminalsessie (d.w.z.`foreground`). Je hoeft dus niet na elke bewerking je bronnen opnieuw op te bouwen, dit gebeurt automatisch!
 
@@ -150,7 +150,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
@@ -179,8 +179,8 @@ Zien[README.md](./200/README.md)
 
 ## 300 - Onze applicatie bouwen
 
-Zien[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - Conclusie
 
 Zien[README.md](./400/README.md)
