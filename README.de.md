@@ -52,7 +52,8 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     Dadurch wird das erstellt`app.js`Datei - die alle Komponenten enthält - in`/src/threagile_monitoring/static/js/`.
 
     **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, in a**separate Terminalsitzung**, nachdem Sie den oben genannten Installationsprozess befolgt haben, gehen Sie wie folgt vor:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring`3)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`4)`(threagile-monitoring) $ npm install`5)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt`# Wenn Sie nach dem Beenden eine neue Hatch-Shell gestartet haben, handelt es sich um eine neue Umgebung, die erneut die Anforderungen benötigt
+    4)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(threagile-monitoring) $ npm install`6)`(threagile-monitoring) $ npm run watch`
 
     Dies wird - in der separaten Terminalsitzung (d. h.`background`) – lädt die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien, während Sie diese Änderungen weiterhin vornehmen können – in der ersten Terminalsitzung (d. h.`foreground`). Sie müssen Ihre Quellen also nicht nach jeder Bearbeitung neu erstellen, dies geschieht automatisch!
 
