@@ -23,7 +23,7 @@
 
 **टिप्पणी**: सुनिश्चित करें कि आप इसे पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
-1.  **स्थापना प्रक्रिया:**
+1.  **Installation process:**
 
     ```bash
     $ cd threagile-monitoring
