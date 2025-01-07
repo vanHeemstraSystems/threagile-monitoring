@@ -1,4 +1,4 @@
-مراقبة التهديد
+threagile-monitoring
 
 # الرصد التهديدي
 
@@ -23,7 +23,7 @@
 
 **ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
 
-1.  **Installation process:**
+1.  **عملية التثبيت:**
 
     ```bash
     $ cd threagile-monitoring
