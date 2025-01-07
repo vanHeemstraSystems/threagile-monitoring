@@ -79,7 +79,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 4.  Références API
 
-5.  Build and Test:
+5.  Construire et tester :
 
     Pour construire votre code, utilisez :
 
