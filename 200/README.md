@@ -17,6 +17,15 @@ We use [pipx](https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx) inst
    ```bash
    $ brew install pipx
    $ pipx ensurepath
+   $ pipx completions # Optional
+   $ pipx install argcomplete # Optional
+   $ pipx ensurepath # Again
+   # Then add these lines to your ~/.zshrc file:
+   # # Enable zsh completions
+   # autoload -U compinit && compinit
+   # # Enable pipx completions
+   # eval "$(register-python-argcomplete pipx)"
+   $ source ~/.zshrc # Optional
    $ sudo pipx ensurepath --global # optional to allow pipx actions with --global argument
    ```
 
