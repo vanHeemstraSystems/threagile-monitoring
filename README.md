@@ -56,9 +56,10 @@ Getting your code up and running on your own system.
     If you are still developing your website, in a **separate terminal session**, after having followed the above installation process, do this:
     1) ```$ hatch shell```
     2) ```(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring```
-    3) ```(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm```
-    4) ```(threagile-monitoring) $ npm install```
-    5) ```(threagile-monitoring) $ npm run watch```
+    3) ```(threagile-monitoring) $ pip install -r ../../requirements.txt``` # When you started a new hatch shell later, it was a fresh environment needing the requirements again
+    4) ```(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm```
+    5) ```(threagile-monitoring) $ npm install```
+    6) ```(threagile-monitoring) $ npm run watch```
 
     This will - in the separate terminal session (i.e. ```background```) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. ```foreground```). So you do not have to build your sources after each edit, it is taken care of automatically!
 
