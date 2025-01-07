@@ -35,8 +35,10 @@ Getting your code up and running on your own system.
     (threagile-monitoring) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (threagile-monitoring) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
     (threagile-monitoring) $ pip install -r requirements.txt # pipx won't do this
-    (threagile-monitoring) $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
+    $ cd .. # go one directory up
+    $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
+    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
     **Package your site with webpack:**
@@ -52,10 +54,11 @@ Getting your code up and running on your own system.
 
     **Development with webpack:**
     If you are still developing your website, in a **separate terminal session**, after having followed the above installation process, do this:
-    1) ```$ hatch shell```
-    2) ```(threagile-monitoring) $ cd src/threagile_monitoring```
-    3) ```(threagile-monitoring) $ npm install```
-    4) ```(threagile-monitoring) $ npm run watch```
+    1) ```$ cd threagile-monitoring```
+    2) ```$ hatch shell```
+    3) ```(threagile-monitoring) $ cd src/threagile_monitoring```
+    4) ```(threagile-monitoring) $ npm install```
+    5) ```(threagile-monitoring) $ npm run watch```
 
     This will - in the separate terminal session (i.e. ```background```) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. ```foreground```). So you do not have to build your sources after each edit, it is taken care of automatically!
 

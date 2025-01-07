@@ -1,8 +1,109 @@
+# threagile-monitoring/pyproject.toml
 [build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
+requires = ["hatchling", "setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "hatchling.build"
+
+[tool.setuptools_scm]
+write_to = "src/threagile_monitoring/_version.py"
+version_scheme = "post-release"
+local_scheme = "node-and-timestamp"
 
 [project]
-name = "YOUR_PROJECT_NAME"
-authors = [{name = "Willem van Heemstra", email = "wvanheemstra@icloud.com"}]
-dynamic = ["version", "description"]
+name = "threagile-monitoring"
+dynamic = ["version"]
+description = 'Threagile Monitoring application'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = [
+    "hatch",
+  "blockly",
+  "threagile"
+]
+authors = [
+  { name = "Willem van Heemstra", email = "wvanheemstra@icloud.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",  
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+]
+
+[project.urls]
+Documentation = "https://github.com/vanHeemstraSystems/threagile-monitoring#readme"
+Donate = "https://github.com/sponsors/vanHeemstraSystems"
+History = "https://github.com/vanHeemstraSystems/threagile-monitoring/blob/master/HISTORY.md"
+Issues = "https://github.com/vanHeemstraSystems/threagile-monitoring/issues"
+Source = "https://github.com/vanHeemstraSystems/threagile-monitoring"
+
+[tool.hatch.version]
+path = "src/threagile_monitoring/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "flask"
+]
+[tool.hatch.envs.default.scripts]
+app = "python src/threagile_monitoring/app.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/threagile_monitoring tests}"
+
+[tool.hatch.envs.test]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+  "pytest-watcher"
+]
+
+[tool.hatch.envs.test.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.10", "3.11"]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.12"]
+
+[tool.coverage.run]
+source_pkgs = ["threagile_monitoring", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/threagile_monitoring/__about__.py",
+]
+
+[tool.coverage.paths]
+threagile_monitoring = ["src/threagile_monitoring", "*/threagile-monitoring/src/threagile_monitoring"]
+tests = ["tests", "*/threagile-monitoring/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
