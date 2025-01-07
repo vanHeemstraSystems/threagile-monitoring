@@ -23,7 +23,7 @@
 
 **ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
 
-1.  **عملية التثبيت:**
+1.  **Installation process:**
 
     ```bash
     $ cd threagile-monitoring
@@ -52,7 +52,7 @@
     سيؤدي هذا إلى إنشاء`app.js`الملف - الذي يحتوي على جميع المكونات - في`/src/threagile_monitoring/static/js/`.
 
     **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تقوم بتطوير موقع الويب الخاص بك، في**جلسة طرفية منفصلة**، بعد اتباع عملية التثبيت المذكورة أعلاه، قم بما يلي:
-    1)`$ cd threagile-monitoring`2)`$ hatch shell`3)`(threagile-monitoring) $ cd src/threagile_monitoring`4)`(threagile-monitoring) $ npm install`5)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring`3)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`4)`(threagile-monitoring) $ npm install`5)`(threagile-monitoring) $ npm run watch`
 
     سيؤدي هذا - في الجلسة الطرفية المنفصلة (أي`background`) - قم بتحميل التغييرات التي تجريها باستمرار على الملفات المناسبة، بينما يمكنك الاستمرار في إجراء هذه التغييرات - في الجلسة الطرفية الأولية (أي:`foreground`). لذلك لا يتوجب عليك بناء مصادرك بعد كل تعديل، بل يتم الاهتمام بها تلقائيًا!
 
@@ -159,7 +159,7 @@ pip install threagile-monitoring
 
 ## يبني
 
--   جميع أهداف البناء تستخدم[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
+-   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
