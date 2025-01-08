@@ -19,7 +19,7 @@ monitoreo-threagil
 
 **Resumen ejecutivo**
 
-Cómo poner en marcha su código en su propio sistema.
+Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -44,8 +44,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **Empaqueta tu sitio con webpack:**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This package folder is listed in `.gitignore`para evitar que se comprometa con git.
+    **Empaqueta tu sitio con webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para su uso, deberá empaquetar la aplicación con webpack. Esta carpeta de paquete aparece en`.gitignore`para evitar que se comprometa con git.
 
     Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer:
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
