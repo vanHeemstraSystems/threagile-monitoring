@@ -26,7 +26,7 @@
 1.  **安裝過程：**
 
     ```bash
-    $ cd threagile-monitoring
+    $ cd threagile-monitoring # start at the root of the repository, where the pyproject.toml file is kept
     $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -44,7 +44,7 @@
     $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包應用程式。該包資料夾列於`.gitignore`以避免它被提交給 git。
+    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包該應用程式。該包資料夾列於`.gitignore`以避免它被提交給 git。
 
     現在所有設定都應該準備就緒，因此您需要做的就是：
     1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
@@ -59,8 +59,8 @@
 
     要查看更改，只需儲存並重新載入導航器（通常使用 F5）。
 
-    Make sure, to run your webpage when testing with backend functions, as follows:
-    1) `(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
+    確保在使用後端功能進行測試時運行您的網頁，如下所示：
+    1）`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
 
     **測試**
 
@@ -141,7 +141,7 @@
 -   [版本來源](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
--   [License](#license)
+-   [執照](#license)
 
 ## 安裝
 
@@ -163,7 +163,7 @@ pip install threagile-monitoring
 -   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
-    -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
+    -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel) to distribute binary wheels for every platform
     -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
 
 ## 執照
