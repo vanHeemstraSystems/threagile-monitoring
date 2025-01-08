@@ -37,7 +37,14 @@ We use [pipx](https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx) inst
 
 2. Install python with pipx:
    ```bash
-   $ pipx install python
+   $ python3 -m pipx install --user pipx
+   $ pipx install python # optional
+   ```
+
+3. Check by looking at the installed versions:
+   ```bash
+   $ pip --version
+   $ pipx --version
    ```
 
 **Note**: In VS Code, make sure you have selected the correct Python interpreter that corresponds to the virtual environment where ```flask_sqlalchemy``` is installed:
