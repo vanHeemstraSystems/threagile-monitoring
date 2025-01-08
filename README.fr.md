@@ -1,4 +1,4 @@
-surveillance des menaces
+surveillance des risques
 
 # Surveillance menaçante
 
@@ -26,7 +26,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 1.  **Processus d'installation :**
 
     ```bash
-    $ cd threagile-monitoring
+    $ cd threagile-monitoring # start at the root of the repository, where the pyproject.toml file is kept
     $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -156,7 +156,7 @@ pip install threagile-monitoring
 ## Environnements
 
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Le`test`la matrice utilise le[conteneurs à écoutille](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
+-   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
 ## Construire
 
