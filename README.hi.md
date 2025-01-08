@@ -17,7 +17,7 @@
 -   [प्रलेखन](./DOCUMENTATION.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
-**Executive Summary**
+**कार्यकारी सारांश**
 
 अपना कोड तैयार करना और अपने सिस्टम पर चलाना।
 
@@ -172,7 +172,7 @@ pip install threagile-monitoring
 
 ## 100 - परिचय
 
-देखना[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - आवश्यकताएँ
 
