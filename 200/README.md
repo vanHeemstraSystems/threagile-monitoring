@@ -40,6 +40,16 @@ We use [pipx](https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx) inst
    $ pipx install python
    ```
 
+**Note**: In VS Code, make sure you have selected the correct Python interpreter that corresponds to the virtual environment where ```flask_sqlalchemy``` is installed:
+
+1. Press ```Ctrl+Shift+P``` (or ```Cmd+Shift+P``` on macOS) to open the Command Palette.
+
+2. Type ```Python: Select Interpreter``` and select it.
+
+3. Choose the interpreter associated with your virtual environment (```venv```).
+
+This ensures that VS Code uses the correct Python environment where your packages, including ```flask_sqlalchemy```, are installed.
+
 We use [hatch](https://hatch.pypa.io/) for project management. 
 
 1. Install hatch:
