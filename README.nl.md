@@ -17,7 +17,7 @@ threagile-monitoring
 -   [Documentatie](./DOCUMENTATION.md)
 -   [Telemetrie](./TELEMETRY.md)
 
-**Samenvatting**
+**Executive Summary**
 
 Uw code op uw eigen systeem operationeel krijgen.
 
@@ -26,7 +26,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 1.  **Installatieproces:**
 
     ```bash
-    $ cd threagile-monitoring
+    $ cd threagile-monitoring # start at the root of the repository, where the pyproject.toml file is kept
     $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -151,7 +151,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
