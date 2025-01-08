@@ -44,7 +44,7 @@
     $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
-    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 來打包應用程式。該包資料夾列於`.gitignore`以避免它被提交給 git。
+    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包該應用程式。該包資料夾列於`.gitignore`以避免它被提交給 git。
 
     現在所有設定都應該準備就緒，因此您需要做的就是：
     1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
@@ -143,7 +143,7 @@
 -   [建造](#build)
 -   [執照](#license)
 
-## 安裝
+## Installation
 
 ```console
 pip install threagile-monitoring
@@ -168,7 +168,7 @@ pip install threagile-monitoring
 
 ## 執照
 
-`threagile-monitoring`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
+`threagile-monitoring`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html) license.
 
 ## 100 - 簡介
 
