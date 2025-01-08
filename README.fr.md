@@ -68,7 +68,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm test`5)`(threagile-monitoring) $ npm test -- --coverage`
 
-    **Courir:**
+    **Run:**
 
     Si vous ne développez pas, exécutez l'application (backend et frontend simultanément) de cette façon :
 
@@ -178,7 +178,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Créer notre application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 
