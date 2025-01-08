@@ -23,7 +23,7 @@ Getting your code up and running on your own system.
 **Note**: Make sure you fulfill the [requirements](./200/README.md).
 1.	**Installation process:** 
     ```bash 
-    $ cd threagile-monitoring
+    $ cd threagile-monitoring # start at the root of the repository, where the pyproject.toml file is kept
     $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
