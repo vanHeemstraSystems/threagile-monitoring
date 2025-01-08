@@ -49,6 +49,7 @@ Source = "https://github.com/vanHeemstraSystems/threagile-monitoring"
 path = "src/threagile_monitoring/__about__.py"
 
 [tool.hatch.envs.default]
+path = ".hatch"
 dependencies = [
   "coverage[toml]>=6.5",
   "pytest",
