@@ -17,7 +17,7 @@ threagile-monitoring
 -   [Documentatie](./DOCUMENTATION.md)
 -   [Telemetrie](./TELEMETRY.md)
 
-**Executive Summary**
+**Samenvatting**
 
 Uw code op uw eigen systeem operationeel krijgen.
 
