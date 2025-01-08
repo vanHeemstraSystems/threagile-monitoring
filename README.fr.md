@@ -26,7 +26,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 1.  **Processus d'installation :**
 
     ```bash
-    $ cd threagile-monitoring # start at the root of the repository, where the pyproject.toml file is kept
+    $ cd threagile-monitoring # start at directory of the repository where the pyproject.toml file is kept.
     $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -178,7 +178,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Construire notre application
+## 300 - Créer notre application
 
 Voir[README.md](./300/README.md)
 
