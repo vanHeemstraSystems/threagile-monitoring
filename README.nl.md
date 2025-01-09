@@ -56,19 +56,22 @@ Uw code op uw eigen systeem operationeel krijgen.
     Hierdoor ontstaat de`app.js`bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
 
     **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, in a**afzonderlijke terminalsessie**, nadat u het bovenstaande installatieproces heeft gevolgd, doet u het volgende:
-    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`3)`(.hatch) $ npm install`4)`(.hatch) $ npm run watch`
+    1)`cd ../`# ga naar de hoofdmap van de repository
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     Dit zal - in de afzonderlijke terminalsessie (d.w.z.`background`) - laad voortdurend de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u door kunt gaan met het aanbrengen van die wijzigingen - in de initiële terminalsessie (d.w.z.`foreground`). Je hoeft dus niet na elke bewerking je bronnen opnieuw op te bouwen, dit gebeurt automatisch!
 
     Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5).
 
     Zorg ervoor dat u uw webpagina als volgt uitvoert tijdens het testen met backend-functies:
-    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ python app.py`
+    1)`cd ../`# ga naar de hoofdmap van de repository
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **Test**
 
     Test de applicatie (frontend) op deze manier:
-    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm test`4)`(.hatch) $ npm test -- --coverage`
+    1)`cd ../`# ga naar de hoofdmap van de repository
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Loop:**
 
@@ -178,7 +181,7 @@ Zien[README.md](./100/README.md)
 
 ## 200 - Vereisten
 
-See [README.md](./200/README.md)
+Zien[README.md](./200/README.md)
 
 ## 300 - Onze applicatie bouwen
 
