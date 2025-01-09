@@ -42,28 +42,25 @@
     # ...
     (.hatch) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (.hatch) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    (.hatch) $ pip install -r requirements.txt # pipx won't do this
-    (.hatch) $ exit # optional, type `exit` to leave the environment
-    $ cd .. # go one directory up
-    $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
+    (.hatch) $ pip install -r ../../pip install requirements.txt # pipx won't do this
+    (.hatch) $ git tag # check if you already have a verion tagged
+    (.hatch) $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **使用 webpack 打包您的網站：**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This package folder is listed in `.gitignore`以避免它被提交給 git。
+    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包應用程式。該包資料夾列於`.gitignore`以避免它被提交給 git。
 
     現在所有設定都應該準備就緒，因此您需要做的就是：
-    1）`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ npm install`4)`(.hatch) $ npm run build`
+    1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
     這將創建`app.js`文件 - 包含所有組件 - 在`/src/threagile_monitoring/static/js/`.
 
     **使用webpack開發：**如果您仍在開發您的網站，**單獨的終端會話**，按照上述安裝程序後，執行以下操作：
-    1）`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ pip install -r ../../requirements.txt`# 當您退出前一個孵化外殼後啟動新的孵化外殼時，這是一個再次需要滿足要求的新環境
-    4）`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
+    1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`3)`(.hatch) $ npm install`4)`(.hatch) $ npm run watch`
 
     這將 - 在單獨的終端會話中（即`background`) - 不斷地將您所做的更改載入到適當的文件中，同時您可以在初始終端會話中繼續進行這些更改（即`foreground`）。因此，您不必在每次編輯後建立原始程式碼，它會自動處理！
 
-    要查看更改，只需儲存並重新載入導航器（通常使用 F5）。
+    To see the changes just save and reload your navigator (usually with F5). 
 
     確保在使用後端功能進行測試時運行您的網頁，如下所示：
     1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ python app.py`
@@ -71,8 +68,7 @@
     **測試**
 
     以這種方式測試應用程式（前端）：
-
-    1)`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ npm install`4)`(.hatch) $ npm test`5)`(.hatch) $ npm test -- --coverage`
+    1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm test`4)`(.hatch) $ npm test -- --coverage`
 
     **跑步：**
 
@@ -101,7 +97,7 @@
 
     要運行該應用程序，請使用：
 
-    Linux：
+    Linux:
 
     ```bash
     $ export SECRET_KEY="secret"
@@ -121,7 +117,7 @@
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    然後，導航至`http://127.0.0.1:5000/`在您的網頁瀏覽器中。
+    然後，導航至`http://127.0.0.1:5000/` in your web browser.
 
     若要執行測試，請使用：
 
@@ -146,7 +142,7 @@
 -   [安裝](#installation)
 -   [版本來源](#version-source)
 -   [環境](#environments)
--   [建造](#build)
+-   [Build](#build)
 -   [執照](#license)
 
 ## 安裝
