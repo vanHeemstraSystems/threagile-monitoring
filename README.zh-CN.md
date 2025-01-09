@@ -12,7 +12,7 @@
 
 > 用于创建仪表板的 Web 应用程序[威胁型](https://threagile.io).
 
--   [Glossary](./GLOSSARY.md)
+-   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 -   [遥测](./TELEMETRY.md)
@@ -33,42 +33,42 @@
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (threagile-monitoring) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
+    (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
     # ...
-    (threagile-monitoring) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
-    (threagile-monitoring) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    (threagile-monitoring) $ pip install -r requirements.txt # pipx won't do this
-    (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
+    (.hatch) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
+    (.hatch) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    (.hatch) $ pip install -r requirements.txt # pipx won't do this
+    (.hatch) $ exit # optional, type `exit` to leave the environment
     $ cd .. # go one directory up
     $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
-    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 打包该应用程序。该包文件夹列于`.gitignore`以避免它被提交给 git。
+    **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 来打包应用程序。该包文件夹列于`.gitignore`以避免它被提交给 git。
 
     现在所有设置都应该准备就绪，因此您需要做的就是：
-    1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    1）`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ npm install`4)`(.hatch) $ npm run build`
 
     这将创建`app.js`文件 - 包含所有组件 - 在`/src/threagile_monitoring/static/js/`.
 
     **使用webpack开发：**如果您仍在开发您的网站，**单独的终端会话**，按照上述安装过程后，执行以下操作：
-    1）`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt`# 当您退出前一个孵化外壳后启动新的孵化外壳时，这是一个再次需要满足要求的新环境
-    4）`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(threagile-monitoring) $ npm install`6)`(threagile-monitoring) $ npm run watch`
+    1）`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ pip install -r ../../requirements.txt`# 当您退出前一个孵化外壳后启动新的孵化外壳时，这是一个再次需要满足要求的新环境
+    4）`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     这将 - 在单独的终端会话中（即`background`) - 不断地将您所做的更改加载到适当的文件中，同时您可以在初始终端会话中继续进行这些更改（即`foreground`）。因此，您不必在每次编辑后构建源代码，它会自动处理！
 
     要查看更改，只需保存并重新加载导航器（通常使用 F5）。
 
     确保在使用后端功能进行测试时运行您的网页，如下所示：
-    1）`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
+    1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ python app.py`
 
     **测试**
 
     以这种方式测试应用程序（前端）：
 
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm test`5)`(threagile-monitoring) $ npm test -- --coverage`
+    1)`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ npm install`4)`(.hatch) $ npm test`5)`(.hatch) $ npm test -- --coverage`
 
     **跑步：**
 
