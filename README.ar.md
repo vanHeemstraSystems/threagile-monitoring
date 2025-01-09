@@ -42,23 +42,22 @@
     # ...
     (.hatch) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (.hatch) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    (.hatch) $ pip install -r requirements.txt # pipx won't do this
-    (.hatch) $ exit # optional, type `exit` to leave the environment
-    $ cd .. # go one directory up
-    $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
+    (.hatch) $ pip install -r ../../pip install requirements.txt # pipx won't do this
+    (.hatch) $ git tag # check if you already have a verion tagged
+    (.hatch) $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
     **حزم موقعك باستخدام حزمة الويب:**بمجرد أن يكون لديك موقع ويب جيد بما يكفي لاستخدامه، يجب عليك حزم التطبيق مع حزمة الويب. تم إدراج مجلد الحزمة هذا في`.gitignore`لتجنب ذلك يجب الالتزام بـ git.
 
     يجب أن تكون جميع الإعدادات جاهزة الآن، لذا كل ما عليك فعله:
-    1)`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ npm install`4)`(.hatch) $ npm run build`
+    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
     سيؤدي هذا إلى إنشاء`app.js`الملف - الذي يحتوي على جميع المكونات - في`/src/threagile_monitoring/static/js/`.
 
     **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تقوم بتطوير موقع الويب الخاص بك، في**جلسة طرفية منفصلة**، بعد اتباع عملية التثبيت المذكورة أعلاه، قم بما يلي:
-    1)`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ pip install -r ../../requirements.txt`# عند بدء تشغيل غلاف فتحة جديد بعد الخروج من غلاف فتحة سابق، فهذه بيئة جديدة تحتاج إلى المتطلبات مرة أخرى
-    4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
+    1)`(.hatch) $ cd src/threagile_monitoring`
+    2) `(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`3)`(.hatch) $ npm install`4)`(.hatch) $ npm run watch`
 
     سيؤدي هذا - في الجلسة الطرفية المنفصلة (أي`background`) - قم بتحميل التغييرات التي تجريها باستمرار على الملفات المناسبة، بينما يمكنك الاستمرار في إجراء هذه التغييرات - في الجلسة الطرفية الأولية (أي.`foreground`). لذلك لا يتوجب عليك بناء مصادرك بعد كل تعديل، بل يتم الاهتمام بها تلقائيًا!
 
@@ -70,8 +69,8 @@
     **امتحان**
 
     اختبر التطبيق (الواجهة الأمامية) بهذه الطريقة:
-
-    1)`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ npm install`4)`(.hatch) $ npm test`5)`(.hatch) $ npm test -- --coverage`
+    1)`(.hatch) $ cd src/threagile_monitoring`
+    2) `(.hatch) $ npm install`3)`(.hatch) $ npm test`4)`(.hatch) $ npm test -- --coverage`
 
     **يجري:**
 
