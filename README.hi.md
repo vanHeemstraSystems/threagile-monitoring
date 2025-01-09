@@ -2,11 +2,11 @@
 
 # खतरनाक निगरानी
 
-|       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| CI/CD | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
-| पैकेट | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
-| मेटा  | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
+|           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| सीआई/सीडी | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
+| पैकेट     | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
+| मेटा      | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
 
 * * *
 
@@ -17,16 +17,18 @@
 -   [प्रलेखन](./DOCUMENTATION.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 
-**Executive Summary**
+**कार्यकारी सारांश**
 
 अपना कोड तैयार करना और अपने सिस्टम पर चलाना।
 
-**टिप्पणी**: Make sure you fulfill the [आवश्यकताएं](./200/README.md).
+**टिप्पणी**: द`pyproject.toml`फ़ाइल रिपॉजिटरी के मूल में होनी चाहिए!
+
+**टिप्पणी**: सुनिश्चित करें कि आप इसे पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
 1.  **स्थापना प्रक्रिया:**
 
     ```bash
-    $ cd threagile-monitoring # start at directory of the repository where the pyproject.toml file is kept.
+    $ cd threagile-monitoring # start at sub-directory of the repository where the requirements.txt file is kept.
     $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -41,19 +43,21 @@
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     $ cd .. # go one directory up
     $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
-    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
     **अपनी साइट को वेबपैक के साथ पैकेज करें:**एक बार जब आपके पास एक ऐसी वेबसाइट हो जो आपके उपयोग के लिए पर्याप्त हो, तो आपको एप्लिकेशन को वेबपैक के साथ पैकेज करना होगा। यह पैकेज फ़ोल्डर सूचीबद्ध है`.gitignore`इससे बचने के लिए गिट के प्रति प्रतिबद्ध होना होगा।
 
     अब तक सारा सेटअप तैयार हो जाना चाहिए, इसलिए आपको बस इतना करना है:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`
+    3) `(threagile-monitoring) $ npm install`
+    4) `(threagile-monitoring) $ npm run build`
 
     यह बनायेगा`app.js`फ़ाइल - जिसमें सभी घटक शामिल हैं - in`/src/threagile_monitoring/static/js/`.
 
     **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, तो a**अलग टर्मिनल सत्र**, उपरोक्त स्थापना प्रक्रिया का पालन करने के बाद, यह करें:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt` # When you start a new hatch shell after exiting a previous hatch shell, it is a fresh environment needing the requirements again
-    4) `(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(threagile-monitoring) $ npm install`6)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt`# जब आप पिछले हैच शेल से बाहर निकलने के बाद एक नया हैच शेल शुरू करते हैं, तो यह एक ताज़ा वातावरण होता है जिसे फिर से आवश्यकताओं की आवश्यकता होती है
+    4)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(threagile-monitoring) $ npm install`6)`(threagile-monitoring) $ npm run watch`
 
     यह होगा - अलग टर्मिनल सत्र में (अर्थात्)`background`) - आपके द्वारा किए गए परिवर्तनों को उचित फ़ाइलों में लगातार लोड करें, जबकि आप उन परिवर्तनों को जारी रख सकते हैं - प्रारंभिक टर्मिनल सत्र में (यानी)`foreground`). इसलिए आपको प्रत्येक संपादन के बाद अपने स्रोत बनाने की ज़रूरत नहीं है, इसका स्वचालित रूप से ध्यान रखा जाता है!
 
@@ -89,7 +93,7 @@
     $ hatch build
     ```
 
-    To use AI for pull request reviews, use:
+    पुल अनुरोध समीक्षा के लिए AI का उपयोग करने के लिए, इसका उपयोग करें:
 
     <https://app.coderabbit.ai/dashboard>(उपयोग करता है`phpstan.neon`)
 
@@ -139,9 +143,9 @@
 
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
--   [Environments](#environments)
+-   [वातावरण](#environments)
 -   [निर्माण](#build)
--   [License](#license)
+-   [लाइसेंस](#license)
 
 ## इंस्टालेशन
 
