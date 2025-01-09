@@ -10,9 +10,9 @@ threagile-monitoring
 
 * * *
 
-> Een webapplicatie om dashboards voor te maken[Threagil](https://threagile.io).
+> Een webapplicatie om dashboards voor te maken[Threagile](https://threagile.io).
 
--   [Glossarium](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
 -   [Documentatie](./DOCUMENTATION.md)
 -   [Telemetrie](./TELEMETRY.md)
@@ -33,6 +33,9 @@ Uw code op uw eigen systeem operationeel krijgen.
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
+    (.hatch) $ cd .. # go one directory up to where pyproject.toml resides
+    (.hatch) $ pip install -e . # install the package in editable mode
+    (.hatch) $ cd threagile-monitoring # go back to the sub-directory of the repository where the requirements.txt file is kept.
     (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
@@ -51,7 +54,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     Alle instellingen zouden nu klaar moeten zijn, dus alles wat je hoeft te doen:
     1)`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ npm install`4)`(.hatch) $ npm run build`
 
-    This will create the `app.js`bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
+    Hierdoor ontstaat de`app.js`bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
 
     **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, in a**afzonderlijke terminalsessie**, nadat u het bovenstaande installatieproces heeft gevolgd, doet u het volgende:
     1)`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ pip install -r ../../requirements.txt`# Wanneer u een nieuwe hatchshell start nadat u een vorige hatchshell hebt verlaten, is het een nieuwe omgeving die opnieuw aan de vereisten moet voldoen
@@ -78,7 +81,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
 2.  Software-afhankelijkheden
 
-3.  Latest releases
+3.  Nieuwste releases
 
 4.  API-referenties
 
@@ -158,7 +161,7 @@ pip install threagile-monitoring
 ## Omgevingen
 
 -   Netjes gedefinieerd in een standalone[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   De`test`matrix maakt gebruik van de[luikcontainers](https://github.com/ofek/hatch-containers)plug-in om elke omgeving binnen Docker-containers uit te voeren; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub-workflow
+-   De`test`matrix maakt gebruik van de[luikcontainers](https://github.com/ofek/hatch-containers)plug-in om elke omgeving binnen Docker-containers uit te voeren; gebruik is te zien in de[test](.github/workflows/test.yml) GitHub workflow
 
 ## Bouwen
 
