@@ -19,7 +19,7 @@ monitoreo-threagil
 
 **Resumen ejecutivo**
 
-Cómo poner en marcha su código en su propio sistema.
+Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: El`pyproject.toml`¡El archivo debe estar en la raíz del repositorio!
 
@@ -33,42 +33,42 @@ Cómo poner en marcha su código en su propio sistema.
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (threagile-monitoring) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
+    (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
     # ...
-    (threagile-monitoring) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
-    (threagile-monitoring) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    (threagile-monitoring) $ pip install -r requirements.txt # pipx won't do this
-    (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
+    (.hatch) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
+    (.hatch) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    (.hatch) $ pip install -r requirements.txt # pipx won't do this
+    (.hatch) $ exit # optional, type `exit` to leave the environment
     $ cd .. # go one directory up
     $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
-    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
     **Empaqueta tu sitio con webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para su uso, deberá empaquetar la aplicación con webpack. Esta carpeta de paquete aparece en`.gitignore`para evitar que se comprometa con git.
 
     Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm run build`
+    1)`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ npm install`4)`(.hatch) $ npm run build`
 
     Esto creará el`app.js`archivo, que contiene todos los componentes, en`/src/threagile_monitoring/static/js/`.
 
     **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, en un**sesión terminal separada**, después de haber seguido el proceso de instalación anterior, haga esto:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt`# Cuando inicias un nuevo shell de hatch después de salir de un shell de hatch anterior, es un entorno nuevo que necesita los requisitos nuevamente
-    4)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(threagile-monitoring) $ npm install`6)`(threagile-monitoring) $ npm run watch`
+    1)`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ pip install -r ../../requirements.txt`# Cuando inicias un nuevo shell de hatch después de salir de un shell de hatch anterior, es un entorno nuevo que necesita los requisitos nuevamente
+    4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     Esto, en la sesión de terminal separada (es decir,`background`) - cargue constantemente los cambios que realice en los archivos apropiados, mientras puede continuar realizando esos cambios - en la sesión inicial del terminal (es decir,`foreground`). Así que no tienes que crear tus fuentes después de cada edición, ¡se encargan automáticamente!
 
     Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5).
 
     Asegúrese de ejecutar su página web cuando pruebe con funciones de backend, de la siguiente manera:
-    1)`(threagile-monitoring) $ cd src/threagile_monitoring`2)`(threagile-monitoring) $ python app.py`
+    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ python app.py`
 
     **Prueba**
 
     Pruebe la aplicación (frontend) de esta manera:
 
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ npm install`4)`(threagile-monitoring) $ npm test`5)`(threagile-monitoring) $ npm test -- --coverage`
+    1)`$ hatch shell`2)`(.hatch) $ cd src/threagile_monitoring`3)`(.hatch) $ npm install`4)`(.hatch) $ npm test`5)`(.hatch) $ npm test -- --coverage`
 
     **Correr:**
 
@@ -141,7 +141,7 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
 
 -   [Instalación](#installation)
 -   [Fuente de la versión](#version-source)
--   [Environments](#environments)
+-   [Ambientes](#environments)
 -   [Construir](#build)
 -   [Licencia](#license)
 
@@ -158,7 +158,7 @@ pip install threagile-monitoring
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
@@ -166,7 +166,7 @@ pip install threagile-monitoring
 -   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
-    -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
+    -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/) build target to build standalone distributions for every platform
 
 ## Licencia
 
