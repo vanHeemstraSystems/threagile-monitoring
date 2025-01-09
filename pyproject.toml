@@ -4,7 +4,7 @@ requires = ["hatchling", "setuptools>=45", "setuptools_scm[toml]>=6.2"]
 build-backend = "hatchling.build"
 
 [tool.setuptools_scm]
-write_to = "src/threagile_monitoring/__about__.py"
+write_to = "threagile-monitoring/src/threagile_monitoring/__about__.py"
 version_scheme = "post-release"
 local_scheme = "node-and-timestamp"
 

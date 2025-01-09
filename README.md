@@ -20,10 +20,12 @@ threagile-monitoring
 
 Getting your code up and running on your own system.
 
+**Note**: The ```pyproject.toml``` file should be in the root of the repository!
+
 **Note**: Make sure you fulfill the [requirements](./200/README.md).
 1.	**Installation process:** 
     ```bash 
-    $ cd threagile-monitoring # start at directory of the repository where the pyproject.toml file is kept.
+    $ cd threagile-monitoring # start at sub-directory of the repository where the requirements.txt file is kept.
     $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -38,7 +40,7 @@ Getting your code up and running on your own system.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     $ cd .. # go one directory up
     $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
-    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
     **Package your site with webpack:**
@@ -55,7 +57,7 @@ Getting your code up and running on your own system.
     **Development with webpack:**
     If you are still developing your website, in a **separate terminal session**, after having followed the above installation process, do this:
     1) ```$ hatch shell```
-    2) ```(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring```
+    2) ```(threagile-monitoring) $ cd src/threagile_monitoring```
     3) ```(threagile-monitoring) $ pip install -r ../../requirements.txt``` # When you start a new hatch shell after exiting a previous hatch shell, it is a fresh environment needing the requirements again
     4) ```(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm```
     5) ```(threagile-monitoring) $ npm install```
