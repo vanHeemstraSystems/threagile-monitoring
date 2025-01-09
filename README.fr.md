@@ -21,12 +21,14 @@ surveillance des risques
 
 Faire en sorte que votre code soit opérationnel sur votre propre système.
 
+**Note**: Le`pyproject.toml`le fichier doit être à la racine du référentiel !
+
 **Note**: Assurez-vous de remplir les[exigences](./200/README.md).
 
 1.  **Processus d'installation :**
 
     ```bash
-    $ cd threagile-monitoring # start at directory of the repository where the pyproject.toml file is kept.
+    $ cd threagile-monitoring # start at sub-directory of the repository where the requirements.txt file is kept.
     $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -41,7 +43,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     $ cd .. # go one directory up
     $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
-    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
     **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
@@ -51,8 +53,8 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Cela créera le`app.js`fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
 
-    **Développement avec webpack :**Si vous développez encore votre site Web, dans un**session terminale séparée**, after having followed the above installation process, do this:
-    1) `$ hatch shell`2)`(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt`# Lorsque vous démarrez un nouveau shell de hachure après avoir quitté un shell de hachure précédent, il s'agit d'un nouvel environnement nécessitant à nouveau les exigences
+    **Développement avec webpack :**Si vous développez encore votre site Web, dans un**session terminale séparée**, après avoir suivi le processus d'installation ci-dessus, faites ceci :
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt`# Lorsque vous démarrez un nouveau shell de hachure après avoir quitté un shell de hachure précédent, il s'agit d'un nouvel environnement nécessitant à nouveau les exigences
     4)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(threagile-monitoring) $ npm install`6)`(threagile-monitoring) $ npm run watch`
 
     Cela sera - dans la session de terminal séparée (c'est-à-dire`background`) - chargez constamment les modifications que vous apportez dans les fichiers appropriés, tandis que vous pouvez continuer à apporter ces modifications - lors de la session initiale du terminal (c'est-à-dire`foreground`). Vous n’avez donc pas besoin de construire vos sources après chaque édition, cela est pris en charge automatiquement !
@@ -164,7 +166,7 @@ pip install threagile-monitoring
 -   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
 -   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
     -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
-    -   use the [application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
+    -   utiliser le[application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
 
 ## Licence
 
@@ -172,7 +174,7 @@ pip install threagile-monitoring
 
 ## 100 - Introduction
 
-See [README.md](./100/README.md)
+Voir[README.md](./100/README.md)
 
 ## 200 - Exigences
 
