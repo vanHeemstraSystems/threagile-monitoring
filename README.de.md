@@ -21,7 +21,7 @@ Threagile-Überwachung
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
-**Notiz**: Der`pyproject.toml`Die Datei sollte sich im Stammverzeichnis des Repositorys befinden!
+**Notiz**: The `pyproject.toml`Die Datei sollte sich im Stammverzeichnis des Repositorys befinden!
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
@@ -56,19 +56,22 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     Dadurch wird das erstellt`app.js`Datei - die alle Komponenten enthält - in`/src/threagile_monitoring/static/js/`.
 
     **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, in a**separate Terminalsitzung**, nachdem Sie den oben genannten Installationsprozess befolgt haben, gehen Sie wie folgt vor:
-    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`3)`(.hatch) $ npm install`4)`(.hatch) $ npm run watch`
+    1)`cd ../`# Gehen Sie zum Stammverzeichnis des Repositorys
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     Dies wird - in der separaten Terminalsitzung (d. h.`background`) – lädt die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien, während Sie diese Änderungen weiterhin vornehmen können – in der ersten Terminalsitzung (d. h.`foreground`). Sie müssen Ihre Quellen also nicht nach jeder Bearbeitung neu erstellen, dies geschieht automatisch!
 
     Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5).
 
     Stellen Sie sicher, dass Sie Ihre Webseite beim Testen mit Backend-Funktionen wie folgt ausführen:
-    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ python app.py`
+    1)`cd ../`# Gehen Sie zum Stammverzeichnis des Repositorys
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **Prüfen**
 
     Testen Sie die Anwendung (Frontend) auf diese Weise:
-    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm test`4)`(.hatch) $ npm test -- --coverage`
+    1)`cd ../`# Gehen Sie zum Stammverzeichnis des Repositorys
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Laufen:**
 
