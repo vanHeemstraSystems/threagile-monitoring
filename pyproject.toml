@@ -4,7 +4,7 @@ requires = ["hatchling", "setuptools>=45", "setuptools_scm[toml]>=6.2"]
 build-backend = "hatchling.build"
 
 [tool.setuptools_scm]
-write_to = "threagile-monitoring/src/threagile_monitoring/__about__.py"
+write_to = "src/threagile_monitoring/_version.py"
 version_scheme = "post-release"
 local_scheme = "node-and-timestamp"
 
@@ -46,7 +46,7 @@ Issues = "https://github.com/vanHeemstraSystems/threagile-monitoring/issues"
 Source = "https://github.com/vanHeemstraSystems/threagile-monitoring"
 
 [tool.hatch.version]
-path = "src/threagile_monitoring/__about__.py"
+path = "threagile-monitoring/src/threagile_monitoring/__about__.py"
 
 [tool.hatch.envs.default]
 path = ".hatch"
@@ -108,3 +108,6 @@ exclude_lines = [
   "if __name__ == .__main__.:",
   "if TYPE_CHECKING:",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["threagile-monitoring/src/threagile_monitoring"] 
