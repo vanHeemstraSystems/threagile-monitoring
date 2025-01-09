@@ -57,26 +57,32 @@ Getting your code up and running on your own system.
 
     **Development with webpack:**
     If you are still developing your website, in a **separate terminal session**, after having followed the above installation process, do this:
-    1) ```(.hatch) $ cd src/threagile_monitoring```
-    2) ```(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm```
-    3) ```(.hatch) $ npm install```
-    4) ```(.hatch) $ npm run watch```
+    1) ```cd ../``` # go to the root of the repository
+    2) ```hatch shell```
+    3) ```(.hatch) $ cd threagile-monitoring/src/threagile_monitoring```
+    4) ```(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm```
+    5) ```(.hatch) $ npm install```
+    6) ```(.hatch) $ npm run watch```
 
     This will - in the separate terminal session (i.e. ```background```) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. ```foreground```). So you do not have to build your sources after each edit, it is taken care of automatically!
 
     To see the changes just save and reload your navigator (usually with F5). 
     
     Make sure, to run your webpage when testing with backend functions, as follows:
-    1) ```(.hatch) $ cd src/threagile_monitoring```
-    2) ```(.hatch) $ python app.py```
+    1) ```cd ../``` # go to the root of the repository
+    2) ```hatch shell```
+    3) ```(.hatch) $ cd threagile-monitoring/src/threagile_monitoring```
+    4) ```(.hatch) $ python app.py```
 
     **Test**
 
     Test the application (frontend) this way:
-    1) ```(.hatch) $ cd src/threagile_monitoring```
-    2) ```(.hatch) $ npm install```
-    3) ```(.hatch) $ npm test```
-    4) ```(.hatch) $ npm test -- --coverage```
+    1) ```cd ../``` # go to the root of the repository
+    2) ```hatch shell```
+    3) ```(.hatch) $ cd threagile-monitoring/src/threagile_monitoring```
+    4) ```(.hatch) $ npm install```
+    5) ```(.hatch) $ npm test```
+    6) ```(.hatch) $ npm test -- --coverage```
 
     **Run:**
 
