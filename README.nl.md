@@ -21,12 +21,14 @@ threagile-monitoring
 
 Uw code op uw eigen systeem operationeel krijgen.
 
+**Opmerking**: De`pyproject.toml`bestand moet in de root van de repository staan!
+
 **Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
 
 1.  **Installatieproces:**
 
     ```bash
-    $ cd threagile-monitoring # start at directory of the repository where the pyproject.toml file is kept.
+    $ cd threagile-monitoring # start at sub-directory of the repository where the requirements.txt file is kept.
     $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -41,7 +43,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     $ cd .. # go one directory up
     $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
-    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
     **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Deze pakketmap wordt vermeld in`.gitignore`om te voorkomen dat het aan git wordt vastgelegd.
@@ -52,7 +54,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     Hierdoor ontstaat de`app.js`bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
 
     **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, in a**afzonderlijke terminalsessie**, nadat u het bovenstaande installatieproces heeft gevolgd, doet u het volgende:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt`# Wanneer u een nieuwe hatchshell start nadat u een vorige hatchshell hebt verlaten, is het een nieuwe omgeving die opnieuw aan de vereisten moet voldoen
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt`# Wanneer u een nieuwe hatchshell start nadat u een vorige hatchshell hebt verlaten, is het een nieuwe omgeving die opnieuw aan de vereisten moet voldoen
     4)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(threagile-monitoring) $ npm install`6)`(threagile-monitoring) $ npm run watch`
 
     Dit zal - in de afzonderlijke terminalsessie (d.w.z.`background`) - laad voortdurend de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u door kunt gaan met het aanbrengen van die wijzigingen - in de initiële terminalsessie (d.w.z.`foreground`). Je hoeft dus niet na elke bewerking je bronnen opnieuw op te bouwen, dit gebeurt automatisch!
@@ -156,7 +158,7 @@ pip install threagile-monitoring
 ## Omgevingen
 
 -   Netjes gedefinieerd in een standalone[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   De`test`matrix maakt gebruik van de[hatch-containers](https://github.com/ofek/hatch-containers)plug-in om elke omgeving binnen Docker-containers uit te voeren; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub-workflow
+-   De`test`matrix maakt gebruik van de[luikcontainers](https://github.com/ofek/hatch-containers)plug-in om elke omgeving binnen Docker-containers uit te voeren; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub-workflow
 
 ## Bouwen
 
