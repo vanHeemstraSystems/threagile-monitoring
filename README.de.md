@@ -21,12 +21,14 @@ Threagile-Überwachung
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
+**Notiz**: Der`pyproject.toml`Die Datei sollte sich im Stammverzeichnis des Repositorys befinden!
+
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
 1.  **Installationsprozess:**
 
     ```bash
-    $ cd threagile-monitoring # start at directory of the repository where the pyproject.toml file is kept.
+    $ cd threagile-monitoring # start at sub-directory of the repository where the requirements.txt file is kept.
     $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -41,7 +43,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
     $ cd .. # go one directory up
     $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
-    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     ```
 
     **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Dieser Paketordner ist in aufgeführt`.gitignore`um zu vermeiden, dass man sich an Git bindet.
@@ -52,7 +54,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     Dadurch wird das erstellt`app.js`Datei - die alle Komponenten enthält - in`/src/threagile_monitoring/static/js/`.
 
     **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, in a**separate Terminalsitzung**, nachdem Sie den oben genannten Installationsprozess befolgt haben, gehen Sie wie folgt vor:
-    1)`$ hatch shell`2)`(threagile-monitoring) $ cd threagile-monitoring/src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt`# Wenn Sie eine neue Hatch-Shell starten, nachdem Sie eine vorherige Hatch-Shell beendet haben, handelt es sich um eine neue Umgebung, die erneut die Anforderungen benötigt
+    1)`$ hatch shell`2)`(threagile-monitoring) $ cd src/threagile_monitoring`3)`(threagile-monitoring) $ pip install -r ../../requirements.txt`# Wenn Sie eine neue Hatch-Shell starten, nachdem Sie eine vorherige Hatch-Shell beendet haben, handelt es sich um eine neue Umgebung, die erneut die Anforderungen benötigt
     4)`(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(threagile-monitoring) $ npm install`6)`(threagile-monitoring) $ npm run watch`
 
     Dies wird - in der separaten Terminalsitzung (d. h.`background`) – lädt die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien, während Sie diese Änderungen weiterhin vornehmen können – in der ersten Terminalsitzung (d. h.`foreground`). Sie müssen Ihre Quellen also nicht nach jeder Bearbeitung neu erstellen, dies geschieht automatisch!
