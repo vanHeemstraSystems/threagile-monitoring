@@ -30,17 +30,17 @@ Getting your code up and running on your own system.
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (threagile-monitoring) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
+    (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
     # ...
-    (threagile-monitoring) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
-    (threagile-monitoring) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    (threagile-monitoring) $ pip install -r requirements.txt # pipx won't do this
-    (threagile-monitoring) $ exit # optional, type `exit` to leave the environment
+    (.hatch) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
+    (.hatch) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    (.hatch) $ pip install -r requirements.txt # pipx won't do this
+    (.hatch) $ exit # optional, type `exit` to leave the environment
     $ cd .. # go one directory up
     $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet: $ git tag
-    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
     **Package your site with webpack:**
@@ -48,38 +48,38 @@ Getting your code up and running on your own system.
 
     All of the setup should be ready by now so all you have to do:
     1) ```$ hatch shell```
-    2) ```(threagile-monitoring) $ cd src/threagile_monitoring```
-    3) ```(threagile-monitoring) $ npm install```
-    4) ```(threagile-monitoring) $ npm run build```
+    2) ```(.hatch) $ cd src/threagile_monitoring```
+    3) ```(.hatch) $ npm install```
+    4) ```(.hatch) $ npm run build```
 
     This will create the ```app.js``` file - which contains all components - in ```/src/threagile_monitoring/static/js/```.
 
     **Development with webpack:**
     If you are still developing your website, in a **separate terminal session**, after having followed the above installation process, do this:
     1) ```$ hatch shell```
-    2) ```(threagile-monitoring) $ cd src/threagile_monitoring```
-    3) ```(threagile-monitoring) $ pip install -r ../../requirements.txt``` # When you start a new hatch shell after exiting a previous hatch shell, it is a fresh environment needing the requirements again
-    4) ```(threagile-monitoring) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm```
-    5) ```(threagile-monitoring) $ npm install```
-    6) ```(threagile-monitoring) $ npm run watch```
+    2) ```(.hatch) $ cd src/threagile_monitoring```
+    3) ```(.hatch) $ pip install -r ../../requirements.txt``` # When you start a new hatch shell after exiting a previous hatch shell, it is a fresh environment needing the requirements again
+    4) ```(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm```
+    5) ```(.hatch) $ npm install```
+    6) ```(.hatch) $ npm run watch```
 
     This will - in the separate terminal session (i.e. ```background```) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. ```foreground```). So you do not have to build your sources after each edit, it is taken care of automatically!
 
     To see the changes just save and reload your navigator (usually with F5). 
     
     Make sure, to run your webpage when testing with backend functions, as follows:
-    1) ```(threagile-monitoring) $ cd src/threagile_monitoring```
-    2) ```(threagile-monitoring) $ python app.py```
+    1) ```(.hatch) $ cd src/threagile_monitoring```
+    2) ```(.hatch) $ python app.py```
 
     **Test**
 
     Test the application (frontend) this way:
 
     1) ```$ hatch shell```
-    2) ```(threagile-monitoring) $ cd src/threagile_monitoring```
-    3) ```(threagile-monitoring) $ npm install```
-    4) ```(threagile-monitoring) $ npm test```
-    5) ```(threagile-monitoring) $ npm test -- --coverage```
+    2) ```(.hatch) $ cd src/threagile_monitoring```
+    3) ```(.hatch) $ npm install```
+    4) ```(.hatch) $ npm test```
+    5) ```(.hatch) $ npm test -- --coverage```
 
     **Run:**
 
