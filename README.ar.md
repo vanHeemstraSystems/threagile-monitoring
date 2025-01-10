@@ -18,13 +18,13 @@
 -   [القياس عن بعد](./TELEMETRY.md)
 -   [الأدوات](./TOOLING.md)
 
-**Executive Summary**
+**ملخص تنفيذي**
 
 الحصول على التعليمات البرمجية الخاصة بك وتشغيلها على النظام الخاص بك.
 
-**Note**: ال`pyproject.toml`يجب أن يكون الملف في جذر المستودع!
+**ملحوظة**: ال`pyproject.toml`يجب أن يكون الملف في جذر المستودع!
 
-**ملحوظة**: تأكد من الوفاء[requirements](./200/README.md).
+**ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
 
 1.  **عملية التثبيت:**
 
@@ -144,7 +144,7 @@
 **جدول المحتويات**
 
 -   [تثبيت](#installation)
--   [مصدر الإصدار](#version-source)
+-   [مصدر النسخة](#version-source)
 -   [البيئات](#environments)
 -   [يبني](#build)
 -   [رخصة](#license)
@@ -155,7 +155,7 @@
 pip install threagile-monitoring
 ```
 
-## مصدر الإصدار
+## مصدر النسخة
 
 -   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
@@ -184,7 +184,7 @@ pip install threagile-monitoring
 
 يرى[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 – بناء تطبيقنا
 
 يرى[README.md](./300/README.md)
 
