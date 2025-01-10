@@ -13,7 +13,7 @@ surveillance des risques
 > Une application web pour créer des tableaux de bord pour[Menaçant](https://threagile.io).
 
 -   [Glossaire](./GLOSSARY.md)
--   [References](./REFERENCES.md)
+-   [Références](./REFERENCES.md)
 -   [Documentation](./DOCUMENTATION.md)
 -   [Télémétrie](./TELEMETRY.md)
 -   [Outillage](./TOOLING.md)
@@ -22,7 +22,7 @@ surveillance des risques
 
 Faire en sorte que votre code soit opérationnel sur votre propre système.
 
-**Note**: The `pyproject.toml`le fichier doit être à la racine du référentiel !
+**Note**: Le`pyproject.toml`le fichier doit être à la racine du référentiel !
 
 **Note**: Assurez-vous de remplir les[exigences](./200/README.md).
 
@@ -60,7 +60,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     1)`cd ../`# va à la racine du dépôt
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    This will - in the separate terminal session (i.e. `background`) - chargez constamment les modifications que vous apportez dans les fichiers appropriés, tandis que vous pouvez continuer à apporter ces modifications - lors de la session initiale du terminal (c'est-à-dire`foreground`). Vous n’avez donc pas besoin de construire vos sources après chaque édition, cela est pris en charge automatiquement !
+    Cela sera - dans la session de terminal séparée (c'est-à-dire`background`) - chargez constamment les modifications que vous apportez dans les fichiers appropriés, tandis que vous pouvez continuer à apporter ces modifications - lors de la session initiale du terminal (c'est-à-dire`foreground`). Vous n’avez donc pas besoin de construire vos sources après chaque édition, cela est pris en charge automatiquement !
 
     Pour voir les modifications, enregistrez et rechargez simplement votre navigateur (généralement avec F5).
 
@@ -72,8 +72,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Testez l'application (frontend) de cette façon :
     1)`cd ../`# va à la racine du dépôt
-    2)`hatch shell`
-    3) `(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Courir:**
 
@@ -185,7 +184,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Construire notre application
+## 300 - Créer notre application
 
 Voir[README.md](./300/README.md)
 
