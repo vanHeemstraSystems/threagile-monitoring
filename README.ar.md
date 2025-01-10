@@ -144,7 +144,7 @@
 **جدول المحتويات**
 
 -   [تثبيت](#installation)
--   [مصدر الإصدار](#version-source)
+-   [مصدر النسخة](#version-source)
 -   [البيئات](#environments)
 -   [يبني](#build)
 -   [رخصة](#license)
@@ -155,7 +155,7 @@
 pip install threagile-monitoring
 ```
 
-## مصدر الإصدار
+## مصدر النسخة
 
 -   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
