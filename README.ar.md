@@ -18,7 +18,7 @@
 -   [القياس عن بعد](./TELEMETRY.md)
 -   [الأدوات](./TOOLING.md)
 
-**ملخص تنفيذي**
+**Executive Summary**
 
 الحصول على التعليمات البرمجية الخاصة بك وتشغيلها على النظام الخاص بك.
 
@@ -131,7 +131,7 @@
     $ pytest tests/
     ```
 
-# وثائق واجهة برمجة التطبيقات
+# API Documentation
 
 انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
@@ -143,7 +143,7 @@
 
 **جدول المحتويات**
 
--   [تثبيت](#installation)
+-   [Installation](#installation)
 -   [مصدر النسخة](#version-source)
 -   [البيئات](#environments)
 -   [يبني](#build)
@@ -162,7 +162,7 @@ pip install threagile-monitoring
 ## البيئات
 
 -   تم تعريفها بدقة في قائمة بذاتها[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
+-   ال`test` matrix uses the [حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
 
 ## يبني
 
