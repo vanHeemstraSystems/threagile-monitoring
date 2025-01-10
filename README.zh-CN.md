@@ -18,7 +18,7 @@
 -   [遥测](./TELEMETRY.md)
 -   [工装](./TOOLING.md)
 
-**Executive Summary**
+**执行摘要**
 
 在您自己的系统上启动并运行您的代码。
 
@@ -49,7 +49,7 @@
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 来打包应用程序。该包文件夹列于`.gitignore`以避免它被提交给 git。
+    **使用 webpack 打包您的网站：**一旦你有了一个足够好的网站可供你使用，你就必须使用 webpack 打包该应用程序。该包文件夹列于`.gitignore`以避免它被提交给 git。
 
     现在所有设置都应该准备就绪，因此您需要做的就是：
     1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
@@ -65,8 +65,8 @@
     要查看更改，只需保存并重新加载导航器（通常使用 F5）。
 
     确保在使用后端功能进行测试时运行您的网页，如下所示：
-    1）`cd ../` # go to the root of the repository
-    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
+    1）`cd ../`# 转到存储库的根目录
+    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **测试**
 
@@ -137,7 +137,7 @@
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -157,11 +157,11 @@ pip install threagile-monitoring
 
 ## 版本来源
 
--   The [hatch-vcs](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
+-   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 
 ## 环境
 
--   整齐地定义在独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
@@ -184,7 +184,7 @@ pip install threagile-monitoring
 
 看[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 - 构建我们的应用程序
 
 看[README.md](./300/README.md)
 
