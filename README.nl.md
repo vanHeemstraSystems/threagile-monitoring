@@ -20,7 +20,7 @@ threagile-monitoring
 
 **Samenvatting**
 
-Uw code op uw eigen systeem operationeel krijgen.
+Getting your code up and running on your own system.
 
 **Opmerking**: De`pyproject.toml`bestand moet in de root van de repository staan!
 
@@ -157,7 +157,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
@@ -168,11 +168,11 @@ pip install threagile-monitoring
 
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
+-   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
-## Licentie
+## License
 
 `threagile-monitoring`wordt verspreid onder de voorwaarden van de[MET](https://spdx.org/licenses/MIT.html)licentie.
 
