@@ -1,34 +1,20 @@
-// import { React, Router, Route, Switch } from 'react'
-import {React, Router} from 'react';
+import { React, Switch } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Layout from './Layout'
+import NoMatch from './NoMatch'
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-      <p>This is a React component.</p>
-      <Router>
-
-      </Router>
-    </div>
-  );
+    <>
+      <Routes>
+        <Switch>
+          <Route exact path='/' element={<Layout showHome />} />
+          <Route path='/dashboards' element={<Layout showDashboard />} />
+          <Route path='*' component={() => <NoMatch />} />
+        </Switch>
+      </Routes>
+    </>
+  )
 }
-
-
-// const App = () => {
-//   return (
-//     <div className='App'>
-//       <Router>
-//         <Switch>
-//           <Route exact path='/' component={() => <Layout showHome />} />
-//           <Route
-//             exact
-//             path='/dashboards'
-//             component={() => <Layout showDashboard />}
-//           />
-//         </Switch>
-//       </Router>
-//     </div>
-//   )
-// }
 
 export default App
