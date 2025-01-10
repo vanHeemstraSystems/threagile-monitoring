@@ -54,7 +54,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     Alle instellingen zouden nu klaar moeten zijn, dus alles wat je hoeft te doen:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Hierdoor ontstaat de`app.js` file - which contains all components - in `/src/threagile_monitoring/static/js/`.
+    Hierdoor ontstaat de`app.js`bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
 
     **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, in a**afzonderlijke terminalsessie**, nadat u het bovenstaande installatieproces heeft gevolgd, doet u het volgende:
     1)`cd ../`# ga naar de hoofdmap van de repository
@@ -66,8 +66,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
     Zorg ervoor dat u uw webpagina als volgt uitvoert tijdens het testen met backend-functies:
     1)`cd ../`# ga naar de hoofdmap van de repository
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`
-    4) `(.hatch) $ python app.py`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **Test**
 
@@ -158,7 +157,7 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
