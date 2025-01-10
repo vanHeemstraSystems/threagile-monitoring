@@ -82,7 +82,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 2.  Softwareabhängigkeiten
 
-3.  Neueste Veröffentlichungen
+3.  Latest releases
 
 4.  API-Referenzen
 
