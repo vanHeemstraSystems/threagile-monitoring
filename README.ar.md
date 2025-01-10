@@ -16,6 +16,7 @@
 -   [مراجع](./REFERENCES.md)
 -   [التوثيق](./DOCUMENTATION.md)
 -   [القياس عن بعد](./TELEMETRY.md)
+-   [الأدوات](./TOOLING.md)
 
 **ملخص تنفيذي**
 
@@ -59,7 +60,7 @@
     1)`cd ../`# انتقل إلى جذر المستودع
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    سيؤدي هذا - في الجلسة الطرفية المنفصلة (أي`background`) - قم بتحميل التغييرات التي تجريها باستمرار على الملفات المناسبة، بينما يمكنك الاستمرار في إجراء هذه التغييرات - في الجلسة الطرفية الأولية (أي.`foreground`). لذلك لا يتوجب عليك بناء مصادرك بعد كل تعديل، بل يتم الاهتمام بها تلقائيًا!
+    سيؤدي هذا - في الجلسة الطرفية المنفصلة (أي`background`) - قم بتحميل التغييرات التي تجريها باستمرار على الملفات المناسبة، بينما يمكنك الاستمرار في إجراء هذه التغييرات - في الجلسة الطرفية الأولية (أي:`foreground`). لذلك لا يتوجب عليك بناء مصادرك بعد كل تعديل، بل يتم الاهتمام بها تلقائيًا!
 
     لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5).
 
@@ -75,7 +76,7 @@
 
     **يجري:**
 
-    If not developing, run the application (backend and frontend simultaneously) this way: 
+    إذا لم يكن قيد التطوير، قم بتشغيل التطبيق (الواجهة الخلفية والواجهة الأمامية في وقت واحد) بهذه الطريقة:
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
@@ -156,7 +157,7 @@ pip install threagile-monitoring
 
 ## مصدر النسخة
 
--   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs) version source plugin determines the project version using Git tags
+-   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
 ## البيئات
 
