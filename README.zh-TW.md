@@ -76,7 +76,7 @@
 
     **跑步：**
 
-    如果不進行開發，請按以下方式運行應用程式（同時後端和前端）：
+    If not developing, run the application (backend and frontend simultaneously) this way: 
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
@@ -167,7 +167,7 @@ pip install threagile-monitoring
 ## 建造
 
 -   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
--   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
+-   Wheels use the [孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
     -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
