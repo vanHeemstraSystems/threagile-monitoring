@@ -16,6 +16,7 @@
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 -   [遥测](./TELEMETRY.md)
+-   [工装](./TOOLING.md)
 
 **执行摘要**
 
@@ -64,8 +65,8 @@
     要查看更改，只需保存并重新加载导航器（通常使用 F5）。
 
     确保在使用后端功能进行测试时运行您的网页，如下所示：
-    1）`cd ../` # go to the root of the repository
-    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
+    1）`cd ../`# 转到存储库的根目录
+    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **测试**
 
@@ -158,7 +159,7 @@ pip install threagile-monitoring
 
 -   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 
-## 环境
+## Environments
 
 -   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
@@ -168,7 +169,7 @@ pip install threagile-monitoring
 -   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
-    -   use [cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
+    -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
     -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
 ## 执照
@@ -177,7 +178,7 @@ pip install threagile-monitoring
 
 ## 100 - 简介
 
-See [README.md](./100/README.md)
+看[README.md](./100/README.md)
 
 ## 200 - 要求
 
