@@ -10,7 +10,7 @@
 
 * * *
 
-> A web application to create dashboards for [威脅型](https://threagile.io).
+> 用於建立儀表板的 Web 應用程式[威脅型](https://threagile.io).
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
