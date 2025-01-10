@@ -19,7 +19,7 @@ monitoreo-threagil
 
 **Resumen ejecutivo**
 
-Poner en funcionamiento su código en su propio sistema.
+Cómo poner en marcha su código en su propio sistema.
 
 **Nota**: El`pyproject.toml`¡El archivo debe estar en la raíz del repositorio!
 
@@ -67,7 +67,7 @@ Poner en funcionamiento su código en su propio sistema.
     1)`cd ../`# ir a la raíz del repositorio
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
-    **Prueba**
+    **Test**
 
     Pruebe la aplicación (frontend) de esta manera:
     1)`cd ../`# ir a la raíz del repositorio
