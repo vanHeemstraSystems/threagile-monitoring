@@ -68,7 +68,7 @@
     1)`cd ../`# انتقل إلى جذر المستودع
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
-    **امتحان**
+    **Test**
 
     اختبر التطبيق (الواجهة الأمامية) بهذه الطريقة:
     1)`cd ../`# انتقل إلى جذر المستودع
@@ -144,7 +144,7 @@
 **جدول المحتويات**
 
 -   [تثبيت](#installation)
--   [مصدر النسخة](#version-source)
+-   [مصدر الإصدار](#version-source)
 -   [البيئات](#environments)
 -   [يبني](#build)
 -   [رخصة](#license)
@@ -155,7 +155,7 @@
 pip install threagile-monitoring
 ```
 
-## مصدر النسخة
+## Version source
 
 -   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
