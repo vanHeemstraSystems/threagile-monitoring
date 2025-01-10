@@ -16,7 +16,7 @@
 -   [संदर्भ](./REFERENCES.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
--   [टूलींग](./TOOLING.md)
+-   [Tooling](./TOOLING.md)
 
 **कार्यकारी सारांश**
 
@@ -144,7 +144,7 @@
 **विषयसूची**
 
 -   [इंस्टालेशन](#installation)
--   [संस्करण स्रोत](#version-source)
+-   [Version source](#version-source)
 -   [वातावरण](#environments)
 -   [निर्माण](#build)
 -   [लाइसेंस](#license)
@@ -188,6 +188,6 @@ pip install threagile-monitoring
 
 देखना[README.md](./300/README.md)
 
-## 400 - निष्कर्ष
+## 400 - Conclusion
 
 देखना[README.md](./400/README.md)
