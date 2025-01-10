@@ -15,6 +15,7 @@ threagile-monitoring
 - [References](./REFERENCES.md)
 - [Documentation](./DOCUMENTATION.md)
 - [Telemetry](./TELEMETRY.md)
+- [Tooling](./TOOLING.md)
 
 **Executive Summary**
 
