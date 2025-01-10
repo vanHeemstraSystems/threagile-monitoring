@@ -8,3 +8,11 @@
 - [SvelteKit](https://flowbite.com/docs/getting-started/svelte/)
 - [Threagile](https://threagile.io/)
 - [TailwindCSS](https://flowbite.com/docs/getting-started/svelte/)
+- [React](https://react.dev/)
+
+**Note**: 
+
+- The **frontend** of our application is built with React, TailwindCSS, and Flowbite.
+- The **backend** of our application is built with Flask, Hatch, SvelteKit.
+- The **deployment** of the application is done with Podman.
+- The **security vulnerability analysis** of the application is done with Threagile.
