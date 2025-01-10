@@ -72,8 +72,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
     Test de applicatie (frontend) op deze manier:
     1)`cd ../`# ga naar de hoofdmap van de repository
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`
-    4) `(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Loop:**
 
