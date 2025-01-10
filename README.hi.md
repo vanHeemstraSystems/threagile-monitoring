@@ -144,7 +144,7 @@
 **विषयसूची**
 
 -   [इंस्टालेशन](#installation)
--   [संस्करण स्रोत](#version-source)
+-   [Version source](#version-source)
 -   [वातावरण](#environments)
 -   [निर्माण](#build)
 -   [लाइसेंस](#license)
