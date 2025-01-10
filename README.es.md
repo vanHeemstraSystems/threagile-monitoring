@@ -20,7 +20,7 @@ monitoreo-threagil
 
 **Resumen ejecutivo**
 
-Poner en funcionamiento su código en su propio sistema.
+Cómo poner en marcha su código en su propio sistema.
 
 **Nota**: El`pyproject.toml`¡El archivo debe estar en la raíz del repositorio!
 
@@ -107,7 +107,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ export SECRET_KEY="secret"
     ```
 
-    Ventanas:
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
@@ -121,7 +121,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
+    Then, navigate to `http://127.0.0.1:5000/`en su navegador web.
 
     Para ejecutar pruebas, utilice:
 
@@ -166,7 +166,7 @@ pip install threagile-monitoring
 
 ## Construir
 
--   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
+-   All build targets use the [escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
 -   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
