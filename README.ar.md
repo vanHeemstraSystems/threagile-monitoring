@@ -43,7 +43,7 @@
     # ...
     (.hatch) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (.hatch) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    (.hatch) $ pip install -r ../../pip install requirements.txt # pipx won't do this
+    (.hatch) $ pip install -r requirements.txt # pipx won't do this
     (.hatch) $ git tag # check if you already have a verion tagged
     (.hatch) $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
@@ -68,7 +68,7 @@
     1)`cd ../`# انتقل إلى جذر المستودع
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
-    **Test**
+    **امتحان**
 
     اختبر التطبيق (الواجهة الأمامية) بهذه الطريقة:
     1)`cd ../`# انتقل إلى جذر المستودع
@@ -144,7 +144,7 @@
 **جدول المحتويات**
 
 -   [تثبيت](#installation)
--   [مصدر الإصدار](#version-source)
+-   [مصدر النسخة](#version-source)
 -   [البيئات](#environments)
 -   [يبني](#build)
 -   [رخصة](#license)
@@ -155,7 +155,7 @@
 pip install threagile-monitoring
 ```
 
-## Version source
+## مصدر النسخة
 
 -   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
