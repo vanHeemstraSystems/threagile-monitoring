@@ -56,7 +56,7 @@
 
     这将创建`app.js`文件 - 包含所有组件 - 在`/src/threagile_monitoring/static/js/`.
 
-    **使用webpack开发：**如果您仍在开发您的网站，**单独的终端会话**，按照上述安装过程后，执行以下操作：
+    **Development with webpack:**如果您仍在开发您的网站，**单独的终端会话**，按照上述安装过程后，执行以下操作：
     1）`cd ../`# 转到存储库的根目录
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
@@ -162,7 +162,7 @@ pip install threagile-monitoring
 ## 环境
 
 -   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
+-   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml) GitHub workflow
 
 ## 建造
 
@@ -180,7 +180,7 @@ pip install threagile-monitoring
 
 看[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - 要求
 
 看[README.md](./200/README.md)
 
