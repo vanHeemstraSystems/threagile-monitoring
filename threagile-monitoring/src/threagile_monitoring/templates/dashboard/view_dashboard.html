@@ -1,4 +1,10 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+
+{% block header %}
+  <h1>{% block title %}View Dashboard{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
 
 <section class="bg-white dark:bg-gray-900">
   <div class="container mx-auto p-4">
