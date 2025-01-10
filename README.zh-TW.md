@@ -26,7 +26,7 @@
 
 **筆記**: 確保您滿足[要求](./200/README.md).
 
-1.  **Installation process:**
+1.  **安裝過程：**
 
     ```bash
     $ cd threagile-monitoring # start at sub-directory of the repository where the requirements.txt file is kept.
@@ -88,7 +88,7 @@
 
 5.  建置和測試：
 
-    要建立您的程式碼，請使用：
+    To build your code, use:
 
     ```bash
     $ cd threagile-monitoring
@@ -141,7 +141,7 @@
 
 **_新的_**
 
-**目錄**
+**Table of Contents**
 
 -   [安裝](#installation)
 -   [版本來源](#version-source)
