@@ -13,7 +13,7 @@ surveillance des risques
 > Une application web pour créer des tableaux de bord pour[Menaçant](https://threagile.io).
 
 -   [Glossaire](./GLOSSARY.md)
--   [Références](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [Documentation](./DOCUMENTATION.md)
 -   [Télémétrie](./TELEMETRY.md)
 -   [Outillage](./TOOLING.md)
@@ -22,7 +22,7 @@ surveillance des risques
 
 Faire en sorte que votre code soit opérationnel sur votre propre système.
 
-**Note**: Le`pyproject.toml`le fichier doit être à la racine du référentiel !
+**Note**: The `pyproject.toml`le fichier doit être à la racine du référentiel !
 
 **Note**: Assurez-vous de remplir les[exigences](./200/README.md).
 
@@ -60,7 +60,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     1)`cd ../`# va à la racine du dépôt
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Cela sera - dans la session de terminal séparée (c'est-à-dire`background`) - chargez constamment les modifications que vous apportez dans les fichiers appropriés, tandis que vous pouvez continuer à apporter ces modifications - lors de la session initiale du terminal (c'est-à-dire`foreground`). Vous n’avez donc pas besoin de construire vos sources après chaque édition, cela est pris en charge automatiquement !
+    This will - in the separate terminal session (i.e. `background`) - chargez constamment les modifications que vous apportez dans les fichiers appropriés, tandis que vous pouvez continuer à apporter ces modifications - lors de la session initiale du terminal (c'est-à-dire`foreground`). Vous n’avez donc pas besoin de construire vos sources après chaque édition, cela est pris en charge automatiquement !
 
     Pour voir les modifications, enregistrez et rechargez simplement votre navigateur (généralement avec F5).
 
@@ -72,7 +72,8 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Testez l'application (frontend) de cette façon :
     1)`cd ../`# va à la racine du dépôt
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
+    2)`hatch shell`
+    3) `(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Courir:**
 
@@ -88,7 +89,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 5.  Construire et tester :
 
-    To build your code, use:
+    Pour construire votre code, utilisez :
 
     ```bash
     $ cd threagile-monitoring
@@ -167,7 +168,7 @@ pip install threagile-monitoring
 ## Construire
 
 -   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
--   Les roues utilisent le[hatch-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
+-   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
 -   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
     -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
     -   utiliser le[application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
@@ -184,7 +185,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Créer notre application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 
