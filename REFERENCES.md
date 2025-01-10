@@ -13,3 +13,4 @@
 - [Scatter plot in recharts - how to use 4 quadrants?](https://stackoverflow.com/questions/68515611/scatter-plot-in-recharts-how-to-use-4-quadrants)
 - [Is requirements.txt Becoming Obsolete?](https://gary-badwal.medium.com/is-requirements-txt-becoming-obsolete-509eab442bdf#:~:text=You%20don't%20always%20have,dependency%20installs%20in%20isolated%20environments.)
 - [Svelte Navbar - Flowbite](https://flowbite-svelte.com/docs/components/navbar)
+- [Tailwind CSS Svelte - Flowbite](https://flowbite.com/docs/getting-started/svelte/)
