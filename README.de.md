@@ -82,7 +82,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 2.  Softwareabhängigkeiten
 
-3.  Latest releases
+3.  Neueste Veröffentlichungen
 
 4.  API-Referenzen
 
@@ -137,7 +137,7 @@ Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie 
 
 # Metriken
 
-Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
 
 **_NEU_**
 
@@ -170,7 +170,7 @@ pip install threagile-monitoring
 -   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build-Hook-Plugin, mit dem zunächst der gesamte Code kompiliert werden soll[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Der GitHub-Workflow zeigt, wie Sie:
     -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)binäre Räder für jede Plattform zu verteilen
-    -   Benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)build target zum Erstellen eigenständiger Distributionen für jede Plattform
+    -   Benutze die[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target zum Erstellen eigenständiger Distributionen für jede Plattform
 
 ## Lizenz
 
@@ -182,7 +182,7 @@ Sehen[README.md](./100/README.md)
 
 ## 200 – Anforderungen
 
-Sehen[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 – Erstellen unserer Anwendung
 
