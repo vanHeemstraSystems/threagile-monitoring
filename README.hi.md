@@ -16,6 +16,7 @@
 -   [संदर्भ](./REFERENCES.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
+-   [टूलींग](./TOOLING.md)
 
 **कार्यकारी सारांश**
 
@@ -59,21 +60,21 @@
     1)`cd ../`# रिपोजिटरी के मूल तक जाएं
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    यह होगा - अलग टर्मिनल सत्र में (अर्थात्)`background`) - आपके द्वारा किए गए परिवर्तनों को उचित फ़ाइलों में लगातार लोड करें, जबकि आप उन परिवर्तनों को जारी रख सकते हैं - प्रारंभिक टर्मिनल सत्र में (यानी)`foreground`). इसलिए आपको प्रत्येक संपादन के बाद अपने स्रोत बनाने की ज़रूरत नहीं है, इसका स्वचालित रूप से ध्यान रखा जाता है!
+    यह होगा - अलग टर्मिनल सत्र में (अर्थात्`background`) - आपके द्वारा किए गए परिवर्तनों को उचित फ़ाइलों में लगातार लोड करें, जबकि आप उन परिवर्तनों को जारी रख सकते हैं - प्रारंभिक टर्मिनल सत्र में (यानी)`foreground`). इसलिए आपको प्रत्येक संपादन के बाद अपने स्रोत बनाने की ज़रूरत नहीं है, इसका स्वचालित रूप से ध्यान रखा जाता है!
 
     परिवर्तनों को देखने के लिए बस अपने नेविगेटर को सहेजें और पुनः लोड करें (आमतौर पर F5 के साथ)।
 
     सुनिश्चित करें कि बैकएंड फ़ंक्शंस के साथ परीक्षण करते समय अपना वेबपेज निम्नानुसार चलाएं:
-    1)`cd ../`# रिपोजिटरी के मूल तक जाएं
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
+    1)`cd ../` # go to the root of the repository
+    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
-    **परीक्षा**
+    **Test**
 
     एप्लिकेशन (फ़्रंटएंड) का इस प्रकार परीक्षण करें:
     1)`cd ../`# रिपोजिटरी के मूल तक जाएं
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
-    **दौड़ना:**
+    **Run:**
 
     यदि विकास नहीं हो रहा है, तो एप्लिकेशन को इस प्रकार चलाएं (बैकएंड और फ्रंटएंड एक साथ):
 
