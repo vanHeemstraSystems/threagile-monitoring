@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from 'tailwindcss';
+import flowbitePlugin from 'flowbite/plugin';
+
 module.exports = {
   content: [
     './src/**/*.{html,js,svelte,ts}',
@@ -7,9 +9,7 @@ module.exports = {
     './node_modules/flowbite/**/*.js',
     './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
   ],
-  theme: {
-    extend: {}
-  },
+
   plugins: [
     require('flowbite/plugin')({
       datatables: true
@@ -17,7 +17,7 @@ module.exports = {
     // ... other plugins
   ],
 
-  darkMode: 'class',
+  darkMode: 'selector',
 
   theme: {
     extend: {
