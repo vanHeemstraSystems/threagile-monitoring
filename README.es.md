@@ -16,10 +16,11 @@ monitoreo-threagil
 -   [Referencias](./REFERENCES.md)
 -   [Documentación](./DOCUMENTATION.md)
 -   [Telemetria](./TELEMETRY.md)
+-   [Estampación](./TOOLING.md)
 
 **Resumen ejecutivo**
 
-Poner en funcionamiento su código en su propio sistema.
+Cómo poner en marcha su código en su propio sistema.
 
 **Nota**: El`pyproject.toml`¡El archivo debe estar en la raíz del repositorio!
 
@@ -73,7 +74,7 @@ Poner en funcionamiento su código en su propio sistema.
     1)`cd ../`# ir a la raíz del repositorio
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
-    **Correr:**
+    **Run:**
 
     Si no está en desarrollo, ejecute la aplicación (backend y frontend simultáneamente) de esta manera:
 
@@ -161,7 +162,7 @@ pip install threagile-monitoring
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
@@ -185,7 +186,7 @@ Ver[README.md](./200/README.md)
 
 ## 300 - Construyendo nuestra aplicación
 
-Ver[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400 - Conclusión
 
