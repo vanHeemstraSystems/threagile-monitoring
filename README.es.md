@@ -43,7 +43,7 @@ Cómo poner en marcha su código en su propio sistema.
     # ...
     (.hatch) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (.hatch) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    (.hatch) $ pip install -r ../../pip install requirements.txt # pipx won't do this
+    (.hatch) $ pip install -r requirements.txt # pipx won't do this
     (.hatch) $ git tag # check if you already have a verion tagged
     (.hatch) $ git tag -a v0.0.1 -m "Initial release" # optional, if you have no tags yet
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
@@ -162,7 +162,7 @@ pip install threagile-monitoring
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
