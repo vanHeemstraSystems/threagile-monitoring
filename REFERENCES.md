@@ -14,3 +14,4 @@
 - [Is requirements.txt Becoming Obsolete?](https://gary-badwal.medium.com/is-requirements-txt-becoming-obsolete-509eab442bdf#:~:text=You%20don't%20always%20have,dependency%20installs%20in%20isolated%20environments.)
 - [Svelte Navbar - Flowbite](https://flowbite-svelte.com/docs/components/navbar)
 - [Tailwind CSS Svelte - Flowbite](https://flowbite.com/docs/getting-started/svelte/)
+- [Quickstart - Flowbite Svelte](https://flowbite-svelte.com/docs/pages/quickstart)
