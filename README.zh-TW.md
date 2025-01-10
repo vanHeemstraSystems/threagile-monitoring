@@ -1,4 +1,4 @@
-威脅監控
+threagile-monitoring
 
 # 威脅監控
 
@@ -113,7 +113,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    然後：
+    Then:
 
     ```bash
     $ cd threagile-monitoring
@@ -146,7 +146,7 @@
 -   [安裝](#installation)
 -   [版本來源](#version-source)
 -   [環境](#environments)
--   [建造](#build)
+-   [Build](#build)
 -   [執照](#license)
 
 ## 安裝
