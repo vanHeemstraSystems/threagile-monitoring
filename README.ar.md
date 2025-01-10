@@ -24,7 +24,7 @@
 
 **ملحوظة**: ال`pyproject.toml`يجب أن يكون الملف في جذر المستودع!
 
-**ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
+**ملحوظة**: Make sure you fulfill the [متطلبات](./200/README.md).
 
 1.  **عملية التثبيت:**
 
@@ -56,7 +56,7 @@
 
     سيؤدي هذا إلى إنشاء`app.js`الملف - الذي يحتوي على جميع المكونات - في`/src/threagile_monitoring/static/js/`.
 
-    **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تقوم بتطوير موقع الويب الخاص بك، في**جلسة طرفية منفصلة**، بعد اتباع عملية التثبيت المذكورة أعلاه، قم بما يلي:
+    **التطوير باستخدام حزمة الويب:**إذا كنت لا تزال تقوم بتطوير موقع الويب الخاص بك، في**separate terminal session**، بعد اتباع عملية التثبيت المذكورة أعلاه، قم بما يلي:
     1)`cd ../`# انتقل إلى جذر المستودع
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
@@ -64,8 +64,8 @@
 
     لرؤية التغييرات، ما عليك سوى حفظ متصفحك وإعادة تحميله (عادةً باستخدام F5).
 
-    تأكد من تشغيل صفحة الويب الخاصة بك عند الاختبار باستخدام وظائف الواجهة الخلفية، كما يلي:
-    1)`cd ../`# انتقل إلى جذر المستودع
+    Make sure, to run your webpage when testing with backend functions, as follows:
+    1) `cd ../`# انتقل إلى جذر المستودع
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **امتحان**
@@ -101,7 +101,7 @@
 
     لتشغيل التطبيق استخدم:
 
-    لينكس:
+    Linux:
 
     ```bash
     $ export SECRET_KEY="secret"
@@ -131,7 +131,7 @@
     $ pytest tests/
     ```
 
-# وثائق واجهة برمجة التطبيقات
+# API Documentation
 
 انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
@@ -146,7 +146,7 @@
 -   [تثبيت](#installation)
 -   [مصدر النسخة](#version-source)
 -   [البيئات](#environments)
--   [يبني](#build)
+-   [Build](#build)
 -   [رخصة](#license)
 
 ## تثبيت
@@ -166,7 +166,7 @@ pip install threagile-monitoring
 
 ## يبني
 
--   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
+-   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
@@ -184,7 +184,7 @@ pip install threagile-monitoring
 
 يرى[README.md](./200/README.md)
 
-## 300 – بناء تطبيقنا
+## 300 - Building Our Application
 
 يرى[README.md](./300/README.md)
 
