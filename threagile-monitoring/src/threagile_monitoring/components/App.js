@@ -1,5 +1,5 @@
-import { React, Switch } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import React from 'react'
+import { Routes, Route, Switch } from 'react-router-dom'
 import Layout from './Layout'
 import NoMatch from './NoMatch'
 
@@ -8,9 +8,15 @@ const App = () => {
     <>
       <Routes>
         <Switch>
-          <Route exact path='/' element={<Layout showHome />} />
-          <Route path='/dashboards' element={<Layout showDashboard />} />
-          <Route path='*' component={() => <NoMatch />} />
+          <Route exact path='/'>
+            <Layout showHome />
+          </Route>
+          <Route path='/dashboards'>
+            <Layout showDashboard />
+          </Route>
+          <Route path='*'>
+            <NoMatch />
+          </Route>
         </Switch>
       </Routes>
     </>

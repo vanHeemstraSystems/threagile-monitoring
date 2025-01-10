@@ -19,3 +19,4 @@
 - [Render specific react component based on the URL](https://stackoverflow.com/questions/68412713/render-specific-react-component-based-on-the-url)
 - [React functional components: const vs. function](https://dev.to/ugglr/react-functional-components-const-vs-function-2kj9)
 - [A complete guide to routing in React](https://hygraph.com/blog/routing-in-react)
+- [Switch](https://v5.reactrouter.com/web/api/Switch)
