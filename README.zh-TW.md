@@ -12,7 +12,7 @@
 
 > 用於建立儀表板的 Web 應用程式[威脅型](https://threagile.io).
 
--   [詞彙表](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
 -   [文件](./DOCUMENTATION.md)
 -   [遙測](./TELEMETRY.md)
@@ -160,7 +160,7 @@ pip install threagile-monitoring
 
 ## 環境
 
--   整齊地定義在一個獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   整齊地定義在獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
