@@ -1,5 +1,6 @@
 // See https://createapp.dev/webpack/react--babel--react-hot-loader
 const path = require('path')
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const config = {
   entry: './components/index.js',
   devtool: 'inline-nosources-cheap-source-map',
@@ -34,7 +35,10 @@ const config = {
         }
       }
     }
-  }
+  },
+  plugins: [
+    new WebpackManifestPlugin()
+  ]
 }
 
 module.exports = config
