@@ -24,7 +24,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
 **Opmerking**: De`pyproject.toml`bestand moet in de root van de repository staan!
 
-**Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
+**Opmerking**: Zorg ervoor dat u voldoet aan de[requirements](./200/README.md).
 
 1.  **Installatieproces:**
 
@@ -131,7 +131,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ pytest tests/
     ```
 
-# API-documentatie
+# API Documentation
 
 Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openapi.json van`http://127.0.0.1:5000/openapi.json`.
 
