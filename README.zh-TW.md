@@ -137,7 +137,7 @@
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -147,7 +147,7 @@
 -   [版本來源](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
--   [執照](#license)
+-   [License](#license)
 
 ## 安裝
 
