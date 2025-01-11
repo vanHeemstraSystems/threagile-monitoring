@@ -68,7 +68,7 @@
     1）`cd ../`# 转到存储库的根目录
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
-    **Test**
+    **测试**
 
     以这种方式测试应用程序（前端）：
     1）`cd ../`# 转到存储库的根目录
@@ -186,7 +186,7 @@ pip install threagile-monitoring
 
 ## 300 - 构建我们的应用程序
 
-看[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400 - 结论
 
