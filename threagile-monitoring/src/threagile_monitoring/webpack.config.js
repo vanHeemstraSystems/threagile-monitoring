@@ -5,7 +5,7 @@ const config = {
   devtool: 'inline-nosources-cheap-source-map',
   output: {
     path: path.resolve(__dirname, 'static/js'),
-    filename: 'app.js'
+    filename: '[name].[contenthash].js'
   },
   module: {
     rules: [
@@ -25,8 +25,14 @@ const config = {
   optimization: {
     splitChunks: {
       chunks: 'all',
-      minSize: 20000,
-      maxSize: 244000,
+      maxInitialRequests: 10,
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
     }
   }
 }
