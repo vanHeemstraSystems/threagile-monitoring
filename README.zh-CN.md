@@ -68,7 +68,7 @@
     1）`cd ../`# 转到存储库的根目录
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
-    **测试**
+    **Test**
 
     以这种方式测试应用程序（前端）：
     1）`cd ../`# 转到存储库的根目录
