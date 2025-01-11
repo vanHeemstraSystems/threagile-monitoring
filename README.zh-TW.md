@@ -137,7 +137,7 @@
 
 # 指標
 
-Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -147,7 +147,7 @@ Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
 -   [版本來源](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
--   [License](#license)
+-   [執照](#license)
 
 ## 安裝
 
@@ -174,7 +174,7 @@ pip install threagile-monitoring
 
 ## 執照
 
-`threagile-monitoring`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
+`threagile-monitoring`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html) license.
 
 ## 100 - 簡介
 
