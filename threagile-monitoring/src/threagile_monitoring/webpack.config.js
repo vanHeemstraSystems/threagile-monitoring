@@ -21,6 +21,13 @@ const config = {
     static: {
       directory: './static/js'
     }
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      minSize: 20000,
+      maxSize: 244000,
+    }
   }
 }
 
