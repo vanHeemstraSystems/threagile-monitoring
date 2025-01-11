@@ -37,7 +37,10 @@ const config = {
     }
   },
   plugins: [
-    new WebpackManifestPlugin()
+    new WebpackManifestPlugin({
+      fileName: 'manifest.json',
+      publicPath: 'js/'
+    })
   ]
 }
 
