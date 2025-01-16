@@ -5,7 +5,7 @@ const config = {
   entry: './components/index.js',
   devtool: 'inline-nosources-cheap-source-map',
   output: {
-    path: path.resolve(__dirname, 'static/js'),
+    path: __dirname + '/static/js',
     filename: '[name].[contenthash].js'
   },
   module: {
