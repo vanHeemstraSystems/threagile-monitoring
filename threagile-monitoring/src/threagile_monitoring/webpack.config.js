@@ -2,7 +2,7 @@
 const path = require('path')
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const config = {
-  entry: './components/index.js',
+  entry: './components/index.tsx',
   devtool: 'inline-nosources-cheap-source-map',
   output: {
     path: __dirname + '/static/js',
@@ -11,9 +11,22 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        use: 'babel-loader',
-        exclude: /node_modules/
+        test: /\.(ts|tsx|js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react',
+              '@babel/preset-typescript'
+            ]
+          }
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       }
     ]
   },
@@ -41,7 +54,10 @@ const config = {
       fileName: 'manifest.json',
       publicPath: 'js/'
     })
-  ]
+  ],
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
+  }
 }
 
 module.exports = config
