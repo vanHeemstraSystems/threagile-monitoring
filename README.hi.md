@@ -54,7 +54,7 @@
     अब तक सारा सेटअप तैयार हो जाना चाहिए, इसलिए आपको बस इतना करना है:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    यह बनायेगा`app.js` file - which contains all components - in `/src/threagile_monitoring/static/js/`.
+    यह बनायेगा`app.js`फ़ाइल - जिसमें सभी घटक शामिल हैं - in`/src/threagile_monitoring/static/js/`.
 
     **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, तो a**अलग टर्मिनल सत्र**, उपरोक्त स्थापना प्रक्रिया का पालन करने के बाद, यह करें:
     1)`cd ../`# रिपोजिटरी के मूल तक जाएं
@@ -65,7 +65,7 @@
     परिवर्तनों को देखने के लिए बस अपने नेविगेटर को सहेजें और पुनः लोड करें (आमतौर पर F5 के साथ)।
 
     सुनिश्चित करें कि बैकएंड फ़ंक्शंस के साथ परीक्षण करते समय अपना वेबपेज निम्नानुसार चलाएं:
-    1)`cd ../`# रिपोजिटरी के मूल तक जाएं
+    1)`cd ../../../`# रिपोजिटरी के मूल तक जाएं
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **परीक्षा**
@@ -88,7 +88,7 @@
 
 5.  निर्माण और परीक्षण:
 
-    To build your code, use:
+    अपना कोड बनाने के लिए, इसका उपयोग करें:
 
     ```bash
     $ cd threagile-monitoring
@@ -157,7 +157,7 @@ pip install threagile-monitoring
 
 ## संस्करण स्रोत
 
--   [हैच-वीसीएस](https://github.com/ofek/hatch-vcs) version source plugin determines the project version using Git tags
+-   [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
 
 ## वातावरण
 
@@ -176,7 +176,7 @@ pip install threagile-monitoring
 
 `threagile-monitoring`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
 
-## 100 - परिचय
+## 100 - Introduction
 
 देखना[README.md](./100/README.md)
 
