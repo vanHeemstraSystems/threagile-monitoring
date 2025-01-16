@@ -12,7 +12,7 @@ Threagile-Überwachung
 
 > Eine Webanwendung zum Erstellen von Dashboards[Threagile](https://threagile.io).
 
--   [Glossary](./GLOSSARY.md)
+-   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 -   [Telemetrie](./TELEMETRY.md)
@@ -54,7 +54,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     Die gesamte Einrichtung sollte inzwischen fertig sein. Sie müssen also nur noch Folgendes tun:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    This will create the `app.js`Datei - die alle Komponenten enthält - in`/src/threagile_monitoring/static/js/`.
+    Dadurch wird das erstellt`app.js`Datei - die alle Komponenten enthält - in`/src/threagile_monitoring/static/js/`.
 
     **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, in a**separate Terminalsitzung**, nachdem Sie den oben genannten Installationsprozess befolgt haben, gehen Sie wie folgt vor:
     1)`cd ../`# Gehen Sie zum Stammverzeichnis des Repositorys
@@ -162,7 +162,7 @@ pip install threagile-monitoring
 ## Umgebungen
 
 -   Ordentlich in einem Standalone definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   The `test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
+-   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
 
 ## Bauen
 
@@ -180,7 +180,7 @@ pip install threagile-monitoring
 
 Sehen[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 – Anforderungen
 
 Sehen[README.md](./200/README.md)
 
