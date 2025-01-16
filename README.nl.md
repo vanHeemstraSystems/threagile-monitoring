@@ -65,7 +65,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5).
 
     Zorg ervoor dat u uw webpagina als volgt uitvoert tijdens het testen met backend-functies:
-    1)`cd ../`# ga naar de hoofdmap van de repository
+    1)`cd ../../../`# ga naar de hoofdmap van de repository
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **Test**
@@ -169,7 +169,7 @@ pip install threagile-monitoring
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
-    -   gebruik[cibuildwheel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
+    -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
 ## Licentie
