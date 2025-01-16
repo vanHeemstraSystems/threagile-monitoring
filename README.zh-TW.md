@@ -20,7 +20,7 @@
 
 **執行摘要**
 
-Getting your code up and running on your own system.
+在您自己的系統上啟動並運行您的程式碼。
 
 **筆記**： 這`pyproject.toml`檔案應該位於儲存庫的根目錄中！
 
@@ -65,7 +65,7 @@ Getting your code up and running on your own system.
     要查看更改，只需儲存並重新載入導航器（通常使用 F5）。
 
     確保在使用後端功能進行測試時運行您的網頁，如下所示：
-    1）`cd ../`# 前往儲存庫的根目錄
+    1）`cd ../../../`# 前往儲存庫的根目錄
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **測試**
