@@ -44,8 +44,8 @@
       type="text/javascript"
     ></script>
     <!-- Use manifest to get correct filenames, load vendors before main -->
-    <script src="{{ url_for('static', filename='js/' + manifest['vendors.js']) }}"></script>
-    <script src="{{ url_for('static', filename='js/' + manifest['main.js']) }}"></script>
+    <script src="{{ url_for('static', filename=manifest['vendors.js']) }}"></script>
+    <script src="{{ url_for('static', filename=manifest['main.js']) }}"></script>
     {% include 'footer.html' %}
   </body>
 </html>
