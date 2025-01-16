@@ -20,7 +20,7 @@ monitoreo-threagil
 
 **Resumen ejecutivo**
 
-Cómo poner en marcha su código en su propio sistema.
+Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: El`pyproject.toml`¡El archivo debe estar en la raíz del repositorio!
 
@@ -49,18 +49,16 @@ Cómo poner en marcha su código en su propio sistema.
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **Package your site with webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para su uso, deberá empaquetar la aplicación con webpack. Esta carpeta de paquete aparece en`.gitignore`para evitar que se comprometa con git.
+    **Empaqueta tu sitio con webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para su uso, deberá empaquetar la aplicación con webpack. Esta carpeta de paquete aparece en`.gitignore`para evitar que se comprometa con git.
 
     Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer:
-    1)`(.hatch) $ cd src/threagile_monitoring`
-    2) `(.hatch) $ npm install`3)`(.hatch) $ npm run build`
+    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
     Esto creará el`app.js`archivo, que contiene todos los componentes, en`/src/threagile_monitoring/static/js/`.
 
     **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, en un**sesión terminal separada**, después de haber seguido el proceso de instalación anterior, haga esto:
     1)`cd ../`# ir a la raíz del repositorio
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`
-    6) `(.hatch) $ npm run watch`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     Esto, en la sesión de terminal separada (es decir,`background`) - cargue constantemente los cambios que realice en los archivos apropiados, mientras puede continuar realizando esos cambios - en la sesión inicial del terminal (es decir,`foreground`). Así que no tienes que crear tus fuentes después de cada edición, ¡se encargan automáticamente!
 
@@ -97,7 +95,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ hatch build
     ```
 
-    To use AI for pull request reviews, use:
+    Para usar IA para revisiones de solicitudes de extracción, use:
 
     <https://app.coderabbit.ai/dashboard>(usa`phpstan.neon`)
 
@@ -123,7 +121,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Luego, navegue hasta`http://127.0.0.1:5000/` in your web browser.
+    Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
 
     Para ejecutar pruebas, utilice:
 
@@ -168,7 +166,7 @@ pip install threagile-monitoring
 
 ## Construir
 
--   Todos los objetivos de construcción utilizan el[hatch-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
+-   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
 -   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
@@ -182,7 +180,7 @@ pip install threagile-monitoring
 
 Ver[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - Requisitos
 
 Ver[README.md](./200/README.md)
 
