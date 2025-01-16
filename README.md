@@ -70,7 +70,7 @@ Getting your code up and running on your own system.
     To see the changes just save and reload your navigator (usually with F5). 
     
     Make sure, to run your webpage when testing with backend functions, as follows:
-    1) ```cd ../``` # go to the root of the repository
+    1) ```cd ../../../``` # go to the root of the repository
     2) ```hatch shell```
     3) ```(.hatch) $ cd threagile-monitoring/src/threagile_monitoring```
     4) ```(.hatch) $ python app.py```

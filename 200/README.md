@@ -82,4 +82,4 @@ We use [hatch](https://hatch.pypa.io/) for project management.
    ```bash
    # pip install hatch # This method modifies the Python environment in which you choose to install. Consider instead using pipx to avoid dependency conflicts.
    $ pipx install hatch 
-   $ h
+   $ hatch --version # verify the version
