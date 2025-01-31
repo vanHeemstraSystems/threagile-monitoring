@@ -76,7 +76,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     **Correr:**
 
-    Si no se desarrolla, ejecute la aplicación (backend y frontend simultáneamente) de esta manera:
+    If not developing, run the application (backend and frontend simultaneously) this way: 
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
@@ -121,7 +121,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Entonces, navegue a`http://127.0.0.1:5000/`en su navegador web.
+    Then, navigate to `http://127.0.0.1:5000/`en su navegador web.
 
     Para ejecutar pruebas, use:
 
