@@ -95,8 +95,8 @@ throweagile监控
 
     **测试**
 
-    Test the application (frontend) this way:
-    1) `cd ../`＃转到存储库的根
+    以这种方式测试应用程序（前端）：
+    1）`cd ../`＃转到存储库的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **跑步：**
