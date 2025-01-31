@@ -69,7 +69,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
     [Onlook](https://github.com/vanHeemstraSystems/onlook)ist ein leistungsstarkes Tool für die interaktive UI -Entwicklung, das sich in Ihr Projekt integriert.
 
     1.  **Integrationssetup**:
-        -   Ensure your frontend is running (`npm run watch`)
+        -   Stellen Sie sicher, dass Ihr Frontend läuft (`npm run watch`)
         -   Starten Sie Ihren Backend -Server (`python app.py`)
         -   Starten Sie Onlook in einer eigenen Anwendung
         -   Verbinden Sie Onlook mit Ihrem laufenden Frontend
@@ -124,7 +124,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     <https://app.coderabbit.ai/dashboard>(Verwendet`phpstan.neon`)
 
-    To run the application, use:
+    Verwenden Sie die Anwendung, um die Anwendung auszuführen:
 
     Linux:
 
@@ -192,9 +192,9 @@ pip install threagile-monitoring
 ## Bauen
 
 -   Alle Build -Ziele verwenden die[Hatch-VCS](https://github.com/ofek/hatch-vcs)Bauen Sie Hook -Plugin, um a zu versenden`_version.py`Datei so kann die Version zur Laufzeit verwendet werden
--   Räder verwenden die[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
+-   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Github Workflow zeigt, wie man:
-    -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
+    -   verwenden[Cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
     -   benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
 
 ## Lizenz
