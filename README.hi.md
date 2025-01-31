@@ -56,7 +56,8 @@
 
     यह बनाएगा`vendors.#####.js`और`main.#####.js`फ़ाइलें - जिसमें सभी घटक शामिल हैं - में`/src/threagile_monitoring/static/js/`.
 
-    **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, एक में**अलग टर्मिनल सत्र**, उपरोक्त स्थापना प्रक्रिया का पालन करने के बाद, ऐसा करें:
+    **वेबपैक के साथ विकास:**
+    If you are still developing your website, in a **अलग टर्मिनल सत्र**, उपरोक्त स्थापना प्रक्रिया का पालन करने के बाद, ऐसा करें:
     1)`cd ../`# रिपॉजिटरी की जड़ पर जाएं
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
@@ -90,8 +91,8 @@
     **टिप्पणी**: हमेशा यह सुनिश्चित करें कि ओनलुक विकास शुरू करने से पहले आपका फ्रंटेंड चल रहा है। यह आपके परिवर्तनों का वास्तविक समय पूर्वावलोकन सक्षम करता है।
 
     सुनिश्चित करें, बैकएंड फ़ंक्शंस के साथ परीक्षण करते समय अपने वेबपेज को चलाने के लिए, निम्नानुसार:
-    1)`cd ../../../`# रिपॉजिटरी की जड़ पर जाएं
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
+    1)`cd ../../../` # go to the root of the repository
+    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **परीक्षा**
 
@@ -187,11 +188,11 @@ pip install threagile-monitoring
 ## वातावरण
 
 -   एक स्टैंडअलोन में बड़े करीने से परिभाषित किया गया[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   `test`मैट्रिक्स का उपयोग करता है[हैच-कंटेनर्स](https://github.com/ofek/hatch-containers)डॉकटर कंटेनरों के अंदर प्रत्येक वातावरण को चलाने के लिए प्लगइन; उपयोग में देखा जा सकता है[परीक्षा](.github/workflows/test.yml)Github वर्कफ़्लो
+-   `test`मैट्रिक्स का उपयोग करता है[हैच-कंटेनर्स](https://github.com/ofek/hatch-containers) plugin to run each environment inside Docker containers; usage can be seen in the [परीक्षा](.github/workflows/test.yml)Github वर्कफ़्लो
 
 ## निर्माण
 
--   सभी निर्माण लक्ष्य उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)एक जहाज करने के लिए हुक प्लगइन का निर्माण करें`_version.py`फ़ाइल तो संस्करण का उपयोग रनटाइम पर किया जा सकता है
+-   सभी निर्माण लक्ष्य उपयोग करते हैं[hatch-vcs](https://github.com/ofek/hatch-vcs)एक जहाज करने के लिए हुक प्लगइन का निर्माण करें`_version.py`फ़ाइल तो संस्करण का उपयोग रनटाइम पर किया जा सकता है
 -   पहिए का उपयोग करें[हैच-मिपीक](https://github.com/ofek/hatch-mypyc)पहले सभी कोड को संकलित करने के लिए हुक प्लगइन का निर्माण करें[Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे:
     -   उपयोग[सभ्य](https://github.com/pypa/cibuildwheel)हर मंच के लिए बाइनरी पहियों को वितरित करने के लिए
