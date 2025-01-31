@@ -1,16 +1,16 @@
-surveillance des risques
+surveillant
 
-# Surveillance menaçante
+# Surveillance
 
-|          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CI/CD    | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                         |
-| Emballer | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                      |
-| Méta     | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black) [![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
+|          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| CI / CD  | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
+| Emballer | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
+| Méta     | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
 
 * * *
 
-> Une application web pour créer des tableaux de bord pour[Menaçant](https://threagile.io).
+> Une application Web pour créer des tableaux de bord pour[Époustouflant](https://threagile.io).
 
 -   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
@@ -20,13 +20,13 @@ surveillance des risques
 
 **Résumé exécutif**
 
-Faire en sorte que votre code soit opérationnel sur votre propre système.
+Mettre votre code en cours d'exécution sur votre propre système.
 
-**Note**: Le`pyproject.toml` file should be in the root of the repository!
+**Note**: Le`pyproject.toml`Le fichier doit être à la racine du référentiel!
 
-**Note**: Assurez-vous de remplir les[exigences](./200/README.md).
+**Note**: Assurez-vous de réaliser le[exigences](./200/README.md).
 
-1.  **Processus d'installation :**
+1.  **Processus d'installation:**
 
     ```bash
     $ cd threagile-monitoring # start at sub-directory of the repository where the requirements.txt file is kept.
@@ -49,34 +49,34 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **Packagez votre site avec webpack :**Une fois que vous disposez d’un site Web suffisamment performant pour que vous puissiez l’utiliser, vous devez empaqueter l’application avec webpack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il soit engagé dans git.
+    **Package de votre site avec webpack:**Une fois que vous avez un site Web assez bon pour vous, vous devez emballer l'application avec WebPack. Ce dossier de package est répertorié dans`.gitignore`pour éviter qu'il ne soit attaché à Git.
 
-    Toute la configuration devrait être prête maintenant, il vous suffit donc de :
+    Toute la configuration doit être prête maintenant, donc tout ce que vous avez à faire:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Cela créera le`app.js`fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
+    Cela créera le`app.js`Fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
 
-    **Développement avec webpack :**Si vous développez encore votre site Web, dans un**session terminale séparée**, après avoir suivi le processus d'installation ci-dessus, faites ceci :
-    1)`cd ../`# va à la racine du dépôt
+    **Développement avec WebPack:**Si vous développez toujours votre site Web, dans un**Session du terminal séparé**, après avoir suivi le processus d'installation ci-dessus, faites-le:
+    1)`cd ../`# allez à la racine du référentiel
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Cela sera - dans la session de terminal séparée (c'est-à-dire`background`) - chargez constamment les modifications que vous apportez dans les fichiers appropriés, tandis que vous pouvez continuer à apporter ces modifications - lors de la session initiale du terminal (c'est-à-dire`foreground`). Vous n’avez donc pas besoin de construire vos sources après chaque édition, cela est pris en charge automatiquement !
+    Ce sera - dans la session du terminal séparé (c'est-à-dire`background`) - Chargez constamment les modifications que vous apportez dans les fichiers appropriés, tandis que vous pouvez continuer à apporter ces modifications - dans la session du terminal initial (c'est-à-dire.`foreground`). Vous n'avez donc pas à construire vos sources après chaque modification, il est pris en charge automatiquement!
 
-    Pour voir les modifications, enregistrez et rechargez simplement votre navigateur (généralement avec F5).
+    Pour voir les modifications, enregistrez et rechargez votre navigateur (généralement avec F5).
 
-    Assurez-vous d'exécuter votre page Web lors des tests avec les fonctions backend, comme suit :
-    1)`cd ../../../`# va à la racine du dépôt
+    Assurez-vous, pour exécuter votre page Web lors des tests avec des fonctions backend, comme suit:
+    1)`cd ../../../`# allez à la racine du référentiel
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **Test**
 
-    Testez l'application (frontend) de cette façon :
-    1)`cd ../`# va à la racine du dépôt
+    Test the application (frontend) this way:
+    1) `cd ../`# allez à la racine du référentiel
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Courir:**
 
-    Si vous ne développez pas, exécutez l'application (backend et frontend simultanément) de cette façon :
+    Si vous ne développez pas, exécutez l'application (backend et frontend simultanément) de cette façon:
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
@@ -86,28 +86,28 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 4.  Références API
 
-5.  Construire et tester :
+5.  Construire et tester:
 
-    Pour construire votre code, utilisez :
+    Pour créer votre code, utilisez:
 
     ```bash
     $ cd threagile-monitoring
     $ hatch build
     ```
 
-    Pour utiliser l'IA pour les révisions de demandes d'extraction, utilisez :
+    Pour utiliser l'IA pour les avis de demande de traction, utilisez:
 
     <https://app.coderabbit.ai/dashboard>(utilise`phpstan.neon`)
 
-    Pour exécuter l'application, utilisez :
+    Pour exécuter l'application, utilisez:
 
-    Linux :
+    Linux:
 
     ```bash
     $ export SECRET_KEY="secret"
     ```
 
-    Fenêtres :
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
@@ -121,9 +121,9 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
+    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Web.
 
-    Pour exécuter des tests, utilisez :
+    Pour exécuter des tests, utilisez:
 
     ```bash
     $ cd threagile-monitoring
@@ -133,7 +133,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 # Documentation API
 
-Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
+Se diriger vers`http://127.0.0.1:5000/docs`Dans votre navigateur Web, ou téléchargez l'OpenAPI.json depuis`http://127.0.0.1:5000/openapi.json`.
 
 # Métrique
 
@@ -144,7 +144,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 **Table des matières**
 
 -   [Installation](#installation)
--   [Source de la version](#version-source)
+-   [Source de version](#version-source)
 -   [Environnements](#environments)
 -   [Construire](#build)
 -   [Licence](#license)
@@ -155,36 +155,36 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 pip install threagile-monitoring
 ```
 
-## Version source
+## Source de version
 
--   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
+-   Le[trappe](https://github.com/ofek/hatch-vcs)Le plugin de source de version détermine la version du projet à l'aide de balises GIT
 
 ## Environnements
 
--   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
+-   Défini parfaitement dans une autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   Le`test`La matrice utilise le[colporteur de trappe](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement à l'intérieur des conteneurs Docker; L'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flow de travail GitHub
 
 ## Construire
 
--   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
--   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
--   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
-    -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
-    -   utiliser le[application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
+-   Toutes les cibles de construction utilisent le[trappe](https://github.com/ofek/hatch-vcs)Construisez le plugin de crochet pour expédier un`_version.py`Fichier afin que la version puisse être utilisée à l'exécution
+-   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)Construisez le plugin Hook pour compiler tout d'abord tout le code avec[Mypyc](https://github.com/mypyc/mypyc)
+-   Le[construire](.github/workflows/build.yml)GitHub Workflow montre comment:
+    -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)pour distribuer des roues binaires pour chaque plate-forme
+    -   Utiliser le[appliquer](https://hatch.pypa.io/latest/plugins/builder/app/)Créer une cible pour construire des distributions autonomes pour chaque plate-forme
 
 ## Licence
 
-`threagile-monitoring`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
+`threagile-monitoring`est distribué sous les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
 ## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
-## 200 - Exigences
+## 200 - exigences
 
 Voir[README.md](./200/README.md)
 
-## 300 - Créer notre application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 
