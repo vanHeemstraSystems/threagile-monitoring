@@ -34,9 +34,9 @@ throweagile監控
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (.hatch) $ cd .. # go one directory up to where pyproject.toml resides
+    (.hatch) $ pwd # go to the directory where pyproject.toml resides
     (.hatch) $ pip install -e . # install the package in editable mode
-    (.hatch) $ cd threagile-monitoring # go back to the sub-directory of the repository where the requirements.txt file is kept.
+    (.hatch) $ cd threagile-monitoring # go to the sub-directory of the repository where the requirements.txt file is kept.
     (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
@@ -63,6 +63,8 @@ throweagile監控
     這將 - 在單獨的終端會話中（即`background`） - 不斷將更改加載到適當的文件中，而您可以繼續進行這些更改 - 在初始終端會話中（即`foreground`）。因此，您不必在每次編輯後都必須構建來源，它會自動照顧！
 
     要查看更改，只需保存並重新加載導航器（通常使用F5）。
+
+    **筆記**： 使用[Onlook](https://github.com/vanHeemstraSystems/onlook)要交互更改用戶界面，並使代碼更改動態更改。所需的是前端正在運行。
 
     確保在使用後端函數測試時運行網頁，如下：
     1）`cd ../../../`＃轉到存儲庫的根
