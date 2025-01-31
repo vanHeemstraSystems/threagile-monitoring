@@ -89,8 +89,8 @@ Mettre votre code en cours d'exécution sur votre propre système.
 
     **Note**: Assurez-vous toujours que votre frontend est en cours d'exécution avant de commencer le développement de l'application. Cela permet un aperçu en temps réel de vos modifications.
 
-    Assurez-vous, pour exécuter votre page Web lors des tests avec des fonctions backend, comme suit:
-    1)`cd ../../../`# allez à la racine du référentiel
+    Make sure, to run your webpage when testing with backend functions, as follows:
+    1) `cd ../../../`# allez à la racine du référentiel
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **Test**
