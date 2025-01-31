@@ -69,8 +69,31 @@ Getting your code up and running on your own system.
 
     To see the changes just save and reload your navigator (usually with F5). 
 
-    **Note**: Use [Onlook](https://github.com/vanHeemstraSystems/onlook) to change your User Interface interactively and have it make code changes dynamically. Required is that the frontend is running.
-    
+    **Using Onlook for UI Development**
+
+    [Onlook](https://github.com/vanHeemstraSystems/onlook) is a powerful tool for interactive UI development that integrates with your project.
+
+    1. **Integration Setup**:
+       - Ensure your frontend is running (`npm run watch`)
+       - Start your backend server (`python app.py`)
+       - Launch Onlook in its own application
+       - Connect Onlook to your running frontend
+
+    2. **Best Practices**:
+       - Make small, incremental changes
+       - Test changes immediately in the browser
+       - Review generated code before committing
+       - Keep Onlook and your frontend in sync
+       - Use version control for all Onlook-generated changes
+
+    3. **Configuration**:
+       - Onlook will detect your project's structure
+       - It will make changes directly to your source files
+       - Changes are immediately reflected due to webpack watch
+       - Your backend API remains accessible during development
+
+    **Note**: Always ensure your frontend is running before starting Onlook development. This enables real-time preview of your changes.
+
     Make sure, to run your webpage when testing with backend functions, as follows:
     1) ```cd ../../../``` # go to the root of the repository
     2) ```hatch shell```
