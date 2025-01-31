@@ -1,30 +1,30 @@
-威脅監控
+throweagile監控
 
-# 威脅監控
+# 彎曲監測
 
-|           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 持續整合/持續交付 | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
-| 包裹        | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
-| 元         | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
+|       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| CI/CD | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
+| 包裹    | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
+| 元     | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
 
 * * *
 
-> 用於建立儀表板的 Web 應用程式[威脅型](https://threagile.io).
+> 一個為創建儀表板的Web應用程序[tre縮](https://threagile.io).
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
 -   [文件](./DOCUMENTATION.md)
 -   [遙測](./TELEMETRY.md)
--   [工裝](./TOOLING.md)
+-   [工具](./TOOLING.md)
 
 **執行摘要**
 
-在您自己的系統上啟動並運行您的程式碼。
+將代碼啟動並在您自己的系統上運行。
 
-**筆記**： 這`pyproject.toml`檔案應該位於儲存庫的根目錄中！
+**筆記**： 這`pyproject.toml`文件應該在存儲庫的根部！
 
-**筆記**: 確保您滿足[要求](./200/README.md).
+**筆記**: Make sure you fulfill the [要求](./200/README.md).
 
 1.  **安裝過程：**
 
@@ -49,55 +49,55 @@
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **使用 webpack 打包您的網站：**一旦你有了一個足夠好的網站可供你使用，你就必須使用 webpack 打包應用程式。該包資料夾列於`.gitignore`以避免它被提交給 git。
+    **將您的網站與WebPack打包：**一旦擁有足夠好的網站，您就必須將應用程序與WebPack打包。此包裝文件夾在`.gitignore`為了避免致力於git。
 
-    現在所有設定都應該準備就緒，因此您需要做的就是：
+    現在所有設置都應該準備就緒，因此您必須要做的所有設置：
     1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
     這將創建`app.js`文件 - 包含所有組件 - 在`/src/threagile_monitoring/static/js/`.
 
-    **使用webpack開發：**如果您仍在開發您的網站，**單獨的終端會話**，按照上述安裝程序後，執行以下操作：
-    1）`cd ../`# 前往儲存庫的根目錄
+    **使用WebPack開發：**如果您仍在開發網站，則**單獨的終端會話**，遵循上述安裝過程後，執行此操作：
+    1）`cd ../`＃轉到存儲庫的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    這將 - 在單獨的終端會話中（即`background`) - 不斷地將您所做的更改載入到適當的文件中，同時您可以在初始終端會話中繼續進行這些更改（即`foreground`）。因此，您不必在每次編輯後建立原始程式碼，它會自動處理！
+    這將 - 在單獨的終端會話中（即`background`） - 不斷將更改加載到適當的文件中，而您可以繼續進行這些更改 - 在初始終端會話中（即`foreground`）。因此，您不必在每次編輯後都必須構建來源，它會自動照顧！
 
-    要查看更改，只需儲存並重新載入導航器（通常使用 F5）。
+    要查看更改，只需保存並重新加載導航器（通常使用F5）。
 
-    確保在使用後端功能進行測試時運行您的網頁，如下所示：
-    1）`cd ../../../`# 前往儲存庫的根目錄
+    確保在使用後端函數測試時運行網頁，如下：
+    1）`cd ../../../`＃轉到存儲庫的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **測試**
 
-    以這種方式測試應用程式（前端）：
-    1）`cd ../`# 前往儲存庫的根目錄
+    以這種方式測試應用程序（前端）：
+    1）`cd ../`＃轉到存儲庫的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **跑步：**
 
-    如果不進行開發，請按以下方式運行應用程式（同時後端和前端）：
+    如果不開發，請以這種方式運行應用程序（同時和前端）：
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
-2.  軟體依賴性
+2.  軟件依賴性
 
 3.  最新版本
 
 4.  API參考
 
-5.  建置和測試：
+5.  構建和測試：
 
-    要建立您的程式碼，請使用：
+    要構建您的代碼，請使用：
 
     ```bash
     $ cd threagile-monitoring
     $ hatch build
     ```
 
-    若要使用 AI 進行拉取請求審查，請使用：
+    要使用AI進行拉動請求評論，請使用：
 
-    <https://app.coderabbit.ai/dashboard>（使用`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard>（用途`phpstan.neon`)
 
     要運行該應用程序，請使用：
 
@@ -121,9 +121,9 @@
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    然後，導航至`http://127.0.0.1:5000/`在您的網頁瀏覽器中。
+    然後，導航到`http://127.0.0.1:5000/`在您的網絡瀏覽器中。
 
-    若要執行測試，請使用：
+    要運行測試，請使用：
 
     ```bash
     $ cd threagile-monitoring
@@ -131,13 +131,13 @@
     $ pytest tests/
     ```
 
-# API文件
+# API文檔
 
-導航至`http://127.0.0.1:5000/docs`在您的網頁瀏覽器中，或從下列位置下載 openapi.json`http://127.0.0.1:5000/openapi.json`.
+導航到`http://127.0.0.1:5000/docs`在您的網絡瀏覽器中，或從中下載OpenApi.json`http://127.0.0.1:5000/openapi.json`.
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓像Prometheus Scrape這樣的工具`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -157,37 +157,37 @@ pip install threagile-monitoring
 
 ## 版本來源
 
--   這[孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
+-   這[孵化-VC](https://github.com/ofek/hatch-vcs)版本源插件使用git標籤確定項目版本
 
 ## 環境
 
--   整齊地定義在一個獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
+-   在獨立中整齊地定義[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   這`test`矩陣使用[孵化器](https://github.com/ofek/hatch-containers)插件以在Docker容器中運行每個環境；可以在[測試](.github/workflows/test.yml)GitHub工作流程
 
 ## 建造
 
--   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
--   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
--   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
-    -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
-    -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
+-   所有構建目標都使用[孵化-VC](https://github.com/ofek/hatch-vcs)構建掛鉤插件來運送`_version.py`文件，因此可以在運行時使用該版本
+-   車輪使用[孵化 - 摩林](https://github.com/ofek/hatch-mypyc)構建掛鉤插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
+-   這[建造](.github/workflows/build.yml)github工作流程顯示瞭如何：
+    -   使用[cibuild輪](https://github.com/pypa/cibuildwheel)為每個平台分發二元車輪
+    -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建立目標以建立每個平台的獨立分佈
 
 ## 執照
 
-`threagile-monitoring`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
+`threagile-monitoring`根據[和](https://spdx.org/licenses/MIT.html)執照。
 
-## 100 - 簡介
+## 100-簡介
 
 看[README.md](./100/README.md)
 
-## 200 - 要求
+## 200-要求
 
 看[README.md](./200/README.md)
 
-## 300 - 建立我們的應用程式
+## 300-構建我們的應用程序
 
 看[README.md](./300/README.md)
 
-## 400 - 結論
+## 400-結論
 
 看[README.md](./400/README.md)
