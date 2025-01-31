@@ -54,13 +54,13 @@ Uw code op uw eigen systeem laten werken.
     Alle setup zou nu klaar moeten zijn, dus alles wat je hoeft te doen:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Dit zal de`app.js` file - which contains all components - in `/src/threagile_monitoring/static/js/`.
+    Dit zal de`app.js`Bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
 
     **Ontwikkeling met webpack:**Als u uw website nog steeds ontwikkelt, in een**Afzonderlijke eindsessie**, Doe dit na het bovenstaande installatieproces te hebben gevolgd:
     1)`cd ../`# Ga naar de wortel van de repository
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Dit zal - in de afzonderlijke eindsessie (d.w.z.`background`) - Laad constant de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u kunt doorgaan met het aanbrengen van die wijzigingen - in de initiële eindsessie (d.w.z.`foreground`). Dus u hoeft uw bronnen niet na elke bewerking te bouwen, deze wordt automatisch verzorgd!
+    Dit zal - in de afzonderlijke eindsessie (d.w.z.`background`) - Laad de wijzigingen die u aanbrengt voortdurend in de juiste bestanden, terwijl u kunt doorgaan met het aanbrengen van die wijzigingen - in de initiële eindsessie (d.w.z.`foreground`). Dus u hoeft uw bronnen niet na elke bewerking te bouwen, deze wordt automatisch verzorgd!
 
     Om de wijzigingen te zien opslaan en uw navigator opnieuw laden (meestal met F5).
 
@@ -167,7 +167,7 @@ pip install threagile-monitoring
 ## Bouwen
 
 -   Alle build -doelen gebruiken de[luik-VC's](https://github.com/ofek/hatch-vcs)Bouw haakplug -in om een`_version.py`Bestand zodat de versie tijdens runtime kan worden gebruikt
--   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[Mypyc](https://github.com/mypyc/mypyc)
+-   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[MyPyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)GitHub -workflow laat zien hoe:
     -   gebruik[CiBuildwheel](https://github.com/pypa/cibuildwheel)Om binaire wielen te verdelen voor elk platform
     -   Gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)Bouw het doel om zelfstandige distributies voor elk platform te bouwen
@@ -188,6 +188,6 @@ Zien[README.md](./200/README.md)
 
 Zien[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - Conclusie
 
 Zien[README.md](./400/README.md)
