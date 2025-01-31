@@ -17,23 +17,23 @@ requires-python = ">=3.8"
 license = "MIT"
 keywords = [
     "hatch",
-  "blockly",
-  "threagile"
+    "blockly",
+    "threagile"
 ]
 authors = [
-  { name = "Willem van Heemstra", email = "wvanheemstra@icloud.com" },
+    { name = "Willem van Heemstra", email = "wvanheemstra@icloud.com" },
 ]
 classifiers = [
-  "Development Status :: 4 - Beta",
-  "License :: OSI Approved :: MIT License",  
-  "Programming Language :: Python",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-  "Programming Language :: Python :: Implementation :: CPython",
-  "Programming Language :: Python :: Implementation :: PyPy",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",  
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dependencies = [
 ]
@@ -51,37 +51,37 @@ path = "threagile-monitoring/src/threagile_monitoring/__about__.py"
 [tool.hatch.envs.default]
 path = ".hatch"
 dependencies = [
-  "coverage[toml]>=6.5",
-  "pytest",
-  "flask"
+    "coverage[toml]>=6.5",
+    "pytest",
+    "flask"
 ]
 [tool.hatch.envs.default.scripts]
 app = "python src/threagile_monitoring/app.py"
 
 [tool.hatch.envs.types]
 extra-dependencies = [
-  "mypy>=1.0.0",
+    "mypy>=1.0.0",
 ]
 [tool.hatch.envs.types.scripts]
 check = "mypy --install-types --non-interactive {args:src/threagile_monitoring tests}"
 
 [tool.hatch.envs.test]
 dependencies = [
-  "pytest",
-  "pytest-cov",
-  "pytest-watcher"
+    "pytest",
+    "pytest-cov",
+    "pytest-watcher"
 ]
 
 [tool.hatch.envs.test.scripts]
 test = "pytest {args:tests}"
 test-cov = "coverage run -m pytest {args:tests}"
 cov-report = [
-  "- coverage combine",
-  "coverage report",
+    "- coverage combine",
+    "coverage report",
 ]
 cov = [
-  "test-cov",
-  "cov-report",
+    "test-cov",
+    "cov-report",
 ]
 
 [[tool.hatch.envs.test.matrix]]
@@ -95,7 +95,7 @@ source_pkgs = ["threagile_monitoring", "tests"]
 branch = true
 parallel = true
 omit = [
-  "src/threagile_monitoring/__about__.py",
+    "src/threagile_monitoring/__about__.py",
 ]
 
 [tool.coverage.paths]
@@ -104,10 +104,10 @@ tests = ["tests", "*/threagile-monitoring/tests"]
 
 [tool.coverage.report]
 exclude_lines = [
-  "no cov",
-  "if __name__ == .__main__.:",
-  "if TYPE_CHECKING:",
+    "no cov",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["threagile-monitoring/src/threagile_monitoring"] 
+packages = ["src/threagile_monitoring"] 
