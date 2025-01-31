@@ -64,7 +64,30 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     Um die Änderungen zu sehen, speichern und laden Sie Ihren Navigator einfach (normalerweise mit F5).
 
-    **Notiz**: Verwenden[Onlook](https://github.com/vanHeemstraSystems/onlook)Um Ihre Benutzeroberfläche interaktiv zu ändern und diese Code dynamisch zu ändern. Erforderlich ist, dass der Frontend läuft.
+    **Using Onlook for UI Development**
+
+    [Onlook](https://github.com/vanHeemstraSystems/onlook)ist ein leistungsstarkes Tool für die interaktive UI -Entwicklung, das sich in Ihr Projekt integriert.
+
+    1.  **Integrationssetup**:
+        -   Stellen Sie sicher, dass Ihr Frontend läuft (`npm run watch`)
+        -   Starten Sie Ihren Backend -Server (`python app.py`)
+        -   Starten Sie Onlook in einer eigenen Anwendung
+        -   Verbinden Sie Onlook mit Ihrem laufenden Frontend
+
+    2.  **Best Practices**:
+        -   Nehmen Sie kleine, inkrementelle Änderungen vor
+        -   Teständerungen sofort im Browser
+        -   Überprüfen Sie den generierten Code, bevor Sie sich verpflichten
+        -   Bleiben Sie in Synchronisierung und Ihr Frontend
+        -   Use version control for all Onlook-generated changes
+
+    3.  **Konfiguration**:
+        -   Onlook wird die Struktur Ihres Projekts erkennen
+        -   Es werden Änderungen direkt an Ihren Quelldateien vorgenommen
+        -   Änderungen werden sofort aufgrund der Webpack -Uhr reflektiert
+        -   Ihre Backend -API bleibt während der Entwicklung zugänglich
+
+    **Notiz**: Stellen Sie immer sicher, dass Ihre Frontend vor Beginn der Onlook -Entwicklung läuft. Dies ermöglicht eine Echtzeit-Vorschau Ihrer Änderungen.
 
     Stellen Sie sicher, dass Sie Ihre Webseite beim Testen mit Backend -Funktionen wie folgt ausführen:
     1)`cd ../../../`# Gehen Sie zur Wurzel des Repositorys
