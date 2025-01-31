@@ -2,11 +2,11 @@ throweagile監控
 
 # 彎曲監測
 
-|       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| CI/CD | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
-| 包裹    | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
-| 元     | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
+|         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| CI/CD   | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
+| Package | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
+| 元       | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
 
 * * *
 
@@ -64,7 +64,30 @@ throweagile監控
 
     要查看更改，只需保存並重新加載導航器（通常使用F5）。
 
-    **筆記**： 使用[Onlook](https://github.com/vanHeemstraSystems/onlook)要交互更改用戶界面，並使代碼更改動態更改。所需的是前端正在運行。
+    **使用Onlook進行UI開發**
+
+    [Onlook](https://github.com/vanHeemstraSystems/onlook) is a powerful tool for interactive UI development that integrates with your project.
+
+    1.  **集成設置**:
+        -   確保您的前端運行（`npm run watch`)
+        -   啟動您的後端服務器（`python app.py`)
+        -   在自己的應用程序中啟動Onlook
+        -   將Onlook連接到您的跑步前端
+
+    2.  **最佳實踐**:
+        -   進行小小的增量改變
+        -   立即在瀏覽器中進行測試更改
+        -   提交之前審查生成的代碼
+        -   保持Onlook和您的前端同步
+        -   使用版本控制進行所有Onlook生成的更改
+
+    3.  **配置**:
+        -   Onlook將檢測您的項目的結構
+        -   它將直接更改您的源文件
+        -   由於WebPack手錶而立即反映更改
+        -   您的後端API在開發過程中仍然可以訪問
+
+    **筆記**：始終在開始Onlook開發之前確保您的前端運行。這可以實時預覽您的更改。
 
     確保在使用後端函數測試時運行網頁，如下：
     1）`cd ../../../`＃轉到存儲庫的根
@@ -88,7 +111,7 @@ throweagile監控
 
 4.  API參考
 
-5.  構建和測試：
+5.  Build and Test:
 
     要構建您的代碼，請使用：
 
