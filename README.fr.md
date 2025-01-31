@@ -54,7 +54,7 @@ Mettre votre code en cours d'exécution sur votre propre système.
     Toute la configuration doit être prête maintenant, donc tout ce que vous avez à faire:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Cela créera le`app.js`Fichier - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
+    Cela créera le`vendors.#####.js`et`main.#####.js`Fichiers - qui contient tous les composants - dans`/src/threagile_monitoring/static/js/`.
 
     **Développement avec WebPack:**Si vous développez toujours votre site Web, dans un**Session du terminal séparé**, après avoir suivi le processus d'installation ci-dessus, faites-le:
     1)`cd ../`# allez à la racine du référentiel
@@ -66,18 +66,18 @@ Mettre votre code en cours d'exécution sur votre propre système.
 
     **Utilisation de la marche pour le développement de l'interface utilisateur**
 
-    [Onlook](https://github.com/vanHeemstraSystems/onlook)est un outil puissant pour le développement d'interface utilisateur interactif qui s'intègre à votre projet.
+    [Embouteillard](https://github.com/vanHeemstraSystems/onlook)est un outil puissant pour le développement d'interface utilisateur interactif qui s'intègre à votre projet.
 
     1.  **Configuration de l'intégration**:
         -   Assurez-vous que votre frontend est en cours d'exécution (`npm run watch`)
         -   Démarrez votre serveur backend (`python app.py`)
         -   Lancez la marche dans sa propre application
-        -   Connect Onlook to your running frontend
+        -   Connectez le plein air à votre frontend en cours d'exécution
 
     2.  **Meilleures pratiques**:
         -   Apporter de petits changements progressifs
         -   Test des modifications immédiatement dans le navigateur
-        -   Review generated code before committing
+        -   Examiner le code généré avant de s'engager
         -   Gardez l'observation et votre frontend en synchronisation
         -   Utilisez le contrôle de la version pour toutes les modifications générées par le plein air
 
@@ -182,7 +182,7 @@ pip install threagile-monitoring
 
 ## Source de version
 
--   The [trappe](https://github.com/ofek/hatch-vcs)Le plugin de source de version détermine la version du projet à l'aide de balises GIT
+-   Le[trappe](https://github.com/ofek/hatch-vcs)Le plugin de source de version détermine la version du projet à l'aide de balises GIT
 
 ## Environnements
 
