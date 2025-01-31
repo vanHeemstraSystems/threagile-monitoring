@@ -1,6 +1,6 @@
-monitoreo-threagil
+monitoreo de la espía
 
-# Monitoreo amenazante
+# Monitoreo de la espía
 
 |         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,12 +10,12 @@ monitoreo-threagil
 
 * * *
 
-> Una aplicación web para crear paneles de control para[amenazante](https://threagile.io).
+> Una aplicación web para crear paneles para[Espeluznante](https://threagile.io).
 
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
 -   [Documentación](./DOCUMENTATION.md)
--   [Telemetria](./TELEMETRY.md)
+-   [Telemetría](./TELEMETRY.md)
 -   [Estampación](./TOOLING.md)
 
 **Resumen ejecutivo**
@@ -24,7 +24,7 @@ Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: El`pyproject.toml`¡El archivo debe estar en la raíz del repositorio!
 
-**Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
+**Nota**: Asegúrese de cumplir con el[requisitos](./200/README.md).
 
 1.  **Proceso de instalación:**
 
@@ -49,22 +49,22 @@ Poner en funcionamiento su código en su propio sistema.
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **Empaqueta tu sitio con webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para su uso, deberá empaquetar la aplicación con webpack. Esta carpeta de paquete aparece en`.gitignore`para evitar que se comprometa con git.
+    **Empaque su sitio con Webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para usar, debe empaquetar la aplicación con Webpack. Esta carpeta de paquete se enumera en`.gitignore`para evitar que se comprometa con GIT.
 
-    Toda la configuración ya debería estar lista, así que todo lo que tienes que hacer:
+    Toda la configuración debería estar lista para ahora, así que todo lo que tiene que hacer:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Esto creará el`app.js`archivo, que contiene todos los componentes, en`/src/threagile_monitoring/static/js/`.
+    Esto creará el`app.js`Archivo, que contiene todos los componentes - en`/src/threagile_monitoring/static/js/`.
 
-    **Desarrollo con paquete web:**Si todavía estás desarrollando tu sitio web, en un**sesión terminal separada**, después de haber seguido el proceso de instalación anterior, haga esto:
+    **Desarrollo con Webpack:**Si todavía está desarrollando su sitio web, en un**Sesión de terminal separada**, después de haber seguido el proceso de instalación anterior, haga esto:
     1)`cd ../`# ir a la raíz del repositorio
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Esto, en la sesión de terminal separada (es decir,`background`) - cargue constantemente los cambios que realice en los archivos apropiados, mientras puede continuar realizando esos cambios - en la sesión inicial del terminal (es decir,`foreground`). Así que no tienes que crear tus fuentes después de cada edición, ¡se encargan automáticamente!
+    Esto lo hará: en la sesión terminal separada (es decir,`background`) - Cargue constantemente los cambios que realiza en los archivos apropiados, mientras que puede continuar haciendo esos cambios, en la sesión de terminal inicial (es decir,`foreground`). Por lo tanto, no tiene que construir sus fuentes después de cada edición, ¡se cuida automáticamente!
 
-    Para ver los cambios simplemente guarda y recarga tu navegador (normalmente con F5).
+    Para ver los cambios, simplemente guarde y vuelva a cargar su navegador (generalmente con F5).
 
-    Asegúrese de ejecutar su página web cuando pruebe con funciones de backend, de la siguiente manera:
+    Asegúrese, para ejecutar su página web al probar con funciones de backend, de la siguiente manera:
     1)`cd ../../../`# ir a la raíz del repositorio
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
@@ -76,7 +76,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     **Correr:**
 
-    Si no está en desarrollo, ejecute la aplicación (backend y frontend simultáneamente) de esta manera:
+    Si no se desarrolla, ejecute la aplicación (backend y frontend simultáneamente) de esta manera:
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
@@ -84,7 +84,7 @@ Poner en funcionamiento su código en su propio sistema.
 
 3.  Últimos lanzamientos
 
-4.  Referencias API
+4.  Referencias de API
 
 5.  Construir y probar:
 
@@ -95,11 +95,11 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch build
     ```
 
-    Para usar IA para revisiones de solicitudes de extracción, use:
+    Para usar AI para revisiones de solicitudes de extracción, use:
 
     <https://app.coderabbit.ai/dashboard>(usa`phpstan.neon`)
 
-    Para ejecutar la aplicación, utilice:
+    Para ejecutar la aplicación, use:
 
     Linux:
 
@@ -107,7 +107,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ export SECRET_KEY="secret"
     ```
 
-    Ventanas:
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
@@ -121,9 +121,9 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
+    Entonces, navegue a`http://127.0.0.1:5000/`en su navegador web.
 
-    Para ejecutar pruebas, utilice:
+    Para ejecutar pruebas, use:
 
     ```bash
     $ cd threagile-monitoring
@@ -131,13 +131,13 @@ Poner en funcionamiento su código en su propio sistema.
     $ pytest tests/
     ```
 
-# Documentación API
+# Documentación de API
 
-Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
+Navegar por`http://127.0.0.1:5000/docs`En su navegador web, o descargue el OpenApi.json desde`http://127.0.0.1:5000/openapi.json`.
 
 # Métrica
 
-Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
+Deje que una herramienta como Prometheus Scrape`http://127.0.0.1:9464/metrics`.
 
 **_NUEVO_**
 
@@ -145,7 +145,7 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
 
 -   [Instalación](#installation)
 -   [Fuente de la versión](#version-source)
--   [Ambientes](#environments)
+-   [Entornos](#environments)
 -   [Construir](#build)
 -   [Licencia](#license)
 
@@ -157,20 +157,20 @@ pip install threagile-monitoring
 
 ## Fuente de la versión
 
--   El[escotilla-vcs](https://github.com/ofek/hatch-vcs)El complemento fuente de la versión determina la versión del proyecto usando etiquetas Git.
+-   El[Hatch-VCS](https://github.com/ofek/hatch-vcs)El complemento de la fuente de la versión determina la versión del proyecto utilizando etiquetas git
 
-## Ambientes
+## Entornos
 
--   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   Definido perfectamente en un[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   El`test`matriz usa el[contenedores](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de los contenedores Docker; el uso se puede ver en el[prueba](.github/workflows/test.yml)Flujo de trabajo de Github
 
 ## Construir
 
--   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
--   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
+-   Todos los objetivos de construcción usan el[Hatch-VCS](https://github.com/ofek/hatch-vcs)complemento de gancho de compilación para enviar un`_version.py`archivo para que la versión se pueda usar en tiempo de ejecución
+-   Las ruedas usan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook Plugin para compilar primero todo el código con[Mypyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
-    -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
-    -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
+    -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)para distribuir ruedas binarias para cada plataforma
+    -   usar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)Construir un objetivo para construir distribuciones independientes para cada plataforma
 
 ## Licencia
 
