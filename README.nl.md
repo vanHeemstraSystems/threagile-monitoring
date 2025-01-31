@@ -20,7 +20,7 @@ Threagile-Monitoring
 
 **Uitvoerende samenvatting**
 
-Uw code op uw eigen systeem laten werken.
+Getting your code up and running on your own system.
 
 **Opmerking**: De`pyproject.toml`Bestand moet in de root van de repository staan!
 
@@ -79,12 +79,12 @@ Uw code op uw eigen systeem laten werken.
         -   Test wijzigingen onmiddellijk in de browser
         -   Bekijk de gegenereerde code voordat u zich inzet
         -   Houd ONLOOK en uw frontend in synchronisatie
-        -   Gebruik versiebeheer voor alle onlook gegenereerde wijzigingen
+        -   Use version control for all Onlook-generated changes
 
     3.  **Configuratie**:
         -   Onlook zal de structuur van uw project detecteren
         -   Het zal rechtstreeks wijzigingen aanbrengen in uw bronbestanden
-        -   Wijzigingen worden onmiddellijk weerspiegeld vanwege Webpack Watch
+        -   Changes are immediately reflected due to webpack watch
         -   Uw backend -API blijft toegankelijk tijdens de ontwikkeling
 
     **Opmerking**: Zorg er altijd voor dat uw frontend actief is voordat u begint met de ontwikkeling van OneLook. Dit maakt realtime preview van uw wijzigingen mogelijk.
@@ -192,7 +192,7 @@ pip install threagile-monitoring
 ## Bouwen
 
 -   Alle build -doelen gebruiken de[luik-VC's](https://github.com/ofek/hatch-vcs)Bouw haakplug -in om een`_version.py`Bestand zodat de versie tijdens runtime kan worden gebruikt
--   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[MyPyc](https://github.com/mypyc/mypyc)
+-   Wheels use the [hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[MyPyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)GitHub -workflow laat zien hoe:
     -   gebruik[CiBuildwheel](https://github.com/pypa/cibuildwheel)Om binaire wielen te verdelen voor elk platform
     -   Gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)Bouw het doel om zelfstandige distributies voor elk platform te bouwen
