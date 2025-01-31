@@ -42,10 +42,6 @@ export const Hero = () => {
               <Lock className="h-5 w-5" />
               Get Started
             </button>
-            <button className="px-8 py-4 border border-neonBlue text-neonBlue rounded-lg hover:bg-neonBlue hover:bg-opacity-10 transition-all duration-300 flex items-center gap-2">
-              <Activity className="h-5 w-5" />
-              Live Demo
-            </button>
           </div>
         </div>
       </div>

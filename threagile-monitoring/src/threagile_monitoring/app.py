@@ -1,9 +1,16 @@
 # threagile-monitoring/src/threagile_monitoring/app.py
 import json
 import os
-from utils import create_app
+from flask import Flask, render_template
+from flask_cors import CORS
+from blueprints.dashboard import bp as dashboard_bp
 
-app = create_app()
+app = Flask(__name__)
+CORS(app)  # This applies CORS to all routes
+
+@app.route('/')
+def index():
+    return render_template('index.html')  # Make sure this template exists
 
 def get_manifest():
     try:
@@ -22,6 +29,7 @@ def get_manifest():
 def utility_processor():
     return dict(manifest=get_manifest())
 
+app.register_blueprint(dashboard_bp)
 
 if __name__ == "__main__":
     app.run(

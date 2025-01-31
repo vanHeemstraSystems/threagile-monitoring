@@ -29,9 +29,13 @@ const features = [
 
 export const Features = () => {
   return (
-    <div className="bg-white py-24">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-darkGray mb-16">
+    <div className="py-32">
+      <div className="container mx-auto px-4 py-20">
+        <h2
+          className="text-4xl font-bold text-center text-darkGray !py-20 !my-20"
+          data-editable="true"
+          style={{ padding: "3rem 0" }}
+        >
           Key Features
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
