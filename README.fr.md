@@ -34,9 +34,9 @@ Mettre votre code en cours d'exécution sur votre propre système.
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (.hatch) $ cd .. # go one directory up to where pyproject.toml resides
+    (.hatch) $ pwd # go to the directory where pyproject.toml resides
     (.hatch) $ pip install -e . # install the package in editable mode
-    (.hatch) $ cd threagile-monitoring # go back to the sub-directory of the repository where the requirements.txt file is kept.
+    (.hatch) $ cd threagile-monitoring # go to the sub-directory of the repository where the requirements.txt file is kept.
     (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
@@ -63,6 +63,8 @@ Mettre votre code en cours d'exécution sur votre propre système.
     Ce sera - dans la session du terminal séparé (c'est-à-dire`background`) - Chargez constamment les modifications que vous apportez dans les fichiers appropriés, tandis que vous pouvez continuer à apporter ces modifications - dans la session du terminal initial (c'est-à-dire.`foreground`). Vous n'avez donc pas à construire vos sources après chaque modification, il est pris en charge automatiquement!
 
     Pour voir les modifications, enregistrez et rechargez votre navigateur (généralement avec F5).
+
+    **Note**: Utiliser[Embouteillard](https://github.com/vanHeemstraSystems/onlook)Pour modifier votre interface utilisateur de manière interactive et le faire apporter des modifications au code dynamiquement. Requis est que le frontend est en cours d'exécution.
 
     Assurez-vous, pour exécuter votre page Web lors des tests avec des fonctions backend, comme suit:
     1)`cd ../../../`# allez à la racine du référentiel
