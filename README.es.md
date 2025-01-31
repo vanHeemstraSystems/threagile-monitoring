@@ -54,7 +54,7 @@ Poner en funcionamiento su código en su propio sistema.
     Toda la configuración debería estar lista para ahora, así que todo lo que tiene que hacer:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Esto creará el`app.js`Archivo, que contiene todos los componentes - en`/src/threagile_monitoring/static/js/`.
+    Esto creará el`vendors.#####.js`y`main.#####.js`archivos, que contienen todos los componentes, en`/src/threagile_monitoring/static/js/`.
 
     **Desarrollo con Webpack:**Si todavía está desarrollando su sitio web, en un**Sesión de terminal separada**, después de haber seguido el proceso de instalación anterior, haga esto:
     1)`cd ../`# ir a la raíz del repositorio
