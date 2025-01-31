@@ -70,8 +70,8 @@ Mettre votre code en cours d'exécution sur votre propre système.
 
     **Test**
 
-    Test the application (frontend) this way:
-    1) `cd ../`# allez à la racine du référentiel
+    Testez l'application (frontend) de cette façon:
+    1)`cd ../`# allez à la racine du référentiel
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Courir:**
