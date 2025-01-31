@@ -192,7 +192,7 @@ pip install threagile-monitoring
 ## Bauen
 
 -   Alle Build -Ziele verwenden die[Hatch-VCS](https://github.com/ofek/hatch-vcs)Bauen Sie Hook -Plugin, um a zu versenden`_version.py`Datei so kann die Version zur Laufzeit verwendet werden
--   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
+-   Räder verwenden die[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Github Workflow zeigt, wie man:
     -   verwenden[Cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
     -   benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
