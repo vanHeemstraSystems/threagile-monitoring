@@ -64,7 +64,30 @@ Uw code op uw eigen systeem laten werken.
 
     Om de wijzigingen te zien opslaan en uw navigator opnieuw laden (meestal met F5).
 
-    **Opmerking**: Gebruik[Aan het kijken](https://github.com/vanHeemstraSystems/onlook)Om uw gebruikersinterface interactief te wijzigen en codewijzigingen dynamisch te laten wijzigen. Vereist is dat de frontend loopt.
+    **Gebruik van ONLOOK voor UI -ontwikkeling**
+
+    [Aan het kijken](https://github.com/vanHeemstraSystems/onlook)is een krachtig hulpmiddel voor interactieve UI -ontwikkeling die integreert met uw project.
+
+    1.  **Integratie -instelling**:
+        -   Zorg ervoor dat uw frontend loopt (`npm run watch`)
+        -   Start je backend -server (`python app.py`)
+        -   Lanceer ONLOOK in zijn eigen applicatie
+        -   Verbind ONLOOK met uw rennende frontend
+
+    2.  **Best practices**:
+        -   Breng kleine, incrementele veranderingen aan
+        -   Test wijzigingen onmiddellijk in de browser
+        -   Bekijk de gegenereerde code voordat u zich inzet
+        -   Houd ONLOOK en uw frontend in synchronisatie
+        -   Gebruik versiebeheer voor alle onlook gegenereerde wijzigingen
+
+    3.  **Configuratie**:
+        -   Onlook zal de structuur van uw project detecteren
+        -   Het zal rechtstreeks wijzigingen aanbrengen in uw bronbestanden
+        -   Wijzigingen worden onmiddellijk weerspiegeld vanwege Webpack Watch
+        -   Uw backend -API blijft toegankelijk tijdens de ontwikkeling
+
+    **Opmerking**: Zorg er altijd voor dat uw frontend actief is voordat u begint met de ontwikkeling van OneLook. Dit maakt realtime preview van uw wijzigingen mogelijk.
 
     Zorg ervoor dat u uw webpagina uitvoert bij het testen met backend -functies, als volgt:
     1)`cd ../../../`# Ga naar de wortel van de repository
