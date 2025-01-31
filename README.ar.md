@@ -54,7 +54,7 @@
     يجب أن يكون كل الإعداد جاهزًا الآن ، لذا كل ما عليك فعله:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    هذا سيخلق`app.js`ملف - الذي يحتوي على جميع المكونات - في`/src/threagile_monitoring/static/js/`.
+    هذا سيخلق`vendors.#####.js`و`main.#####.js` files - which contains all components - in `/src/threagile_monitoring/static/js/`.
 
     **التطوير مع webpack:**إذا كنت لا تزال تقوم بتطوير موقع الويب الخاص بك ، في أ**جلسة طرفية منفصلة**، بعد اتباع عملية التثبيت أعلاه ، قم بذلك:
     1)`cd ../`# انتقل إلى جذر المستودع
@@ -77,7 +77,7 @@
     2.  **أفضل الممارسات**:
         -   قم بإجراء تغييرات صغيرة تدريجية
         -   اختبار التغييرات على الفور في المتصفح
-        -   مراجعة رمز تم إنشاؤه قبل الالتزام
+        -   Review generated code before committing
         -   الحفاظ على الإطلالة والواجهة الأمامية الخاصة بك في المزامنة
         -   استخدم التحكم في الإصدار لجميع التغييرات التي تم إنشاؤها
 
@@ -187,7 +187,7 @@ pip install threagile-monitoring
 ## البيئات
 
 -   تم تعريفه بدقة في مستقل[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   ال`test`مصفوفة تستخدم[hatch-containers](https://github.com/ofek/hatch-containers)البرنامج المساعد لتشغيل كل بيئة داخل حاويات Docker ؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)جيثب سير العمل
+-   ال`test`مصفوفة تستخدم[تلاشي المونتي](https://github.com/ofek/hatch-containers)البرنامج المساعد لتشغيل كل بيئة داخل حاويات Docker ؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)جيثب سير العمل
 
 ## يبني
 
