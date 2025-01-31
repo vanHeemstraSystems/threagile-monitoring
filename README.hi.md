@@ -20,7 +20,7 @@
 
 **कार्यकारी सारांश**
 
-अपने कोड को प्राप्त करना और अपने सिस्टम पर चलाना।
+अपने कोड को प्राप्त करना और अपने सिस्टम पर चल रहा है।
 
 **टिप्पणी**:`pyproject.toml`फ़ाइल रिपॉजिटरी की जड़ में होनी चाहिए!
 
@@ -34,9 +34,9 @@
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (.hatch) $ cd .. # go one directory up to where pyproject.toml resides
+    (.hatch) $ pwd # go to the directory where pyproject.toml resides
     (.hatch) $ pip install -e . # install the package in editable mode
-    (.hatch) $ cd threagile-monitoring # go back to the sub-directory of the repository where the requirements.txt file is kept.
+    (.hatch) $ cd threagile-monitoring # go to the sub-directory of the repository where the requirements.txt file is kept.
     (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
@@ -49,8 +49,7 @@
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **अपनी साइट को वेबपैक के साथ पैकेज करें:**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This package folder is listed in `.gitignore`इससे बचने के लिए git के लिए प्रतिबद्ध होना।
+    **अपनी साइट को वेबपैक के साथ पैकेज करें:**एक बार जब आपके पास एक वेबसाइट होती है जो आपके लिए उपयोग करने के लिए पर्याप्त है, तो आपको वेबपैक के साथ एप्लिकेशन को पैकेज करना होगा। यह पैकेज फ़ोल्डर सूचीबद्ध है`.gitignore`इससे बचने के लिए git के लिए प्रतिबद्ध होना।
 
     सेटअप के सभी अब तक तैयार होना चाहिए ताकि आपको बस इतना करना पड़े:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
@@ -64,6 +63,8 @@
     यह - अलग टर्मिनल सत्र में (यानी`background`) - आपके द्वारा उपयुक्त फ़ाइलों में किए गए परिवर्तनों को लगातार लोड करें, जबकि आप उन परिवर्तनों को जारी रख सकते हैं - प्रारंभिक टर्मिनल सत्र में (अर्थात्।`foreground`)। इसलिए आपको प्रत्येक संपादन के बाद अपने स्रोतों का निर्माण करने की आवश्यकता नहीं है, यह स्वचालित रूप से ध्यान रखा जाता है!
 
     परिवर्तनों को देखने के लिए बस अपने नेविगेटर को सहेजें और फिर से लोड करें (आमतौर पर F5 के साथ)।
+
+    **टिप्पणी**: उपयोग[घिनौना](https://github.com/vanHeemstraSystems/onlook)अपने उपयोगकर्ता इंटरफ़ेस को अंतःक्रियात्मक रूप से बदलने के लिए और यह कोड परिवर्तन को गतिशील रूप से करता है। आवश्यक है कि फ्रंटेंड चल रहा है।
 
     सुनिश्चित करें, बैकएंड फ़ंक्शंस के साथ परीक्षण करते समय अपने वेबपेज को चलाने के लिए, निम्नानुसार:
     1)`cd ../../../`# रिपॉजिटरी की जड़ पर जाएं
