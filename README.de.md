@@ -1,6 +1,6 @@
-Threagile-Überwachung
+Dreigile-Überwachung
 
-# Threagile Überwachung
+# Überwachung der Dreigile
 
 |       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,19 +10,19 @@ Threagile-Überwachung
 
 * * *
 
-> Eine Webanwendung zum Erstellen von Dashboards[Threagile](https://threagile.io).
+> Eine Webanwendung zum Erstellen von Dashboards für[Dreigile](https://threagile.io).
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 -   [Telemetrie](./TELEMETRY.md)
--   [Werkzeuge](./TOOLING.md)
+-   [Werkzeug](./TOOLING.md)
 
 **Zusammenfassung**
 
-Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
+Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
-**Notiz**: Der`pyproject.toml`Die Datei sollte sich im Stammverzeichnis des Repositorys befinden!
+**Notiz**: Der`pyproject.toml`Die Datei sollte sich im Stamm des Repositorys befinden!
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
@@ -49,34 +49,34 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **Verpacken Sie Ihre Website mit Webpack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit Webpack packen. Dieser Paketordner ist in aufgeführt`.gitignore`um zu vermeiden, dass man sich an Git bindet.
+    **Verpacken Sie Ihre Website mit WebPack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit WebPack verpacken. Dieser Paketordner ist in aufgeführt`.gitignore`Um zu vermeiden, dass es Git verpflichtet ist.
 
-    Die gesamte Einrichtung sollte inzwischen fertig sein. Sie müssen also nur noch Folgendes tun:
+    Das gesamte Setup sollte inzwischen fertig sein, also alles, was Sie tun müssen:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Dadurch wird das erstellt`app.js`Datei - die alle Komponenten enthält - in`/src/threagile_monitoring/static/js/`.
+    Dies erstellt die`app.js`Datei - die alle Komponenten enthält - in`/src/threagile_monitoring/static/js/`.
 
-    **Entwicklung mit Webpack:**Wenn Sie Ihre Website noch entwickeln, in a**separate Terminalsitzung**, nachdem Sie den oben genannten Installationsprozess befolgt haben, gehen Sie wie folgt vor:
-    1)`cd ../`# Gehen Sie zum Stammverzeichnis des Repositorys
+    **Development with webpack:**Wenn Sie noch Ihre Website in a entwickeln**separate Terminalsitzung**Nachdem Sie den oben genannten Installationsprozess befolgt haben, tun Sie dies:
+    1)`cd ../`# Gehen Sie zur Wurzel des Repositorys
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Dies wird - in der separaten Terminalsitzung (d. h.`background`) – lädt die von Ihnen vorgenommenen Änderungen ständig in die entsprechenden Dateien, während Sie diese Änderungen weiterhin vornehmen können – in der ersten Terminalsitzung (d. h.`foreground`). Sie müssen Ihre Quellen also nicht nach jeder Bearbeitung neu erstellen, dies geschieht automatisch!
+    Dies gilt - in der separaten Terminalsitzung (d. H.`background`) - Laden Sie die Änderungen, die Sie vornehmen, ständig in die entsprechenden Dateien, während Sie diese Änderungen in der anfänglichen Terminalsitzung fortsetzen können (d. H.`foreground`). Sie müssen also nach jeder Bearbeitung keine Quellen erstellen, sondern wird automatisch gepflegt!
 
-    Um die Änderungen zu sehen, speichern Sie einfach Ihren Navigator und laden Sie ihn neu (normalerweise mit F5).
+    Um die Änderungen zu sehen, speichern und laden Sie Ihren Navigator einfach (normalerweise mit F5).
 
-    Stellen Sie sicher, dass Sie Ihre Webseite beim Testen mit Backend-Funktionen wie folgt ausführen:
-    1)`cd ../../../`# Gehen Sie zum Stammverzeichnis des Repositorys
+    Stellen Sie sicher, dass Sie Ihre Webseite beim Testen mit Backend -Funktionen wie folgt ausführen:
+    1)`cd ../../../`# Gehen Sie zur Wurzel des Repositorys
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **Prüfen**
 
     Testen Sie die Anwendung (Frontend) auf diese Weise:
-    1)`cd ../`# Gehen Sie zum Stammverzeichnis des Repositorys
+    1)`cd ../`# Gehen Sie zur Wurzel des Repositorys
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Laufen:**
 
-    Wenn Sie nicht entwickeln, führen Sie die Anwendung (Backend und Frontend gleichzeitig) auf diese Weise aus:
+    Wenn Sie sich nicht entwickeln, führen Sie die Anwendung auf diese Weise aus (Backend und Frontend gleichzeitig):
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
@@ -84,22 +84,22 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 3.  Neueste Veröffentlichungen
 
-4.  API-Referenzen
+4.  API -Referenzen
 
-5.  Erstellen und testen:
+5.  Bauen und testen:
 
-    Um Ihren Code zu erstellen, verwenden Sie:
+    Verwenden Sie, um Ihren Code zu erstellen:
 
     ```bash
     $ cd threagile-monitoring
     $ hatch build
     ```
 
-    Um KI für Pull-Request-Reviews zu verwenden, verwenden Sie:
+    Um AI für Pull -Anfrage -Bewertungen zu verwenden, verwenden Sie:
 
-    <https://app.coderabbit.ai/dashboard>(verwendet`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard>(Verwendet`phpstan.neon`)
 
-    Um die Anwendung auszuführen, verwenden Sie:
+    Verwenden Sie die Anwendung, um die Anwendung auszuführen:
 
     Linux:
 
@@ -107,7 +107,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ export SECRET_KEY="secret"
     ```
 
-    Windows:
+    Fenster:
 
     ```bash
     $ setx SECRET_KEY secret
@@ -121,7 +121,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Navigieren Sie dann zu`http://127.0.0.1:5000/`in Ihrem Webbrowser.
+    Dann navigieren Sie zu`http://127.0.0.1:5000/`in Ihrem Webbrowser.
 
     Um Tests auszuführen, verwenden Sie:
 
@@ -131,9 +131,9 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ pytest tests/
     ```
 
-# API-Dokumentation
+# API -Dokumentation
 
-Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
+Navigieren zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie den OpenAPI.json von herunter`http://127.0.0.1:5000/openapi.json`.
 
 # Metriken
 
@@ -157,37 +157,37 @@ pip install threagile-monitoring
 
 ## Versionsquelle
 
--   Der[hatch-vcs](https://github.com/ofek/hatch-vcs)Das Versionsquellen-Plugin bestimmt die Projektversion mithilfe von Git-Tags
+-   Der[Hatch-VCS](https://github.com/ofek/hatch-vcs)Versionsquellen -Plugin bestimmt die Projektversion mit Git -Tags
 
 ## Umgebungen
 
--   Ordentlich in einem Standalone definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
+-   Ordentlich in einem Standalon definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   Der`test`Matrix verwendet die[Hatch-Container](https://github.com/ofek/hatch-containers)Plugin, um jede Umgebung in Docker -Containern auszuführen; Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)Github Workflow
 
 ## Bauen
 
--   Alle Build-Ziele verwenden die[hatch-vcs](https://github.com/ofek/hatch-vcs)Erstellen Sie ein Hook-Plugin, um ein zu versenden`_version.py`Datei, damit die Version zur Laufzeit verwendet werden kann
--   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build-Hook-Plugin, mit dem zunächst der gesamte Code kompiliert werden soll[Mypyc](https://github.com/mypyc/mypyc)
--   Der[bauen](.github/workflows/build.yml)Der GitHub-Workflow zeigt, wie Sie:
-    -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)binäre Räder für jede Plattform zu verteilen
-    -   Benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)build target zum Erstellen eigenständiger Distributionen für jede Plattform
+-   Alle Build -Ziele verwenden die[Hatch-VCS](https://github.com/ofek/hatch-vcs)Bauen Sie Hook -Plugin, um a zu versenden`_version.py`Datei so kann die Version zur Laufzeit verwendet werden
+-   Räder verwenden die[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
+-   Der[bauen](.github/workflows/build.yml)Github Workflow zeigt, wie man:
+    -   verwenden[Cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
+    -   Verwenden Sie das[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
 
 ## Lizenz
 
-`threagile-monitoring`wird gemäß den Bedingungen der verteilt[MIT](https://spdx.org/licenses/MIT.html)Lizenz.
+`threagile-monitoring`ist unter den Bedingungen der[MIT](https://spdx.org/licenses/MIT.html)Lizenz.
 
 ## 100 - Einführung
 
 Sehen[README.md](./100/README.md)
 
-## 200 – Anforderungen
+## 200 - Anforderungen
 
 Sehen[README.md](./200/README.md)
 
-## 300 – Erstellen unserer Anwendung
+## 300 - Aufbau unserer Bewerbung
 
 Sehen[README.md](./300/README.md)
 
-## 400 – Fazit
+## 400 - Schlussfolgerung
 
 Sehen[README.md](./400/README.md)
