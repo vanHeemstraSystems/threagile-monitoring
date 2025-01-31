@@ -1,6 +1,6 @@
 Threagile-Monitoring
 
-# Threagile -monitoring
+# Threagile Monitoring
 
 |        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -54,7 +54,7 @@ Uw code op uw eigen systeem laten werken.
     Alle setup zou nu klaar moeten zijn, dus alles wat je hoeft te doen:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Dit zal de`app.js`Bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
+    Dit zal de`vendors.#####.js`En`main.#####.js`Bestanden - die alle componenten bevatten - in`/src/threagile_monitoring/static/js/`.
 
     **Ontwikkeling met webpack:**Als u uw website nog steeds ontwikkelt, in een**Afzonderlijke eindsessie**, Doe dit na het bovenstaande installatieproces te hebben gevolgd:
     1)`cd ../`# Ga naar de wortel van de repository
