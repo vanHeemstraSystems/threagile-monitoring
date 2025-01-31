@@ -54,7 +54,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
     Das gesamte Setup sollte inzwischen fertig sein, also alles, was Sie tun müssen:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Dies erstellt die`app.js`Datei - die alle Komponenten enthält - in`/src/threagile_monitoring/static/js/`.
+    Dies erstellt die`vendors.#####.js`Und`main.#####.js`Dateien - die alle Komponenten enthalten - in`/src/threagile_monitoring/static/js/`.
 
     **Entwicklung mit Webpack:**Wenn Sie noch Ihre Website in a entwickeln**separate Terminalsitzung**Nachdem Sie den oben genannten Installationsprozess befolgt haben, tun Sie dies:
     1)`cd ../`# Gehen Sie zur Wurzel des Repositorys
@@ -64,12 +64,12 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     Um die Änderungen zu sehen, speichern und laden Sie Ihren Navigator einfach (normalerweise mit F5).
 
-    **Using Onlook for UI Development**
+    **Verwenden von Onlook für die UI -Entwicklung**
 
     [Onlook](https://github.com/vanHeemstraSystems/onlook)ist ein leistungsstarkes Tool für die interaktive UI -Entwicklung, das sich in Ihr Projekt integriert.
 
     1.  **Integrationssetup**:
-        -   Stellen Sie sicher, dass Ihr Frontend läuft (`npm run watch`)
+        -   Ensure your frontend is running (`npm run watch`)
         -   Starten Sie Ihren Backend -Server (`python app.py`)
         -   Starten Sie Onlook in einer eigenen Anwendung
         -   Verbinden Sie Onlook mit Ihrem laufenden Frontend
@@ -79,7 +79,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
         -   Teständerungen sofort im Browser
         -   Überprüfen Sie den generierten Code, bevor Sie sich verpflichten
         -   Bleiben Sie in Synchronisierung und Ihr Frontend
-        -   Use version control for all Onlook-generated changes
+        -   Verwenden Sie die Versionskontrolle für alle von Onlook generierten Änderungen
 
     3.  **Konfiguration**:
         -   Onlook wird die Struktur Ihres Projekts erkennen
@@ -124,7 +124,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     <https://app.coderabbit.ai/dashboard>(Verwendet`phpstan.neon`)
 
-    Verwenden Sie die Anwendung, um die Anwendung auszuführen:
+    To run the application, use:
 
     Linux:
 
@@ -194,7 +194,7 @@ pip install threagile-monitoring
 -   Alle Build -Ziele verwenden die[Hatch-VCS](https://github.com/ofek/hatch-vcs)Bauen Sie Hook -Plugin, um a zu versenden`_version.py`Datei so kann die Version zur Laufzeit verwendet werden
 -   Räder verwenden die[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Github Workflow zeigt, wie man:
-    -   verwenden[Cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
+    -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
     -   benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
 
 ## Lizenz
