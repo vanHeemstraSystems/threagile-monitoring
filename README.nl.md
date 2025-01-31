@@ -1,6 +1,6 @@
-threagile-monitoring
+Threagile-Monitoring
 
-# Threagile-monitoring
+# Threagile -monitoring
 
 |        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,7 +10,7 @@ threagile-monitoring
 
 * * *
 
-> Een webapplicatie om dashboards voor te maken[Threagil](https://threagile.io).
+> Een webtoepassing om dashboards te maken[Threagile](https://threagile.io).
 
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
@@ -18,13 +18,13 @@ threagile-monitoring
 -   [Telemetrie](./TELEMETRY.md)
 -   [Gereedschap](./TOOLING.md)
 
-**Samenvatting**
+**Uitvoerende samenvatting**
 
-Uw code op uw eigen systeem operationeel krijgen.
+Uw code op uw eigen systeem laten werken.
 
-**Opmerking**: De`pyproject.toml`bestand moet in de root van de repository staan!
+**Opmerking**: De`pyproject.toml`Bestand moet in de root van de repository staan!
 
-**Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
+**Opmerking**: Zorg ervoor dat je de[vereisten](./200/README.md).
 
 1.  **Installatieproces:**
 
@@ -49,57 +49,57 @@ Uw code op uw eigen systeem operationeel krijgen.
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **Verpak uw site met webpack:**Zodra u een website heeft die goed genoeg is om te gebruiken, moet u de applicatie verpakken met webpack. Deze pakketmap wordt vermeld in`.gitignore`om te voorkomen dat het aan git wordt vastgelegd.
+    **Pak uw site in met webpack:**Zodra u een website hebt die goed genoeg is om te gebruiken, moet u de applicatie met webpack verpakken. Deze pakketmap wordt vermeld`.gitignore`om te voorkomen dat het zich inzet voor git.
 
-    Alle instellingen zouden nu klaar moeten zijn, dus alles wat je hoeft te doen:
+    Alle setup zou nu klaar moeten zijn, dus alles wat je hoeft te doen:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Hierdoor ontstaat de`app.js`bestand - dat alle componenten bevat - in`/src/threagile_monitoring/static/js/`.
+    Dit zal de`app.js` file - which contains all components - in `/src/threagile_monitoring/static/js/`.
 
-    **Ontwikkeling met webpack:**Als u uw website nog aan het ontwikkelen bent, in a**afzonderlijke terminalsessie**, nadat u het bovenstaande installatieproces heeft gevolgd, doet u het volgende:
-    1)`cd ../`# ga naar de hoofdmap van de repository
+    **Ontwikkeling met webpack:**Als u uw website nog steeds ontwikkelt, in een**Afzonderlijke eindsessie**, Doe dit na het bovenstaande installatieproces te hebben gevolgd:
+    1)`cd ../`# Ga naar de wortel van de repository
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Dit zal - in de afzonderlijke terminalsessie (d.w.z.`background`) - laad voortdurend de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u door kunt gaan met het aanbrengen van die wijzigingen - in de initiële terminalsessie (d.w.z.`foreground`). Je hoeft dus niet na elke bewerking je bronnen opnieuw op te bouwen, dit gebeurt automatisch!
+    Dit zal - in de afzonderlijke eindsessie (d.w.z.`background`) - Laad constant de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u kunt doorgaan met het aanbrengen van die wijzigingen - in de initiële eindsessie (d.w.z.`foreground`). Dus u hoeft uw bronnen niet na elke bewerking te bouwen, deze wordt automatisch verzorgd!
 
-    Om de wijzigingen te zien, hoeft u alleen maar uw navigator op te slaan en opnieuw te laden (meestal met F5).
+    Om de wijzigingen te zien opslaan en uw navigator opnieuw laden (meestal met F5).
 
-    Zorg ervoor dat u uw webpagina als volgt uitvoert tijdens het testen met backend-functies:
-    1)`cd ../../../`# ga naar de hoofdmap van de repository
+    Zorg ervoor dat u uw webpagina uitvoert bij het testen met backend -functies, als volgt:
+    1)`cd ../../../`# Ga naar de wortel van de repository
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **Test**
 
-    Test de applicatie (frontend) op deze manier:
-    1)`cd ../`# ga naar de hoofdmap van de repository
+    Test de toepassing (frontend) op deze manier:
+    1)`cd ../`# Ga naar de wortel van de repository
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Loop:**
 
-    Als u niet aan het ontwikkelen bent, voert u de applicatie (backend en frontend tegelijkertijd) op deze manier uit:
+    Als u zich niet ontwikkelt, voert u de applicatie (backend en frontend tegelijkertijd) uit op deze manier:
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
-2.  Software-afhankelijkheden
+2.  Software -afhankelijkheden
 
-3.  Nieuwste releases
+3.  Laatste releases
 
-4.  API-referenties
+4.  API -referenties
 
 5.  Bouwen en testen:
 
-    Om uw code samen te stellen, gebruikt u:
+    Gebruik: om uw code te bouwen:
 
     ```bash
     $ cd threagile-monitoring
     $ hatch build
     ```
 
-    Om AI te gebruiken voor beoordelingen van pull-aanvragen, gebruikt u:
+    Gebruik: om AI te gebruiken voor pull -aanvraagrecensies:
 
-    <https://app.coderabbit.ai/dashboard>(gebruikt`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard>(Gebruik`phpstan.neon`)
 
-    Om de applicatie uit te voeren, gebruikt u:
+    Gebruik: om de applicatie uit te voeren:
 
     Linux:
 
@@ -107,7 +107,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ export SECRET_KEY="secret"
     ```
 
-    Ramen:
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
@@ -121,9 +121,9 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Navigeer vervolgens naar`http://127.0.0.1:5000/`in uw webbrowser.
+    Navigeer dan naar`http://127.0.0.1:5000/`in uw webbrowser.
 
-    Om tests uit te voeren, gebruikt u:
+    Gebruik om tests uit te voeren:
 
     ```bash
     $ cd threagile-monitoring
@@ -131,13 +131,13 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ pytest tests/
     ```
 
-# API-documentatie
+# API -documentatie
 
-Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openapi.json van`http://127.0.0.1:5000/openapi.json`.
+Navigeren naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openapi.json van`http://127.0.0.1:5000/openapi.json`.
 
 # Statistieken
 
-Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:9464/metrics`.
+Laat een tool als Prometheus schrapen`http://127.0.0.1:9464/metrics`.
 
 **_NIEUW_**
 
@@ -157,24 +157,24 @@ pip install threagile-monitoring
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[luik-VC's](https://github.com/ofek/hatch-vcs)Versiebronplug -in bepaalt de projectversie met behulp van GIT -tags
 
 ## Omgevingen
 
--   Netjes gedefinieerd in een standalone[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   De`test`matrix maakt gebruik van de[luikcontainers](https://github.com/ofek/hatch-containers)plug-in om elke omgeving binnen Docker-containers uit te voeren; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub-workflow
+-   Netjes gedefinieerd in een op zichzelf staande[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   De`test`Matrix gebruikt de[luikcontainers](https://github.com/ofek/hatch-containers)plug -in om elke omgeving in Docker -containers te laten werken; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub -workflow
 
 ## Bouwen
 
--   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
--   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
-    -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
-    -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
+-   Alle build -doelen gebruiken de[luik-VC's](https://github.com/ofek/hatch-vcs)Bouw haakplug -in om een`_version.py`Bestand zodat de versie tijdens runtime kan worden gebruikt
+-   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[Mypyc](https://github.com/mypyc/mypyc)
+-   De[bouwen](.github/workflows/build.yml)GitHub -workflow laat zien hoe:
+    -   gebruik[CiBuildwheel](https://github.com/pypa/cibuildwheel)Om binaire wielen te verdelen voor elk platform
+    -   Gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)Bouw het doel om zelfstandige distributies voor elk platform te bouwen
 
 ## Licentie
 
-`threagile-monitoring`wordt verspreid onder de voorwaarden van de[MET](https://spdx.org/licenses/MIT.html)licentie.
+`threagile-monitoring`wordt verdeeld onder de voorwaarden van de[MET](https://spdx.org/licenses/MIT.html)licentie.
 
 ## 100 - Inleiding
 
@@ -184,10 +184,10 @@ Zien[README.md](./100/README.md)
 
 Zien[README.md](./200/README.md)
 
-## 300 - Onze applicatie bouwen
+## 300 - onze applicatie bouwen
 
 Zien[README.md](./300/README.md)
 
-## 400 - Conclusie
+## 400 - Conclusion
 
 Zien[README.md](./400/README.md)
