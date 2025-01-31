@@ -24,7 +24,7 @@ throweagile監控
 
 **筆記**： 這`pyproject.toml`文件應該在存儲庫的根部！
 
-**筆記**: Make sure you fulfill the [要求](./200/README.md).
+**筆記**：確保您滿足[要求](./200/README.md).
 
 1.  **安裝過程：**
 
