@@ -49,7 +49,7 @@ Poner en funcionamiento su código en su propio sistema.
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **Empaque su sitio con Webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para usar, debe empaquetar la aplicación con Webpack. Esta carpeta de paquete se enumera en`.gitignore`para evitar que se comprometa con GIT.
+    **Empaque su sitio con Webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para usar, debe empaquetar la aplicación con Webpack. Esta carpeta de paquete se enumera en`.gitignore` to avoid it to be committed to git.
 
     Toda la configuración debería estar lista para ahora, así que todo lo que tiene que hacer:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
@@ -146,7 +146,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Entonces, navegue a`http://127.0.0.1:5000/`en su navegador web.
+    Then, navigate to `http://127.0.0.1:5000/`en su navegador web.
 
     Para ejecutar pruebas, use:
 
