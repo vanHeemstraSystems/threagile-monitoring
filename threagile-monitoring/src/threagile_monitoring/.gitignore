@@ -68,3 +68,6 @@ templates/public/index.html
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/static/js/vendors.#####.js
+/static/js/main.#####.js
