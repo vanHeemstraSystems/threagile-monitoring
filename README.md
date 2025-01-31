@@ -31,9 +31,9 @@ Getting your code up and running on your own system.
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (.hatch) $ cd .. # go one directory up to where pyproject.toml resides
+    (.hatch) $ pwd # go to the directory where pyproject.toml resides
     (.hatch) $ pip install -e . # install the package in editable mode
-    (.hatch) $ cd threagile-monitoring # go back to the sub-directory of the repository where the requirements.txt file is kept.
+    (.hatch) $ cd threagile-monitoring # go to the sub-directory of the repository where the requirements.txt file is kept.
     (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
@@ -68,6 +68,8 @@ Getting your code up and running on your own system.
     This will - in the separate terminal session (i.e. ```background```) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. ```foreground```). So you do not have to build your sources after each edit, it is taken care of automatically!
 
     To see the changes just save and reload your navigator (usually with F5). 
+
+    **Note**: Use [Onlook](https://github.com/vanHeemstraSystems/onlook) to change your User Interface interactively and have it make code changes dynamically. Required is that the frontend is running.
     
     Make sure, to run your webpage when testing with backend functions, as follows:
     1) ```cd ../../../``` # go to the root of the repository
