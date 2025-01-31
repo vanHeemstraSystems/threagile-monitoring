@@ -34,9 +34,9 @@
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (.hatch) $ cd .. # go one directory up to where pyproject.toml resides
+    (.hatch) $ pwd # go to the directory where pyproject.toml resides
     (.hatch) $ pip install -e . # install the package in editable mode
-    (.hatch) $ cd threagile-monitoring # go back to the sub-directory of the repository where the requirements.txt file is kept.
+    (.hatch) $ cd threagile-monitoring # go to the sub-directory of the repository where the requirements.txt file is kept.
     (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
@@ -64,13 +64,15 @@
 
     لرؤية التغييرات فقط حفظ وإعادة تحميل الملاح الخاص بك (عادة مع F5).
 
+    **ملحوظة**: يستخدم[onlook](https://github.com/vanHeemstraSystems/onlook)لتغيير واجهة المستخدم الخاصة بك بشكل تفاعلي وجعلها تقوم بتغييرات التعليمات البرمجية بشكل ديناميكي. المطلوب هو أن الواجهة الأمامية تعمل.
+
     تأكد من تشغيل صفحة الويب الخاصة بك عند الاختبار مع وظائف الخلفية ، على النحو التالي:
     1)`cd ../../../`# انتقل إلى جذر المستودع
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **امتحان**
 
-    اختبار التطبيق (الواجهة الأمامية) بهذه الطريقة:
+    اختبر التطبيق (الواجهة الأمامية) بهذه الطريقة:
     1)`cd ../`# انتقل إلى جذر المستودع
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
