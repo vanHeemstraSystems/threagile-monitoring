@@ -1,27 +1,30 @@
-import React from 'react';
+import React from "react";
 import { Shield, Zap, RefreshCw, Bell } from "lucide-react";
 
 const features = [
   {
     icon: Shield,
     title: "Threat Detection",
-    description: "Advanced algorithms to identify and analyze potential security threats in real-time"
+    description:
+      "Advanced algorithms to identify and analyze potential security threats in real-time",
   },
   {
     icon: Zap,
     title: "Quick Response",
-    description: "Immediate alerts and automated responses to security incidents"
+    description:
+      "Immediate alerts and automated responses to security incidents",
   },
   {
     icon: RefreshCw,
     title: "Agile Integration",
-    description: "Seamlessly integrates with your agile development workflow"
+    description: "Seamlessly integrates with your agile development workflow",
   },
   {
     icon: Bell,
     title: "Smart Alerts",
-    description: "Customizable notifications for different threat levels and security events"
-  }
+    description:
+      "Customizable notifications for different threat levels and security events",
+  },
 ];
 
 export const Features = () => {
@@ -38,12 +41,11 @@ export const Features = () => {
               className="p-6 rounded-lg border border-gray-200 hover:border-neonBlue transition-all duration-300 group"
             >
               <feature.icon className="h-12 w-12 text-neonBlue mb-4 group-hover:animate-glow" />
+
               <h3 className="text-xl font-semibold text-darkGray mb-2">
                 {feature.title}
               </h3>
-              <p className="text-gray-600">
-                {feature.description}
-              </p>
+              <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
-import React from 'react';
-import Hero from './Hero.tsx';
-import Features from './Features.tsx';
+import React from "react";
+import Hero from "./Hero.tsx";
+import Features from "./Features.tsx";
 
 function Home() {
   return (
