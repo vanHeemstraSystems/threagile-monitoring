@@ -34,9 +34,9 @@ Poner en funcionamiento su código en su propio sistema.
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (.hatch) $ cd .. # go one directory up to where pyproject.toml resides
+    (.hatch) $ pwd # go to the directory where pyproject.toml resides
     (.hatch) $ pip install -e . # install the package in editable mode
-    (.hatch) $ cd threagile-monitoring # go back to the sub-directory of the repository where the requirements.txt file is kept.
+    (.hatch) $ cd threagile-monitoring # go to the sub-directory of the repository where the requirements.txt file is kept.
     (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
@@ -64,6 +64,8 @@ Poner en funcionamiento su código en su propio sistema.
 
     Para ver los cambios, simplemente guarde y vuelva a cargar su navegador (generalmente con F5).
 
+    **Nota**: Usar[Asumir](https://github.com/vanHeemstraSystems/onlook)Para cambiar su interfaz de usuario de manera interactiva y hacer que haga cambios en el código dinámicamente. Se requiere que el frontend esté funcionando.
+
     Asegúrese, para ejecutar su página web al probar con funciones de backend, de la siguiente manera:
     1)`cd ../../../`# ir a la raíz del repositorio
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
@@ -76,7 +78,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     **Correr:**
 
-    If not developing, run the application (backend and frontend simultaneously) this way: 
+    Si no se desarrolla, ejecute la aplicación (backend y frontend simultáneamente) de esta manera:
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
@@ -121,7 +123,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`en su navegador web.
+    Entonces, navegue a`http://127.0.0.1:5000/`en su navegador web.
 
     Para ejecutar pruebas, use:
 
