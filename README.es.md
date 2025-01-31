@@ -64,7 +64,30 @@ Poner en funcionamiento su código en su propio sistema.
 
     Para ver los cambios, simplemente guarde y vuelva a cargar su navegador (generalmente con F5).
 
-    **Nota**: Usar[Asumir](https://github.com/vanHeemstraSystems/onlook)Para cambiar su interfaz de usuario de manera interactiva y hacer que haga cambios en el código dinámicamente. Se requiere que el frontend esté funcionando.
+    **Uso de torcer para el desarrollo de la interfaz de usuario**
+
+    [Asumir](https://github.com/vanHeemstraSystems/onlook)es una herramienta poderosa para el desarrollo interactivo de la interfaz de usuario que se integra con su proyecto.
+
+    1.  **Configuración de integración**:
+        -   Asegúrese de que su interfaz esté funcionando (`npm run watch`)
+        -   Inicie su servidor de backend (`python app.py`)
+        -   Iniciar a P "en su propia aplicación
+        -   Conecte Plook a su frontend en funcionamiento
+
+    2.  **Mejores prácticas**:
+        -   Hacer pequeños cambios incrementales
+        -   Los cambios de prueba inmediatamente en el navegador
+        -   Revisar el código generado antes de comprometerse
+        -   Mantenga Plook y su frontend en sincronización
+        -   Utilice el control de versiones para todos los cambios generados por P "
+
+    3.  **Configuración**:
+        -   Perspect detectará la estructura de su proyecto
+        -   Hará cambios directamente en sus archivos de origen
+        -   Los cambios se reflejan inmediatamente debido a Webpack Watch
+        -   Su API de backend permanece accesible durante el desarrollo
+
+    **Nota**: Siempre asegúrese de que su interfaz se esté ejecutando antes de comenzar el desarrollo de P ". Esto permite una vista previa en tiempo real de sus cambios.
 
     Asegúrese, para ejecutar su página web al probar con funciones de backend, de la siguiente manera:
     1)`cd ../../../`# ir a la raíz del repositorio
