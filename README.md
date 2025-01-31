@@ -54,7 +54,7 @@ Getting your code up and running on your own system.
     2) ```(.hatch) $ npm install```
     3) ```(.hatch) $ npm run build```
 
-    This will create the ```app.js``` file - which contains all components - in ```/src/threagile_monitoring/static/js/```.
+    This will create the ```vendors.#####.js``` and ```main.#####.js``` files - which contains all components - in ```/src/threagile_monitoring/static/js/```.
 
     **Development with webpack:**
     If you are still developing your website, in a **separate terminal session**, after having followed the above installation process, do this:
