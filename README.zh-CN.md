@@ -34,9 +34,9 @@ throweagile监控
     # Without hatch: $ python src/threagile_monitoring/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (.hatch) $ cd .. # go one directory up to where pyproject.toml resides
+    (.hatch) $ pwd # go to the directory where pyproject.toml resides
     (.hatch) $ pip install -e . # install the package in editable mode
-    (.hatch) $ cd threagile-monitoring # go back to the sub-directory of the repository where the requirements.txt file is kept.
+    (.hatch) $ cd threagile-monitoring # go to the sub-directory of the repository where the requirements.txt file is kept.
     (.hatch) $ pip show threagile-monitoring # optional, shows the project details, here 'threagile-monitoring', from `pyproject.toml`
     # Name: threagile-monitoring
     # Version: 0.0.1 # it takes this from src/threagile_monitoring/__about__.py
@@ -60,9 +60,11 @@ throweagile监控
     1）`cd ../`＃转到存储库的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    这将 - 在单独的终端会话中（即`background`) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. `foreground`）。因此，您不必在每次编辑后都必须构建来源，它会自动照顾！
+    这将 - 在单独的终端会话中（即`background`） - 不断将更改加载到适当的文件中，而您可以继续进行这些更改 - 在初始终端会话中（即`foreground`）。因此，您不必在每次编辑后都必须构建来源，它会自动照顾！
 
     要查看更改，只需保存并重新加载导航器（通常使用F5）。
+
+    **笔记**： 使用[Onlook](https://github.com/vanHeemstraSystems/onlook)要交互更改用户界面，并使代码更改动态更改。所需的是前端正在运行。
 
     确保在使用后端函数测试时运行网页，如下：
     1）`cd ../../../`＃转到存储库的根
