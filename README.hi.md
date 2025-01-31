@@ -54,13 +54,13 @@
     सेटअप के सभी अब तक तैयार होना चाहिए ताकि आपको बस इतना करना पड़े:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    यह बनाएगा`app.js`फ़ाइल - जिसमें सभी घटक शामिल हैं - में`/src/threagile_monitoring/static/js/`.
+    यह बनाएगा`vendors.#####.js`और`main.#####.js` files - which contains all components - in `/src/threagile_monitoring/static/js/`.
 
     **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, एक में**अलग टर्मिनल सत्र**, उपरोक्त स्थापना प्रक्रिया का पालन करने के बाद, ऐसा करें:
     1)`cd ../`# रिपॉजिटरी की जड़ पर जाएं
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    यह - अलग टर्मिनल सत्र में (यानी`background`) - आपके द्वारा उपयुक्त फ़ाइलों में किए गए परिवर्तनों को लगातार लोड करें, जबकि आप उन परिवर्तनों को जारी रख सकते हैं - प्रारंभिक टर्मिनल सत्र में (अर्थात्।`foreground`)। इसलिए आपको प्रत्येक संपादन के बाद अपने स्रोतों का निर्माण करने की आवश्यकता नहीं है, यह स्वचालित रूप से ध्यान रखा जाता है!
+    यह - अलग टर्मिनल सत्र में (यानी`background`) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. `foreground`)। इसलिए आपको प्रत्येक संपादन के बाद अपने स्रोतों का निर्माण करने की आवश्यकता नहीं है, यह स्वचालित रूप से ध्यान रखा जाता है!
 
     परिवर्तनों को देखने के लिए बस अपने नेविगेटर को सहेजें और फिर से लोड करें (आमतौर पर F5 के साथ)।
 
@@ -171,7 +171,7 @@
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
 -   [वातावरण](#environments)
--   [निर्माण](#build)
+-   [Build](#build)
 -   [लाइसेंस](#license)
 
 ## इंस्टालेशन
@@ -193,7 +193,7 @@ pip install threagile-monitoring
 
 -   सभी निर्माण लक्ष्य उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)एक जहाज करने के लिए हुक प्लगइन का निर्माण करें`_version.py`फ़ाइल तो संस्करण का उपयोग रनटाइम पर किया जा सकता है
 -   पहिए का उपयोग करें[हैच-मिपीक](https://github.com/ofek/hatch-mypyc)पहले सभी कोड को संकलित करने के लिए हुक प्लगइन का निर्माण करें[Mypyc](https://github.com/mypyc/mypyc)
--   [निर्माण](.github/workflows/build.yml) GitHub workflow shows how to:
+-   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे:
     -   उपयोग[सभ्य](https://github.com/pypa/cibuildwheel)हर मंच के लिए बाइनरी पहियों को वितरित करने के लिए
     -   उपयोग[अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)हर प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण का निर्माण करने के लिए लक्ष्य का निर्माण करें
 
