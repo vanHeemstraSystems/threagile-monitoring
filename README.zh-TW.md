@@ -192,7 +192,7 @@ pip install threagile-monitoring
 ## 建造
 
 -   所有構建目標都使用[孵化-VC](https://github.com/ofek/hatch-vcs)構建掛鉤插件來運送`_version.py`文件，因此可以在運行時使用該版本
--   車輪使用[孵化 - 摩林](https://github.com/ofek/hatch-mypyc)構建掛鉤插件以首先使用[Mypyc](https://github.com/mypyc/mypyc)
+-   車輪使用[孵化 - 摩林](https://github.com/ofek/hatch-mypyc)構建掛鉤插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)github工作流程顯示瞭如何：
     -   使用[cibuild輪](https://github.com/pypa/cibuildwheel)為每個平台分發二元車輪
     -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建立目標以建立每個平台的獨立分佈
