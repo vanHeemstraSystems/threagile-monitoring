@@ -2,11 +2,11 @@ throweagile監控
 
 # 彎曲監測
 
-|         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| CI/CD   | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
-| Package | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
-| 元       | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
+|       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| CI/CD | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
+| 包裹    | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
+| 元     | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
 
 * * *
 
@@ -54,7 +54,7 @@ throweagile監控
     現在所有設置都應該準備就緒，因此您必須要做的所有設置：
     1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    這將創建`app.js`文件 - 包含所有組件 - 在`/src/threagile_monitoring/static/js/`.
+    這將創建`vendors.#####.js`和`main.#####.js`文件 - 包含所有組件 - 在`/src/threagile_monitoring/static/js/`.
 
     **使用WebPack開發：**如果您仍在開發網站，則**單獨的終端會話**，遵循上述安裝過程後，執行此操作：
     1）`cd ../`＃轉到存儲庫的根
@@ -66,7 +66,7 @@ throweagile監控
 
     **使用Onlook進行UI開發**
 
-    [Onlook](https://github.com/vanHeemstraSystems/onlook) is a powerful tool for interactive UI development that integrates with your project.
+    [Onlook](https://github.com/vanHeemstraSystems/onlook)是與您的項目集成的交互式UI開發的強大工具。
 
     1.  **集成設置**:
         -   確保您的前端運行（`npm run watch`)
@@ -111,7 +111,7 @@ throweagile監控
 
 4.  API參考
 
-5.  Build and Test:
+5.  構建和測試：
 
     要構建您的代碼，請使用：
 
@@ -193,7 +193,7 @@ pip install threagile-monitoring
 
 -   所有構建目標都使用[孵化-VC](https://github.com/ofek/hatch-vcs)構建掛鉤插件來運送`_version.py`文件，因此可以在運行時使用該版本
 -   車輪使用[孵化 - 摩林](https://github.com/ofek/hatch-mypyc)構建掛鉤插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
--   這[建造](.github/workflows/build.yml)github工作流程顯示瞭如何：
+-   這[建造](.github/workflows/build.yml) GitHub workflow shows how to:
     -   使用[cibuild輪](https://github.com/pypa/cibuildwheel)為每個平台分發二元車輪
     -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建立目標以建立每個平台的獨立分佈
 
