@@ -64,7 +64,30 @@ Mettre votre code en cours d'exécution sur votre propre système.
 
     Pour voir les modifications, enregistrez et rechargez votre navigateur (généralement avec F5).
 
-    **Note**: Utiliser[Embouteillard](https://github.com/vanHeemstraSystems/onlook)Pour modifier votre interface utilisateur de manière interactive et le faire apporter des modifications au code dynamiquement. Requis est que le frontend est en cours d'exécution.
+    **Utilisation de la marche pour le développement de l'interface utilisateur**
+
+    [Onlook](https://github.com/vanHeemstraSystems/onlook)est un outil puissant pour le développement d'interface utilisateur interactif qui s'intègre à votre projet.
+
+    1.  **Configuration de l'intégration**:
+        -   Assurez-vous que votre frontend est en cours d'exécution (`npm run watch`)
+        -   Démarrez votre serveur backend (`python app.py`)
+        -   Lancez la marche dans sa propre application
+        -   Connect Onlook to your running frontend
+
+    2.  **Meilleures pratiques**:
+        -   Apporter de petits changements progressifs
+        -   Test des modifications immédiatement dans le navigateur
+        -   Review generated code before committing
+        -   Gardez l'observation et votre frontend en synchronisation
+        -   Utilisez le contrôle de la version pour toutes les modifications générées par le plein air
+
+    3.  **Configuration**:
+        -   L'observation détectera la structure de votre projet
+        -   Il apportera des modifications directement dans vos fichiers source
+        -   Les modifications sont immédiatement reflétées en raison de la montre WebPack
+        -   Votre API backend reste accessible pendant le développement
+
+    **Note**: Assurez-vous toujours que votre frontend est en cours d'exécution avant de commencer le développement de l'application. Cela permet un aperçu en temps réel de vos modifications.
 
     Assurez-vous, pour exécuter votre page Web lors des tests avec des fonctions backend, comme suit:
     1)`cd ../../../`# allez à la racine du référentiel
@@ -159,7 +182,7 @@ pip install threagile-monitoring
 
 ## Source de version
 
--   Le[trappe](https://github.com/ofek/hatch-vcs)Le plugin de source de version détermine la version du projet à l'aide de balises GIT
+-   The [trappe](https://github.com/ofek/hatch-vcs)Le plugin de source de version détermine la version du projet à l'aide de balises GIT
 
 ## Environnements
 
