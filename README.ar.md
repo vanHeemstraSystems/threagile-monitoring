@@ -70,7 +70,7 @@
 
     **امتحان**
 
-    اختبر التطبيق (الواجهة الأمامية) بهذه الطريقة:
+    اختبار التطبيق (الواجهة الأمامية) بهذه الطريقة:
     1)`cd ../`# انتقل إلى جذر المستودع
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
