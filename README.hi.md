@@ -20,7 +20,7 @@
 
 **कार्यकारी सारांश**
 
-अपने कोड को प्राप्त करना और अपने सिस्टम पर चल रहा है।
+अपने कोड को प्राप्त करना और अपने सिस्टम पर चलाना।
 
 **टिप्पणी**:`pyproject.toml`फ़ाइल रिपॉजिटरी की जड़ में होनी चाहिए!
 
@@ -49,7 +49,8 @@
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **अपनी साइट को वेबपैक के साथ पैकेज करें:**एक बार जब आपके पास एक वेबसाइट होती है जो आपके लिए उपयोग करने के लिए पर्याप्त है, तो आपको वेबपैक के साथ एप्लिकेशन को पैकेज करना होगा। यह पैकेज फ़ोल्डर सूचीबद्ध है`.gitignore`इससे बचने के लिए git के लिए प्रतिबद्ध होना।
+    **अपनी साइट को वेबपैक के साथ पैकेज करें:**
+    Once you have a website that is good enough for you to use, you have to package the application with webpack. This package folder is listed in `.gitignore`इससे बचने के लिए git के लिए प्रतिबद्ध होना।
 
     सेटअप के सभी अब तक तैयार होना चाहिए ताकि आपको बस इतना करना पड़े:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
@@ -161,12 +162,12 @@ pip install threagile-monitoring
 
 ## वातावरण
 
--   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   एक स्टैंडअलोन में बड़े करीने से परिभाषित किया गया[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   `test`मैट्रिक्स का उपयोग करता है[हैच-कंटेनर्स](https://github.com/ofek/hatch-containers)डॉकटर कंटेनरों के अंदर प्रत्येक वातावरण को चलाने के लिए प्लगइन; उपयोग में देखा जा सकता है[परीक्षा](.github/workflows/test.yml)Github वर्कफ़्लो
 
 ## निर्माण
 
--   All build targets use the [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)एक जहाज करने के लिए हुक प्लगइन का निर्माण करें`_version.py`फ़ाइल तो संस्करण का उपयोग रनटाइम पर किया जा सकता है
+-   सभी निर्माण लक्ष्य उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)एक जहाज करने के लिए हुक प्लगइन का निर्माण करें`_version.py`फ़ाइल तो संस्करण का उपयोग रनटाइम पर किया जा सकता है
 -   पहिए का उपयोग करें[हैच-मिपीक](https://github.com/ofek/hatch-mypyc)पहले सभी कोड को संकलित करने के लिए हुक प्लगइन का निर्माण करें[Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे:
     -   उपयोग[सभ्य](https://github.com/pypa/cibuildwheel)हर मंच के लिए बाइनरी पहियों को वितरित करने के लिए
