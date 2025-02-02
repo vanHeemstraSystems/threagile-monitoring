@@ -49,7 +49,7 @@ Poner en funcionamiento su código en su propio sistema.
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **Empaque su sitio con Webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para usar, debe empaquetar la aplicación con Webpack. Esta carpeta de paquete se enumera en`.gitignore` to avoid it to be committed to git.
+    **Empaque su sitio con Webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para usar, debe empaquetar la aplicación con Webpack. Esta carpeta de paquete se enumera en`.gitignore`para evitar que se comprometa con GIT.
 
     Toda la configuración debería estar lista para ahora, así que todo lo que tiene que hacer:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
@@ -64,7 +64,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     Para ver los cambios, simplemente guarde y vuelva a cargar su navegador (generalmente con F5).
 
-    **Uso de torcer para el desarrollo de la interfaz de usuario**
+    **Using Onlook for UI Development**
 
     [Asumir](https://github.com/vanHeemstraSystems/onlook)es una herramienta poderosa para el desarrollo interactivo de la interfaz de usuario que se integra con su proyecto.
 
@@ -146,7 +146,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`en su navegador web.
+    Entonces, navegue a`http://127.0.0.1:5000/`en su navegador web.
 
     Para ejecutar pruebas, use:
 
@@ -213,6 +213,6 @@ Ver[README.md](./200/README.md)
 
 Ver[README.md](./300/README.md)
 
-## 400 - Conclusión
+## 400 - Conclusion
 
 Ver[README.md](./400/README.md)
