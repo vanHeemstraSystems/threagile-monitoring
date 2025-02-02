@@ -10,7 +10,7 @@ throweagile监控
 
 * * *
 
-> 一个为创建仪表板的Web应用程序[Threagile](https://threagile.io).
+> 一个为创建仪表板的Web应用程序[tre缩](https://threagile.io).
 
 -   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
@@ -24,7 +24,7 @@ throweagile监控
 
 **笔记**： 这`pyproject.toml`文件应该在存储库的根部！
 
-**笔记**：确保您满足[requirements](./200/README.md).
+**笔记**：确保您满足[要求](./200/README.md).
 
 1.  **安装过程：**
 
