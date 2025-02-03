@@ -66,7 +66,7 @@ throweagile监控
 
     **使用Onlook进行UI开发**
 
-    [Onlook](https://github.com/vanHeemstraSystems/onlook)是与您的项目集成的交互式UI开发的强大工具。
+    [Onlook](https://github.com/vanHeemstraSystems/onlook) is a powerful tool for interactive UI development that integrates with your project.
 
     1.  **集成设置**:
         -   确保您的前端运行（`npm run watch`)
@@ -124,7 +124,7 @@ throweagile监控
 
     <https://app.coderabbit.ai/dashboard>（用途`phpstan.neon`)
 
-    To run the application, use:
+    要运行该应用程序，请使用：
 
     Linux：
 
@@ -199,7 +199,7 @@ pip install threagile-monitoring
 
 ## 执照
 
-`threagile-monitoring`根据[和](https://spdx.org/licenses/MIT.html)执照。
+`threagile-monitoring`根据[和](https://spdx.org/licenses/MIT.html) license.
 
 ## 100-简介
 
