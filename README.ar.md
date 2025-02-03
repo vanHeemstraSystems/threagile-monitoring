@@ -169,7 +169,7 @@
 **جدول المحتويات**
 
 -   [تثبيت](#installation)
--   [مصدر الإصدار](#version-source)
+-   [Version source](#version-source)
 -   [البيئات](#environments)
 -   [يبني](#build)
 -   [رخصة](#license)
