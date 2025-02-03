@@ -85,7 +85,7 @@ throweagile监控
         -   Onlook将检测您的项目的结构
         -   它将直接更改您的源文件
         -   由于WebPack手表而立即反映更改
-        -   Your backend API remains accessible during development
+        -   您的后端API在开发过程中仍然可以访问
 
     **笔记**：始终在开始Onlook开发之前确保您的前端运行。这可以实时预览您的更改。
 
@@ -187,7 +187,7 @@ pip install threagile-monitoring
 ## 环境
 
 -   在独立中整齐地定义[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   The `test`矩阵使用[孵化器](https://github.com/ofek/hatch-containers)插件以在Docker容器中运行每个环境；可以在[测试](.github/workflows/test.yml)GitHub工作流程
+-   这`test`矩阵使用[孵化器](https://github.com/ofek/hatch-containers)插件以在Docker容器中运行每个环境；可以在[测试](.github/workflows/test.yml)GitHub工作流程
 
 ## 建造
 
