@@ -146,7 +146,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Entonces, navegue a`http://127.0.0.1:5000/` in your web browser.
+    Entonces, navegue a`http://127.0.0.1:5000/`en su navegador web.
 
     Para ejecutar pruebas, use:
 
@@ -192,7 +192,7 @@ pip install threagile-monitoring
 ## Construir
 
 -   Todos los objetivos de construcción usan el[Hatch-VCS](https://github.com/ofek/hatch-vcs)complemento de gancho de compilación para enviar un`_version.py`archivo para que la versión se pueda usar en tiempo de ejecución
--   Wheels use the [hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook Plugin para compilar primero todo el código con[Mypyc](https://github.com/mypyc/mypyc)
+-   Las ruedas usan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook Plugin para compilar primero todo el código con[Mypyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)para distribuir ruedas binarias para cada plataforma
     -   usar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)Construir un objetivo para construir distribuciones independientes para cada plataforma
