@@ -60,7 +60,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
     1)`cd ../`# Gehen Sie zur Wurzel des Repositorys
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Dies gilt - in der separaten Terminalsitzung (d. H.`background`) - Laden Sie die Änderungen, die Sie vornehmen, ständig in die entsprechenden Dateien, während Sie diese Änderungen in der anfänglichen Terminalsitzung fortsetzen können (d. H.`foreground`). Sie müssen also nach jeder Bearbeitung keine Quellen erstellen, sondern wird automatisch gepflegt!
+    Dies gilt - in der separaten Terminalsitzung (d. H.`background`) - Laden Sie die Änderungen, die Sie vornehmen, ständig in die entsprechenden Dateien, während Sie diese Änderungen in der anfänglichen Terminalsitzung fortsetzen können (d. H.`foreground`). So you do not have to build your sources after each edit, it is taken care of automatically!
 
     Um die Änderungen zu sehen, speichern und laden Sie Ihren Navigator einfach (normalerweise mit F5).
 
@@ -195,7 +195,7 @@ pip install threagile-monitoring
 -   Räder verwenden die[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Github Workflow zeigt, wie man:
     -   verwenden[Cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
-    -   benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
+    -   Verwenden Sie das[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
 
 ## Lizenz
 
