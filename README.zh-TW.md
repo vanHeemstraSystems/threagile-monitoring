@@ -10,7 +10,7 @@ throweagile監控
 
 * * *
 
-> 一個為創建儀表板的Web應用程序[Threagile](https://threagile.io).
+> 一個為創建儀表板的Web應用程序[tre縮](https://threagile.io).
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
@@ -26,7 +26,7 @@ throweagile監控
 
 **筆記**：確保您滿足[要求](./200/README.md).
 
-1.  **Installation process:**
+1.  **安裝過程：**
 
     ```bash
     $ cd threagile-monitoring # start at sub-directory of the repository where the requirements.txt file is kept.
@@ -69,7 +69,7 @@ throweagile監控
     [Onlook](https://github.com/vanHeemstraSystems/onlook)是與您的項目集成的交互式UI開發的強大工具。
 
     1.  **集成設置**:
-        -   Ensure your frontend is running (`npm run watch`)
+        -   確保您的前端運行（`npm run watch`)
         -   啟動您的後端服務器（`python app.py`)
         -   在自己的應用程序中啟動Onlook
         -   將Onlook連接到您的跑步前端
@@ -77,9 +77,9 @@ throweagile監控
     2.  **最佳實踐**:
         -   進行小小的增量改變
         -   立即在瀏覽器中進行測試更改
-        -   提交之前審查生成的代碼
+        -   Review generated code before committing
         -   保持Onlook和您的前端同步
-        -   Use version control for all Onlook-generated changes
+        -   使用版本控制進行所有Onlook生成的更改
 
     3.  **配置**:
         -   Onlook將檢測您的項目的結構
@@ -87,7 +87,7 @@ throweagile監控
         -   由於WebPack手錶而立即反映更改
         -   您的後端API在開發過程中仍然可以訪問
 
-    **筆記**: Always ensure your frontend is running before starting Onlook development. This enables real-time preview of your changes.
+    **筆記**：始終在開始Onlook開發之前確保您的前端運行。這可以實時預覽您的更改。
 
     確保在使用後端函數測試時運行網頁，如下：
     1）`cd ../../../`＃轉到存儲庫的根
@@ -138,7 +138,7 @@ throweagile監控
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    然後：
 
     ```bash
     $ cd threagile-monitoring
