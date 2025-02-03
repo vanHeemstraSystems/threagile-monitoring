@@ -132,7 +132,7 @@ throweagile监控
     $ export SECRET_KEY="secret"
     ```
 
-    视窗：
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
