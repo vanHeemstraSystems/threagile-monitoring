@@ -70,7 +70,7 @@
 
     1.  **إعداد التكامل**:
         -   تأكد من تشغيل الواجهة الأمامية (`npm run watch`)
-        -   ابدأ خادم الواجهة الخلفية الخاصة بك (`python app.py`)
+        -   Start your backend server (`python app.py`)
         -   قم بتشغيل Onlook في تطبيقه الخاص
         -   قم بتوصيل Onlook بالواجهة الأمامية الخاصة بك
 
@@ -91,8 +91,7 @@
 
     تأكد من تشغيل صفحة الويب الخاصة بك عند الاختبار مع وظائف الخلفية ، على النحو التالي:
     1)`cd ../../../`# انتقل إلى جذر المستودع
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`
-    4) `(.hatch) $ python app.py`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **امتحان**
 
