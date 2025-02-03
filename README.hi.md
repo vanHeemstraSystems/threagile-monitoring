@@ -14,7 +14,7 @@
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
--   [Documentation](./DOCUMENTATION.md)
+-   [प्रलेखन](./DOCUMENTATION.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 -   [टूलिंग](./TOOLING.md)
 
@@ -101,7 +101,7 @@
 
     **दौड़ना:**
 
-    If not developing, run the application (backend and frontend simultaneously) this way: 
+    यदि विकसित नहीं हो रहा है, तो इस तरह से एप्लिकेशन (बैकएंड और फ्रंटेंड एक साथ) चलाएं:
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
@@ -170,7 +170,7 @@
 
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
--   [Environments](#environments)
+-   [वातावरण](#environments)
 -   [निर्माण](#build)
 -   [लाइसेंस](#license)
 
