@@ -70,7 +70,7 @@
 
     1.  **إعداد التكامل**:
         -   تأكد من تشغيل الواجهة الأمامية (`npm run watch`)
-        -   Start your backend server (`python app.py`)
+        -   ابدأ خادم الواجهة الخلفية الخاصة بك (`python app.py`)
         -   قم بتشغيل Onlook في تطبيقه الخاص
         -   قم بتوصيل Onlook بالواجهة الأمامية الخاصة بك
 
@@ -192,7 +192,7 @@ pip install threagile-monitoring
 ## يبني
 
 -   جميع أهداف البناء تستخدم[Hatch-VCs](https://github.com/ofek/hatch-vcs)قم ببناء المكون الإضافي للخطاف لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
--   عجلات استخدام[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)قم ببناء المكون الإضافي الخطاف لتجميع كل الرمز أولاً[mypyc](https://github.com/mypyc/mypyc)
+-   Wheels use the [Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)قم ببناء المكون الإضافي الخطاف لتجميع كل الرمز أولاً[mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح GitHub Workflow كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
     -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء هدف لبناء توزيعات مستقلة لكل منصة
