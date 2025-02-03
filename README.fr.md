@@ -20,7 +20,7 @@ surveillant
 
 **Résumé exécutif**
 
-Mettre votre code en cours d'exécution sur votre propre système.
+Getting your code up and running on your own system.
 
 **Note**: Le`pyproject.toml`Le fichier doit être à la racine du référentiel!
 
