@@ -90,8 +90,8 @@ Uw code op uw eigen systeem laten werken.
     **Opmerking**: Zorg er altijd voor dat uw frontend actief is voordat u begint met de ontwikkeling van OneLook. Dit maakt realtime preview van uw wijzigingen mogelijk.
 
     Zorg ervoor dat u uw webpagina uitvoert bij het testen met backend -functies, als volgt:
-    1)`cd ../../../`# Ga naar de wortel van de repository
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
+    1)`cd ../../../` # go to the root of the repository
+    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **Test**
 
@@ -186,7 +186,7 @@ pip install threagile-monitoring
 
 ## Omgevingen
 
--   Netjes gedefinieerd in een op zichzelf staande[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   De`test`Matrix gebruikt de[luikcontainers](https://github.com/ofek/hatch-containers)plug -in om elke omgeving in Docker -containers te laten werken; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub -workflow
 
 ## Bouwen
