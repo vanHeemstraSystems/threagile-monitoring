@@ -64,7 +64,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     Para ver los cambios, simplemente guarde y vuelva a cargar su navegador (generalmente con F5).
 
-    **Using Onlook for UI Development**
+    **Uso de torcer para el desarrollo de la interfaz de usuario**
 
     [Asumir](https://github.com/vanHeemstraSystems/onlook)es una herramienta poderosa para el desarrollo interactivo de la interfaz de usuario que se integra con su proyecto.
 
@@ -158,7 +158,7 @@ Poner en funcionamiento su código en su propio sistema.
 
 # Documentación de API
 
-Navegar por`http://127.0.0.1:5000/docs`En su navegador web, o descargue el OpenApi.json desde`http://127.0.0.1:5000/openapi.json`.
+Navegar por`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
 
 # Métrica
 
@@ -213,6 +213,6 @@ Ver[README.md](./200/README.md)
 
 Ver[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - Conclusión
 
 Ver[README.md](./400/README.md)
