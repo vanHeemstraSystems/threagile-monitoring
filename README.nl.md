@@ -66,7 +66,7 @@ Uw code op uw eigen systeem laten werken.
 
     **Gebruik van ONLOOK voor UI -ontwikkeling**
 
-    [Onlook](https://github.com/vanHeemstraSystems/onlook)is een krachtig hulpmiddel voor interactieve UI -ontwikkeling die integreert met uw project.
+    [Aan het kijken](https://github.com/vanHeemstraSystems/onlook)is een krachtig hulpmiddel voor interactieve UI -ontwikkeling die integreert met uw project.
 
     1.  **Integratie -instelling**:
         -   Zorg ervoor dat uw frontend loopt (`npm run watch`)
@@ -189,7 +189,7 @@ pip install threagile-monitoring
 -   Netjes gedefinieerd in een op zichzelf staande[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   De`test`Matrix gebruikt de[luikcontainers](https://github.com/ofek/hatch-containers)plug -in om elke omgeving in Docker -containers te laten werken; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub -workflow
 
-## Build
+## Bouwen
 
 -   Alle build -doelen gebruiken de[luik-VC's](https://github.com/ofek/hatch-vcs)Bouw haakplug -in om een`_version.py`Bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[MyPyc](https://github.com/mypyc/mypyc)
