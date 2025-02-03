@@ -56,8 +56,8 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     Dies erstellt die`vendors.#####.js`Und`main.#####.js`Dateien - die alle Komponenten enthalten - in`/src/threagile_monitoring/static/js/`.
 
-    **Entwicklung mit Webpack:**Wenn Sie noch Ihre Website in a entwickeln**separate Terminalsitzung**Nachdem Sie den oben genannten Installationsprozess befolgt haben, tun Sie dies:
-    1)`cd ../`# Gehen Sie zur Wurzel des Repositorys
+    **Entwicklung mit Webpack:**Wenn Sie noch Ihre Website in a entwickeln**separate Terminalsitzung**, after having followed the above installation process, do this:
+    1) `cd ../`# Gehen Sie zur Wurzel des Repositorys
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     Dies gilt - in der separaten Terminalsitzung (d. H.`background`) - Laden Sie die Änderungen, die Sie vornehmen, ständig in die entsprechenden Dateien, während Sie diese Änderungen in der anfänglichen Terminalsitzung fortsetzen können (d. H.`foreground`). Sie müssen also nach jeder Bearbeitung keine Quellen erstellen, sondern wird automatisch gepflegt!
