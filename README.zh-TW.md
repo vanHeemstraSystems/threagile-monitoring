@@ -66,7 +66,7 @@ throweagile監控
 
     **使用Onlook進行UI開發**
 
-    [Onlook](https://github.com/vanHeemstraSystems/onlook)是與您的項目集成的交互式UI開發的強大工具。
+    [Onlook](https://github.com/vanHeemstraSystems/onlook) is a powerful tool for interactive UI development that integrates with your project.
 
     1.  **集成設置**:
         -   確保您的前端運行（`npm run watch`)
@@ -87,7 +87,7 @@ throweagile監控
         -   由於WebPack手錶而立即反映更改
         -   您的後端API在開發過程中仍然可以訪問
 
-    **筆記**：始終在開始Onlook開發之前確保您的前端運行。這可以實時預覽您的更改。
+    **筆記**: Always ensure your frontend is running before starting Onlook development. This enables real-time preview of your changes.
 
     確保在使用後端函數測試時運行網頁，如下：
     1）`cd ../../../`＃轉到存儲庫的根
@@ -113,7 +113,7 @@ throweagile監控
 
 5.  構建和測試：
 
-    要構建您的代碼，請使用：
+    To build your code, use:
 
     ```bash
     $ cd threagile-monitoring
@@ -138,7 +138,7 @@ throweagile監控
     $ setx SECRET_KEY secret
     ```
 
-    然後：
+    Then:
 
     ```bash
     $ cd threagile-monitoring
