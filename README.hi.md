@@ -49,8 +49,7 @@
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **अपनी साइट को वेबपैक के साथ पैकेज करें:**
-    Once you have a website that is good enough for you to use, you have to package the application with webpack. This package folder is listed in `.gitignore`इससे बचने के लिए git के लिए प्रतिबद्ध होना।
+    **अपनी साइट को वेबपैक के साथ पैकेज करें:**एक बार जब आपके पास एक वेबसाइट होती है जो आपके लिए उपयोग करने के लिए पर्याप्त है, तो आपको वेबपैक के साथ एप्लिकेशन को पैकेज करना होगा। यह पैकेज फ़ोल्डर सूचीबद्ध है`.gitignore`इससे बचने के लिए git के लिए प्रतिबद्ध होना।
 
     सेटअप के सभी अब तक तैयार होना चाहिए ताकि आपको बस इतना करना पड़े:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
@@ -110,7 +109,7 @@
 
 3.  नवीनतम रिलीज़
 
-4.  API references
+4.  एपीआई संदर्भ
 
 5.  निर्माण और परीक्षण:
 
