@@ -194,7 +194,7 @@ pip install threagile-monitoring
 -   Alle build -doelen gebruiken de[luik-VC's](https://github.com/ofek/hatch-vcs)Bouw haakplug -in om een`_version.py`Bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[MyPyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)GitHub -workflow laat zien hoe:
-    -   gebruik[CiBuildwheel](https://github.com/pypa/cibuildwheel)Om binaire wielen te verdelen voor elk platform
+    -   gebruik[cibuildwheel](https://github.com/pypa/cibuildwheel)Om binaire wielen te verdelen voor elk platform
     -   Gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)Bouw het doel om zelfstandige distributies voor elk platform te bouwen
 
 ## Licentie
