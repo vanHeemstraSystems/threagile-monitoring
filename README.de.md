@@ -96,8 +96,8 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
     **Prüfen**
 
     Testen Sie die Anwendung (Frontend) auf diese Weise:
-    1)`cd ../` # go to the root of the repository
-    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
+    1)`cd ../`# Gehen Sie zur Wurzel des Repositorys
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Laufen:**
 
