@@ -6,7 +6,7 @@ throweagile监控
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | CI/CD | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
 | 包裹    | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
-| Meta  | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
+| 元     | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
 
 * * *
 
@@ -85,7 +85,7 @@ throweagile监控
         -   Onlook将检测您的项目的结构
         -   它将直接更改您的源文件
         -   由于WebPack手表而立即反映更改
-        -   您的后端API在开发过程中仍然可以访问
+        -   Your backend API remains accessible during development
 
     **笔记**：始终在开始Onlook开发之前确保您的前端运行。这可以实时预览您的更改。
 
@@ -187,11 +187,11 @@ pip install threagile-monitoring
 ## 环境
 
 -   在独立中整齐地定义[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   这`test`矩阵使用[孵化器](https://github.com/ofek/hatch-containers)插件以在Docker容器中运行每个环境；可以在[测试](.github/workflows/test.yml)GitHub工作流程
+-   The `test`矩阵使用[孵化器](https://github.com/ofek/hatch-containers)插件以在Docker容器中运行每个环境；可以在[测试](.github/workflows/test.yml)GitHub工作流程
 
 ## 建造
 
--   所有构建目标都使用[孵化-VC](https://github.com/ofek/hatch-vcs)构建挂钩插件来运送`_version.py` file so the version can be used at runtime
+-   所有构建目标都使用[孵化-VC](https://github.com/ofek/hatch-vcs)构建挂钩插件来运送`_version.py`文件，因此可以在运行时使用该版本
 -   车轮使用[孵化 - 摩林](https://github.com/ofek/hatch-mypyc)构建挂钩插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)github工作流程显示了如何：
     -   使用[cibuild轮](https://github.com/pypa/cibuildwheel)为每个平台分发二元车轮
