@@ -187,7 +187,7 @@ pip install threagile-monitoring
 ## Environnements
 
 -   Défini parfaitement dans une autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   The `test`La matrice utilise le[colporteur de trappe](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement à l'intérieur des conteneurs Docker; L'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flow de travail GitHub
+-   Le`test`La matrice utilise le[colporteur de trappe](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement à l'intérieur des conteneurs Docker; L'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flow de travail GitHub
 
 ## Construire
 
