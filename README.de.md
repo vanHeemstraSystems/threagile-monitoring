@@ -20,7 +20,7 @@ Dreigile-Überwachung
 
 **Zusammenfassung**
 
-Getting your code up and running on your own system.
+Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
 **Notiz**: Der`pyproject.toml`Die Datei sollte sich im Stamm des Repositorys befinden!
 
