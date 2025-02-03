@@ -62,7 +62,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     Esto lo hará: en la sesión terminal separada (es decir,`background`) - Cargue constantemente los cambios que realiza en los archivos apropiados, mientras que puede continuar haciendo esos cambios, en la sesión de terminal inicial (es decir,`foreground`). Por lo tanto, no tiene que construir sus fuentes después de cada edición, ¡se cuida automáticamente!
 
-    Para ver los cambios, simplemente guarde y vuelva a cargar su navegador (generalmente con F5).
+    To see the changes just save and reload your navigator (usually with F5). 
 
     **Uso de torcer para el desarrollo de la interfaz de usuario**
 
