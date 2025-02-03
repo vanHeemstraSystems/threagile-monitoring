@@ -170,7 +170,7 @@ throweagile監控
 
 -   [安裝](#installation)
 -   [版本來源](#version-source)
--   [Environments](#environments)
+-   [環境](#environments)
 -   [建造](#build)
 -   [執照](#license)
 
