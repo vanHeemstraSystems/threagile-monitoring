@@ -10,7 +10,7 @@ surveillant
 
 * * *
 
-> Une application Web pour créer des tableaux de bord pour[Threagile](https://threagile.io).
+> Une application Web pour créer des tableaux de bord pour[Époustouflant](https://threagile.io).
 
 -   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
