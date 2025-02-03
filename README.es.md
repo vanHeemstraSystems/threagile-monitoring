@@ -62,7 +62,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     Esto lo hará: en la sesión terminal separada (es decir,`background`) - Cargue constantemente los cambios que realiza en los archivos apropiados, mientras que puede continuar haciendo esos cambios, en la sesión de terminal inicial (es decir,`foreground`). Por lo tanto, no tiene que construir sus fuentes después de cada edición, ¡se cuida automáticamente!
 
-    To see the changes just save and reload your navigator (usually with F5). 
+    Para ver los cambios, simplemente guarde y vuelva a cargar su navegador (generalmente con F5).
 
     **Uso de torcer para el desarrollo de la interfaz de usuario**
 
@@ -97,7 +97,8 @@ Poner en funcionamiento su código en su propio sistema.
 
     Pruebe la aplicación (frontend) de esta manera:
     1)`cd ../`# ir a la raíz del repositorio
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
+    2)`hatch shell`
+    3) `(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Correr:**
 
