@@ -66,7 +66,7 @@ Uw code op uw eigen systeem laten werken.
 
     **Gebruik van ONLOOK voor UI -ontwikkeling**
 
-    [Aan het kijken](https://github.com/vanHeemstraSystems/onlook)is een krachtig hulpmiddel voor interactieve UI -ontwikkeling die integreert met uw project.
+    [Aan het kijken](https://github.com/vanHeemstraSystems/onlook) is a powerful tool for interactive UI development that integrates with your project.
 
     1.  **Integratie -instelling**:
         -   Zorg ervoor dat uw frontend loopt (`npm run watch`)
@@ -120,7 +120,7 @@ Uw code op uw eigen systeem laten werken.
     $ hatch build
     ```
 
-    Gebruik: om AI te gebruiken voor pull -aanvraagrecensies:
+    To use AI for pull request reviews, use:
 
     <https://app.coderabbit.ai/dashboard>(Gebruik`phpstan.neon`)
 
@@ -180,7 +180,7 @@ Laat een tool als Prometheus schrapen`http://127.0.0.1:9464/metrics`.
 pip install threagile-monitoring
 ```
 
-## Version source
+## Versiebron
 
 -   De[luik-VC's](https://github.com/ofek/hatch-vcs)Versiebronplug -in bepaalt de projectversie met behulp van GIT -tags
 
@@ -193,7 +193,7 @@ pip install threagile-monitoring
 
 -   Alle build -doelen gebruiken de[luik-VC's](https://github.com/ofek/hatch-vcs)Bouw haakplug -in om een`_version.py`Bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[MyPyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)GitHub -workflow laat zien hoe:
+-   De[bouwen](.github/workflows/build.yml) GitHub workflow shows how to:
     -   gebruik[CiBuildwheel](https://github.com/pypa/cibuildwheel)Om binaire wielen te verdelen voor elk platform
     -   Gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)Bouw het doel om zelfstandige distributies voor elk platform te bouwen
 
