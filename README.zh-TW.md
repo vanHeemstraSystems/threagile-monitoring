@@ -87,7 +87,7 @@ throweagile監控
         -   由於WebPack手錶而立即反映更改
         -   您的後端API在開發過程中仍然可以訪問
 
-    **筆記**: Always ensure your frontend is running before starting Onlook development. This enables real-time preview of your changes.
+    **筆記**：始終在開始Onlook開發之前確保您的前端運行。這可以實時預覽您的更改。
 
     確保在使用後端函數測試時運行網頁，如下：
     1）`cd ../../../`＃轉到存儲庫的根
@@ -170,7 +170,7 @@ throweagile監控
 
 -   [安裝](#installation)
 -   [版本來源](#version-source)
--   [環境](#environments)
+-   [Environments](#environments)
 -   [建造](#build)
 -   [執照](#license)
 
@@ -193,7 +193,7 @@ pip install threagile-monitoring
 
 -   所有構建目標都使用[孵化-VC](https://github.com/ofek/hatch-vcs)構建掛鉤插件來運送`_version.py`文件，因此可以在運行時使用該版本
 -   車輪使用[孵化 - 摩林](https://github.com/ofek/hatch-mypyc)構建掛鉤插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
--   這[建造](.github/workflows/build.yml)github工作流程顯示瞭如何：
+-   The [建造](.github/workflows/build.yml)github工作流程顯示瞭如何：
     -   使用[cibuild輪](https://github.com/pypa/cibuildwheel)為每個平台分發二元車輪
     -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建立目標以建立每個平台的獨立分佈
 
