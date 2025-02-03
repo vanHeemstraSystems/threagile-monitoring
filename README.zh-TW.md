@@ -78,7 +78,7 @@ throweagile監控
         -   進行小小的增量改變
         -   立即在瀏覽器中進行測試更改
         -   提交之前審查生成的代碼
-        -   保持Onlook和您的前端同步
+        -   Keep Onlook and your frontend in sync
         -   使用版本控制進行所有Onlook生成的更改
 
     3.  **配置**:
