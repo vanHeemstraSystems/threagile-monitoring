@@ -69,7 +69,7 @@
     [onlook](https://github.com/vanHeemstraSystems/onlook)هي أداة قوية لتطوير واجهة المستخدم التفاعلية التي تتكامل مع مشروعك.
 
     1.  **إعداد التكامل**:
-        -   Ensure your frontend is running (`npm run watch`)
+        -   تأكد من تشغيل الواجهة الأمامية (`npm run watch`)
         -   ابدأ خادم الواجهة الخلفية الخاصة بك (`python app.py`)
         -   قم بتشغيل Onlook في تطبيقه الخاص
         -   قم بتوصيل Onlook بالواجهة الأمامية الخاصة بك
@@ -138,7 +138,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    ثم:
 
     ```bash
     $ cd threagile-monitoring
