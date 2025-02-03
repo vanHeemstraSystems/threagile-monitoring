@@ -58,7 +58,8 @@ throweagile监控
 
     **使用WebPack开发：**如果您仍在开发网站，则**单独的终端会话**，遵循上述安装过程后，执行此操作：
     1）`cd ../`＃转到存储库的根
-    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
+    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`
+    5) `(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     这将 - 在单独的终端会话中（即`background`） - 不断将更改加载到适当的文件中，而您可以继续进行这些更改 - 在初始终端会话中（即`foreground`）。因此，您不必在每次编辑后都必须构建来源，它会自动照顾！
 
