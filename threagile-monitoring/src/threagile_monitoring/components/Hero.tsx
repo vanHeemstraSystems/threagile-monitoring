@@ -1,5 +1,5 @@
 import React from "react";
-import { Shield, Lock, Activity } from "lucide-react";
+import { Shield, Telescope } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -39,7 +39,7 @@ export const Hero = () => {
           </p>
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
             <button className="px-8 py-4 bg-neonBlue text-white rounded-lg hover:bg-opacity-80 transition-all duration-300 flex items-center gap-2">
-              <Lock className="h-5 w-5" />
+              <Telescope className="h-5 w-5" />
               Get Started
             </button>
           </div>
