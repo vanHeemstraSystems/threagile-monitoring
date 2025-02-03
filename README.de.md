@@ -1,6 +1,6 @@
 Dreigile-Überwachung
 
-# Threagile Monitoring
+# Überwachung der Dreigile
 
 |       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,7 +10,7 @@ Dreigile-Überwachung
 
 * * *
 
-> Eine Webanwendung zum Erstellen von Dashboards für[Threagile](https://threagile.io).
+> Eine Webanwendung zum Erstellen von Dashboards für[Dreigile](https://threagile.io).
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
@@ -160,7 +160,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
 Navigieren zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie den OpenAPI.json von herunter`http://127.0.0.1:5000/openapi.json`.
 
-# Metrics
+# Metriken
 
 Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 
@@ -187,7 +187,7 @@ pip install threagile-monitoring
 ## Umgebungen
 
 -   Ordentlich in einem Standalon definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   The `test`Matrix verwendet die[Hatch-Container](https://github.com/ofek/hatch-containers)Plugin, um jede Umgebung in Docker -Containern auszuführen; Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)Github Workflow
+-   Der`test`Matrix verwendet die[Hatch-Container](https://github.com/ofek/hatch-containers)Plugin, um jede Umgebung in Docker -Containern auszuführen; Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)Github Workflow
 
 ## Bauen
 
