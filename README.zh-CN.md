@@ -22,7 +22,7 @@ throweagile监控
 
 将代码启动并在您自己的系统上运行。
 
-**笔记**： 这`pyproject.toml` file should be in the root of the repository!
+**笔记**： 这`pyproject.toml`文件应该在存储库的根部！
 
 **笔记**：确保您满足[要求](./200/README.md).
 
@@ -81,7 +81,7 @@ throweagile监控
         -   保持Onlook和您的前端同步
         -   使用版本控制进行所有Onlook生成的更改
 
-    3.  **Configuration**:
+    3.  **配置**:
         -   Onlook将检测您的项目的结构
         -   它将直接更改您的源文件
         -   由于WebPack手表而立即反映更改
@@ -171,7 +171,7 @@ throweagile监控
 -   [安装](#installation)
 -   [版本来源](#version-source)
 -   [环境](#environments)
--   [Build](#build)
+-   [建造](#build)
 -   [执照](#license)
 
 ## 安装
