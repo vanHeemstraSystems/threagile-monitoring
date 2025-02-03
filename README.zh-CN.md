@@ -84,10 +84,10 @@ throweagile监控
     3.  **配置**:
         -   Onlook将检测您的项目的结构
         -   它将直接更改您的源文件
-        -   由于WebPack手表而立即反映更改
+        -   Changes are immediately reflected due to webpack watch
         -   您的后端API在开发过程中仍然可以访问
 
-    **笔记**：始终在开始Onlook开发之前确保您的前端运行。这可以实时预览您的更改。
+    **笔记**: Always ensure your frontend is running before starting Onlook development. This enables real-time preview of your changes.
 
     确保在使用后端函数测试时运行网页，如下：
     1）`cd ../../../`＃转到存储库的根
