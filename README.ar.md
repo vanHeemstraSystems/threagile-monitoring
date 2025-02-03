@@ -78,7 +78,7 @@
         -   قم بإجراء تغييرات صغيرة تدريجية
         -   اختبار التغييرات على الفور في المتصفح
         -   مراجعة رمز تم إنشاؤه قبل الالتزام
-        -   Keep Onlook and your frontend in sync
+        -   الحفاظ على الإطلالة والواجهة الأمامية الخاصة بك في المزامنة
         -   استخدم التحكم في الإصدار لجميع التغييرات التي تم إنشاؤها
 
     3.  **إعدادات**:
@@ -192,7 +192,7 @@ pip install threagile-monitoring
 ## يبني
 
 -   جميع أهداف البناء تستخدم[Hatch-VCs](https://github.com/ofek/hatch-vcs)قم ببناء المكون الإضافي للخطاف لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
--   عجلات استخدام[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)قم ببناء المكون الإضافي الخطاف لتجميع كل الرمز أولاً[mypyc](https://github.com/mypyc/mypyc)
+-   عجلات استخدام[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc) build hook plugin to first compile all code with [mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح GitHub Workflow كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
     -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء هدف لبناء توزيعات مستقلة لكل منصة
@@ -213,6 +213,6 @@ pip install threagile-monitoring
 
 يرى[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - الخلاصة
 
 يرى[README.md](./400/README.md)
