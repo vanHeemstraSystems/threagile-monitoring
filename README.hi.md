@@ -22,7 +22,7 @@
 
 अपने कोड को प्राप्त करना और अपने सिस्टम पर चल रहा है।
 
-**टिप्पणी**: The `pyproject.toml`फ़ाइल रिपॉजिटरी की जड़ में होनी चाहिए!
+**टिप्पणी**:`pyproject.toml`फ़ाइल रिपॉजिटरी की जड़ में होनी चाहिए!
 
 **टिप्पणी**: सुनिश्चित करें कि आप पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
@@ -187,7 +187,7 @@ pip install threagile-monitoring
 ## वातावरण
 
 -   एक स्टैंडअलोन में बड़े करीने से परिभाषित किया गया[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   The `test`मैट्रिक्स का उपयोग करता है[हैच-कंटेनर्स](https://github.com/ofek/hatch-containers)डॉकटर कंटेनरों के अंदर प्रत्येक वातावरण को चलाने के लिए प्लगइन; उपयोग में देखा जा सकता है[परीक्षा](.github/workflows/test.yml)Github वर्कफ़्लो
+-   `test`मैट्रिक्स का उपयोग करता है[हैच-कंटेनर्स](https://github.com/ofek/hatch-containers)डॉकटर कंटेनरों के अंदर प्रत्येक वातावरण को चलाने के लिए प्लगइन; उपयोग में देखा जा सकता है[परीक्षा](.github/workflows/test.yml)Github वर्कफ़्लो
 
 ## निर्माण
 
@@ -209,7 +209,7 @@ pip install threagile-monitoring
 
 देखना[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 - हमारे आवेदन का निर्माण
 
 देखना[README.md](./300/README.md)
 
