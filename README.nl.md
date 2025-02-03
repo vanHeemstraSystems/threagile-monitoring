@@ -180,7 +180,7 @@ Laat een tool als Prometheus schrapen`http://127.0.0.1:9464/metrics`.
 pip install threagile-monitoring
 ```
 
-## Versiebron
+## Version source
 
 -   De[luik-VC's](https://github.com/ofek/hatch-vcs)Versiebronplug -in bepaalt de projectversie met behulp van GIT -tags
 
