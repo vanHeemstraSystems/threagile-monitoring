@@ -1,6 +1,6 @@
 Dreigile-Überwachung
 
-# Überwachung der Dreigile
+# Threagile Monitoring
 
 |       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,7 +10,7 @@ Dreigile-Überwachung
 
 * * *
 
-> Eine Webanwendung zum Erstellen von Dashboards für[Dreigile](https://threagile.io).
+> Eine Webanwendung zum Erstellen von Dashboards für[Threagile](https://threagile.io).
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
@@ -160,7 +160,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
 Navigieren zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie den OpenAPI.json von herunter`http://127.0.0.1:5000/openapi.json`.
 
-# Metriken
+# Metrics
 
 Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 
@@ -187,7 +187,7 @@ pip install threagile-monitoring
 ## Umgebungen
 
 -   Ordentlich in einem Standalon definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Der`test`Matrix verwendet die[Hatch-Container](https://github.com/ofek/hatch-containers)Plugin, um jede Umgebung in Docker -Containern auszuführen; Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)Github Workflow
+-   The `test`Matrix verwendet die[Hatch-Container](https://github.com/ofek/hatch-containers)Plugin, um jede Umgebung in Docker -Containern auszuführen; Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)Github Workflow
 
 ## Bauen
 
@@ -195,7 +195,7 @@ pip install threagile-monitoring
 -   Räder verwenden die[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Github Workflow zeigt, wie man:
     -   verwenden[Cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
-    -   benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
+    -   Verwenden Sie das[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
 
 ## Lizenz
 
