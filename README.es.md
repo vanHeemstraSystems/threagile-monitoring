@@ -99,7 +99,7 @@ Poner en funcionamiento su código en su propio sistema.
     1)`cd ../`# ir a la raíz del repositorio
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
-    **Run:**
+    **Correr:**
 
     Si no se desarrolla, ejecute la aplicación (backend y frontend simultáneamente) de esta manera:
 
@@ -182,7 +182,7 @@ pip install threagile-monitoring
 
 ## Fuente de la versión
 
--   The [Hatch-VCS](https://github.com/ofek/hatch-vcs)El complemento de la fuente de la versión determina la versión del proyecto utilizando etiquetas git
+-   El[Hatch-VCS](https://github.com/ofek/hatch-vcs)El complemento de la fuente de la versión determina la versión del proyecto utilizando etiquetas git
 
 ## Entornos
 
