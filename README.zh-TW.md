@@ -60,7 +60,7 @@ throweagile監控
     1）`cd ../`＃轉到存儲庫的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    這將 - 在單獨的終端會話中（即`background`） - 不斷將更改加載到適當的文件中，而您可以繼續進行這些更改 - 在初始終端會話中（即`foreground`). So you do not have to build your sources after each edit, it is taken care of automatically!
+    這將 - 在單獨的終端會話中（即`background`） - 不斷將更改加載到適當的文件中，而您可以繼續進行這些更改 - 在初始終端會話中（即`foreground`）。因此，您不必在每次編輯後都必須構建來源，它會自動照顧！
 
     要查看更改，只需保存並重新加載導航器（通常使用F5）。
 
@@ -158,7 +158,7 @@ throweagile監控
 
 # API文檔
 
-Navigate to `http://127.0.0.1:5000/docs`在您的網絡瀏覽器中，或從中下載OpenApi.json`http://127.0.0.1:5000/openapi.json`.
+導航到`http://127.0.0.1:5000/docs`在您的網絡瀏覽器中，或從中下載OpenApi.json`http://127.0.0.1:5000/openapi.json`.
 
 # 指標
 
