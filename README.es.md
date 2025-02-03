@@ -97,8 +97,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     Pruebe la aplicación (frontend) de esta manera:
     1)`cd ../`# ir a la raíz del repositorio
-    2)`hatch shell`
-    3) `(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Correr:**
 
@@ -147,7 +146,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Entonces, navegue a`http://127.0.0.1:5000/`en su navegador web.
+    Entonces, navegue a`http://127.0.0.1:5000/` in your web browser.
 
     Para ejecutar pruebas, use:
 
@@ -193,7 +192,7 @@ pip install threagile-monitoring
 ## Construir
 
 -   Todos los objetivos de construcción usan el[Hatch-VCS](https://github.com/ofek/hatch-vcs)complemento de gancho de compilación para enviar un`_version.py`archivo para que la versión se pueda usar en tiempo de ejecución
--   Las ruedas usan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook Plugin para compilar primero todo el código con[Mypyc](https://github.com/mypyc/mypyc)
+-   Wheels use the [hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook Plugin para compilar primero todo el código con[Mypyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)para distribuir ruedas binarias para cada plataforma
     -   usar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)Construir un objetivo para construir distribuciones independientes para cada plataforma
