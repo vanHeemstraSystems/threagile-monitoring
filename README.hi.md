@@ -14,7 +14,7 @@
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
--   [प्रलेखन](./DOCUMENTATION.md)
+-   [Documentation](./DOCUMENTATION.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
 -   [टूलिंग](./TOOLING.md)
 
@@ -101,7 +101,7 @@
 
     **दौड़ना:**
 
-    यदि विकसित नहीं हो रहा है, तो इस तरह से एप्लिकेशन (बैकएंड और फ्रंटेंड एक साथ) चलाएं:
+    If not developing, run the application (backend and frontend simultaneously) this way: 
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
@@ -170,7 +170,7 @@
 
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
--   [वातावरण](#environments)
+-   [Environments](#environments)
 -   [निर्माण](#build)
 -   [लाइसेंस](#license)
 
@@ -205,7 +205,7 @@ pip install threagile-monitoring
 
 देखना[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - आवश्यकताएँ
 
 देखना[README.md](./200/README.md)
 
