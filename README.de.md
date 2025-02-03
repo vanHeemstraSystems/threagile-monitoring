@@ -51,8 +51,8 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     **Verpacken Sie Ihre Website mit WebPack:**Sobald Sie eine Website haben, die für Sie gut genug ist, müssen Sie die Anwendung mit WebPack verpacken. Dieser Paketordner ist in aufgeführt`.gitignore`Um zu vermeiden, dass es Git verpflichtet ist.
 
-    All of the setup should be ready by now so all you have to do:
-    1) `(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
+    Das gesamte Setup sollte inzwischen fertig sein, also alles, was Sie tun müssen:
+    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
     Dies erstellt die`vendors.#####.js`Und`main.#####.js`Dateien - die alle Komponenten enthalten - in`/src/threagile_monitoring/static/js/`.
 
@@ -81,7 +81,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
         -   Bleiben Sie in Synchronisierung und Ihr Frontend
         -   Verwenden Sie die Versionskontrolle für alle von Onlook generierten Änderungen
 
-    3.  **Konfiguration**:
+    3.  **Configuration**:
         -   Onlook wird die Struktur Ihres Projekts erkennen
         -   Es werden Änderungen direkt an Ihren Quelldateien vorgenommen
         -   Änderungen werden sofort aufgrund der Webpack -Uhr reflektiert
