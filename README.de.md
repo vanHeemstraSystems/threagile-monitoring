@@ -81,7 +81,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
         -   Bleiben Sie in Synchronisierung und Ihr Frontend
         -   Verwenden Sie die Versionskontrolle für alle von Onlook generierten Änderungen
 
-    3.  **Configuration**:
+    3.  **Konfiguration**:
         -   Onlook wird die Struktur Ihres Projekts erkennen
         -   Es werden Änderungen direkt an Ihren Quelldateien vorgenommen
         -   Änderungen werden sofort aufgrund der Webpack -Uhr reflektiert
