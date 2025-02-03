@@ -64,7 +64,7 @@ Mettre votre code en cours d'exécution sur votre propre système.
 
     Pour voir les modifications, enregistrez et rechargez votre navigateur (généralement avec F5).
 
-    **Utilisation de la marche pour le développement de l'interface utilisateur**
+    **Using Onlook for UI Development**
 
     [Embouteillard](https://github.com/vanHeemstraSystems/onlook)est un outil puissant pour le développement d'interface utilisateur interactif qui s'intègre à votre projet.
 
@@ -87,7 +87,7 @@ Mettre votre code en cours d'exécution sur votre propre système.
         -   Les modifications sont immédiatement reflétées en raison de la montre WebPack
         -   Votre API backend reste accessible pendant le développement
 
-    **Note**: Assurez-vous toujours que votre frontend est en cours d'exécution avant de commencer le développement de l'application. Cela permet un aperçu en temps réel de vos modifications.
+    **Note**: Always ensure your frontend is running before starting Onlook development. This enables real-time preview of your changes.
 
     Assurez-vous, pour exécuter votre page Web lors des tests avec des fonctions backend, comme suit:
     1)`cd ../../../`# allez à la racine du référentiel
