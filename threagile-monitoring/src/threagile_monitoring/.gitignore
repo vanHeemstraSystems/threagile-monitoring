@@ -70,4 +70,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /static/js/vendors.*.js
+/static/js/vendors.*.js.*
 /static/js/main.*.js
+/static/js/main.*.js.*
