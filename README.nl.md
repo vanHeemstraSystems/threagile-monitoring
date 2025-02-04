@@ -15,7 +15,7 @@ Threagile-Monitoring
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
 -   [Documentatie](./DOCUMENTATION.md)
--   [Telemetrie](./TELEMETRY.md)
+-   [Telemetry](./TELEMETRY.md)
 -   [Gereedschap](./TOOLING.md)
 
 **Uitvoerende samenvatting**
@@ -56,11 +56,11 @@ Uw code op uw eigen systeem laten werken.
 
     Dit zal de`vendors.#####.js`En`main.#####.js`Bestanden - die alle componenten bevatten - in`/src/threagile_monitoring/static/js/`.
 
-    **Ontwikkeling met webpack:**Als u uw website nog steeds ontwikkelt, in een**Afzonderlijke eindsessie**, Doe dit na het bovenstaande installatieproces te hebben gevolgd:
+    **Ontwikkeling met webpack:**Als u uw website nog steeds ontwikkelt, in een**separate terminal session**, Doe dit na het bovenstaande installatieproces te hebben gevolgd:
     1)`cd ../`# Ga naar de wortel van de repository
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Dit zal - in de afzonderlijke eindsessie (d.w.z.`background`) - Laad de wijzigingen die u aanbrengt voortdurend in de juiste bestanden, terwijl u kunt doorgaan met het aanbrengen van die wijzigingen - in de initiële eindsessie (d.w.z.`foreground`). Dus u hoeft uw bronnen niet na elke bewerking te bouwen, deze wordt automatisch verzorgd!
+    Dit zal - in de afzonderlijke eindsessie (d.w.z.`background`) - Laad constant de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u kunt doorgaan met het aanbrengen van die wijzigingen - in de initiële eindsessie (d.w.z.`foreground`). Dus u hoeft uw bronnen niet na elke bewerking te bouwen, deze wordt automatisch verzorgd!
 
     Om de wijzigingen te zien opslaan en uw navigator opnieuw laden (meestal met F5).
 
@@ -194,7 +194,7 @@ pip install threagile-monitoring
 -   Alle build -doelen gebruiken de[luik-VC's](https://github.com/ofek/hatch-vcs)Bouw haakplug -in om een`_version.py`Bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[MyPyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)GitHub -workflow laat zien hoe:
-    -   gebruik[CiBuildwheel](https://github.com/pypa/cibuildwheel)Om binaire wielen te verdelen voor elk platform
+    -   use [CiBuildwheel](https://github.com/pypa/cibuildwheel)Om binaire wielen te verdelen voor elk platform
     -   Gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)Bouw het doel om zelfstandige distributies voor elk platform te bouwen
 
 ## Licentie
