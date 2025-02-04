@@ -11,6 +11,8 @@ const App = () => {
 
         <Route path="/dashboards" element={<Layout showDashboard={true} />} />
 
+        <Route path="/dashboard/:id" element={<Layout showDashboard={true} />} />
+
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </>

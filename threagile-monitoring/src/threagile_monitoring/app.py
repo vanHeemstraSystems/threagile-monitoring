@@ -4,7 +4,7 @@ import os
 from flask import Flask, render_template
 from flask_cors import CORS
 from utils.db_utils import db  # Updated import to use db_utils
-from blueprints.dashboard import bp as dashboard_bp
+from blueprints.dashboard import dashboard_bp
 
 app = Flask(__name__)
 CORS(app)  # This applies CORS to all routes
