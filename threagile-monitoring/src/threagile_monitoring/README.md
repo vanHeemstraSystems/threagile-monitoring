@@ -39,6 +39,40 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Dashboard Functionality
+
+The Dashboard provides a comprehensive view of your Threagile analysis results and monitoring data. Here are the key features:
+
+### Risk Overview
+
+- Displays a summary of identified risks categorized by severity levels
+- Interactive charts showing risk distribution across different technical assets
+- Trend analysis of risk metrics over time
+
+### Technical Assets Monitoring
+
+- Real-time monitoring of technical assets defined in your Threagile model
+- Status indicators for each asset's health and compliance
+- Detailed view of asset properties and relationships
+
+### Compliance Tracking
+
+- Monitors compliance with defined security requirements
+- Tracks mitigation status for identified risks
+- Progress indicators for implemented security controls
+
+### Data Visualization
+
+- Interactive graphs and charts for risk analysis
+- Heat maps showing risk concentration areas
+- Custom filtering and sorting options for better data insight
+
+### Reports and Exports
+
+- Generate detailed PDF reports of risk assessments
+- Export data in various formats (CSV, JSON)
+- Scheduled report generation capabilities
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
@@ -68,3 +102,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+

@@ -7,6 +7,7 @@ from utils.db_utils import db, get_dashboard, get_dashboard_risks, init_db, crea
 from models.dashboard_model import Dashboard
 import json
 from pathlib import Path
+from werkzeug.utils import secure_filename
 
 dashboard_bp = Blueprint('dashboard', __name__, url_prefix='/dashboard')
 
@@ -76,9 +77,27 @@ def create_dashboard_route():
     if request.method == 'POST':
         title = request.form['title']
         description = request.form['description']
-        dashboard = create_dashboard(title, description)
-        flash('Dashboard created successfully!')
-        return redirect(url_for('dashboard.view_dashboard', dashboard_id=dashboard.id))
+        
+        # Handle JSON file upload
+        if 'risks_file' not in request.files:
+            flash('No file uploaded')
+            return redirect(request.url)
+            
+        file = request.files['risks_file']
+        if file.filename == '':
+            flash('No file selected')
+            return redirect(request.url)
+            
+        if file:
+            try:
+                risks_json = json.load(file)
+                dashboard = create_dashboard(title, description, risks_json)
+                flash('Dashboard created successfully!')
+                return redirect(url_for('dashboard.view_dashboard', dashboard_id=dashboard.id))
+            except json.JSONDecodeError:
+                flash('Invalid JSON file')
+                return redirect(request.url)
+                
     return render_template('dashboard/create_dashboard.html')
 
 # Initialize the database when the blueprint is registered
