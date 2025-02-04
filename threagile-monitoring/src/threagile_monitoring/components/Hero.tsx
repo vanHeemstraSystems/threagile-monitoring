@@ -40,7 +40,7 @@ export const Hero = () => {
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
             <button 
               className="px-8 py-4 bg-neonBlue text-white rounded-lg hover:bg-opacity-80 transition-all duration-300 flex items-center gap-2" 
-              onClick={() => window.location.href='/dashboard/'>
+              onClick={() => window.location.href='/dashboard/'}>
               <Telescope className="h-5 w-5" />
               Get Started
             </button>
