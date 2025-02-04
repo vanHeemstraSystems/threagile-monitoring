@@ -69,7 +69,7 @@ throweagile监控
     [Onlook](https://github.com/vanHeemstraSystems/onlook)是与您的项目集成的交互式UI开发的强大工具。
 
     1.  **集成设置**:
-        -   确保您的前端运行（`npm run watch`)
+        -   Ensure your frontend is running (`npm run watch`)
         -   启动您的后端服务器（`python app.py`)
         -   在自己的应用程序中启动Onlook
         -   将Onlook连接到您的跑步前端
@@ -89,8 +89,8 @@ throweagile监控
 
     **笔记**：始终在开始Onlook开发之前确保您的前端运行。这可以实时预览您的更改。
 
-    确保在使用后端函数测试时运行网页，如下：
-    1）`cd ../../../`＃转到存储库的根
+    Make sure, to run your webpage when testing with backend functions, as follows:
+    1) `cd ../../../`＃转到存储库的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **测试**
