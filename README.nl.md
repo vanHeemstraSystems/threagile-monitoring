@@ -24,7 +24,7 @@ Uw code op uw eigen systeem laten werken.
 
 **Opmerking**: De`pyproject.toml`Bestand moet in de root van de repository staan!
 
-**Opmerking**: Zorg ervoor dat je de[vereisten](./200/README.md).
+**Note**: Zorg ervoor dat je de[vereisten](./200/README.md).
 
 1.  **Installatieproces:**
 
