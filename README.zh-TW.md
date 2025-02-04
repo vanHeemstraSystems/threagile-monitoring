@@ -93,7 +93,7 @@ throweagile監控
     1）`cd ../../../`＃轉到存儲庫的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
-    **測試**
+    **Test**
 
     以這種方式測試應用程序（前端）：
     1）`cd ../`＃轉到存儲庫的根
