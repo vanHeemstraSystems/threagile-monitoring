@@ -75,9 +75,9 @@ Poner en funcionamiento su código en su propio sistema.
         -   Conecte Plook a su frontend en funcionamiento
 
     2.  **Mejores prácticas**:
-        -   Hacer pequeños cambios incrementales
+        -   Make small, incremental changes
         -   Los cambios de prueba inmediatamente en el navegador
-        -   Revisar el código generado antes de comprometerse
+        -   Review generated code before committing
         -   Mantenga Plook y su frontend en sincronización
         -   Utilice el control de versiones para todos los cambios generados por P "
 
