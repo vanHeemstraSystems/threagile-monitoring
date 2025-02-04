@@ -22,7 +22,7 @@
 
 अपने कोड को प्राप्त करना और अपने सिस्टम पर चल रहा है।
 
-**टिप्पणी**:`pyproject.toml`फ़ाइल रिपॉजिटरी की जड़ में होनी चाहिए!
+**Note**:`pyproject.toml`फ़ाइल रिपॉजिटरी की जड़ में होनी चाहिए!
 
 **टिप्पणी**: सुनिश्चित करें कि आप पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
@@ -87,7 +87,7 @@
         -   वेबपैक वॉच के कारण परिवर्तन तुरंत परिलक्षित होते हैं
         -   आपका बैकएंड एपीआई विकास के दौरान सुलभ रहता है
 
-    **टिप्पणी**: हमेशा यह सुनिश्चित करें कि ओनलुक विकास शुरू करने से पहले आपका फ्रंटेंड चल रहा है। यह आपके परिवर्तनों का वास्तविक समय पूर्वावलोकन सक्षम करता है।
+    **टिप्पणी**: Always ensure your frontend is running before starting Onlook development. This enables real-time preview of your changes.
 
     सुनिश्चित करें, बैकएंड फ़ंक्शंस के साथ परीक्षण करते समय अपने वेबपेज को चलाने के लिए, निम्नानुसार:
     1)`cd ../../../`# रिपॉजिटरी की जड़ पर जाएं
@@ -96,8 +96,8 @@
     **परीक्षा**
 
     इस तरह से आवेदन (फ्रंटेंड) का परीक्षण करें:
-    1)`cd ../`# रिपॉजिटरी की जड़ पर जाएं
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
+    1)`cd ../` # go to the root of the repository
+    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **दौड़ना:**
 
@@ -182,7 +182,7 @@ pip install threagile-monitoring
 
 ## संस्करण स्रोत
 
--   The [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन GIT टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
+-   [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन GIT टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
 
 ## वातावरण
 
@@ -191,7 +191,7 @@ pip install threagile-monitoring
 
 ## निर्माण
 
--   सभी निर्माण लक्ष्य उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py`फ़ाइल तो संस्करण का उपयोग रनटाइम पर किया जा सकता है
+-   सभी निर्माण लक्ष्य उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)एक जहाज करने के लिए हुक प्लगइन का निर्माण करें`_version.py`फ़ाइल तो संस्करण का उपयोग रनटाइम पर किया जा सकता है
 -   पहिए का उपयोग करें[हैच-मिपीक](https://github.com/ofek/hatch-mypyc)पहले सभी कोड को संकलित करने के लिए हुक प्लगइन का निर्माण करें[Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे:
     -   उपयोग[सभ्य](https://github.com/pypa/cibuildwheel)हर मंच के लिए बाइनरी पहियों को वितरित करने के लिए
