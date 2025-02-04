@@ -71,7 +71,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
     1.  **Integrationssetup**:
         -   Stellen Sie sicher, dass Ihr Frontend läuft (`npm run watch`)
         -   Starten Sie Ihren Backend -Server (`python app.py`)
-        -   Starten Sie Onlook in einer eigenen Anwendung
+        -   Launch Onlook in its own application
         -   Verbinden Sie Onlook mit Ihrem laufenden Frontend
 
     2.  **Best Practices**:
@@ -195,7 +195,7 @@ pip install threagile-monitoring
 -   Räder verwenden die[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Github Workflow zeigt, wie man:
     -   verwenden[Cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
-    -   benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
+    -   Verwenden Sie das[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
 
 ## Lizenz
 
