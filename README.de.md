@@ -60,7 +60,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
     1)`cd ../`# Gehen Sie zur Wurzel des Repositorys
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Dies gilt - in der separaten Terminalsitzung (d. H.`background`) - Laden Sie die Änderungen, die Sie vornehmen, ständig in die entsprechenden Dateien, während Sie diese Änderungen in der anfänglichen Terminalsitzung fortsetzen können (d. H.`foreground`). Sie müssen also nach jeder Bearbeitung keine Quellen erstellen, sondern wird automatisch gepflegt!
+    Dies gilt - in der separaten Terminalsitzung (d. H.`background`) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. `foreground`). Sie müssen also nach jeder Bearbeitung keine Quellen erstellen, sondern wird automatisch gepflegt!
 
     Um die Änderungen zu sehen, speichern und laden Sie Ihren Navigator einfach (normalerweise mit F5).
 
