@@ -10,13 +10,13 @@ throweagile監控
 
 * * *
 
-> A web application to create dashboards for [tre縮](https://threagile.io).
+> 一個為創建儀表板的Web應用程序[tre縮](https://threagile.io).
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
 -   [文件](./DOCUMENTATION.md)
 -   [遙測](./TELEMETRY.md)
--   [Tooling](./TOOLING.md)
+-   [工具](./TOOLING.md)
 
 **執行摘要**
 
