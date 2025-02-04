@@ -168,7 +168,7 @@
 
 **विषयसूची**
 
--   [इंस्टालेशन](#installation)
+-   [स्थापना](#installation)
 -   [संस्करण स्रोत](#version-source)
 -   [वातावरण](#environments)
 -   [निर्माण](#build)
