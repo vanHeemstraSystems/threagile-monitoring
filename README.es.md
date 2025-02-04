@@ -93,7 +93,7 @@ Poner en funcionamiento su código en su propio sistema.
     1)`cd ../../../`# ir a la raíz del repositorio
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
-    **Prueba**
+    **Test**
 
     Pruebe la aplicación (frontend) de esta manera:
     1)`cd ../`# ir a la raíz del repositorio
