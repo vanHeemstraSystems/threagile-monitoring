@@ -78,7 +78,7 @@ Uw code op uw eigen systeem laten werken.
         -   Breng kleine, incrementele veranderingen aan
         -   Test wijzigingen onmiddellijk in de browser
         -   Bekijk de gegenereerde code voordat u zich inzet
-        -   Keep Onlook and your frontend in sync
+        -   Houd ONLOOK en uw frontend in synchronisatie
         -   Gebruik versiebeheer voor alle onlook gegenereerde wijzigingen
 
     3.  **Configuratie**:
