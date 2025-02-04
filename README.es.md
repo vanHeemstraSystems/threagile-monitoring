@@ -51,8 +51,8 @@ Poner en funcionamiento su código en su propio sistema.
 
     **Empaque su sitio con Webpack:**Una vez que tenga un sitio web que sea lo suficientemente bueno para usar, debe empaquetar la aplicación con Webpack. Esta carpeta de paquete se enumera en`.gitignore`para evitar que se comprometa con GIT.
 
-    Toda la configuración debería estar lista para ahora, así que todo lo que tiene que hacer:
-    1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
+    All of the setup should be ready by now so all you have to do:
+    1) `(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
     Esto creará el`vendors.#####.js`y`main.#####.js`archivos, que contienen todos los componentes, en`/src/threagile_monitoring/static/js/`.
 
