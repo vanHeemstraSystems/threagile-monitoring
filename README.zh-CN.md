@@ -51,8 +51,8 @@ throweagile监控
 
     **将您的网站与WebPack打包：**一旦拥有足够好的网站，您就必须将应用程序与WebPack打包。此包装文件夹在`.gitignore`为了避免致力于git。
 
-    现在所有设置都应该准备就绪，因此您必须要做的所有设置：
-    1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
+    All of the setup should be ready by now so all you have to do:
+    1) `(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
     这将创建`vendors.#####.js`和`main.#####.js`文件 - 包含所有组件 - 在`/src/threagile_monitoring/static/js/`.
 
