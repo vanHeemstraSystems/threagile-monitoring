@@ -49,7 +49,7 @@ throweagile監控
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **將您的網站與WebPack打包：**一旦擁有足夠好的網站，您就必須將應用程序與WebPack打包。此包裝文件夾在`.gitignore`為了避免致力於git。
+    **Package your site with webpack:**一旦擁有足夠好的網站，您就必須將應用程序與WebPack打包。此包裝文件夾在`.gitignore`為了避免致力於git。
 
     現在所有設置都應該準備就緒，因此您必須要做的所有設置：
     1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
@@ -99,7 +99,7 @@ throweagile監控
     1）`cd ../`＃轉到存儲庫的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
-    **跑步：**
+    **Run:**
 
     如果不開發，請以這種方式運行應用程序（同時和前端）：
 
