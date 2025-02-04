@@ -66,7 +66,7 @@
 
     **باستخدام Onlook لتطوير واجهة المستخدم**
 
-    [onlook](https://github.com/vanHeemstraSystems/onlook) is a powerful tool for interactive UI development that integrates with your project.
+    [onlook](https://github.com/vanHeemstraSystems/onlook)هي أداة قوية لتطوير واجهة المستخدم التفاعلية التي تتكامل مع مشروعك.
 
     1.  **إعداد التكامل**:
         -   تأكد من تشغيل الواجهة الأمامية (`npm run watch`)
@@ -79,7 +79,7 @@
         -   اختبار التغييرات على الفور في المتصفح
         -   مراجعة رمز تم إنشاؤه قبل الالتزام
         -   الحفاظ على الإطلالة والواجهة الأمامية الخاصة بك في المزامنة
-        -   Use version control for all Onlook-generated changes
+        -   استخدم التحكم في الإصدار لجميع التغييرات التي تم إنشاؤها
 
     3.  **إعدادات**:
         -   سوف تكتشف Onlook هيكل مشروعك
@@ -111,7 +111,7 @@
 
 4.  مراجع API
 
-5.  بناء واختبار:
+5.  Build and Test:
 
     لبناء الكود الخاص بك ، استخدم:
 
@@ -126,7 +126,7 @@
 
     لتشغيل التطبيق ، استخدم:
 
-    Linux:
+    لينكس:
 
     ```bash
     $ export SECRET_KEY="secret"
