@@ -55,10 +55,15 @@ def delete_dashboard(dashboard_id: int):
     DashboardQuery = Query()
     db.remove(DashboardQuery.id == dashboard_id)
 
-def update_dashboard(dashboard_id: int, title: str, description: str):
+def update_dashboard(dashboard_id: int, title: str, description: str, risks_json=None):
     DashboardQuery = Query()
-    db.update({
+    update_data = {
         'title': title,
         'description': description
-    }, DashboardQuery.id == dashboard_id)
+    }
+    
+    if risks_json is not None:
+        update_data['risks_json'] = risks_json
+        
+    db.update(update_data, DashboardQuery.id == dashboard_id)
     return get_dashboard(dashboard_id)

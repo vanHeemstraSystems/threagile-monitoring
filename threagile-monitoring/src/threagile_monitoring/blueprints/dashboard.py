@@ -54,9 +54,21 @@ def edit_dashboard_route(dashboard_id):
     if request.method == 'POST':
         title = request.form['title']
         description = request.form['description']
-        dashboard = update_dashboard(dashboard_id, title, description)
+        
+        risks_json = None
+        if 'risks_file' in request.files:
+            file = request.files['risks_file']
+            if file and file.filename:
+                try:
+                    risks_json = json.load(file)
+                except json.JSONDecodeError:
+                    flash('Invalid JSON file')
+                    return redirect(request.url)
+        
+        dashboard = update_dashboard(dashboard_id, title, description, risks_json)
         flash('Dashboard updated successfully!')
         return redirect(url_for('dashboard.view_dashboard', dashboard_id=dashboard_id))
+        
     return render_template('dashboard/edit_dashboard.html', dashboard=dashboard)
 
 @dashboard_bp.route('/<int:dashboard_id>/delete', methods=['POST'])
