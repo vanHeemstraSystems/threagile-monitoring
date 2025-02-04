@@ -57,8 +57,8 @@ throweagile监控
     这将创建`vendors.#####.js`和`main.#####.js`文件 - 包含所有组件 - 在`/src/threagile_monitoring/static/js/`.
 
     **使用WebPack开发：**如果您仍在开发网站，则**单独的终端会话**，遵循上述安装过程后，执行此操作：
-    1）`cd ../` # go to the root of the repository
-    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
+    1）`cd ../`＃转到存储库的根
+    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     这将 - 在单独的终端会话中（即`background`） - 不断将更改加载到适当的文件中，而您可以继续进行这些更改 - 在初始终端会话中（即`foreground`）。因此，您不必在每次编辑后都必须构建来源，它会自动照顾！
 
@@ -79,7 +79,7 @@ throweagile监控
         -   立即在浏览器中进行测试更改
         -   提交之前审查生成的代码
         -   保持Onlook和您的前端同步
-        -   使用版本控制进行所有Onlook生成的更改
+        -   Use version control for all Onlook-generated changes
 
     3.  **配置**:
         -   Onlook将检测您的项目的结构
@@ -122,7 +122,7 @@ throweagile监控
 
     要使用AI进行拉动请求评论，请使用：
 
-    <https://app.coderabbit.ai/dashboard>（用途`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
 
     要运行该应用程序，请使用：
 
