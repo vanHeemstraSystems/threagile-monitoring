@@ -1,12 +1,13 @@
 # threagile-monitoring/src/threagile_monitoring/models/dashboard_model.py
-from utils.db_utils import db
+from dataclasses import dataclass
+from typing import List, Any
 
-
-class Dashboard(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(100), nullable=False)
-    description = db.Column(db.Text, nullable=True)
-    code = db.Column(db.Text, nullable=True)
+@dataclass
+class Dashboard:
+    id: int
+    title: str
+    description: str
+    risks_json: List[Any]
 
     def __repr__(self):
       return f'<Dashboard {self.title}>'

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Home from "./Home";
 import Dashboard from "./Dashboard";
+import { dashboardDb, DashboardData } from "../utils/db";
 
 // Temporarily hard coded, make dynamic import
 const risksJson = [
@@ -1529,10 +1531,24 @@ const risksJson = [
 ];
 
 function Layout(props) {
+  const { id } = useParams();
+  const [risksData, setRisksData] = useState(null);
+
+  useEffect(() => {
+    if (props.showDashboard && id) {
+      fetch(`/api/dashboard/${id}/risks`)
+        .then(res => res.json())
+        .then(data => setRisksData(data))
+        .catch(console.error);
+    }
+  }, [props.showDashboard, id]);
+
   return (
     <div className="Layout">
       {props.showHome && <Home />}
-      {props.showDashboard && <Dashboard risksJson={risksJson} />}
+      {props.showDashboard && risksData && (
+        <Dashboard risksJson={risksData} />
+      )}
     </div>
   );
 }

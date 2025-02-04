@@ -3,8 +3,8 @@ import json
 import os
 from flask import Flask, render_template
 from flask_cors import CORS
-from utils.db_utils import db  # Updated import to use db_utils
 from blueprints.dashboard import dashboard_bp
+from utils.db_utils import init_db
 
 app = Flask(__name__)
 CORS(app)  # This applies CORS to all routes
@@ -12,10 +12,11 @@ app.config['SECRET_KEY'] = 'your-secret-key-here'  # Add this line after creatin
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///threagile.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db.init_app(app)
+app.register_blueprint(dashboard_bp)
 
+# Initialize the database
 with app.app_context():
-    db.create_all()  # Create database tables
+    init_db()
 
 @app.route('/')
 def index():
@@ -37,8 +38,6 @@ def get_manifest():
 @app.context_processor
 def utility_processor():
     return dict(manifest=get_manifest())
-
-app.register_blueprint(dashboard_bp)
 
 if __name__ == "__main__":
     app.run(
