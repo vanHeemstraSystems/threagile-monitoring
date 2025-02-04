@@ -24,7 +24,7 @@ throweagile監控
 
 **筆記**： 這`pyproject.toml`文件應該在存儲庫的根部！
 
-**筆記**: Make sure you fulfill the [要求](./200/README.md).
+**筆記**：確保您滿足[要求](./200/README.md).
 
 1.  **安裝過程：**
 
@@ -56,10 +56,9 @@ throweagile監控
 
     這將創建`vendors.#####.js`和`main.#####.js`文件 - 包含所有組件 - 在`/src/threagile_monitoring/static/js/`.
 
-    **使用WebPack開發：**如果您仍在開發網站，則**separate terminal session**，遵循上述安裝過程後，執行此操作：
+    **使用WebPack開發：**如果您仍在開發網站，則**單獨的終端會話**，遵循上述安裝過程後，執行此操作：
     1）`cd ../`＃轉到存儲庫的根
-    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`
-    4) `(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
+    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     這將 - 在單獨的終端會話中（即`background`） - 不斷將更改加載到適當的文件中，而您可以繼續進行這些更改 - 在初始終端會話中（即`foreground`）。因此，您不必在每次編輯後都必須構建來源，它會自動照顧！
 
@@ -75,7 +74,7 @@ throweagile監控
         -   在自己的應用程序中啟動Onlook
         -   將Onlook連接到您的跑步前端
 
-    2.  **Best Practices**:
+    2.  **最佳實踐**:
         -   進行小小的增量改變
         -   立即在瀏覽器中進行測試更改
         -   提交之前審查生成的代碼
@@ -161,7 +160,7 @@ throweagile監控
 
 導航到`http://127.0.0.1:5000/docs`在您的網絡瀏覽器中，或從中下載OpenApi.json`http://127.0.0.1:5000/openapi.json`.
 
-# Metrics
+# 指標
 
 讓像Prometheus Scrape這樣的工具`http://127.0.0.1:9464/metrics`.
 
@@ -195,7 +194,7 @@ pip install threagile-monitoring
 -   所有構建目標都使用[孵化-VC](https://github.com/ofek/hatch-vcs)構建掛鉤插件來運送`_version.py`文件，因此可以在運行時使用該版本
 -   車輪使用[孵化 - 摩林](https://github.com/ofek/hatch-mypyc)構建掛鉤插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)github工作流程顯示瞭如何：
-    -   use [cibuild輪](https://github.com/pypa/cibuildwheel)為每個平台分發二元車輪
+    -   使用[cibuild輪](https://github.com/pypa/cibuildwheel)為每個平台分發二元車輪
     -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建立目標以建立每個平台的獨立分佈
 
 ## 執照
@@ -206,7 +205,7 @@ pip install threagile-monitoring
 
 看[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200-要求
 
 看[README.md](./200/README.md)
 
