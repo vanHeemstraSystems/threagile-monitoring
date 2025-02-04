@@ -67,6 +67,8 @@ def delete_dashboard_route(dashboard_id):
 @dashboard_bp.route('/api/dashboard/<int:dashboard_id>/risks')
 def get_risks(dashboard_id):
     risks_data = get_dashboard_risks(dashboard_id)
+    if risks_data is None:
+        return jsonify({'error': 'Dashboard not found'}), 404
     return jsonify(risks_data)
 
 @dashboard_bp.route('/create', methods=['GET', 'POST'])

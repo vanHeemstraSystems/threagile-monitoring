@@ -1530,18 +1530,28 @@ const risksJson = [
   },
 ];
 
-function Layout(props) {
-  const { id } = useParams();
+interface LayoutProps {
+  showHome?: boolean;
+  showDashboard?: boolean;
+}
+
+function Layout(props: LayoutProps) {
   const [risksData, setRisksData] = useState(null);
 
   useEffect(() => {
-    if (props.showDashboard && id) {
-      fetch(`/api/dashboard/${id}/risks`)
-        .then(res => res.json())
-        .then(data => setRisksData(data))
-        .catch(console.error);
+    if (props.showDashboard) {
+      // Get dashboard ID from the DOM
+      const rootElement = document.getElementById('root');
+      const dashboardId = rootElement?.dataset.dashboardId;
+
+      if (dashboardId) {
+        fetch(`/dashboard/api/dashboard/${dashboardId}/risks`)
+          .then(res => res.json())
+          .then(data => setRisksData(data))
+          .catch(console.error);
+      }
     }
-  }, [props.showDashboard, id]);
+  }, [props.showDashboard]);
 
   return (
     <div className="Layout">
