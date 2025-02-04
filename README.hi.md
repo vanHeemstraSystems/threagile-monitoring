@@ -58,7 +58,8 @@
 
     **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, एक में**अलग टर्मिनल सत्र**, उपरोक्त स्थापना प्रक्रिया का पालन करने के बाद, ऐसा करें:
     1)`cd ../`# रिपॉजिटरी की जड़ पर जाएं
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`
+    6) `(.hatch) $ npm run watch`
 
     यह - अलग टर्मिनल सत्र में (यानी`background`) - आपके द्वारा उपयुक्त फ़ाइलों में किए गए परिवर्तनों को लगातार लोड करें, जबकि आप उन परिवर्तनों को जारी रख सकते हैं - प्रारंभिक टर्मिनल सत्र में (अर्थात्।`foreground`)। इसलिए आपको प्रत्येक संपादन के बाद अपने स्रोतों का निर्माण करने की आवश्यकता नहीं है, यह स्वचालित रूप से ध्यान रखा जाता है!
 
