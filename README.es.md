@@ -20,7 +20,7 @@ monitoreo de la espía
 
 **Resumen ejecutivo**
 
-Poner en funcionamiento su código en su propio sistema.
+Getting your code up and running on your own system.
 
 **Nota**: El`pyproject.toml`¡El archivo debe estar en la raíz del repositorio!
 
@@ -75,9 +75,9 @@ Poner en funcionamiento su código en su propio sistema.
         -   Conecte Plook a su frontend en funcionamiento
 
     2.  **Mejores prácticas**:
-        -   Make small, incremental changes
+        -   Hacer pequeños cambios incrementales
         -   Los cambios de prueba inmediatamente en el navegador
-        -   Review generated code before committing
+        -   Revisar el código generado antes de comprometerse
         -   Mantenga Plook y su frontend en sincronización
         -   Utilice el control de versiones para todos los cambios generados por P "
 
@@ -209,7 +209,7 @@ Ver[README.md](./100/README.md)
 
 Ver[README.md](./200/README.md)
 
-## 300 - Construyendo nuestra aplicación
+## 300 - Building Our Application
 
 Ver[README.md](./300/README.md)
 
