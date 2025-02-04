@@ -79,7 +79,7 @@ throweagile監控
         -   立即在瀏覽器中進行測試更改
         -   提交之前審查生成的代碼
         -   保持Onlook和您的前端同步
-        -   Use version control for all Onlook-generated changes
+        -   使用版本控制進行所有Onlook生成的更改
 
     3.  **配置**:
         -   Onlook將檢測您的項目的結構
