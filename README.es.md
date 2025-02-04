@@ -26,7 +26,7 @@ Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con el[requisitos](./200/README.md).
 
-1.  **Proceso de instalación:**
+1.  **Installation process:**
 
     ```bash
     $ cd threagile-monitoring # start at sub-directory of the repository where the requirements.txt file is kept.
@@ -56,11 +56,11 @@ Poner en funcionamiento su código en su propio sistema.
 
     Esto creará el`vendors.#####.js`y`main.#####.js`archivos, que contienen todos los componentes, en`/src/threagile_monitoring/static/js/`.
 
-    **Desarrollo con Webpack:**Si todavía está desarrollando su sitio web, en un**Sesión de terminal separada**, después de haber seguido el proceso de instalación anterior, haga esto:
-    1)`cd ../`# ir a la raíz del repositorio
+    **Desarrollo con Webpack:**Si todavía está desarrollando su sitio web, en un**Sesión de terminal separada**, after having followed the above installation process, do this:
+    1) `cd ../`# ir a la raíz del repositorio
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Esto lo hará: en la sesión terminal separada (es decir,`background`) - Cargue constantemente los cambios que realiza en los archivos apropiados, mientras que puede continuar haciendo esos cambios, en la sesión de terminal inicial (es decir,`foreground`). Por lo tanto, no tiene que construir sus fuentes después de cada edición, ¡se cuida automáticamente!
+    Esto lo hará: en la sesión terminal separada (es decir,`background`) - Cargue constantemente los cambios que realiza en los archivos apropiados, mientras que puede continuar haciendo esos cambios, en la sesión de terminal inicial (es decir,`foreground`). So you do not have to build your sources after each edit, it is taken care of automatically!
 
     Para ver los cambios, simplemente guarde y vuelva a cargar su navegador (generalmente con F5).
 
@@ -93,7 +93,7 @@ Poner en funcionamiento su código en su propio sistema.
     1)`cd ../../../`# ir a la raíz del repositorio
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
-    **Test**
+    **Prueba**
 
     Pruebe la aplicación (frontend) de esta manera:
     1)`cd ../`# ir a la raíz del repositorio
@@ -205,7 +205,7 @@ pip install threagile-monitoring
 
 Ver[README.md](./100/README.md)
 
-## 200 - Requisitos
+## 200 - Requirements
 
 Ver[README.md](./200/README.md)
 
