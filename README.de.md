@@ -18,7 +18,7 @@ Dreigile-Überwachung
 -   [Telemetrie](./TELEMETRY.md)
 -   [Werkzeug](./TOOLING.md)
 
-**Zusammenfassung**
+**Executive Summary**
 
 Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
