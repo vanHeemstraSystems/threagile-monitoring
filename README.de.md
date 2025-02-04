@@ -22,7 +22,7 @@ Dreigile-Überwachung
 
 Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
-**Notiz**: Der`pyproject.toml` file should be in the root of the repository!
+**Notiz**: Der`pyproject.toml`Die Datei sollte sich im Stamm des Repositorys befinden!
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
@@ -148,7 +148,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     Dann navigieren Sie zu`http://127.0.0.1:5000/`in Ihrem Webbrowser.
 
-    To run tests, use:
+    Um Tests auszuführen, verwenden Sie:
 
     ```bash
     $ cd threagile-monitoring
@@ -171,7 +171,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)
 -   [Umgebungen](#environments)
--   [Build](#build)
+-   [Bauen](#build)
 -   [Lizenz](#license)
 
 ## Installation
@@ -195,7 +195,7 @@ pip install threagile-monitoring
 -   Räder verwenden die[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Github Workflow zeigt, wie man:
     -   verwenden[Cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
-    -   benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
+    -   Verwenden Sie das[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
 
 ## Lizenz
 
