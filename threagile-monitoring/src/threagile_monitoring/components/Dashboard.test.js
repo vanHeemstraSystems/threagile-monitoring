@@ -1,30 +1,59 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen, fireEvent, within, cleanup } from '@testing-library/react'
 import Dashboard from './Dashboard'
 
-const mockRisksData = [
-  {
-    id: '1',
-    severity: 'critical',
-    category: 'Authentication',
-    exploitation_impact: 4,
-    exploitation_likelihood: 3,
-    title: 'Authentication Bypass',
-    risk_status: 'in-progress',
-    data_breach_technical_assets: ['web-server']
-  },
-  {
-    id: '2',
-    severity: 'high',
-    category: 'Authorization',
-    exploitation_impact: 3,
-    exploitation_likelihood: 4,
-    title: 'Privilege Escalation',
-    risk_status: 'open',
-    data_breach_technical_assets: ['database']
-  }
-]
+// Mock data
+const mockRisksData = {
+  risks: [
+    {
+      id: '1',
+      severity: 'critical',
+      category: 'Authentication',
+      exploitation_impact: 4,
+      exploitation_likelihood: 3,
+      title: 'Authentication Bypass',
+      risk_status: 'in-progress',
+      data_breach_technical_assets: ['web-server']
+    }
+  ]
+}
+
+const multipleRisksData = {
+  risks: [
+    ...mockRisksData.risks,
+    {
+      id: '2',
+      severity: 'critical',
+      category: 'Authorization',
+      exploitation_impact: 4,
+      exploitation_likelihood: 4,
+      title: 'Privilege Escalation',
+      risk_status: 'open',
+      data_breach_technical_assets: ['database']
+    }
+  ]
+}
+
+const noCriticalRisks = {
+  risks: [
+    {
+      id: '1',
+      severity: 'high',
+      category: 'Authentication',
+      exploitation_impact: 3,
+      exploitation_likelihood: 3,
+      title: 'Weak Password Policy',
+      risk_status: 'in-progress',
+      data_breach_technical_assets: ['web-server']
+    }
+  ]
+}
 
 describe('Dashboard Component', () => {
+  beforeEach(() => {
+    cleanup()
+    jest.clearAllMocks()
+  })
+
   test('shows loading state when no data is provided', () => {
     render(<Dashboard />)
     expect(screen.getByText('Loading...')).toBeInTheDocument()
@@ -71,17 +100,34 @@ describe('Dashboard Component', () => {
       fireEvent.change(severitySelect, { target: { value: 'critical' } })
       expect(severitySelect.value).toBe('critical')
     })
-  })
 
-  test('parses risk data correctly', () => {
-    render(<Dashboard risksJson={mockRisksData} />)
-    
-    // Check critical risks count
-    const criticalCount = screen.getByText('1')
-    expect(criticalCount).toBeInTheDocument()
-    
-    // Check active mitigations count
-    const activeMitigationsCount = screen.getByText('1')
-    expect(activeMitigationsCount).toBeInTheDocument()
+    describe('Critical Risks Card', () => {
+      it('displays correct number for single critical risk', () => {
+        const { container } = render(<Dashboard risksJson={mockRisksData} />)
+        const criticalRisksCard = container.querySelector('[data-testid="critical-risks-card"]')
+        const count = criticalRisksCard.querySelector('[data-testid="critical-risks-count"]')
+        expect(count).toHaveTextContent('1')
+      })
+
+      it('displays correct number for multiple critical risks', () => {
+        const { container } = render(<Dashboard risksJson={multipleRisksData} />)
+        const criticalRisksCard = container.querySelector('[data-testid="critical-risks-card"]')
+        const count = criticalRisksCard.querySelector('[data-testid="critical-risks-count"]')
+        expect(count).toHaveTextContent('2')
+      })
+
+      it('displays zero when no critical risks exist', () => {
+        const { container } = render(<Dashboard risksJson={noCriticalRisks} />)
+        const criticalRisksCard = container.querySelector('[data-testid="critical-risks-card"]')
+        const count = criticalRisksCard.querySelector('[data-testid="critical-risks-count"]')
+        expect(count).toHaveTextContent('0')
+      })
+    })
+
+    test('parses risk data correctly', () => {
+      const { container } = render(<Dashboard risksJson={mockRisksData} />)
+      const criticalCount = container.querySelector('[data-testid="critical-risks-count"]')
+      expect(criticalCount).toHaveTextContent('1')
+    })
   })
 })

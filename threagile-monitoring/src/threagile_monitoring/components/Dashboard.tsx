@@ -30,7 +30,8 @@ import { AlertCircle, Activity, TrendingDown, Settings } from 'lucide-react'
 
 // Parse Threagile risks.json structure
 const parseThreagileData = risksJson => {
-  console.debug('parseThreagileData')
+  if (!risksJson || !risksJson.risks) return null
+
   const severityMap = {
     critical: { weight: 5, color: '#dc2626' },
     high: { weight: 4, color: '#ea580c' },
@@ -38,24 +39,27 @@ const parseThreagileData = risksJson => {
     medium: { weight: 2, color: '#84cc16' },
     low: { weight: 1, color: '#22c55e' }
   }
+
+  const risks = risksJson.risks // Get the risks array from the risksJson object
+  
   return {
     risksBySeverity: Object.entries(
-      risksJson.reduce((acc, risk) => {
+      risks.reduce((acc, risk) => {
         acc[risk.severity] = (acc[risk.severity] || 0) + 1
         return acc
       }, {})
     ).map(([severity, count]) => ({
       name: severity,
       count,
-      color: severityMap[severity.toLowerCase()].color
+      color: severityMap[severity.toLowerCase()]?.color || '#gray'
     })),
     risksByCategory: Object.entries(
-      risksJson.reduce((acc, risk) => {
+      risks.reduce((acc, risk) => {
         acc[risk.category] = (acc[risk.category] || 0) + 1
         return acc
       }, {})
     ).map(([category, value]) => ({ name: category, value })),
-    riskMatrix: risksJson.map(risk => ({
+    riskMatrix: risks.map(risk => ({
       id: risk.id,
       impact: risk.exploitation_impact,
       likelihood: risk.exploitation_likelihood,
@@ -63,13 +67,13 @@ const parseThreagileData = risksJson => {
       title: risk.title
     })),
     mitigationStatus: Object.entries(
-      risksJson.reduce((acc, risk) => {
+      risks.reduce((acc, risk) => {
         acc[risk.risk_status] = (acc[risk.risk_status] || 0) + 1
         return acc
       }, {})
     ).map(([status, count]) => ({ name: status, value: count })),
     technicalAssetRisks: Object.entries(
-      risksJson.reduce((acc, risk) => {
+      risks.reduce((acc, risk) => {
         console.debug('acc:', acc, 'risk:', risk)
         if (!risk.data_breach_technical_assets || !acc) return {}
         risk.data_breach_technical_assets.forEach(asset => {
@@ -87,12 +91,21 @@ const Dashboard = ({ risksJson }) => {
   const [selectedSeverity, setSelectedSeverity] = useState(null)
   const [timeRange, setTimeRange] = useState('1M')
   const [data, setData] = useState(null)
+
   useEffect(() => {
-    console.debug('Dashboard with risksJson started: ', risksJson)
     if (risksJson) {
-      setData(parseThreagileData(risksJson))
+      const parsedData = parseThreagileData(risksJson)
+      setData(parsedData)
     }
   }, [risksJson])
+
+  const getCriticalRisksCount = (data) => {
+    if (!data?.risksBySeverity) return 0
+    const criticalRisks = data.risksBySeverity.find(
+      r => r.name.toLowerCase() === 'critical'
+    )
+    return criticalRisks?.count || 0
+  }
 
   if (!data) return <div>Loading...</div>
 
@@ -257,6 +270,7 @@ const Dashboard = ({ risksJson }) => {
       </AreaChart>
     )
   }
+
   return (
     <div className='p-6 space-y-8'>
       {/* Dashboard Header */}
@@ -284,14 +298,18 @@ const Dashboard = ({ risksJson }) => {
 
       {/* Risk Summary Cards */}
       <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-        <div className='bg-white p-4 rounded-lg shadow flex items-center gap-4'>
+        <div 
+          data-testid="critical-risks-card"
+          className='bg-white p-4 rounded-lg shadow flex items-center gap-4'
+        >
           <AlertCircle className='text-red-500' size={24} />
           <div>
             <h3 className='text-lg font-semibold'>Critical Risks</h3>
-            <p className='text-2xl font-bold'>
-              {data.risksBySeverity.find(
-                r => r.name.toLowerCase() === 'critical'
-              ).count || 0}
+            <p 
+              data-testid="critical-risks-count"
+              className='text-2xl font-bold'
+            >
+              {getCriticalRisksCount(data)}
             </p>
           </div>
         </div>
