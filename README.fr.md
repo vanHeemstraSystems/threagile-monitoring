@@ -60,7 +60,7 @@ Mettre votre code en cours d'exécution sur votre propre système.
     1)`cd ../`# allez à la racine du référentiel
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Ce sera - dans la session du terminal séparé (c'est-à-dire`background`) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. `foreground`). Vous n'avez donc pas à construire vos sources après chaque modification, il est pris en charge automatiquement!
+    Ce sera - dans la session du terminal séparé (c'est-à-dire`background`) - Chargez constamment les modifications que vous apportez dans les fichiers appropriés, tandis que vous pouvez continuer à apporter ces modifications - dans la session du terminal initial (c'est-à-dire.`foreground`). Vous n'avez donc pas à construire vos sources après chaque modification, il est pris en charge automatiquement!
 
     Pour voir les modifications, enregistrez et rechargez votre navigateur (généralement avec F5).
 
@@ -146,7 +146,7 @@ Mettre votre code en cours d'exécution sur votre propre système.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Web.
+    Then, navigate to `http://127.0.0.1:5000/`dans votre navigateur Web.
 
     Pour exécuter des tests, utilisez:
 
