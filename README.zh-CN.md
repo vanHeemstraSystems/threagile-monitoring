@@ -82,7 +82,7 @@ throweagile监控
         -   使用版本控制进行所有Onlook生成的更改
 
     3.  **配置**:
-        -   Onlook will detect your project's structure
+        -   Onlook将检测您的项目的结构
         -   它将直接更改您的源文件
         -   由于WebPack手表而立即反映更改
         -   您的后端API在开发过程中仍然可以访问
