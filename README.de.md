@@ -22,7 +22,7 @@ Dreigile-Überwachung
 
 Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
-**Notiz**: Der`pyproject.toml`Die Datei sollte sich im Stamm des Repositorys befinden!
+**Notiz**: Der`pyproject.toml` file should be in the root of the repository!
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
@@ -124,7 +124,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     <https://app.coderabbit.ai/dashboard>(Verwendet`phpstan.neon`)
 
-    To run the application, use:
+    Verwenden Sie die Anwendung, um die Anwendung auszuführen:
 
     Linux:
 
@@ -148,7 +148,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     Dann navigieren Sie zu`http://127.0.0.1:5000/`in Ihrem Webbrowser.
 
-    Um Tests auszuführen, verwenden Sie:
+    To run tests, use:
 
     ```bash
     $ cd threagile-monitoring
@@ -171,7 +171,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)
 -   [Umgebungen](#environments)
--   [Bauen](#build)
+-   [Build](#build)
 -   [Lizenz](#license)
 
 ## Installation
