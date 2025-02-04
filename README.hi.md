@@ -6,7 +6,7 @@
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | सीआई/सीडी | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-monitoring/actions/workflows/build.yml)                                                                                                                                                                                        |
 | पैकेट     | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-monitoring.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-monitoring.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-monitoring/)                                                                                                                                                                                                                                                     |
-| मेटा      | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
+| Meta      | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
 
 * * *
 
@@ -22,7 +22,7 @@
 
 अपने कोड को प्राप्त करना और अपने सिस्टम पर चल रहा है।
 
-**Note**:`pyproject.toml`फ़ाइल रिपॉजिटरी की जड़ में होनी चाहिए!
+**टिप्पणी**:`pyproject.toml`फ़ाइल रिपॉजिटरी की जड़ में होनी चाहिए!
 
 **टिप्पणी**: सुनिश्चित करें कि आप पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
@@ -54,7 +54,7 @@
     सेटअप के सभी अब तक तैयार होना चाहिए ताकि आपको बस इतना करना पड़े:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    यह बनाएगा`vendors.#####.js`और`main.#####.js`फ़ाइलें - जिसमें सभी घटक हैं - में`/src/threagile_monitoring/static/js/`.
+    This will create the `vendors.#####.js`और`main.#####.js`फ़ाइलें - जिसमें सभी घटक हैं - में`/src/threagile_monitoring/static/js/`.
 
     **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, एक में**अलग टर्मिनल सत्र**, उपरोक्त स्थापना प्रक्रिया का पालन करने के बाद, ऐसा करें:
     1)`cd ../`# रिपॉजिटरी की जड़ पर जाएं
@@ -66,7 +66,7 @@
 
     **UI विकास के लिए onlook का उपयोग करना**
 
-    [घिनौना](https://github.com/vanHeemstraSystems/onlook) is a powerful tool for interactive UI development that integrates with your project.
+    [घिनौना](https://github.com/vanHeemstraSystems/onlook)इंटरैक्टिव यूआई विकास के लिए एक शक्तिशाली उपकरण है जो आपकी परियोजना के साथ एकीकृत करता है।
 
     1.  **एकीकरण सेटअप**:
         -   सुनिश्चित करें कि आपका फ्रंटेंड चल रहा है (`npm run watch`)
@@ -87,7 +87,7 @@
         -   वेबपैक वॉच के कारण परिवर्तन तुरंत परिलक्षित होते हैं
         -   आपका बैकएंड एपीआई विकास के दौरान सुलभ रहता है
 
-    **टिप्पणी**: Always ensure your frontend is running before starting Onlook development. This enables real-time preview of your changes.
+    **टिप्पणी**: हमेशा यह सुनिश्चित करें कि ओनलुक विकास शुरू करने से पहले आपका फ्रंटेंड चल रहा है। यह आपके परिवर्तनों का वास्तविक समय पूर्वावलोकन सक्षम करता है।
 
     सुनिश्चित करें, बैकएंड फ़ंक्शंस के साथ परीक्षण करते समय अपने वेबपेज को चलाने के लिए, निम्नानुसार:
     1)`cd ../../../`# रिपॉजिटरी की जड़ पर जाएं
@@ -96,8 +96,8 @@
     **परीक्षा**
 
     इस तरह से आवेदन (फ्रंटेंड) का परीक्षण करें:
-    1)`cd ../` # go to the root of the repository
-    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
+    1)`cd ../`# रिपॉजिटरी की जड़ पर जाएं
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **दौड़ना:**
 
