@@ -56,7 +56,7 @@ throweagile监控
 
     这将创建`vendors.#####.js`和`main.#####.js`文件 - 包含所有组件 - 在`/src/threagile_monitoring/static/js/`.
 
-    **使用WebPack开发：**如果您仍在开发网站，则**separate terminal session**，遵循上述安装过程后，执行此操作：
+    **使用WebPack开发：**如果您仍在开发网站，则**单独的终端会话**，遵循上述安装过程后，执行此操作：
     1）`cd ../`＃转到存储库的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
