@@ -57,8 +57,8 @@ throweagile监控
     这将创建`vendors.#####.js`和`main.#####.js`文件 - 包含所有组件 - 在`/src/threagile_monitoring/static/js/`.
 
     **使用WebPack开发：**如果您仍在开发网站，则**单独的终端会话**，遵循上述安装过程后，执行此操作：
-    1）`cd ../`＃转到存储库的根
-    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
+    1）`cd ../` # go to the root of the repository
+    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     这将 - 在单独的终端会话中（即`background`） - 不断将更改加载到适当的文件中，而您可以继续进行这些更改 - 在初始终端会话中（即`foreground`）。因此，您不必在每次编辑后都必须构建来源，它会自动照顾！
 
@@ -69,7 +69,7 @@ throweagile监控
     [Onlook](https://github.com/vanHeemstraSystems/onlook)是与您的项目集成的交互式UI开发的强大工具。
 
     1.  **集成设置**:
-        -   Ensure your frontend is running (`npm run watch`)
+        -   确保您的前端运行（`npm run watch`)
         -   启动您的后端服务器（`python app.py`)
         -   在自己的应用程序中启动Onlook
         -   将Onlook连接到您的跑步前端
@@ -89,8 +89,8 @@ throweagile监控
 
     **笔记**：始终在开始Onlook开发之前确保您的前端运行。这可以实时预览您的更改。
 
-    Make sure, to run your webpage when testing with backend functions, as follows:
-    1) `cd ../../../`＃转到存储库的根
+    确保在使用后端函数测试时运行网页，如下：
+    1）`cd ../../../`＃转到存储库的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **测试**
