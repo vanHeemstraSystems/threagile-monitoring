@@ -146,7 +146,7 @@ Mettre votre code en cours d'exécution sur votre propre système.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`dans votre navigateur Web.
+    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Web.
 
     Pour exécuter des tests, utilisez:
 
