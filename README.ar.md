@@ -168,7 +168,7 @@
 
 **جدول المحتويات**
 
--   [تثبيت](#installation)
+-   [Installation](#installation)
 -   [مصدر الإصدار](#version-source)
 -   [البيئات](#environments)
 -   [يبني](#build)
