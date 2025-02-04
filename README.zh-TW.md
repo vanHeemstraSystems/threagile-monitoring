@@ -122,7 +122,7 @@ throweagile監控
 
     要使用AI進行拉動請求評論，請使用：
 
-    <https://app.coderabbit.ai/dashboard>（用途`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
 
     要運行該應用程序，請使用：
 
