@@ -24,7 +24,7 @@ Uw code op uw eigen systeem laten werken.
 
 **Opmerking**: De`pyproject.toml`Bestand moet in de root van de repository staan!
 
-**Opmerking**: Zorg ervoor dat je de[vereisten](./200/README.md).
+**Opmerking**: Zorg ervoor dat je de[requirements](./200/README.md).
 
 1.  **Installatieproces:**
 
@@ -164,7 +164,7 @@ Navigeren naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de opena
 
 Laat een tool als Prometheus schrapen`http://127.0.0.1:9464/metrics`.
 
-**_NIEUW_**
+**_ NEW _**
 
 **Inhoudsopgave**
 
@@ -187,7 +187,7 @@ pip install threagile-monitoring
 ## Omgevingen
 
 -   Netjes gedefinieerd in een op zichzelf staande[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   De`test`Matrix gebruikt de[luikcontainers](https://github.com/ofek/hatch-containers)plug -in om elke omgeving in Docker -containers te laten werken; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub -workflow
+-   De`test`Matrix gebruikt de[luikcontainers](https://github.com/ofek/hatch-containers) plugin to run each environment inside Docker containers; usage can be seen in the [test](.github/workflows/test.yml)GitHub -workflow
 
 ## Bouwen
 
