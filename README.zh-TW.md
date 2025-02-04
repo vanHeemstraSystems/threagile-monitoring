@@ -76,7 +76,7 @@ throweagile監控
 
     2.  **最佳實踐**:
         -   進行小小的增量改變
-        -   立即在瀏覽器中進行測試更改
+        -   Test changes immediately in the browser
         -   提交之前審查生成的代碼
         -   保持Onlook和您的前端同步
         -   使用版本控制進行所有Onlook生成的更改
@@ -122,7 +122,7 @@ throweagile監控
 
     要使用AI進行拉動請求評論，請使用：
 
-    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard>（用途`phpstan.neon`)
 
     要運行該應用程序，請使用：
 
@@ -170,7 +170,7 @@ throweagile監控
 
 -   [安裝](#installation)
 -   [版本來源](#version-source)
--   [環境](#environments)
+-   [Environments](#environments)
 -   [建造](#build)
 -   [執照](#license)
 
@@ -199,7 +199,7 @@ pip install threagile-monitoring
 
 ## 執照
 
-`threagile-monitoring`根據[和](https://spdx.org/licenses/MIT.html)執照。
+`threagile-monitoring` is distributed under the terms of the [和](https://spdx.org/licenses/MIT.html)執照。
 
 ## 100-簡介
 
