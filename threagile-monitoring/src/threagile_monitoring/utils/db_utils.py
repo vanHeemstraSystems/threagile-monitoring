@@ -50,3 +50,15 @@ def create_dashboard(title: str, description: str, risks_json: list = None):
     }
     db.insert(new_dashboard)
     return DashboardModel(**new_dashboard)
+
+def delete_dashboard(dashboard_id: int):
+    DashboardQuery = Query()
+    db.remove(DashboardQuery.id == dashboard_id)
+
+def update_dashboard(dashboard_id: int, title: str, description: str):
+    DashboardQuery = Query()
+    db.update({
+        'title': title,
+        'description': description
+    }, DashboardQuery.id == dashboard_id)
+    return get_dashboard(dashboard_id)

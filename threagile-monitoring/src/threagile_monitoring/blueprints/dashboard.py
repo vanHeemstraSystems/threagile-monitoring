@@ -3,7 +3,7 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash,
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField
 from wtforms.validators import DataRequired
-from utils.db_utils import db, get_dashboard, get_dashboard_risks, init_db, create_dashboard
+from utils.db_utils import db, get_dashboard, get_dashboard_risks, init_db, create_dashboard, delete_dashboard, update_dashboard
 from models.dashboard_model import Dashboard
 import json
 from pathlib import Path
@@ -48,28 +48,20 @@ def view_dashboard(dashboard_id):
 
 
 @dashboard_bp.route('/<int:dashboard_id>/edit', methods=['GET', 'POST'])
-def edit_dashboard(dashboard_id):
-    dashboard = Dashboard.query.get_or_404(dashboard_id)
-
-    form = DashboardForm(obj=dashboard)
-    
-    if form.validate_on_submit():
-        dashboard.title = form.title.data
-        dashboard.description = form.description.data
-        dashboard.code = form.code.data
-        db.session.commit()
-        flash('Dashboard updated successfully!', 'success')
+def edit_dashboard_route(dashboard_id):
+    dashboard = get_dashboard(dashboard_id)
+    if request.method == 'POST':
+        title = request.form['title']
+        description = request.form['description']
+        dashboard = update_dashboard(dashboard_id, title, description)
+        flash('Dashboard updated successfully!')
         return redirect(url_for('dashboard.view_dashboard', dashboard_id=dashboard_id))
-    
-    return render_template('dashboard/edit_dashboard.html', form=form, dashboard_id=dashboard_id)
+    return render_template('dashboard/edit_dashboard.html', dashboard=dashboard)
 
 @dashboard_bp.route('/<int:dashboard_id>/delete', methods=['POST'])
-def delete_dashboard(dashboard_id):
-    dashboard = Dashboard.query.get_or_404(dashboard_id)
-
-    db.session.delete(dashboard)
-    db.session.commit()
-    flash('Dashboard deleted successfully!', 'success')
+def delete_dashboard_route(dashboard_id):
+    delete_dashboard(dashboard_id)
+    flash('Dashboard deleted successfully!')
     return redirect(url_for('dashboard.list_dashboards'))
 
 @dashboard_bp.route('/api/dashboard/<int:dashboard_id>/risks')

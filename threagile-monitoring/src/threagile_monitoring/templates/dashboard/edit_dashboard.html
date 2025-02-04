@@ -5,63 +5,34 @@
 {% endblock %}
 
 {% block content %}
-
-<section class="bg-white dark:bg-gray-900">
-    <div class="container mx-auto p-4">
-        <h1 class="text-2xl font-bold mb-4">Edit Dashboard</h1>
-
-        <div class="container mx-auto p-6">
-            <form method="post" class="max-w-lg mx-auto">
-                {{ form.csrf_token }}
-                <div class="mb-4">
-                    <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title</label>
-                    {{ form.title(class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline") }}
-                    {% if form.title.errors %}
-                        {% for error in form.title.errors %}
-                            <p class="text-red-500 text-xs italic">{{ error }}</p>
-                        {% endfor %}
-                    {% endif %}
-                </div>
-                <div class="mb-4">
-                    <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Description</label>
-                    {{ form.description(class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline") }}
-                    {% if form.description.errors %}
-                        {% for error in form.description.errors %}
-                            <p class="text-red-500 text-xs italic">{{ error }}</p>
-                        {% endfor %}
-                    {% endif %}
-                </div>
-                <div class="mb-4">
-                    <label for="code" class="block text-gray-700 text-sm font-bold mb-2">Code</label>
-                    {{ form.code(class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline") }}
-                    {% if form.code.errors %}
-                        {% for error in form.code.errors %}
-                            <p class="text-red-500 text-xs italic">{{ error }}</p>
-                        {% endfor %}
-                    {% endif %}
-                </div>
-                <div class="flex items-center justify-between">
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                        Save Changes
-                    </button>
-                    <a href="{{ url_for('dashboard.view_dashboard', dashboard_id=dashboard_id) }}" class="text-blue-500 hover:text-blue-800">Cancel</a>
-                </div>
-            </form>
+  <div class="container mx-auto p-6">
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <form method="post">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="title">
+            Title
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                 id="title" name="title" type="text" value="{{ dashboard.title }}" required>
         </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="description">
+            Description
+          </label>
+          <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="description" name="description" rows="3">{{ dashboard.description }}</textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
+                  type="submit">
+            Update Dashboard
+          </button>
+          <a href="{{ url_for('dashboard.view_dashboard', dashboard_id=dashboard.id) }}" 
+             class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+            Cancel
+          </a>
+        </div>
+      </form>
     </div>
-
-    <!-- START -->
-
-    
-
-    <!-- END -->
-
-    <script type="text/javascript">
-        console.log('Dashboard Edit started');
-    </script>
-
-</section>
-
-<br />
-
+  </div>
 {% endblock %}
