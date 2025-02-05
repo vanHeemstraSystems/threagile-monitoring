@@ -52,8 +52,7 @@ throweagile监控
     **将您的网站与WebPack打包：**一旦拥有足够好的网站，您就必须将应用程序与WebPack打包。此包装文件夹在`.gitignore`为了避免致力于git。
 
     现在所有设置都应该准备就绪，因此您必须要做的所有设置：
-    1）`(.hatch) $ cd src/threagile_monitoring`
-    2) `(.hatch) $ npm install`3)`(.hatch) $ npm run build`
+    1）`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
     这将创建`vendors.#####.js`和`main.#####.js`文件 - 包含所有组件 - 在`/src/threagile_monitoring/static/js/`.
 
@@ -88,7 +87,7 @@ throweagile监控
         -   由于WebPack手表而立即反映更改
         -   您的后端API在开发过程中仍然可以访问
 
-    **Note**：始终在开始Onlook开发之前确保您的前端运行。这可以实时预览您的更改。
+    **笔记**：始终在开始Onlook开发之前确保您的前端运行。这可以实时预览您的更改。
 
     确保在使用后端函数测试时运行网页，如下：
     1）`cd ../../../`＃转到存储库的根
