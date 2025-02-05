@@ -105,7 +105,7 @@ throweagile監控
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
-2.  軟件依賴性
+2.  Software dependencies
 
 3.  最新版本
 
@@ -199,7 +199,7 @@ pip install threagile-monitoring
 
 ## 執照
 
-`threagile-monitoring`根據[和](https://spdx.org/licenses/MIT.html)執照。
+`threagile-monitoring`根據[MIT](https://spdx.org/licenses/MIT.html)執照。
 
 ## 100-簡介
 
