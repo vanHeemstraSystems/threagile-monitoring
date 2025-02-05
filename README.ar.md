@@ -101,7 +101,7 @@
 
     **يجري:**
 
-    If not developing, run the application (backend and frontend simultaneously) this way: 
+    إذا لم يتم تطويرها ، فتشغيل التطبيق (الواجهة الخلفية والواجهة في وقت واحد) بهذه الطريقة:
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
