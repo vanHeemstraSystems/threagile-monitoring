@@ -187,7 +187,7 @@ pip install threagile-monitoring
 ## 環境
 
 -   在獨立中整齊地定義[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   這`test`矩陣使用[孵化器](https://github.com/ofek/hatch-containers)插件以在Docker容器中運行每個環境；可以在[測試](.github/workflows/test.yml)GitHub工作流程
+-   這`test` matrix uses the [孵化器](https://github.com/ofek/hatch-containers)插件以在Docker容器中運行每個環境；可以在[測試](.github/workflows/test.yml)GitHub工作流程
 
 ## 建造
 
