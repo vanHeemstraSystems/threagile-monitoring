@@ -22,7 +22,7 @@ Dreigile-Überwachung
 
 Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
-**Notiz**: Der`pyproject.toml`Die Datei sollte sich im Stamm des Repositorys befinden!
+**Notiz**: The `pyproject.toml`Die Datei sollte sich im Stamm des Repositorys befinden!
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
@@ -64,7 +64,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     Um die Änderungen zu sehen, speichern und laden Sie Ihren Navigator einfach (normalerweise mit F5).
 
-    **Verwenden von Onlook für die UI -Entwicklung**
+    **Using Onlook for UI Development**
 
     [Onlook](https://github.com/vanHeemstraSystems/onlook)ist ein leistungsstarkes Tool für die interaktive UI -Entwicklung, das sich in Ihr Projekt integriert.
 
@@ -109,7 +109,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
 3.  Neueste Veröffentlichungen
 
-4.  API -Referenzen
+4.  API references
 
 5.  Bauen und testen:
 
@@ -172,7 +172,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 -   [Versionsquelle](#version-source)
 -   [Umgebungen](#environments)
 -   [Bauen](#build)
--   [Lizenz](#license)
+-   [License](#license)
 
 ## Installation
 
@@ -182,7 +182,7 @@ pip install threagile-monitoring
 
 ## Versionsquelle
 
--   Der[Hatch-VCS](https://github.com/ofek/hatch-vcs)Versionsquellen -Plugin bestimmt die Projektversion mit Git -Tags
+-   Der[hatch-vcs](https://github.com/ofek/hatch-vcs)Versionsquellen -Plugin bestimmt die Projektversion mit Git -Tags
 
 ## Umgebungen
 
@@ -197,7 +197,7 @@ pip install threagile-monitoring
     -   verwenden[Cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
     -   Verwenden Sie das[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
 
-## Lizenz
+## License
 
 `threagile-monitoring`ist unter den Bedingungen der[MIT](https://spdx.org/licenses/MIT.html)Lizenz.
 
