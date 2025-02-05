@@ -24,7 +24,7 @@ Uw code op uw eigen systeem laten werken.
 
 **Opmerking**: De`pyproject.toml`Bestand moet in de root van de repository staan!
 
-**Opmerking**: Zorg ervoor dat je de[vereisten](./200/README.md).
+**Note**: Zorg ervoor dat je de[vereisten](./200/README.md).
 
 1.  **Installatieproces:**
 
@@ -54,19 +54,19 @@ Uw code op uw eigen systeem laten werken.
     Alle setup zou nu klaar moeten zijn, dus alles wat je hoeft te doen:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Dit zal de`vendors.#####.js`En`main.#####.js` files - which contains all components - in `/src/threagile_monitoring/static/js/`.
+    Dit zal de`vendors.#####.js`En`main.#####.js`Bestanden - die alle componenten bevatten - in`/src/threagile_monitoring/static/js/`.
 
-    **Ontwikkeling met webpack:**Als u uw website nog steeds ontwikkelt, in een**separate terminal session**, Doe dit na het bovenstaande installatieproces te hebben gevolgd:
+    **Ontwikkeling met webpack:**Als u uw website nog steeds ontwikkelt, in een**Afzonderlijke eindsessie**, Doe dit na het bovenstaande installatieproces te hebben gevolgd:
     1)`cd ../`# Ga naar de wortel van de repository
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Dit zal - in de afzonderlijke eindsessie (d.w.z.`background`) - Laad constant de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u kunt doorgaan met het aanbrengen van die wijzigingen - in de initiële eindsessie (d.w.z.`foreground`). Dus u hoeft uw bronnen niet na elke bewerking te bouwen, deze wordt automatisch verzorgd!
+    Dit zal - in de afzonderlijke eindsessie (d.w.z.`background`) - Laad de wijzigingen die u aanbrengt voortdurend in de juiste bestanden, terwijl u kunt doorgaan met het aanbrengen van die wijzigingen - in de initiële eindsessie (d.w.z.`foreground`). Dus u hoeft uw bronnen niet na elke bewerking te bouwen, deze wordt automatisch verzorgd!
 
     Om de wijzigingen te zien opslaan en uw navigator opnieuw laden (meestal met F5).
 
     **Gebruik van ONLOOK voor UI -ontwikkeling**
 
-    [Aan het kijken](https://github.com/vanHeemstraSystems/onlook)is een krachtig hulpmiddel voor interactieve UI -ontwikkeling die integreert met uw project.
+    [Onlook](https://github.com/vanHeemstraSystems/onlook)is een krachtig hulpmiddel voor interactieve UI -ontwikkeling die integreert met uw project.
 
     1.  **Integratie -instelling**:
         -   Zorg ervoor dat uw frontend loopt (`npm run watch`)
@@ -76,7 +76,7 @@ Uw code op uw eigen systeem laten werken.
 
     2.  **Best practices**:
         -   Breng kleine, incrementele veranderingen aan
-        -   Test wijzigingen onmiddellijk in de browser
+        -   Test changes immediately in the browser
         -   Bekijk de gegenereerde code voordat u zich inzet
         -   Houd ONLOOK en uw frontend in synchronisatie
         -   Gebruik versiebeheer voor alle onlook gegenereerde wijzigingen
@@ -97,7 +97,8 @@ Uw code op uw eigen systeem laten werken.
 
     Test de toepassing (frontend) op deze manier:
     1)`cd ../`# Ga naar de wortel van de repository
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`
+    6) `(.hatch) $ npm test -- --coverage`
 
     **Loop:**
 
@@ -146,7 +147,7 @@ Uw code op uw eigen systeem laten werken.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Navigeer dan naar`http://127.0.0.1:5000/`in uw webbrowser.
+    Navigeer dan naar`http://127.0.0.1:5000/` in your web browser.
 
     Gebruik om tests uit te voeren:
 
@@ -192,7 +193,7 @@ pip install threagile-monitoring
 ## Bouwen
 
 -   Alle build -doelen gebruiken de[luik-VC's](https://github.com/ofek/hatch-vcs)Bouw haakplug -in om een`_version.py`Bestand zodat de versie tijdens runtime kan worden gebruikt
--   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[MyPyc](https://github.com/mypyc/mypyc)
+-   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[Mypyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)GitHub -workflow laat zien hoe:
     -   gebruik[CiBuildwheel](https://github.com/pypa/cibuildwheel)Om binaire wielen te verdelen voor elk platform
     -   Gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)Bouw het doel om zelfstandige distributies voor elk platform te bouwen
