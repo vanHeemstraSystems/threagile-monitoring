@@ -24,7 +24,7 @@ Uw code op uw eigen systeem laten werken.
 
 **Opmerking**: De`pyproject.toml`Bestand moet in de root van de repository staan!
 
-**Note**: Zorg ervoor dat je de[vereisten](./200/README.md).
+**Opmerking**: Zorg ervoor dat je de[vereisten](./200/README.md).
 
 1.  **Installatieproces:**
 
@@ -54,9 +54,9 @@ Uw code op uw eigen systeem laten werken.
     Alle setup zou nu klaar moeten zijn, dus alles wat je hoeft te doen:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
 
-    Dit zal de`vendors.#####.js`En`main.#####.js`Bestanden - die alle componenten bevatten - in`/src/threagile_monitoring/static/js/`.
+    Dit zal de`vendors.#####.js`En`main.#####.js` files - which contains all components - in `/src/threagile_monitoring/static/js/`.
 
-    **Ontwikkeling met webpack:**Als u uw website nog steeds ontwikkelt, in een**Afzonderlijke eindsessie**, Doe dit na het bovenstaande installatieproces te hebben gevolgd:
+    **Ontwikkeling met webpack:**Als u uw website nog steeds ontwikkelt, in een**separate terminal session**, Doe dit na het bovenstaande installatieproces te hebben gevolgd:
     1)`cd ../`# Ga naar de wortel van de repository
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
