@@ -97,7 +97,8 @@
 
     इस तरह से आवेदन (फ्रंटेंड) का परीक्षण करें:
     1)`cd ../`# रिपॉजिटरी की जड़ पर जाएं
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`
+    6) `(.hatch) $ npm test -- --coverage`
 
     **दौड़ना:**
 
@@ -124,7 +125,7 @@
 
     <https://app.coderabbit.ai/dashboard>(उपयोग करता है`phpstan.neon`)
 
-    एप्लिकेशन चलाने के लिए, उपयोग करें:
+    To run the application, use:
 
     लिनक्स:
 
