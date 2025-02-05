@@ -14,7 +14,7 @@ Threagile-Monitoring
 
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
--   [Documentatie](./DOCUMENTATION.md)
+-   [Documentation](./DOCUMENTATION.md)
 -   [Telemetrie](./TELEMETRY.md)
 -   [Gereedschap](./TOOLING.md)
 
@@ -24,7 +24,7 @@ Uw code op uw eigen systeem laten werken.
 
 **Opmerking**: De`pyproject.toml`Bestand moet in de root van de repository staan!
 
-**Note**: Zorg ervoor dat je de[vereisten](./200/README.md).
+**Opmerking**: Zorg ervoor dat je de[vereisten](./200/README.md).
 
 1.  **Installatieproces:**
 
@@ -66,7 +66,7 @@ Uw code op uw eigen systeem laten werken.
 
     **Gebruik van ONLOOK voor UI -ontwikkeling**
 
-    [Onlook](https://github.com/vanHeemstraSystems/onlook)is een krachtig hulpmiddel voor interactieve UI -ontwikkeling die integreert met uw project.
+    [Aan het kijken](https://github.com/vanHeemstraSystems/onlook)is een krachtig hulpmiddel voor interactieve UI -ontwikkeling die integreert met uw project.
 
     1.  **Integratie -instelling**:
         -   Zorg ervoor dat uw frontend loopt (`npm run watch`)
@@ -76,7 +76,7 @@ Uw code op uw eigen systeem laten werken.
 
     2.  **Best practices**:
         -   Breng kleine, incrementele veranderingen aan
-        -   Test changes immediately in the browser
+        -   Test wijzigingen onmiddellijk in de browser
         -   Bekijk de gegenereerde code voordat u zich inzet
         -   Houd ONLOOK en uw frontend in synchronisatie
         -   Gebruik versiebeheer voor alle onlook gegenereerde wijzigingen
@@ -90,15 +90,14 @@ Uw code op uw eigen systeem laten werken.
     **Opmerking**: Zorg er altijd voor dat uw frontend actief is voordat u begint met de ontwikkeling van OneLook. Dit maakt realtime preview van uw wijzigingen mogelijk.
 
     Zorg ervoor dat u uw webpagina uitvoert bij het testen met backend -functies, als volgt:
-    1)`cd ../../../`# Ga naar de wortel van de repository
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
+    1)`cd ../../../` # go to the root of the repository
+    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **Test**
 
     Test de toepassing (frontend) op deze manier:
     1)`cd ../`# Ga naar de wortel van de repository
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`
-    6) `(.hatch) $ npm test -- --coverage`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **Loop:**
 
@@ -123,7 +122,7 @@ Uw code op uw eigen systeem laten werken.
 
     Gebruik: om AI te gebruiken voor pull -aanvraagrecensies:
 
-    <https://app.coderabbit.ai/dashboard>(Gebruik`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
 
     Gebruik: om de applicatie uit te voeren:
 
@@ -147,7 +146,7 @@ Uw code op uw eigen systeem laten werken.
     $ hatch run python src/threagile_monitoring/app.py
     ```
 
-    Navigeer dan naar`http://127.0.0.1:5000/` in your web browser.
+    Navigeer dan naar`http://127.0.0.1:5000/`in uw webbrowser.
 
     Gebruik om tests uit te voeren:
 
@@ -188,12 +187,12 @@ pip install threagile-monitoring
 ## Omgevingen
 
 -   Netjes gedefinieerd in een op zichzelf staande[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   De`test`Matrix gebruikt de[luikcontainers](https://github.com/ofek/hatch-containers)plug -in om elke omgeving in Docker -containers te laten werken; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub -workflow
+-   De`test` matrix uses the [luikcontainers](https://github.com/ofek/hatch-containers) plugin to run each environment inside Docker containers; usage can be seen in the [test](.github/workflows/test.yml)GitHub -workflow
 
 ## Bouwen
 
 -   Alle build -doelen gebruiken de[luik-VC's](https://github.com/ofek/hatch-vcs)Bouw haakplug -in om een`_version.py`Bestand zodat de versie tijdens runtime kan worden gebruikt
--   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[Mypyc](https://github.com/mypyc/mypyc)
+-   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build Hook -plug -in om eerst alle code samen te stellen met[MyPyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)GitHub -workflow laat zien hoe:
     -   gebruik[CiBuildwheel](https://github.com/pypa/cibuildwheel)Om binaire wielen te verdelen voor elk platform
     -   Gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)Bouw het doel om zelfstandige distributies voor elk platform te bouwen
