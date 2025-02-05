@@ -197,7 +197,7 @@ pip install threagile-monitoring
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)para distribuir ruedas binarias para cada plataforma
     -   usar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)Construir un objetivo para construir distribuciones independientes para cada plataforma
 
-## Licencia
+## License
 
 `threagile-monitoring`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html)licencia.
 
