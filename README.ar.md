@@ -49,7 +49,7 @@
     # setuptools_scm displays the version of our package and perform any side-effects like writing to a file. (here: `__about__.py`)
     ```
 
-    **قم بتعبئة موقعك باستخدام WebPack:**بمجرد أن يكون لديك موقع ويب جيد بما يكفي لاستخدامه ، يجب عليك حزم التطبيق باستخدام WebPack. مجلد الحزمة هذا مدرج في`.gitignore` to avoid it to be committed to git.
+    **قم بتعبئة موقعك باستخدام WebPack:**بمجرد أن يكون لديك موقع ويب جيد بما يكفي لاستخدامه ، يجب عليك حزم التطبيق باستخدام WebPack. مجلد الحزمة هذا مدرج في`.gitignore`لتجنب أن تلتزم بالجيت.
 
     يجب أن يكون كل الإعداد جاهزًا الآن ، لذا كل ما عليك فعله:
     1)`(.hatch) $ cd src/threagile_monitoring`2)`(.hatch) $ npm install`3)`(.hatch) $ npm run build`
@@ -87,22 +87,21 @@
         -   تنعكس التغييرات على الفور بسبب ساعة WebPack
         -   يبقى واجهة برمجة تطبيقات الواجهة الخلفية متاحة أثناء التطوير
 
-    **ملحوظة**: Always ensure your frontend is running before starting Onlook development. This enables real-time preview of your changes.
+    **ملحوظة**: تأكد دائمًا من تشغيل الواجهة الأمامية قبل بدء تطوير Onlook. هذا يتيح المعاينة في الوقت الفعلي لتغييراتك.
 
-    Make sure, to run your webpage when testing with backend functions, as follows:
-    1) `cd ../../../`# انتقل إلى جذر المستودع
+    تأكد من تشغيل صفحة الويب الخاصة بك عند الاختبار مع وظائف الخلفية ، على النحو التالي:
+    1)`cd ../../../`# انتقل إلى جذر المستودع
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **امتحان**
 
     اختبر التطبيق (الواجهة الأمامية) بهذه الطريقة:
     1)`cd ../`# انتقل إلى جذر المستودع
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`
-    6) `(.hatch) $ npm test -- --coverage`
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **يجري:**
 
-    إذا لم يتم تطويرها ، فتشغيل التطبيق (الواجهة الخلفية والواجهة في وقت واحد) بهذه الطريقة:
+    If not developing, run the application (backend and frontend simultaneously) this way: 
 
         $ hatch run python src/threagile_monitoring/app.py # starts the app 
 
