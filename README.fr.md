@@ -70,7 +70,7 @@ Mettre votre code en cours d'exécution sur votre propre système.
 
     1.  **Configuration de l'intégration**:
         -   Assurez-vous que votre frontend est en cours d'exécution (`npm run watch`)
-        -   Démarrez votre serveur backend (`python app.py`)
+        -   Start your backend server (`python app.py`)
         -   Lancez la marche dans sa propre application
         -   Connectez le plein air à votre frontend en cours d'exécution
 
