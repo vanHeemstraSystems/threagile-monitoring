@@ -12,7 +12,7 @@
 
 > के लिए डैशबोर्ड बनाने के लिए एक वेब एप्लिकेशन[थ्रैगाइल](https://threagile.io).
 
--   [शब्दकोष](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 -   [टेलीमेटरी](./TELEMETRY.md)
@@ -56,8 +56,8 @@
 
     यह बनाएगा`vendors.#####.js`और`main.#####.js`फ़ाइलें - जिसमें सभी घटक हैं - में`/src/threagile_monitoring/static/js/`.
 
-    **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, एक में**अलग टर्मिनल सत्र**, उपरोक्त स्थापना प्रक्रिया का पालन करने के बाद, ऐसा करें:
-    1)`cd ../`# रिपॉजिटरी की जड़ पर जाएं
+    **वेबपैक के साथ विकास:**यदि आप अभी भी अपनी वेबसाइट विकसित कर रहे हैं, एक में**अलग टर्मिनल सत्र**, after having followed the above installation process, do this:
+    1) `cd ../`# रिपॉजिटरी की जड़ पर जाएं
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     यह - अलग टर्मिनल सत्र में (यानी`background`) - आपके द्वारा उपयुक्त फ़ाइलों में किए गए परिवर्तनों को लगातार लोड करें, जबकि आप उन परिवर्तनों को जारी रख सकते हैं - प्रारंभिक टर्मिनल सत्र में (अर्थात्।`foreground`)। इसलिए आपको प्रत्येक संपादन के बाद अपने स्रोतों का निर्माण करने की आवश्यकता नहीं है, यह स्वचालित रूप से ध्यान रखा जाता है!
@@ -95,10 +95,9 @@
 
     **परीक्षा**
 
-    इस तरह से आवेदन (फ्रंटेंड) का परीक्षण करें:
-    1)`cd ../`# रिपॉजिटरी की जड़ पर जाएं
-    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`
-    6) `(.hatch) $ npm test -- --coverage`
+    Test the application (frontend) this way:
+    1) `cd ../`# रिपॉजिटरी की जड़ पर जाएं
+    2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
     **दौड़ना:**
 
@@ -125,7 +124,7 @@
 
     <https://app.coderabbit.ai/dashboard>(उपयोग करता है`phpstan.neon`)
 
-    To run the application, use:
+    एप्लिकेशन चलाने के लिए, उपयोग करें:
 
     लिनक्स:
 
@@ -172,7 +171,7 @@
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
 -   [वातावरण](#environments)
--   [निर्माण](#build)
+-   [Build](#build)
 -   [लाइसेंस](#license)
 
 ## इंस्टालेशन
