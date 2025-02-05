@@ -60,7 +60,7 @@ throweagile监控
     1）`cd ../`＃转到存储库的根
     2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    这将 - 在单独的终端会话中（即`background`） - 不断将更改加载到适当的文件中，而您可以继续进行这些更改 - 在初始终端会话中（即`foreground`). So you do not have to build your sources after each edit, it is taken care of automatically!
+    这将 - 在单独的终端会话中（即`background`） - 不断将更改加载到适当的文件中，而您可以继续进行这些更改 - 在初始终端会话中（即`foreground`）。因此，您不必在每次编辑后都必须构建来源，它会自动照顾！
 
     要查看更改，只需保存并重新加载导航器（通常使用F5）。
 
@@ -192,7 +192,7 @@ pip install threagile-monitoring
 ## 建造
 
 -   所有构建目标都使用[孵化-VC](https://github.com/ofek/hatch-vcs)构建挂钩插件来运送`_version.py`文件，因此可以在运行时使用该版本
--   车轮使用[孵化 - 摩林](https://github.com/ofek/hatch-mypyc)构建挂钩插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
+-   车轮使用[hatch-mypyc](https://github.com/ofek/hatch-mypyc)构建挂钩插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)github工作流程显示了如何：
     -   使用[cibuild轮](https://github.com/pypa/cibuildwheel)为每个平台分发二元车轮
     -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)建立目标以建立每个平台的独立分布
