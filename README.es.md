@@ -64,7 +64,7 @@ Poner en funcionamiento su código en su propio sistema.
 
     Para ver los cambios, simplemente guarde y vuelva a cargar su navegador (generalmente con F5).
 
-    **Using Onlook for UI Development**
+    **Uso de torcer para el desarrollo de la interfaz de usuario**
 
     [Asumir](https://github.com/vanHeemstraSystems/onlook)es una herramienta poderosa para el desarrollo interactivo de la interfaz de usuario que se integra con su proyecto.
 
@@ -85,7 +85,7 @@ Poner en funcionamiento su código en su propio sistema.
         -   Perspect detectará la estructura de su proyecto
         -   Hará cambios directamente en sus archivos de origen
         -   Los cambios se reflejan inmediatamente debido a Webpack Watch
-        -   Your backend API remains accessible during development
+        -   Su API de backend permanece accesible durante el desarrollo
 
     **Nota**: Siempre asegúrese de que su interfaz se esté ejecutando antes de comenzar el desarrollo de P ". Esto permite una vista previa en tiempo real de sus cambios.
 
