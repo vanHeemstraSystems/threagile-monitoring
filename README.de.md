@@ -56,7 +56,7 @@ Lassen Sie Ihren Code in Ihrem eigenen System ausgeführt.
 
     Dies erstellt die`vendors.#####.js`Und`main.#####.js`Dateien - die alle Komponenten enthalten - in`/src/threagile_monitoring/static/js/`.
 
-    **Entwicklung mit Webpack:**Wenn Sie noch Ihre Website in a entwickeln**separate terminal session**Nachdem Sie den oben genannten Installationsprozess befolgt haben, tun Sie dies:
+    **Entwicklung mit Webpack:**Wenn Sie noch Ihre Website in a entwickeln**separate Terminalsitzung**Nachdem Sie den oben genannten Installationsprozess befolgt haben, tun Sie dies:
     1)`cd ../`# Gehen Sie zur Wurzel des Repositorys
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
@@ -192,7 +192,7 @@ pip install threagile-monitoring
 ## Bauen
 
 -   Alle Build -Ziele verwenden die[Hatch-VCS](https://github.com/ofek/hatch-vcs)Bauen Sie Hook -Plugin, um a zu versenden`_version.py`Datei so kann die Version zur Laufzeit verwendet werden
--   Räder verwenden die[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc) build hook plugin to first compile all code with [Mypyc](https://github.com/mypyc/mypyc)
+-   Räder verwenden die[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)Bauen Sie das Hook -Plugin auf, um zuerst alle Code mit zu kompilieren[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Github Workflow zeigt, wie man:
     -   verwenden[Cibuildwheel](https://github.com/pypa/cibuildwheel)Binärräder für jede Plattform verteilen
     -   Verwenden Sie das[App](https://hatch.pypa.io/latest/plugins/builder/app/)Erstellen Sie das Ziel, um eigenständige Verteilungen für jede Plattform zu erstellen
