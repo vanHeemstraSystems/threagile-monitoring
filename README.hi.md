@@ -193,7 +193,7 @@ pip install threagile-monitoring
 
 -   सभी निर्माण लक्ष्य उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)एक जहाज करने के लिए हुक प्लगइन का निर्माण करें`_version.py`फ़ाइल तो संस्करण का उपयोग रनटाइम पर किया जा सकता है
 -   पहिए का उपयोग करें[हैच-मिपीक](https://github.com/ofek/hatch-mypyc)पहले सभी कोड को संकलित करने के लिए हुक प्लगइन का निर्माण करें[Mypyc](https://github.com/mypyc/mypyc)
--   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे:
+-   [निर्माण](.github/workflows/build.yml) GitHub workflow shows how to:
     -   उपयोग[सभ्य](https://github.com/pypa/cibuildwheel)हर मंच के लिए बाइनरी पहियों को वितरित करने के लिए
     -   उपयोग[अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)हर प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण का निर्माण करने के लिए लक्ष्य का निर्माण करें
 
