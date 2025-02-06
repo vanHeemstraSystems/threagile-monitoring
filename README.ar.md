@@ -124,7 +124,7 @@
 
     <https://app.coderabbit.ai/dashboard>(يستخدم`phpstan.neon`)
 
-    لتشغيل التطبيق ، استخدم:
+    To run the application, use:
 
     لينكس:
 
