@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Outlet } from "react-router-dom";
 import Home from "./Home";
 import Dashboard from "./Dashboard";
 import { dashboardDb, DashboardData } from "../utils/db";
@@ -1555,10 +1555,12 @@ function Layout(props: LayoutProps) {
 
   return (
     <div className="Layout">
-      {props.showHome && <Home />}
-      {props.showDashboard && risksData && (
-        <Dashboard risksJson={risksData} />
-      )}
+      <header>
+        <h1>Threagile Monitoring</h1>
+      </header>
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 }

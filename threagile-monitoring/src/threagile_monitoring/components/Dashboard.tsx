@@ -74,7 +74,6 @@ const parseThreagileData = risksJson => {
     ).map(([status, count]) => ({ name: status, value: count })),
     technicalAssetRisks: Object.entries(
       risks.reduce((acc, risk) => {
-        console.debug('acc:', acc, 'risk:', risk)
         if (!risk.data_breach_technical_assets || !acc) return {}
         risk.data_breach_technical_assets.forEach(asset => {
           acc[asset] =
@@ -111,7 +110,6 @@ const Dashboard = ({ risksJson }) => {
 
   // Custom Active Shape for Pie Chart
   const renderActiveShape = props => {
-    console.debug('renderActiveShape')
     const {
       cx,
       cy,
@@ -154,7 +152,6 @@ const Dashboard = ({ risksJson }) => {
 
   // Hardcoded Risk Matrix for testing only
   const TestRiskMatrix = data => {
-    console.debug('TestRiskMatrix, data: ', data)
     const sample_data = [
       { likelihood: "likely", impact: "medium" },
       { likelihood: "likely", impact: "medium" },
@@ -178,7 +175,6 @@ const Dashboard = ({ risksJson }) => {
 
   // Interactive Risk Matrix
   const RiskMatrix = data => {
-    console.debug('RiskMatrix, data: ', data)
     const severityColors = {
       critical: '#dc2626',
       high: '#ea580c',

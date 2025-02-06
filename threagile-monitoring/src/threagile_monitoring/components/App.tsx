@@ -1,22 +1,15 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Layout from "./Layout";
-import NoMatch from "./NoMatch";
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import routes from './routes'
 
-const App = () => {
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout showHome={true} />} />
+const router = createBrowserRouter(routes, {
+  future: {
+    v7_startTransition: true,
+    v7_relativeSplatPath: true
+  }
+})
 
-        <Route path="/dashboards" element={<Layout showDashboard={true} />} />
+function App() {
+  return <RouterProvider router={router} />
+}
 
-        <Route path="/dashboard/:id" element={<Layout showDashboard={true} />} />
-
-        <Route path="*" element={<NoMatch />} />
-      </Routes>
-    </>
-  );
-};
-
-export default App;
+export default App

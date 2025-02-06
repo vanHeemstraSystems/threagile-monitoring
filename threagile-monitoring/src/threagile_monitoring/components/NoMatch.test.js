@@ -3,6 +3,6 @@ import NoMatch from './NoMatch'
 
 test('renders No Match text', () => {
   render(<NoMatch />)
-  const textElement = screen.getByText('No Match')
+  const textElement = screen.getByText('No Match Found')
   expect(textElement).toBeInTheDocument()
 })

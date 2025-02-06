@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react'
 import Home from './Home'
 
-test('renders Welcome text', () => {
+test('renders home page title', () => {
   render(<Home />)
-  const textElement = screen.getByText('Welcome')
-  expect(textElement).toBeInTheDocument()
+  const titleElement = screen.getByText('Threagile Monitoring')
+  expect(titleElement).toBeInTheDocument()
 })
