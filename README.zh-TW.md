@@ -83,7 +83,7 @@ throweagile監控
 
     3.  **配置**:
         -   Onlook將檢測您的項目的結構
-        -   It will make changes directly to your source files
+        -   它將直接更改您的源文件
         -   由於WebPack手錶而立即反映更改
         -   您的後端API在開發過程中仍然可以訪問
 
