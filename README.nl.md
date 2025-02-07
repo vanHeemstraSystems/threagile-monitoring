@@ -60,7 +60,7 @@ Uw code op uw eigen systeem laten werken.
     1)`cd ../`# Ga naar de wortel van de repository
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Dit zal - in de afzonderlijke eindsessie (d.w.z.`background`) - Laad de wijzigingen die u aanbrengt voortdurend in de juiste bestanden, terwijl u kunt doorgaan met het aanbrengen van die wijzigingen - in de initiële eindsessie (d.w.z.`foreground`). Dus u hoeft uw bronnen niet na elke bewerking te bouwen, deze wordt automatisch verzorgd!
+    Dit zal - in de afzonderlijke eindsessie (d.w.z.`background`) - Laad constant de wijzigingen die u aanbrengt in de juiste bestanden, terwijl u kunt doorgaan met het aanbrengen van die wijzigingen - in de initiële eindsessie (d.w.z.`foreground`). Dus u hoeft uw bronnen niet na elke bewerking te bouwen, deze wordt automatisch verzorgd!
 
     Om de wijzigingen te zien opslaan en uw navigator opnieuw laden (meestal met F5).
 
