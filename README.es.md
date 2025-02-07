@@ -60,11 +60,11 @@ Poner en funcionamiento su código en su propio sistema.
     1)`cd ../`# ir a la raíz del repositorio
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
-    Esto lo hará: en la sesión terminal separada (es decir,`background`) - Cargue constantemente los cambios que realiza en los archivos apropiados, mientras que puede continuar haciendo esos cambios, en la sesión de terminal inicial (es decir,`foreground`). Por lo tanto, no tiene que construir sus fuentes después de cada edición, ¡se cuida automáticamente!
+    Esto lo hará: en la sesión terminal separada (es decir,`background`) - constantly load the changes you make into the appropriate files, whilst you can can continue make those changes - in the initial terminal session (i.e. `foreground`). Por lo tanto, no tiene que construir sus fuentes después de cada edición, ¡se cuida automáticamente!
 
     Para ver los cambios, simplemente guarde y vuelva a cargar su navegador (generalmente con F5).
 
-    **Uso de torcer para el desarrollo de la interfaz de usuario**
+    **Uso de torce para el desarrollo de la interfaz de usuario**
 
     [Asumir](https://github.com/vanHeemstraSystems/onlook)es una herramienta poderosa para el desarrollo interactivo de la interfaz de usuario que se integra con su proyecto.
 
@@ -74,7 +74,7 @@ Poner en funcionamiento su código en su propio sistema.
         -   Iniciar a P "en su propia aplicación
         -   Conecte Plook a su frontend en funcionamiento
 
-    2.  **Mejores prácticas**:
+    2.  **Best Practices**:
         -   Hacer pequeños cambios incrementales
         -   Los cambios de prueba inmediatamente en el navegador
         -   Revisar el código generado antes de comprometerse
