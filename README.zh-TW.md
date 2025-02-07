@@ -58,8 +58,7 @@ throweagile監控
 
     **使用WebPack開發：**如果您仍在開發網站，則**單獨的終端會話**，遵循上述安裝過程後，執行此操作：
     1）`cd ../`＃轉到存儲庫的根
-    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`
-    4) `(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
+    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
     這將 - 在單獨的終端會話中（即`background`） - 不斷將更改加載到適當的文件中，而您可以繼續進行這些更改 - 在初始終端會話中（即`foreground`）。因此，您不必在每次編輯後都必須構建來源，它會自動照顧！
 
@@ -72,7 +71,7 @@ throweagile監控
     1.  **集成設置**:
         -   確保您的前端運行（`npm run watch`)
         -   啟動您的後端服務器（`python app.py`)
-        -   Launch Onlook in its own application
+        -   在自己的應用程序中啟動Onlook
         -   將Onlook連接到您的跑步前端
 
     2.  **最佳實踐**:
@@ -80,19 +79,19 @@ throweagile監控
         -   立即在瀏覽器中進行測試更改
         -   提交之前審查生成的代碼
         -   保持Onlook和您的前端同步
-        -   Use version control for all Onlook-generated changes
+        -   使用版本控制進行所有Onlook生成的更改
 
     3.  **配置**:
         -   Onlook將檢測您的項目的結構
-        -   它將直接更改您的源文件
+        -   It will make changes directly to your source files
         -   由於WebPack手錶而立即反映更改
         -   您的後端API在開發過程中仍然可以訪問
 
     **筆記**：始終在開始Onlook開發之前確保您的前端運行。這可以實時預覽您的更改。
 
     確保在使用後端函數測試時運行網頁，如下：
-    1）`cd ../../../` # go to the root of the repository
-    2) `hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
+    1）`cd ../../../`＃轉到存儲庫的根
+    2）`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ python app.py`
 
     **測試**
 
@@ -193,7 +192,7 @@ pip install threagile-monitoring
 ## 建造
 
 -   所有構建目標都使用[孵化-VC](https://github.com/ofek/hatch-vcs)構建掛鉤插件來運送`_version.py`文件，因此可以在運行時使用該版本
--   車輪使用[hatch-mypyc](https://github.com/ofek/hatch-mypyc)構建掛鉤插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
+-   車輪使用[孵化 - 摩林](https://github.com/ofek/hatch-mypyc)構建掛鉤插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)github工作流程顯示瞭如何：
     -   使用[cibuild輪](https://github.com/pypa/cibuildwheel)為每個平台分發二元車輪
     -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建立目標以建立每個平台的獨立分佈
