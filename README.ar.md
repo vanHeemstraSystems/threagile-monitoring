@@ -16,7 +16,7 @@
 -   [مراجع](./REFERENCES.md)
 -   [الوثائق](./DOCUMENTATION.md)
 -   [القياس عن بعد](./TELEMETRY.md)
--   [Tooling](./TOOLING.md)
+-   [الأدوات](./TOOLING.md)
 
 **ملخص تنفيذي**
 
@@ -56,7 +56,7 @@
 
     هذا سيخلق`vendors.#####.js`و`main.#####.js`الملفات - التي تحتوي على جميع المكونات - في`/src/threagile_monitoring/static/js/`.
 
-    **التطوير مع webpack:**إذا كنت لا تزال تقوم بتطوير موقع الويب الخاص بك ، في أ**separate terminal session**، بعد اتباع عملية التثبيت أعلاه ، قم بذلك:
+    **التطوير مع webpack:**إذا كنت لا تزال تقوم بتطوير موقع الويب الخاص بك ، في أ**جلسة طرفية منفصلة**، بعد اتباع عملية التثبيت أعلاه ، قم بذلك:
     1)`cd ../`# انتقل إلى جذر المستودع
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ sudo chown -R $USER:$(id -gn $USER) ~/.npm`5)`(.hatch) $ npm install`6)`(.hatch) $ npm run watch`
 
@@ -195,7 +195,7 @@ pip install threagile-monitoring
 -   عجلات استخدام[Hatch-Mypyc](https://github.com/ofek/hatch-mypyc)قم ببناء المكون الإضافي الخطاف لتجميع كل الرمز أولاً[mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح GitHub Workflow كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
-    -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/) build target to build standalone distributions for every platform
+    -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء هدف لبناء توزيعات مستقلة لكل منصة
 
 ## رخصة
 
