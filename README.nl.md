@@ -82,7 +82,7 @@ Uw code op uw eigen systeem laten werken.
         -   Gebruik versiebeheer voor alle onlook gegenereerde wijzigingen
 
     3.  **Configuratie**:
-        -   Onlook zal de structuur van uw project detecteren
+        -   Onlook will detect your project's structure
         -   Het zal rechtstreeks wijzigingen aanbrengen in uw bronbestanden
         -   Wijzigingen worden onmiddellijk weerspiegeld vanwege Webpack Watch
         -   Uw backend -API blijft toegankelijk tijdens de ontwikkeling
