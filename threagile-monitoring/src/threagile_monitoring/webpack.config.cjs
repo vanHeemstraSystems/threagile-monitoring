@@ -7,7 +7,8 @@ module.exports = {
   devtool: 'inline-nosources-cheap-source-map',
   output: {
     filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, 'dist'),
+    // REMOVE path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'static/js'),    
     clean: true
   },
   optimization: {
