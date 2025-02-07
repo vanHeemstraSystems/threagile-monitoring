@@ -195,7 +195,7 @@ pip install threagile-monitoring
 -   车轮使用[孵化 - 摩林](https://github.com/ofek/hatch-mypyc)构建挂钩插件以首先使用[mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)github工作流程显示了如何：
     -   使用[cibuild轮](https://github.com/pypa/cibuildwheel)为每个平台分发二元车轮
-    -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)建立目标以建立每个平台的独立分布
+    -   use the [应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)建立目标以建立每个平台的独立分布
 
 ## 执照
 
