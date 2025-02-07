@@ -99,7 +99,7 @@ Mettre votre code en cours d'exécution sur votre propre système.
     1)`cd ../`# allez à la racine du référentiel
     2)`hatch shell`3)`(.hatch) $ cd threagile-monitoring/src/threagile_monitoring`4)`(.hatch) $ npm install`5)`(.hatch) $ npm test`6)`(.hatch) $ npm test -- --coverage`
 
-    **Courir:**
+    **Run:**
 
     Si vous ne développez pas, exécutez l'application (backend et frontend simultanément) de cette façon:
 
@@ -122,7 +122,7 @@ Mettre votre code en cours d'exécution sur votre propre système.
 
     Pour utiliser l'IA pour les avis de demande de traction, utilisez:
 
-    <https://app.coderabbit.ai/dashboard>(utilise`phpstan.neon`)
+    <https://app.coderabbit.ai/dashboard> (uses `phpstan.neon`)
 
     Pour exécuter l'application, utilisez:
 
